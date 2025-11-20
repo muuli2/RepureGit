@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Prop
   - 
   - 
   - 
@@ -41,3 +41,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: TileMap01
+    uniqueID: 3935737589
+    locked: 0
+  - name: Ui
+    uniqueID: 2171488937
+    locked: 0
+  - name: Prop
+    uniqueID: 4212033393
+    locked: 0
+  m_RenderingLayers:
+  - Default
