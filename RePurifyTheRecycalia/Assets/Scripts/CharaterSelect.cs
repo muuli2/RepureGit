@@ -135,14 +135,19 @@ public class CharacterSelect : MonoBehaviour
     }
 
     public void OnSelectPressed()
+{
+    if(selectedCharacter == null)
     {
-        if(selectedCharacter == null)
-        {
-            Debug.Log("กรุณาเลือกตัวละครก่อน!");
-            return;
-        }
-
-        // โหลด Scene ด่านถัดไป
-        SceneManager.LoadScene("Map01");
+        Debug.Log("กรุณาเลือกตัวละครก่อน!");
+        return;
     }
+
+    // บันทึกตัวละครที่เลือก
+    SelectedCharacter.characterName = selectedCharacter.characterName;
+
+    // โหลด Scene ด่านถัดไป
+    SceneManager.LoadScene("Map01");
+}
+
+
 }

@@ -1027,13 +1027,13 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1038221916}
   - {fileID: 184489069}
   - {fileID: 1601368863}
   - {fileID: 774781816}
   - {fileID: 1441829375}
   - {fileID: 1836190903}
   - {fileID: 1126745167}
-  - {fileID: 1038221916}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSelect
   characterLeft:
-    characterName: Roro
+    characterName: Knight
     description: "\u0E40\u0E01\u0E48\u0E07\u0E21\u0E32\u0E01 \u0E46\u0E46 \u0E46
       \u0E46 \u0E46 \u0E46"
     characterButton: {fileID: 1632493000}
@@ -1066,7 +1066,7 @@ MonoBehaviour:
     descriptionText: {fileID: 1939235897}
     panelBasePosition: {x: 0, y: 0, z: 0}
   characterRight:
-    characterName: Ruru
+    characterName: Mage
     description: "\u0E40\u0E01\u0E48\u0E07\u0E2A\u0E38\u0E14 \u0E46\u0E46 \u0E46
       \u0E46 \u0E46"
     characterButton: {fileID: 1524421776}
