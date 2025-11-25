@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class SceneTransition : MonoBehaviour
+public class FadePanel : MonoBehaviour
 {
     public Image fadeImage;
     public float fadeDuration = 1f;
