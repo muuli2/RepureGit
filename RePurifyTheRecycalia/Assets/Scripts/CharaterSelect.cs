@@ -102,37 +102,41 @@ public class CharacterSelect : MonoBehaviour
         ShowInfo(characterToShow);
 
         // เลื่อน Panel ทุกครั้งที่กด
-        float offset = characterToShow == characterLeft ? -panelOffset : panelOffset;
-        StartCoroutine(ShakePanel(characterToShow.infoPanelRect, offset, fadeDuration));
+       float offset = characterToShow == characterLeft ? -panelOffset : panelOffset;
+
+StartCoroutine(SlideIn(
+    characterToShow.infoPanelRect,
+    characterToShow.panelBasePosition,
+    offset,
+    fadeDuration
+));
+
     }
 
-    IEnumerator ShakePanel(RectTransform panel, float offset, float duration)
+   IEnumerator SlideIn(RectTransform panel, Vector3 basePos, float offset, float duration)
+{
+    if(panel == null) yield break;
+
+    Vector3 startPos = basePos;
+    Vector3 targetPos = basePos + new Vector3(offset, 0, 0);
+
+    float t = 0f;
+
+    while(t < 1f)
     {
-        if(panel == null) yield break;
-
-        Vector3 startPos = panel.anchoredPosition;
-        Vector3 targetPos = startPos + new Vector3(offset, 0, 0);
-        float t = 0f;
-
-        // เลื่อนไปข้างหน้า
-        while(t < 1f)
-        {
-            t += Time.deltaTime / duration;
-            panel.anchoredPosition = Vector3.Lerp(startPos, targetPos, t);
-            yield return null;
-        }
-
-        // เลื่อนกลับ
-        t = 0f;
-        while(t < 1f)
-        {
-            t += Time.deltaTime / duration;
-            panel.anchoredPosition = Vector3.Lerp(targetPos, startPos, t);
-            yield return null;
-        }
-
-        panel.anchoredPosition = startPos;
+        t += Time.deltaTime / duration;
+        panel.anchoredPosition = Vector3.Lerp(startPos, targetPos, t);
+        yield return null;
     }
+
+    panel.anchoredPosition = targetPos;
+}
+
+
+
+   
+
+
 
     public void OnSelectPressed()
 {
