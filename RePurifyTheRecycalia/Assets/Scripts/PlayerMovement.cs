@@ -1,12 +1,19 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // ต้องมีอันนี้
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
 
-    Vector2 movement;
+    [HideInInspector]
+    public Vector2 movement;
+
+    // ฟังก์ชันเช็คว่ามีการ input
+    public bool IsMoving()
+    {
+        return movement.sqrMagnitude > 0.01f; // ถ้ามีการ input เล็กน้อยก็ถือว่ากำลังขยับ
+    }
 
     void Update()
     {
