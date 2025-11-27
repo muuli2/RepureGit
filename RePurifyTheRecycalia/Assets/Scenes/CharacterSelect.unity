@@ -1077,8 +1077,8 @@ MonoBehaviour:
     nameText: {fileID: 1391569462}
     descriptionText: {fileID: 1710166224}
     panelBasePosition: {x: 0, y: 0, z: 0}
-  fadeDuration: 3
-  panelOffset: 30
+  fadeDuration: 2
+  panelOffset: 35
 --- !u!1 &1126745166
 GameObject:
   m_ObjectHideFlags: 0

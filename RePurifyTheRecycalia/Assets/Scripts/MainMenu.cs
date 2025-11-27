@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System;
 
 public class MainMenu : MonoBehaviour
 {
+    public SettingsManager settingsManager;
+
     public void GoToScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
@@ -13,5 +14,11 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Application has quit.");
+    }
+
+    public void OpenSettings()
+    {
+        if(settingsManager != null)
+            settingsManager.OpenSettings();
     }
 }
