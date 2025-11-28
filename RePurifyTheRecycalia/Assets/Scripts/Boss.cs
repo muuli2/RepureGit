@@ -55,28 +55,25 @@ private void UpdateHealthBar()
     }  
 }  
 
-private IEnumerator TriggerMinigameTransition()  
-{  
-    state = BossState.WaitingMinigame;  
-
-    // เล่นทรานซิชัน: แสง/กระพริบ  
-    if(glowEffect != null) glowEffect.SetActive(true);  
-    if(bossAnimator != null) bossAnimator.SetTrigger("PhaseTransition");  
-
-    // แสดงอินโทรข้อความก่อนเข้ามินิเกม
-    IntroMinigame tt = UnityEngine.Object.FindFirstObjectByType<IntroMinigame>();
-if (tt != null)
+private IEnumerator TriggerMinigameTransition()
 {
-    yield return tt.ShowText("SHOWDOWN");
+    state = BossState.WaitingMinigame;
+
+    if (glowEffect != null) glowEffect.SetActive(true);
+    if (bossAnimator != null) bossAnimator.SetTrigger("PhaseTransition");
+
+    // แสดงข้อความ Intro
+    IntroMinigame tt = UnityEngine.Object.FindFirstObjectByType<IntroMinigame>();
+    if (tt != null)
+        yield return tt.ShowText("SHOWDOWN");
+
+    Debug.Log("Boss is preparing minigame...");
+    yield return new WaitForSeconds(1f);
+
+    // โหลดมินิเกมแบบ Additive
+    SceneManager.LoadScene(miniGameSceneName, LoadSceneMode.Additive);
 }
 
-
-    Debug.Log("Boss is preparing minigame...");  
-    yield return new WaitForSeconds(1f); // เวลาสั้นระหว่างข้อความกับโหลดซีน  
-
-    // โหลดมินิเกม  
-    SceneManager.LoadScene(miniGameSceneName);  
-}  
 
 // เรียกหลังเล่นมินิเกมสำเร็จ  
 public void BossDefeated()  

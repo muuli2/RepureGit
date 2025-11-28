@@ -1,5 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
+[System.Serializable]
+public class DropData
+{
+    public GameObject item;      // ไอเท็มที่จะดรอป
+    public float dropChance;     // โอกาสดรอป (0 - 100%)
+}
 
 public class Monster : MonoBehaviour
 {
@@ -9,8 +15,8 @@ public class Monster : MonoBehaviour
     [Header("UI")]
     public Image healthBarFill;
 
-    [Header("Drop Items")]
-    public GameObject[] dropItems;
+    [Header("Drop Settings")]
+    public DropData[] drops;   // << ใช้อันนี้แทน dropItems
 
     void Awake()
     {
@@ -36,11 +42,17 @@ public class Monster : MonoBehaviour
 
     void Die()
     {
-        if(dropItems.Length > 0)
+        foreach (var d in drops)
         {
-            int index = Random.Range(0, dropItems.Length);
-            Instantiate(dropItems[index], transform.position, Quaternion.identity);
+            float roll = Random.Range(0f, 100f);
+
+            // ถ้าสุ่มได้ตามเปอร์เซ็นต์ ก็จะดรอป
+            if (roll <= d.dropChance)
+            {
+                Instantiate(d.item, transform.position, Quaternion.identity);
+            }
         }
+
         Destroy(gameObject);
     }
 }
