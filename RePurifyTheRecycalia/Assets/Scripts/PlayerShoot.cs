@@ -6,7 +6,7 @@ public class PlayerShoot : MonoBehaviour
     public Transform firePoint;        // จุดเกิดกระสุน
     public GameObject bulletPrefab;    // prefab กระสุน
     public float bulletSpeed = 10f;
-    public float shootCooldown = 3f;   // เวลา cooldown
+    public float shootCooldown = 1f;   // เวลา cooldown
     private float lastShootTime = -Mathf.Infinity;
 
     void Update()

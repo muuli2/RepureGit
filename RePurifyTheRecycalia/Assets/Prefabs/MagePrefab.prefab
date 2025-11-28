@@ -110,6 +110,7 @@ MonoBehaviour:
   firePoint: {fileID: 1899831185692085207}
   bulletPrefab: {fileID: 4460072555350427435, guid: 51b00971b99a2b540ba8a65e36b2bbad, type: 3}
   bulletSpeed: 10
+  shootCooldown: 1
 --- !u!61 &-9143267730762092332
 BoxCollider2D:
   m_ObjectHideFlags: 0

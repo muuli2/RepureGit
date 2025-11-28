@@ -11,9 +11,9 @@ public class Bullet : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.linearVelocity = transform.right * speed;
 
-        // หา Animator แล้ว Destroy หลังจบอนิเมชัน
+        // ทำลายตัวเองหลังจบ Animation
         Animator anim = GetComponent<Animator>();
-        if(anim != null)
+        if (anim != null)
         {
             float animLength = anim.runtimeAnimatorController.animationClips[0].length;
             Destroy(gameObject, animLength);
@@ -26,10 +26,20 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        // ตรวจ Monster
         Monster monster = col.GetComponent<Monster>();
         if (monster != null)
         {
             monster.TakeDamage(damage);
+            Destroy(gameObject);
+            return;
+        }
+
+        // ตรวจ Boss
+        Boss boss = col.GetComponent<Boss>();
+        if (boss != null)
+        {
+            boss.TakeDamage(damage);
             Destroy(gameObject);
         }
     }

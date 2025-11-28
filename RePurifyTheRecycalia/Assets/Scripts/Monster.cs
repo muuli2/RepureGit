@@ -1,27 +1,46 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Monster : MonoBehaviour
 {
-    public int maxHP = 3;
-    private int currentHP;
+    public int maxHealth = 5;
+    private int currentHealth;
 
-    void Start()
+    [Header("UI")]
+    public Image healthBarFill;
+
+    [Header("Drop Items")]
+    public GameObject[] dropItems;
+
+    void Awake()
     {
-        currentHP = maxHP;
+        currentHealth = maxHealth;
+        UpdateHealthBar();
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(int damage)
     {
-        currentHP -= amount;
+        currentHealth -= damage;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        UpdateHealthBar();
 
-        if (currentHP <= 0)
-        {
+        if (currentHealth <= 0)
             Die();
-        }
+    }
+
+    void UpdateHealthBar()
+    {
+        if (healthBarFill != null)
+            healthBarFill.fillAmount = (float)currentHealth / maxHealth;
     }
 
     void Die()
     {
+        if(dropItems.Length > 0)
+        {
+            int index = Random.Range(0, dropItems.Length);
+            Instantiate(dropItems[index], transform.position, Quaternion.identity);
+        }
         Destroy(gameObject);
     }
 }

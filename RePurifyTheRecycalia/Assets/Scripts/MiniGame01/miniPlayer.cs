@@ -5,12 +5,15 @@ public class miniPlayer : MonoBehaviour
 {
     public float speed = 5f;
 
-    // ขอบซ้าย-ขวาของจอ (world units)
     public float leftLimit = -8f;
     public float rightLimit = 8f;
 
     void Update()
     {
+        // เช็คว่าเกมเริ่มหรือยัง
+        if (!MiniGame01.Instance.gameStarted)
+            return;
+
         float move = 0f;
 
         if (Keyboard.current.aKey.isPressed) move = -1f;

@@ -5,6 +5,7 @@ using TMPro;
 public class MiniGame01 : MonoBehaviour
 {
     public static MiniGame01 Instance;
+    
 
     public int lives = 5;
     public int score = 0;
