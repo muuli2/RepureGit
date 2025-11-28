@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Prop
-  - 
+  - monster
   - 
   - 
   - 
@@ -52,6 +52,12 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1531782037
+    locked: 0
+  - name: Monster
+    uniqueID: 2050373311
+    locked: 0
+  - name: Bullet
+    uniqueID: 4099094017
     locked: 0
   m_RenderingLayers:
   - Default

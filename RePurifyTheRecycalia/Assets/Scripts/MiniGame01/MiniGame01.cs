@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MiniGame01 : MonoBehaviour
 {
@@ -8,10 +9,10 @@ public class MiniGame01 : MonoBehaviour
     public int lives = 5;
     public int score = 0;
     public int targetScore = 5000;     // คะแนนเป้าหมาย
+    public bool gameStarted = false;   // ตรวจสอบให้เป็น public
 
-    public bool gameStarted = false;  // ตรวจสอบให้เป็น public
-
-
+    [Header("UI")]
+    public TMP_Text scoreText;         // Text แสดงคะแนน
     public Image[] heartImages;
     public Sprite heartFull;
     public Sprite heartEmpty;
@@ -26,6 +27,7 @@ public class MiniGame01 : MonoBehaviour
     private void Start()
     {
         UpdateHeartsUI();
+        UpdateScoreUI();
         gameOverPanel.SetActive(false);
         if(winPanel != null) winPanel.SetActive(false);
     }
@@ -33,11 +35,18 @@ public class MiniGame01 : MonoBehaviour
     public void AddScore(int amount)
     {
         score += amount;
+        UpdateScoreUI();
 
         if(score >= targetScore)
         {
             WinGame();
         }
+    }
+
+    void UpdateScoreUI()
+    {
+        if(scoreText != null)
+            scoreText.text = "Score: " + score;
     }
 
     public void LoseLife()
