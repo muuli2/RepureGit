@@ -9,9 +9,12 @@ public class TrashSpawner : MonoBehaviour
 
     private float timer = 0f;
 
+    public bool canSpawn = true;   // 👈 เพิ่มเพื่อควบคุมการ spawn
+
     void Update()
     {
         if (!MiniGame01.Instance.gameStarted) return;
+        if (!canSpawn) return;      // 👈 ถ้าไม่ให้ spawn ก็หยุดทันที
 
         timer += Time.deltaTime;
         if (timer >= spawnInterval)
@@ -32,5 +35,10 @@ public class TrashSpawner : MonoBehaviour
         Vector3 spawnPos = new Vector3(randomX, spawnY, 0);
 
         Instantiate(prefab, spawnPos, Quaternion.identity);
+    }
+
+    public void StopSpawn()
+    {
+        canSpawn = false;   // 👈 หยุด spawn ตลอดไปจนกว่าจะเริ่มใหม่
     }
 }

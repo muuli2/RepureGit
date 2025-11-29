@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c8250badc3faaf47b58678fa4d966e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Boss
-  maxHealth: 10
+  maxHealth: 1
   state: 0
   healthBarFill: {fileID: 7341515866127859863}
   bossAnimator: {fileID: 0}

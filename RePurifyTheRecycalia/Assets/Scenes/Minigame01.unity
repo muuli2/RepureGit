@@ -153,6 +153,7 @@ MonoBehaviour:
   spawnInterval: 0.8
   spawnRangeX: 8
   spawnY: 6
+  canSpawn: 1
 --- !u!4 &72958234
 Transform:
   m_ObjectHideFlags: 0
@@ -835,8 +836,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1531782037
-  m_SortingLayer: 4
-  m_SortingOrder: 2
+  m_SortingLayer: 6
+  m_SortingOrder: 6
   m_Sprite: {fileID: -6153708761433067724, guid: 14e810806c3610c4b9171d13b13bf740, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1774,7 +1775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniGame01
   lives: 5
   score: 0
-  targetScore: 5000
+  targetScore: 1000
   gameStarted: 0
   scoreText: {fileID: 1547360533}
   heartImages: []
@@ -2396,9 +2397,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1531782037
+  m_SortingLayer: 6
+  m_SortingOrder: 2
   m_Sprite: {fileID: -855298285791758126, guid: d732137afb73cc747b5861dc679c45f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2419,7 +2420,7 @@ Transform:
   m_GameObject: {fileID: 1990347482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -0.01, z: 0}
+  m_LocalPosition: {x: 0.06, y: 0.04, z: 0}
   m_LocalScale: {x: 1.41, y: 1.41, z: 1.41}
   m_ConstrainProportionsScale: 1
   m_Children: []

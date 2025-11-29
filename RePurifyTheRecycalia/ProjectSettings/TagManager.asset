@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Trash
   layers:
   - Default
   - TransparentFX
@@ -47,17 +48,20 @@ TagManager:
   - name: Ui
     uniqueID: 2171488937
     locked: 0
+  - name: Bullet
+    uniqueID: 4099094017
+    locked: 0
   - name: Prop
     uniqueID: 4212033393
-    locked: 0
-  - name: Player
-    uniqueID: 1531782037
     locked: 0
   - name: Monster
     uniqueID: 2050373311
     locked: 0
-  - name: Bullet
-    uniqueID: 4099094017
+  - name: Player
+    uniqueID: 1531782037
+    locked: 0
+  - name: Trash
+    uniqueID: 2900285633
     locked: 0
   m_RenderingLayers:
   - Default

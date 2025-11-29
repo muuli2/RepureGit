@@ -10,7 +10,7 @@ public class MiniGame01 : MonoBehaviour
 
     public int lives = 5;
     public int score = 0;
-    public int targetScore = 5000;
+    public int targetScore = 1000;
     public bool gameStarted = false;
 
     [Header("UI")]
@@ -71,17 +71,60 @@ public class MiniGame01 : MonoBehaviour
         }
     }
 
-    void GameOver()
+    void DestroyAllTrash()
     {
-        gameOverPanel.SetActive(true);
-        Time.timeScale = 0;
+    GameObject[] trashObjects = GameObject.FindGameObjectsWithTag("Trash");
+
+    foreach (var trash in trashObjects)
+    {
+        Destroy(trash);
     }
+    }   
+
+    void FreezeAllTrash()
+{
+    GameObject[] trashObjects = GameObject.FindGameObjectsWithTag("Trash");
+
+    foreach (var trash in trashObjects)
+    {
+        var rb = trash.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.isKinematic = true;   // 👈 หยุด physics
+        }
+    }
+}
+
+
+
+    void GameOver()
+{
+    gameOverPanel.SetActive(true);
+
+    var spawner = Object.FindFirstObjectByType<TrashSpawner>();
+    if (spawner != null)
+        spawner.StopSpawn();
+
+    DestroyAllTrash();
+    Time.timeScale = 0;
+}
+
 
     void WinGame()
-    {
-        if (winPanel != null) winPanel.SetActive(true);
-        Time.timeScale = 0;
-    }
+{
+    if (winPanel != null) winPanel.SetActive(true);
+
+    // หยุดการ spawn
+    var spawner = Object.FindFirstObjectByType<TrashSpawner>();
+    if (spawner != null)
+        spawner.StopSpawn();
+
+    FreezeAllTrash();
+
+    DestroyAllTrash();
+    Time.timeScale = 0;
+}
 
     // ปุ่ม Win Panel: ไปต่อ (กลับ Map01)
     public void ContinueToMap()
