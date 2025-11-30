@@ -12,7 +12,7 @@ public class PlayerShoot : MonoBehaviour
     void Update()
     {
         // ตรวจสอบว่า cooldown ครบและกดเมาส์
-        if (Mouse.current.leftButton.wasPressedThisFrame && Time.time >= lastShootTime + shootCooldown)
+        if ((Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame) && Time.time >= lastShootTime + shootCooldown)
         {
             Shoot();
             lastShootTime = Time.time;  // รีเซ็ตเวลา cooldown

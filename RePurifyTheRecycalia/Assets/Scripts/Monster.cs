@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
+
 [System.Serializable]
 public class DropData
 {
-    public GameObject item;      // ไอเท็มที่จะดรอป
-    public float dropChance;     // โอกาสดรอป (0 - 100%)
+    public GameObject item;
+    public float dropChance;
 }
 
 public class Monster : MonoBehaviour
@@ -16,7 +17,12 @@ public class Monster : MonoBehaviour
     public Image healthBarFill;
 
     [Header("Drop Settings")]
-    public DropData[] drops;   // << ใช้อันนี้แทน dropItems
+    public DropData[] drops;
+
+    [Header("Attack Settings")]
+    public int damageToPlayer = 1;      
+    public float attackCooldown = 1f;   
+    private float lastAttackTime = 0f;
 
     void Awake()
     {
@@ -46,13 +52,33 @@ public class Monster : MonoBehaviour
         {
             float roll = Random.Range(0f, 100f);
 
-            // ถ้าสุ่มได้ตามเปอร์เซ็นต์ ก็จะดรอป
             if (roll <= d.dropChance)
-            {
                 Instantiate(d.item, transform.position, Quaternion.identity);
-            }
         }
 
         Destroy(gameObject);
+    }
+
+    // -------------------------
+    // ทำดาเมจผู้เล่นเมื่อชน
+    // -------------------------
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            TryDamagePlayer();
+        }
+    }
+
+    void TryDamagePlayer()
+    {
+        if (Time.time - lastAttackTime >= attackCooldown)
+        {
+            lastAttackTime = Time.time;
+
+            GameManager.Instance.TakeDamage(damageToPlayer);
+
+            Debug.Log("Player ถูกมอนโจมตี! ลด " + damageToPlayer);
+        }
     }
 }

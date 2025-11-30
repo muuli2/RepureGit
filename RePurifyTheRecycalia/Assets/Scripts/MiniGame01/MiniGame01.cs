@@ -6,11 +6,9 @@ using UnityEngine.SceneManagement;
 public class MiniGame01 : MonoBehaviour
 {
     public static MiniGame01 Instance;
-    
 
-    public int lives = 5;
-    public int score = 0;
     public int targetScore = 1000;
+    public int score = 0;
     public bool gameStarted = false;
 
     [Header("UI")]
@@ -52,79 +50,85 @@ public class MiniGame01 : MonoBehaviour
             scoreText.text = "Score: " + score;
     }
 
-    public void LoseLife()
+   public void UpdateHeartsUI()
     {
-        lives--;
-        UpdateHeartsUI();
+        int currentLives = GameManager.Instance.lives; // ใช้หัวใจจากแมพหลัก
+        for (int i = 0; i < heartImages.Length; i++)
+        {
+            heartImages[i].sprite = i < currentLives ? heartFull : heartEmpty;
+        }
+    }
 
-        if (lives <= 0)
+    public void CollectTrash(TrashItem trash)
+    {
+        int points = 100; // คะแนนคงที่, หรือใช้ trash.scoreValue ถ้ามี
+        if (trash.trashType == targetTrashType)
+        {
+            AddScore(points);
+        }
+        else
+        {
+            // ลดเลือดใน GameManager โดยตรง
+            GameManager.Instance.TakeDamage(1);
+            UpdateHeartsUI();
+        }
+
+        Destroy(trash.gameObject);
+
+        // เช็คหัวใจหมด -> GameOver มินิเกม
+        if (GameManager.Instance.lives <= 0)
         {
             GameOver();
         }
     }
 
-    void UpdateHeartsUI()
-    {
-        for (int i = 0; i < heartImages.Length; i++)
-        {
-            heartImages[i].sprite = i < lives ? heartFull : heartEmpty;
-        }
-    }
-
     void DestroyAllTrash()
     {
-    GameObject[] trashObjects = GameObject.FindGameObjectsWithTag("Trash");
-
-    foreach (var trash in trashObjects)
-    {
-        Destroy(trash);
+        GameObject[] trashObjects = GameObject.FindGameObjectsWithTag("Trash");
+        foreach (var trash in trashObjects)
+            Destroy(trash);
     }
-    }   
 
     void FreezeAllTrash()
-{
-    GameObject[] trashObjects = GameObject.FindGameObjectsWithTag("Trash");
-
-    foreach (var trash in trashObjects)
     {
-        var rb = trash.GetComponent<Rigidbody2D>();
-        if (rb != null)
+        GameObject[] trashObjects = GameObject.FindGameObjectsWithTag("Trash");
+        foreach (var trash in trashObjects)
         {
-            rb.linearVelocity = Vector2.zero;
-            rb.isKinematic = true;   // 👈 หยุด physics
+            var rb = trash.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector2.zero;
+                rb.angularVelocity = 0f;
+                rb.bodyType = RigidbodyType2D.Kinematic;
+            }
         }
     }
-}
 
+   public void GameOver()
 
+    {
+        gameOverPanel.SetActive(true);
 
-    void GameOver()
-{
-    gameOverPanel.SetActive(true);
+        var spawner = Object.FindFirstObjectByType<TrashSpawner>();
+        if (spawner != null)
+            spawner.StopSpawn();
 
-    var spawner = Object.FindFirstObjectByType<TrashSpawner>();
-    if (spawner != null)
-        spawner.StopSpawn();
-
-    DestroyAllTrash();
-    Time.timeScale = 0;
-}
-
+        DestroyAllTrash();
+        Time.timeScale = 0;
+    }
 
     void WinGame()
-{
-    if (winPanel != null) winPanel.SetActive(true);
+    {
+        if (winPanel != null) winPanel.SetActive(true);
 
-    // หยุดการ spawn
-    var spawner = Object.FindFirstObjectByType<TrashSpawner>();
-    if (spawner != null)
-        spawner.StopSpawn();
+        var spawner = Object.FindFirstObjectByType<TrashSpawner>();
+        if (spawner != null)
+            spawner.StopSpawn();
 
-    FreezeAllTrash();
-
-    DestroyAllTrash();
-    Time.timeScale = 0;
-}
+        FreezeAllTrash();
+        DestroyAllTrash();
+        Time.timeScale = 0;
+    }
 
     // ปุ่ม Win Panel: ไปต่อ (กลับ Map01)
     public void ContinueToMap()
@@ -133,16 +137,10 @@ public class MiniGame01 : MonoBehaviour
         if (winPanel != null)
             winPanel.SetActive(false);
 
-        // แจ้ง Boss ว่า minigame ผ่าน
         if (Boss.Instance != null)
             Boss.Instance.BossDefeated();
 
-        
-
-        // Unload มินิเกม Scene (Additive)
         SceneManager.UnloadSceneAsync("MiniGame01");
-
-        
     }
 
     // ปุ่ม Win Panel: เล่นมินิเกมใหม่

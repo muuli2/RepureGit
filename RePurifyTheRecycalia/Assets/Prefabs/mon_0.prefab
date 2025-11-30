@@ -181,9 +181,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Monster
-  maxHealth: 5
+  maxHealth: 1
   healthBarFill: {fileID: 1791056172081892207}
-  dropItems: []
+  drops: []
+  damageToPlayer: 1
+  attackCooldown: 1
 --- !u!50 &5222363316033032003
 Rigidbody2D:
   serializedVersion: 5

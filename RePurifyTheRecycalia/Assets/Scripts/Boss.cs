@@ -15,120 +15,120 @@ public class Boss : MonoBehaviour
     public BossState state = BossState.Normal;  
 
     [Header("UI")]  
-    public Image healthBarFill;       // World Space HealthBar (Fill: Horizontal)  
+    public Image healthBarFill;
 
     [Header("Effects")]  
-    public Animator bossAnimator;     // Animator สำหรับทรานซิชัน  
-    public GameObject glowEffect;     // ตัวอย่างแสงส่องบอส  
+    public Animator bossAnimator;
+    public GameObject glowEffect;
 
     [Header("Minigame")]  
-    public string miniGameSceneName = "MiniGame01";  
+    public string miniGameSceneName = "MiniGame01";
 
-   private PlayerMovement mapPlayerMovement;
-
-    private void Awake()  
-    {  
-        Instance = this;  
-        currentHealth = maxHealth;  
-        UpdateHealthBar();  
-    }  
-
-    // --- Freeze / Unfreeze Map ---
-   
-
-void FreezeAllMapObjects()
-{
-    Rigidbody2D[] bodies = Object.FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
-
-    foreach (var rb in bodies)
+    private void Awake()
     {
-        rb.linearVelocity = Vector2.zero;
-        rb.bodyType = RigidbodyType2D.Static;
+        Instance = this;
+        currentHealth = maxHealth;
+        UpdateHealthBar();
     }
 
-    // Freeze PlayerMovement script
-    PlayerMovement player = FindObjectOfType<PlayerMovement>();
-    if (player != null)
-        player.enabled = false;
-}
+    // -------------------------------------
+    // ❄ Freeze / Unfreeze
+    // -------------------------------------
 
-void UnfreezeAllMapObjects()
-{
-    Rigidbody2D[] bodies = Object.FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
-
-    foreach (var rb in bodies)
+    void FreezeAllMapObjects()
     {
-        rb.bodyType = RigidbodyType2D.Dynamic;
+        Rigidbody2D[] bodies = Object.FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
+
+        foreach (var rb in bodies)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Static;
+        }
+
+        // Freeze PlayerMovement script
+        PlayerMovement player = Object.FindFirstObjectByType<PlayerMovement>();
+        if (player != null)
+            player.enabled = false;
     }
 
-    // Unfreeze PlayerMovement script
-    PlayerMovement player = FindObjectOfType<PlayerMovement>();
-    if (player != null)
-        player.enabled = true;
-}
+    void UnfreezeAllMapObjects()
+    {
+        Rigidbody2D[] bodies = Object.FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
 
+        foreach (var rb in bodies)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+        }
 
+        // Unfreeze PlayerMovement
+        PlayerMovement player = Object.FindFirstObjectByType<PlayerMovement>();
+        if (player != null)
+            player.enabled = true;
+    }
 
+    // -------------------------------------
+    // ❤️ Damage / Health
+    // -------------------------------------
 
-    public void TakeDamage(int damage)  
-    {  
-        if(state != BossState.Normal) return;  
+    public void TakeDamage(int damage)
+    {
+        if (state != BossState.Normal) return;
 
-        currentHealth -= damage;  
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);  
-        UpdateHealthBar();  
+        currentHealth -= damage;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        UpdateHealthBar();
 
-        if(currentHealth <= 0)  
-        {  
-            StartCoroutine(TriggerMinigameTransition());  
-        }  
-    }  
+        if (currentHealth <= 0)
+        {
+            StartCoroutine(TriggerMinigameTransition());
+        }
+    }
 
-    private void UpdateHealthBar()  
-    {  
-        if(healthBarFill != null)  
-        {  
-            float fillPercent = (float)currentHealth / maxHealth;  
-            healthBarFill.fillAmount = fillPercent;  
-        }  
-    }  
+    private void UpdateHealthBar()
+    {
+        if (healthBarFill != null)
+        {
+            float fillPercent = (float)currentHealth / maxHealth;
+            healthBarFill.fillAmount = fillPercent;
+        }
+    }
+
+    // -------------------------------------
+    // ⚔️ Start Minigame Transition
+    // -------------------------------------
 
     private IEnumerator TriggerMinigameTransition()
     {
         state = BossState.WaitingMinigame;
 
-        // Freeze ทุกอย่างในแมพ
         FreezeAllMapObjects();
 
-        // แสดง Glow / Animation
         if (glowEffect != null) glowEffect.SetActive(true);
         if (bossAnimator != null) bossAnimator.SetTrigger("PhaseTransition");
 
-        // Show Text "SHOWDOWN"
-        IntroMinigame tt = UnityEngine.Object.FindFirstObjectByType<IntroMinigame>();
+        // UI Text "SHOWDOWN"
+        IntroMinigame tt = Object.FindFirstObjectByType<IntroMinigame>();
         if (tt != null)
-            yield return tt.ShowText("SHOWDOWN");  // ข้อความวิ่งจากซ้ายไปขวา
+            yield return tt.ShowText("SHOWDOWN");
 
-        yield return new WaitForSeconds(1f); // เวลาชั่วคราวหลังข้อความ
+        yield return new WaitForSeconds(1f);
 
-        Debug.Log("Boss is preparing minigame...");
-
-        // โหลดมินิเกมแบบ Additive
         SceneManager.LoadScene(miniGameSceneName, LoadSceneMode.Additive);
     }
 
-    // เรียกหลังเล่นมินิเกมสำเร็จ  
-    // เรียกหลังเล่นมินิเกมสำเร็จ  
-public void BossDefeated()  
-{  
-    state = BossState.Dead;  
+    // -------------------------------------
+    // 💀 Boss Died After Minigame
+    // -------------------------------------
 
-    if(bossAnimator != null) bossAnimator.SetTrigger("Die");  
+    public void BossDefeated()
+    {
+        state = BossState.Dead;
 
-    // ยกเลิก freeze map + player
-    UnfreezeAllMapObjects();
+        if (bossAnimator != null)
+            bossAnimator.SetTrigger("Die");
 
-    Destroy(gameObject, 2f);  
-}  
+        UnfreezeAllMapObjects();
 
+        Destroy(gameObject, 2f);
+    }
 }
