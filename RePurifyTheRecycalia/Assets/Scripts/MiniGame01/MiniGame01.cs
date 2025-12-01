@@ -118,30 +118,40 @@ public class MiniGame01 : MonoBehaviour
     }
 
     void WinGame()
-    {
-        if (winPanel != null) winPanel.SetActive(true);
+{
+    if (winPanel != null) winPanel.SetActive(true);
 
-        var spawner = Object.FindFirstObjectByType<TrashSpawner>();
-        if (spawner != null)
-            spawner.StopSpawn();
+    var spawner = Object.FindFirstObjectByType<TrashSpawner>();
+    if (spawner != null)
+        spawner.StopSpawn();
 
-        FreezeAllTrash();
-        DestroyAllTrash();
-        Time.timeScale = 0;
-    }
+    FreezeAllTrash();
+    DestroyAllTrash();
+
+    // ✔ ให้บอสตายทันทีเมื่อชนะมินิเกม
+    if (Boss.Instance != null)
+        Boss.Instance.BossDefeated();
+
+    Time.timeScale = 0;
+}
+
 
     // ปุ่ม Win Panel: ไปต่อ (กลับ Map01)
     public void ContinueToMap()
-    {
-        Time.timeScale = 1;
-        if (winPanel != null)
-            winPanel.SetActive(false);
+{
+    Time.timeScale = 1;
 
+    if (winPanel != null)
+        winPanel.SetActive(false);
+
+    // ย้ายคำสั่งไปหลัง Unload เพื่อให้ Map01 เป็น Active Scene ก่อน
+    SceneManager.UnloadSceneAsync("MiniGame01").completed += (op) =>
+    {
         if (Boss.Instance != null)
             Boss.Instance.BossDefeated();
+    };
+}
 
-        SceneManager.UnloadSceneAsync("MiniGame01");
-    }
 
     // ปุ่ม Win Panel: เล่นมินิเกมใหม่
     public void ReplayMinigame()

@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashSpawner
   trashPrefabs:
-  - {fileID: 8845399709404705158, guid: b33ce807cd59f5a4faec3dd57bcc3feb, type: 3}
+  - {fileID: 1366959234916267614, guid: 40f067c5e1c77c8408fb23142f29af96, type: 3}
   spawnInterval: 4
   spawnRangeX: 8
   spawnY: 6

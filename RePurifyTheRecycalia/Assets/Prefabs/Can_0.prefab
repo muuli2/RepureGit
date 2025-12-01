@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2482570972797208869}
   m_Layer: 0
   m_Name: Can_0
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,9 +80,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -82933903
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: 1531782037
+  m_SortingLayer: 6
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7032184553362833509, guid: 4d0569faa76b231418bb0db7048fc93e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
