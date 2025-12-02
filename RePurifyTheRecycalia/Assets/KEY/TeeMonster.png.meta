@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 6fb5ce7e528729f4684dd09da27aed22
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4853589876504854509
+    second: TeeMonster_0
+  - first:
+      213: -5155413668363827544
+    second: TeeMonster_1
+  - first:
+      213: 3900581341575142709
+    second: TeeMonster_2
+  - first:
+      213: -2482121385838501305
+    second: TeeMonster_3
+  - first:
+      213: 3261068192089844298
+    second: TeeMonster_4
+  - first:
+      213: -6693258692928392609
+    second: TeeMonster_5
+  - first:
+      213: 1510204048960315918
+    second: TeeMonster_6
+  - first:
+      213: -5362680738065742165
+    second: TeeMonster_7
+  - first:
+      213: -3250990407356643324
+    second: TeeMonster_8
+  - first:
+      213: 852400389438099905
+    second: TeeMonster_9
+  - first:
+      213: -611174490064642324
+    second: TeeMonster_10
+  - first:
+      213: 1863087214538779779
+    second: TeeMonster_11
+  - first:
+      213: -8099282780879020874
+    second: TeeMonster_12
+  - first:
+      213: -6595043167968452716
+    second: TeeMonster_13
+  - first:
+      213: 7639196032157634581
+    second: TeeMonster_14
+  - first:
+      213: 2154089622639903651
+    second: TeeMonster_15
+  - first:
+      213: 570036181291657211
+    second: TeeMonster_16
+  - first:
+      213: -1500872762773652893
+    second: TeeMonster_17
+  - first:
+      213: -160919516998755874
+    second: TeeMonster_18
+  - first:
+      213: -6208028751056552499
+    second: TeeMonster_19
+  - first:
+      213: 4756574341282949447
+    second: TeeMonster_20
+  - first:
+      213: -4917558598043234484
+    second: TeeMonster_21
+  - first:
+      213: -6247330140112449127
+    second: TeeMonster_22
+  - first:
+      213: 1715724226779709149
+    second: TeeMonster_23
+  - first:
+      213: 3911175062205150821
+    second: TeeMonster_24
+  - first:
+      213: -8101881975814641190
+    second: TeeMonster_25
+  - first:
+      213: 11280070501665259
+    second: TeeMonster_26
+  - first:
+      213: 2481652735394172294
+    second: TeeMonster_27
+  - first:
+      213: -7430976732811887264
+    second: TeeMonster_28
+  - first:
+      213: -2404875572822388220
+    second: TeeMonster_29
+  - first:
+      213: 5181497975370611587
+    second: TeeMonster_30
+  - first:
+      213: -1857640576195164091
+    second: TeeMonster_31
+  - first:
+      213: 623754700133404481
+    second: TeeMonster_32
+  - first:
+      213: 8629713657506747251
+    second: TeeMonster_33
+  - first:
+      213: 6451155432883591683
+    second: TeeMonster_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 7
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TeeMonster_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 427
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deff08af64a6b5340800000000000000
+      internalID: 4853589876504854509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 62f72781893d71742b8e82d1a4048793
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":427.0,"y":130.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      TeeMonster_0: 4853589876504854509
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

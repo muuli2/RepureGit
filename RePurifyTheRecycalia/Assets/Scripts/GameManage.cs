@@ -56,7 +56,7 @@ void SpawnPlayer()
 
     if (SelectedCharacter.characterName == "Knight")
         toSpawn = KnightPrefab;
-    else if (SelectedCharacter.characterName == "Mage")
+    else if (SelectedCharacter.characterName == "Lumina")
         toSpawn = MagePrefab;
 
     if (toSpawn != null)

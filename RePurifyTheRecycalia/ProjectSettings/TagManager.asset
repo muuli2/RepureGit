@@ -63,5 +63,8 @@ TagManager:
   - name: Trash
     uniqueID: 2900285633
     locked: 0
+  - name: Door
+    uniqueID: 3385698781
+    locked: 0
   m_RenderingLayers:
   - Default

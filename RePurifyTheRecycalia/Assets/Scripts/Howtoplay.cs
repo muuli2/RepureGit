@@ -4,13 +4,21 @@ using System.Collections;
 public class HowToPlay : MonoBehaviour
 {
     public CanvasGroup popup;
-    public float fadeInDuration = 1f;    // เวลาเฟดเข้า
-    public float showTime = 15f;         // เวลาที่อยู่บนจอ
-    public float fadeOutDuration = 1f;   // เวลาเฟดออก
+    public float fadeInDuration = 1f;
+    public float showTime = 15f;
+    public float fadeOutDuration = 1f;
 
-    void Start()
+    private bool hasShown = false;   // กันไม่ให้โชว์ซ้ำ
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        StartCoroutine(ShowPopup());
+        if (hasShown) return;
+
+        if (other.CompareTag("Player"))
+        {
+            hasShown = true;
+            StartCoroutine(ShowPopup());
+        }
     }
 
     IEnumerator ShowPopup()
@@ -18,7 +26,7 @@ public class HowToPlay : MonoBehaviour
         popup.alpha = 0;
         popup.blocksRaycasts = true;
 
-        // ---- Fade In ----
+        // Fade In
         float t = 0f;
         while (t < 1f)
         {
@@ -26,12 +34,11 @@ public class HowToPlay : MonoBehaviour
             popup.alpha = t;
             yield return null;
         }
-        popup.alpha = 1;
 
-        // ---- Wait ----
+        popup.alpha = 1;
         yield return new WaitForSeconds(showTime);
 
-        // ---- Fade Out ----
+        // Fade Out
         t = 0f;
         while (t < 1f)
         {

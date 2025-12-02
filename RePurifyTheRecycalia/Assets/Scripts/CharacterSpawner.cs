@@ -16,7 +16,7 @@ public class CharacterSpawner : MonoBehaviour
         GameObject toSpawn = null;
         if(selected == "Knight")
             toSpawn = KnightPrefab;
-        else if(selected == "Mage")
+        else if(selected == "Lumina")
             toSpawn = MagePrefab;
 
         if(toSpawn != null)
