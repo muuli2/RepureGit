@@ -56,6 +56,9 @@ public class Monster : MonoBehaviour
                 Instantiate(d.item, transform.position, Quaternion.identity);
         }
 
+        
+
+        MonsterManage.Instance.EnemyKilled();
         Destroy(gameObject);
     }
 
@@ -81,4 +84,7 @@ public class Monster : MonoBehaviour
             Debug.Log("Player ถูกมอนโจมตี! ลด " + damageToPlayer);
         }
     }
+
+   
+
 }

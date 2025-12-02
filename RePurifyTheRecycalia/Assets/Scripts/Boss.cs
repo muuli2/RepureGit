@@ -121,14 +121,30 @@ public class Boss : MonoBehaviour
     // -------------------------------------
 
     public void BossDefeated()
+{
+    state = BossState.Dead;
+
+    if (bossAnimator != null)
+        bossAnimator.SetTrigger("Die");
+
+    // ปิดฟิสิกส์
+    Rigidbody2D rb = GetComponent<Rigidbody2D>();
+    if (rb != null)
     {
-        state = BossState.Dead;
-
-        if (bossAnimator != null)
-            bossAnimator.SetTrigger("Die");
-
-        UnfreezeAllMapObjects();
-
-        Destroy(gameObject, 2f);
+        rb.linearVelocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Kinematic;  // หยุดทุกฟิสิกส์
     }
+
+    // ปิดคอลลิเดอร์ทั้งหมด
+    Collider2D[] cols = GetComponentsInChildren<Collider2D>();
+    foreach (var c in cols)
+        c.enabled = false;
+
+    UnfreezeAllMapObjects();
+
+    // ทำลายหลังจากอนิเมชันจบ
+    Destroy(gameObject, 2f);
+    MonsterManage.Instance.EnemyKilled();
+}
+
 }

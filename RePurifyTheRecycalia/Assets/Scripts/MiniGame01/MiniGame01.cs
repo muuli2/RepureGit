@@ -128,12 +128,13 @@ public class MiniGame01 : MonoBehaviour
     FreezeAllTrash();
     DestroyAllTrash();
 
-    // ✔ ให้บอสตายทันทีเมื่อชนะมินิเกม
-    if (Boss.Instance != null)
-        Boss.Instance.BossDefeated();
+    // ❌ เอาออก ห้ามฆ่าบอสตรงนี้ เพราะบอสไม่อยู่ในซีน
+    // if (Boss.Instance != null)
+    //     Boss.Instance.BossDefeated();
 
     Time.timeScale = 0;
 }
+
 
 
     // ปุ่ม Win Panel: ไปต่อ (กลับ Map01)
@@ -144,13 +145,15 @@ public class MiniGame01 : MonoBehaviour
     if (winPanel != null)
         winPanel.SetActive(false);
 
-    // ย้ายคำสั่งไปหลัง Unload เพื่อให้ Map01 เป็น Active Scene ก่อน
+    // ⭐ ตอนนี้คือจังหวะที่ถูกต้อง
+    // Map01 เป็น active scene → Boss.Instance ไม่ null
     SceneManager.UnloadSceneAsync("MiniGame01").completed += (op) =>
     {
         if (Boss.Instance != null)
             Boss.Instance.BossDefeated();
     };
 }
+
 
 
     // ปุ่ม Win Panel: เล่นมินิเกมใหม่
