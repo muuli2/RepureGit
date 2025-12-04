@@ -11,31 +11,42 @@ public class PauseManager : MonoBehaviour
 
     void Start()
     {
-        // เริ่มเกมให้ซ่อน Pause และ Confirm
         pauseMenu.SetActive(false);
         confirmPanel.SetActive(false);
     }
 
     void Update()
     {
+        // กด ESC เพื่อสลับ Pause Menu
         if (UnityEngine.InputSystem.Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            TogglePause();
+            TogglePauseMenu();
         }
     }
 
-    void TogglePause()
+    // --- ฟังก์ชันสำหรับเรียกจากปุ่ม UI ---
+    public void OpenPauseMenu()
     {
-        bool isPaused = pauseMenu.activeSelf;
-        pauseMenu.SetActive(!isPaused);
-        Time.timeScale = isPaused ? 1f : 0f; // หยุดหรือเล่นเกม
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0f; // หยุดเกม
     }
 
-    public void ResumeGame()
+    public void ClosePauseMenu()
     {
         pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
+        Time.timeScale = 1f; // เล่นเกมต่อ
     }
+
+    public void TogglePauseMenu()
+    {
+        if (pauseMenu.activeSelf)
+            ClosePauseMenu();
+        else
+            OpenPauseMenu();
+    }
+
+    // --- ฟังก์ชันปุ่ม Resume, Restart, Home ---
+    public void ResumeGame() => ClosePauseMenu();
 
     public void RestartGame()
     {
@@ -61,7 +72,7 @@ public class PauseManager : MonoBehaviour
         else if (pendingAction == ConfirmAction.Home)
         {
             Time.timeScale = 1f;
-            SceneManager.LoadScene("MainMenu"); // เปลี่ยนชื่อเป็นซีน Home จริง
+            SceneManager.LoadScene("MainMenu"); // เปลี่ยนเป็นชื่อ Scene จริง
         }
 
         pendingAction = ConfirmAction.None;

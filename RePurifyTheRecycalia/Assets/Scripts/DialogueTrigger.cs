@@ -1,16 +1,29 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class DialogueTrigger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public DialogueManage dialogueManager;   // ใช้ชื่อ DialogueManage
+    [TextArea]
+    public string[] sentences;
 
-    // Update is called once per frame
-    void Update()
+    private bool triggered = false;
+
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (triggered) return;
+
+        if (other.CompareTag("Player"))
+        {
+            triggered = true;
+
+            PlayerMovement pm = other.GetComponent<PlayerMovement>();
+            pm.SetCanMove(false); // 🔒 หยุดผู้เล่นเดิน
+
+            PlayerShoot ps = other.GetComponent<PlayerShoot>();
+            if (ps != null)
+                ps.canShoot = false; // 🔒 หยุดยิง
+
+            dialogueManager.StartDialogue(sentences, pm);
+        }
     }
 }

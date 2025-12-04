@@ -9,10 +9,16 @@ public class PlayerShoot : MonoBehaviour
     public float shootCooldown = 1f;   // เวลา cooldown
     private float lastShootTime = -Mathf.Infinity;
 
+    [HideInInspector]
+    public bool canShoot = true;       // 🔹 ควบคุมยิง
+
     void Update()
     {
-        // ตรวจสอบว่า cooldown ครบและกดเมาส์
-        if ((Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame) && Time.time >= lastShootTime + shootCooldown)
+        if (!canShoot) return; // ถ้าไม่สามารถยิงได้ ให้ return
+
+        // ตรวจสอบว่า cooldown ครบและกด Spacebar หรือคลิกเมาส์
+        if ((Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame) 
+            && Time.time >= lastShootTime + shootCooldown)
         {
             Shoot();
             lastShootTime = Time.time;  // รีเซ็ตเวลา cooldown
