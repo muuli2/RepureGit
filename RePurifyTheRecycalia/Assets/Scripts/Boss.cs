@@ -122,29 +122,64 @@ public class Boss : MonoBehaviour
 
     public void BossDefeated()
 {
+    if (state == BossState.Dead) return;
     state = BossState.Dead;
 
     if (bossAnimator != null)
         bossAnimator.SetTrigger("Die");
 
-    // ปิดฟิสิกส์
-    Rigidbody2D rb = GetComponent<Rigidbody2D>();
-    if (rb != null)
-    {
-        rb.linearVelocity = Vector2.zero;
-        rb.bodyType = RigidbodyType2D.Kinematic;  // หยุดทุกฟิสิกส์
-    }
-
-    // ปิดคอลลิเดอร์ทั้งหมด
+    // ปิด collider
     Collider2D[] cols = GetComponentsInChildren<Collider2D>();
     foreach (var c in cols)
         c.enabled = false;
 
+    // ปิด Rigidbody2D
+    Rigidbody2D rb = GetComponent<Rigidbody2D>();
+    if (rb != null)
+    {
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        rb.bodyType = RigidbodyType2D.Kinematic;
+    }
+
+    // ปิด glow
+    if (glowEffect != null)
+        glowEffect.SetActive(false);
+
+    // รอให้ scene กลับมาจากมินิเกมก่อนค่อยลบ
+    StartCoroutine(DestroyAfterReturn(2f));
+}
+
+private IEnumerator DestroyAfterReturn(float delay)
+{
+    // รอให้อนิเมชัน Die เล่น
+    yield return new WaitForSeconds(delay);
+
+    // คืน Player / map control
     UnfreezeAllMapObjects();
 
-    // ทำลายหลังจากอนิเมชันจบ
-    Destroy(gameObject, 2f);
-    MonsterManage.Instance.EnemyKilled();
+    // แจ้ง MonsterManage
+    if (MonsterManage.Instance != null)
+        MonsterManage.Instance.EnemyKilled();
+
+    // ลบตัวบอส
+    Destroy(gameObject);
 }
+
+private IEnumerator FinishBossDeath(float delay)
+{
+    yield return new WaitForSeconds(delay);
+
+    // คืนการควบคุม player และ object อื่น ๆ
+    UnfreezeAllMapObjects();
+
+    // แจ้ง MonsterManager ว่าศัตรูตายแล้ว
+    if (MonsterManage.Instance != null)
+        MonsterManage.Instance.EnemyKilled();
+
+    // ลบ object ออกจาก scene
+    Destroy(gameObject);
+}
+
 
 }

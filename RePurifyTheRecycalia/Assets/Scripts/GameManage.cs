@@ -5,55 +5,125 @@ using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
-public static GameManager Instance;
+    public static GameManager Instance;
 
+    [Header("Player Prefabs")]
+    public GameObject KnightPrefab;
+    public GameObject MagePrefab;
+    public Transform spawnPoint;
 
-[Header("Player Prefabs")]
-public GameObject KnightPrefab;
-public GameObject MagePrefab;
-public Transform spawnPoint;
+    [Header("Lives System")]
+    public int maxLives = 5;
+    public int lives;
+    public Image[] heartImages;
+    public Sprite heartFull;
+    public Sprite heartEmpty;
 
-[Header("Lives System")]
-public int lives = 5;                     // จำนวนหัวใจเริ่มต้น
-public Image[] heartImages;               // UI รูปหัวใจ 5 ดวง
-public Sprite heartFull;
-public Sprite heartEmpty;
+    [Header("Game Over UI")]
+    public GameObject gameOverPanel;
+    public Button restartButton;
 
-[Header("Game Over UI")]
-public GameObject gameOverPanel;          // Panel Game Over
-public Button restartButton;              // ปุ่ม Restart
+    [HideInInspector]
+    public Vector3 lastCheckpoint;
 
-private GameObject playerRef;             // reference player ที่ spawn ออกมา
+    private GameObject playerRef;
 
-private void Awake()
+    public GameObject GetPlayer()
 {
-    if (Instance == null)
-        Instance = this;
-    else
-        Destroy(gameObject);
+    return playerRef;
 }
 
-private void Start()
-{
-    SpawnPlayer();
-    UpdateHeartsUI();
 
-    // ปิด panel ตอนเริ่ม
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            lastCheckpoint = spawnPoint.position;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void Start()
+    {
+        if (restartButton != null)
+            restartButton.onClick.AddListener(RestartFromGameOver);
+
+        RestartFromScene();
+    }
+
+    public void RestartFromGameOver()
+    {
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false);
+
+        RestartFromScene();
+    }
+
+    public void RestartFromPause()
+{
+    // รีเซ็ตเวลา
+    Time.timeScale = 1f;
+
+    // ปิด GameOver panel เผื่อเปิดอยู่
     if (gameOverPanel != null)
         gameOverPanel.SetActive(false);
 
-    // เพิ่ม listener ให้ปุ่ม Restart
-    if (restartButton != null)
-        restartButton.onClick.AddListener(RestartGame);
+    // ปิด Pause Menu ถ้ามี
+    var pauseManager = FindObjectOfType<PauseManager>();
+    if (pauseManager != null)
+        pauseManager.ClosePauseMenu();
+
+    RestartFromScene();
 }
 
-// -------------------------------------------------------
-// Spawn Player ตามตัวที่เลือก
-// -------------------------------------------------------
-void SpawnPlayer()
-{
-    GameObject toSpawn = null;
 
+    private void RestartFromScene()
+    {
+        // รีเซ็ตหัวใจเต็ม
+        lives = maxLives;
+        UpdateHeartsUI();
+
+        // ปิด panel ทุกอัน
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false);
+
+        Vector3 spawnPos = lastCheckpoint != Vector3.zero ? lastCheckpoint : spawnPoint.position;
+        SpawnPlayer(spawnPos);
+
+        // รีเซ็ต checkpoint ทุกตัว
+        foreach (var cp in FindObjectsOfType<Checkpoint>())
+            cp.ResetCheckpoint();
+    }
+
+    public void SpawnPlayer(Vector3 position)
+{
+    if (playerRef != null)
+    {
+        playerRef.SetActive(true);
+        playerRef.transform.position = position;
+
+        // ✅ เปิดสคริปต์ PlayerMovement และ Rigidbody
+        var movement = playerRef.GetComponent<PlayerMovement>();
+        if (movement != null)
+            movement.enabled = true;
+
+        var rb = playerRef.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+
+        return;
+    }
+
+    GameObject toSpawn = null;
     if (SelectedCharacter.characterName == "Knight")
         toSpawn = KnightPrefab;
     else if (SelectedCharacter.characterName == "Lumina")
@@ -61,19 +131,16 @@ void SpawnPlayer()
 
     if (toSpawn != null)
     {
-        playerRef = Instantiate(toSpawn, spawnPoint.position, Quaternion.identity);
+        playerRef = Instantiate(toSpawn, position, Quaternion.identity);
 
-        // Add PlayerInput ถ้าไม่มี
         if (playerRef.GetComponent<PlayerInput>() == null)
             playerRef.AddComponent<PlayerInput>();
 
-        // Assign Rigidbody2D ให้ PlayerMovement ถ้าใช้อยู่
-        PlayerMovement movement = playerRef.GetComponent<PlayerMovement>();
+        var movement = playerRef.GetComponent<PlayerMovement>();
         if (movement != null && movement.rb == null)
             movement.rb = playerRef.GetComponent<Rigidbody2D>();
 
-        // กล้องตาม player
-        CameraFollow camFollow = Camera.main.GetComponent<CameraFollow>();
+        var camFollow = Camera.main.GetComponent<CameraFollow>();
         if (camFollow != null)
             camFollow.target = playerRef.transform;
     }
@@ -83,48 +150,29 @@ void SpawnPlayer()
     }
 }
 
-// -------------------------------------------------------
-// ระบบหัวใจ
-// -------------------------------------------------------
-public void TakeDamage(int amount)
-{
-    lives -= amount;
-    lives = Mathf.Clamp(lives, 0, 5);
 
-    UpdateHeartsUI();
-
-    if (lives <= 0)
-        PlayerDied();
-}
-
-void UpdateHeartsUI()
-{
-    for (int i = 0; i < heartImages.Length; i++)
+    public void TakeDamage(int amount)
     {
-        heartImages[i].sprite = i < lives ? heartFull : heartEmpty;
+        lives -= amount;
+        lives = Mathf.Clamp(lives, 0, maxLives);
+        UpdateHeartsUI();
+
+        if (lives <= 0)
+            PlayerDied();
     }
-}
 
+    public void UpdateHeartsUI()
+    {
+        for (int i = 0; i < heartImages.Length; i++)
+            heartImages[i].sprite = i < lives ? heartFull : heartEmpty;
+    }
 
+    void PlayerDied()
+    {
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(true);
 
-// -------------------------------------------------------
-// Player ตาย / Game Over
-// -------------------------------------------------------
-void PlayerDied()
-{
-    Debug.Log("Game Over – ผู้เล่นหัวใจหมดแล้ว!");
-    if (gameOverPanel != null)
-        gameOverPanel.SetActive(true);
-
-    // ปิด Player
-    if (playerRef != null)
-        playerRef.SetActive(false);
-}
-
-void RestartGame()
-{
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-}
-
-
+        if (playerRef != null)
+            playerRef.SetActive(false);
+    }
 }

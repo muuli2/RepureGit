@@ -26,12 +26,17 @@ public class MiniGame01 : MonoBehaviour
     private void Awake() { Instance = this; }
 
     private void Start()
-    {
-        UpdateHeartsUI();
-        UpdateScoreUI();
-        gameOverPanel.SetActive(false);
-        if (winPanel != null) winPanel.SetActive(false);
-    }
+{
+    PauseManager pause = FindObjectOfType<PauseManager>();
+    if (pause != null)
+        pause.isMiniGameActive = true; // บล็อก pause
+
+    UpdateHeartsUI();
+    UpdateScoreUI();
+    gameOverPanel.SetActive(false);
+    if (winPanel != null) winPanel.SetActive(false);
+}
+
 
     public void AddScore(int amount)
     {
@@ -138,20 +143,24 @@ public class MiniGame01 : MonoBehaviour
 
 
     // ปุ่ม Win Panel: ไปต่อ (กลับ Map01)
-    public void ContinueToMap()
+    // ปุ่ม Continue ใน WinPanel
+public void ContinueToMap()
 {
     Time.timeScale = 1;
-
     if (winPanel != null)
         winPanel.SetActive(false);
-
-    // ⭐ ตอนนี้คือจังหวะที่ถูกต้อง
-    // Map01 เป็น active scene → Boss.Instance ไม่ null
-    SceneManager.UnloadSceneAsync("MiniGame01").completed += (op) =>
+SceneManager.UnloadSceneAsync("MiniGame01").completed += (op) =>
+{
+    if (Boss.Instance != null && Boss.Instance.state != Boss.BossState.Dead)
     {
-        if (Boss.Instance != null)
-            Boss.Instance.BossDefeated();
-    };
+        Boss.Instance.BossDefeated();
+    }
+
+    PauseManager pause = FindObjectOfType<PauseManager>();
+    if (pause != null)
+        pause.isMiniGameActive = false;
+};
+
 }
 
 
@@ -163,17 +172,61 @@ public class MiniGame01 : MonoBehaviour
         SceneManager.LoadScene("MiniGame01", LoadSceneMode.Additive);
     }
 
-    // ปุ่ม GameOver Panel: เล่นใหม่
-    public void RetryMinigame()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene("MiniGame01", LoadSceneMode.Additive);
-    }
+    
 
     // ปุ่ม GameOver Panel: รีด่าน (กลับแมพ)
-    public void RetryMap()
+   // ปุ่ม GameOver Panel: รีด่าน (กลับแมพ)
+public void RetryMap()
+{
+    Time.timeScale = 1;
+
+    // ซ่อน GameOver UI
+    if (gameOverPanel != null)
+        gameOverPanel.SetActive(false);
+
+    // unload minigame
+    SceneManager.UnloadSceneAsync("MiniGame01").completed += (op) =>
     {
-        Time.timeScale = 1;
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName(mapSceneName));
-    }
+
+         PauseManager pause = FindObjectOfType<PauseManager>();
+        if (pause != null)
+        pause.isMiniGameActive = false;
+        // ทำให้แมพหลักเป็น active scene
+        Scene mainMapScene = SceneManager.GetSceneByName(mapSceneName);
+        SceneManager.SetActiveScene(mainMapScene);
+
+        // รีเซ็ต Player ไปยัง lastCheckpoint ของ GameManager
+        GameObject player = GameManager.Instance.GetPlayer();
+        if (player != null)
+        {
+            player.SetActive(true); 
+            player.transform.position = GameManager.Instance.lastCheckpoint;
+
+            // ✅ เปิด PlayerMovement ถ้ามันถูกปิด
+            PlayerMovement pm = player.GetComponent<PlayerMovement>();
+            if (pm != null)
+                pm.enabled = true;
+
+            // ✅ เปิด PlayerInput ถ้ามันถูกปิด
+           
+            // รีเซ็ตหัวใจเต็ม
+            GameManager.Instance.lives = GameManager.Instance.maxLives;
+            GameManager.Instance.UpdateHeartsUI();
+
+            // ปิด panel เผื่อเปิดอยู่
+            if (GameManager.Instance.gameOverPanel != null)
+                GameManager.Instance.gameOverPanel.SetActive(false);
+        }
+        else
+        {
+            // ถ้า playerRef ยัง null → spawn ใหม่
+            Vector3 spawnPos = GameManager.Instance.lastCheckpoint != Vector3.zero ?
+                               GameManager.Instance.lastCheckpoint : GameManager.Instance.spawnPoint.position;
+            GameManager.Instance.SpawnPlayer(spawnPos);
+        }
+    };
+}
+
+
+
 }

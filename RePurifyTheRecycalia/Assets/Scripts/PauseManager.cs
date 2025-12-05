@@ -1,10 +1,14 @@
+// PauseManager.cs
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
-    public GameObject pauseMenu;     // assign ใน Inspector
-    public GameObject confirmPanel;  // assign ใน Inspector
+    public GameObject pauseMenu;
+    public GameObject confirmPanel;
+
+    [HideInInspector]
+    public bool isMiniGameActive = false; // ✅ เช็คมินิเกม
 
     private enum ConfirmAction { None, Restart, Home }
     private ConfirmAction pendingAction = ConfirmAction.None;
@@ -17,24 +21,23 @@ public class PauseManager : MonoBehaviour
 
     void Update()
     {
-        // กด ESC เพื่อสลับ Pause Menu
         if (UnityEngine.InputSystem.Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            TogglePauseMenu();
+            if (!isMiniGameActive) // ❌ บล็อก Pause ตอนมินิเกม
+                TogglePauseMenu();
         }
     }
 
-    // --- ฟังก์ชันสำหรับเรียกจากปุ่ม UI ---
     public void OpenPauseMenu()
     {
         pauseMenu.SetActive(true);
-        Time.timeScale = 0f; // หยุดเกม
+        Time.timeScale = 0f;
     }
 
     public void ClosePauseMenu()
     {
         pauseMenu.SetActive(false);
-        Time.timeScale = 1f; // เล่นเกมต่อ
+        Time.timeScale = 1f;
     }
 
     public void TogglePauseMenu()
@@ -45,7 +48,6 @@ public class PauseManager : MonoBehaviour
             OpenPauseMenu();
     }
 
-    // --- ฟังก์ชันปุ่ม Resume, Restart, Home ---
     public void ResumeGame() => ClosePauseMenu();
 
     public void RestartGame()
@@ -60,27 +62,27 @@ public class PauseManager : MonoBehaviour
         confirmPanel.SetActive(true);
     }
 
-    public void ConfirmYes()
-    {
-        confirmPanel.SetActive(false);
-
-        if (pendingAction == ConfirmAction.Restart)
-        {
-            Time.timeScale = 1f;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-        else if (pendingAction == ConfirmAction.Home)
-        {
-            Time.timeScale = 1f;
-            SceneManager.LoadScene("MainMenu"); // เปลี่ยนเป็นชื่อ Scene จริง
-        }
-
-        pendingAction = ConfirmAction.None;
-    }
-
     public void ConfirmNo()
     {
         confirmPanel.SetActive(false);
+        pendingAction = ConfirmAction.None;
+    }
+
+    public void ConfirmYes()
+    {
+        confirmPanel.SetActive(false);
+        Time.timeScale = 1f;
+
+        if (pendingAction == ConfirmAction.Restart)
+{
+    GameManager.Instance.RestartFromPause();
+}
+
+        else if (pendingAction == ConfirmAction.Home)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+
         pendingAction = ConfirmAction.None;
     }
 }
