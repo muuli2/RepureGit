@@ -42170,7 +42170,6 @@ MonoBehaviour:
   gameOverPanel: {fileID: 0}
   restartButton: {fileID: 0}
   lastCheckpoint: {x: 0, y: 0, z: 0}
-  currentCheckpoint: {fileID: 0}
   isMiniGameActive: 0
   mapPoints: 0
 --- !u!4 &705772707
@@ -64039,6 +64038,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1675258965}
+  - {fileID: 1833425743}
+  - {fileID: 705772707}
   - {fileID: 343602168}
   - {fileID: 1726457808}
   - {fileID: 1074932155}
@@ -64051,5 +64052,3 @@ SceneRoots:
   - {fileID: 716148979}
   - {fileID: 378692071}
   - {fileID: 1818893801}
-  - {fileID: 1833425743}
-  - {fileID: 705772707}

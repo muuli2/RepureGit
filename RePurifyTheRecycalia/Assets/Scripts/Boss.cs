@@ -87,78 +87,73 @@ public class Boss : MonoBehaviour
     private void UpdateHealthBar()
     {
         if (healthBarFill != null)
-        {
-            float fillPercent = (float)currentHealth / maxHealth;
-            healthBarFill.fillAmount = fillPercent;
-        }
+            healthBarFill.fillAmount = (float)currentHealth / maxHealth;
     }
-
-    // -------------------------------------
-    // ⚔️ Start Minigame Transition
-    // -------------------------------------
 
     private IEnumerator TriggerMinigameTransition()
-    {
-        state = BossState.WaitingMinigame;
+{
+    state = BossState.WaitingMinigame;
 
-        FreezeAllMapObjects();
+    FreezeAllMapObjects();
 
-        if (glowEffect != null) glowEffect.SetActive(true);
-        if (bossAnimator != null) bossAnimator.SetTrigger("PhaseTransition");
+    if (glowEffect != null) glowEffect.SetActive(true);
+    if (bossAnimator != null) bossAnimator.SetTrigger("PhaseTransition");
 
-        // UI Text "SHOWDOWN"
-        IntroMinigame tt = Object.FindFirstObjectByType<IntroMinigame>();
-        if (tt != null)
-            yield return tt.ShowText("SHOWDOWN");
+    // แสดง SHOWDOWN
+    IntroMinigame tt = Object.FindFirstObjectByType<IntroMinigame>();
+    if (tt != null)
+        yield return tt.ShowText("SHOWDOWN"); // ❌ ต้อง yield รอให้แสดงจบ
 
-        yield return new WaitForSeconds(1f);
+    yield return new WaitForSeconds(0.5f); // รอเล็กน้อยก่อนโหลดมินิเกม
 
-        SceneManager.LoadScene(miniGameSceneName, LoadSceneMode.Additive);
-    }
+    // บอก GameManager ว่าเป็นมินิเกม
+    if (GameManager.Instance != null)
+        GameManager.Instance.isMiniGameActive = true;
+
+    // โหลดมินิเกม Additive
+    SceneManager.LoadScene(miniGameSceneName, LoadSceneMode.Additive);
+}
 
     // -------------------------------------
     // 💀 Boss Died After Minigame
     // -------------------------------------
 
-    public void BossDefeated()
+    // -------------------------------------
+// 💀 Boss Died After Minigame
+// -------------------------------------
+ public void BossDefeated()
 {
     if (state == BossState.Dead) return;
     state = BossState.Dead;
 
-    if (bossAnimator != null)
-        bossAnimator.SetTrigger("Die");
+    // ให้คะแนนบอส 1000
+    ScoreManage.Instance?.AddScore(1000);
 
-    // ปิด collider
-    Collider2D[] cols = GetComponentsInChildren<Collider2D>();
-    foreach (var c in cols)
+    // ปิด collider / physics / effect
+    foreach (var c in GetComponentsInChildren<Collider2D>())
         c.enabled = false;
 
-    // ปิด Rigidbody2D
     Rigidbody2D rb = GetComponent<Rigidbody2D>();
-    if (rb != null)
-    {
-        rb.linearVelocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-        rb.bodyType = RigidbodyType2D.Kinematic;
-    }
+    if (rb != null) rb.bodyType = RigidbodyType2D.Kinematic;
 
-    // ปิด glow
     if (glowEffect != null)
         glowEffect.SetActive(false);
 
-    // รอให้ scene กลับมาจากมินิเกมก่อนค่อยลบ
-    StartCoroutine(DestroyAfterReturn(2f));
+    if (bossAnimator != null)
+        bossAnimator.SetTrigger("Die");
+
+    // ❌ ไม่ Destroy ทันที
+    StartCoroutine(FinishBossDeath(2f));
 }
 
-private IEnumerator DestroyAfterReturn(float delay)
+private IEnumerator FinishBossDeath(float delay)
 {
-    // รอให้อนิเมชัน Die เล่น
     yield return new WaitForSeconds(delay);
 
-    // คืน Player / map control
+    // คืนการควบคุม player / map
     UnfreezeAllMapObjects();
 
-    // แจ้ง MonsterManage
+    // แจ้ง MonsterManager
     if (MonsterManage.Instance != null)
         MonsterManage.Instance.EnemyKilled();
 
@@ -166,20 +161,6 @@ private IEnumerator DestroyAfterReturn(float delay)
     Destroy(gameObject);
 }
 
-private IEnumerator FinishBossDeath(float delay)
-{
-    yield return new WaitForSeconds(delay);
-
-    // คืนการควบคุม player และ object อื่น ๆ
-    UnfreezeAllMapObjects();
-
-    // แจ้ง MonsterManager ว่าศัตรูตายแล้ว
-    if (MonsterManage.Instance != null)
-        MonsterManage.Instance.EnemyKilled();
-
-    // ลบ object ออกจาก scene
-    Destroy(gameObject);
-}
 
 public void ResetBossState()
 {

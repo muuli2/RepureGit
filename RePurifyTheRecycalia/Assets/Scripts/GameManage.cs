@@ -26,39 +26,24 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public Vector3 lastCheckpoint;
 
-    [HideInInspector]
-    // public Checkpoint currentCheckpoint; // checkpoint ปัจจุบัน
+    
 
     private GameObject playerRef;
     public bool isMiniGameActive = false;
 
+    public int mapPoints = 0; // คะแนนในแมพ
 
-    public GameObject GetPlayer()
-{
-    return playerRef;
-}
-    public int mapPoints = 0; // คะแนนสะสมในแมพ
+    public GameObject GetPlayer() => playerRef;
 
-
-
-   private void Awake()
-{
-    if (Instance == null)
+    private void Awake()
     {
         Instance = this;
-        lives = maxLives;          // ✅ รีหัวใจเต็ม
-        mapPoints = 0;             // ✅ รีคะแนน
+        lives = maxLives;  // รีหัวใจเต็ม
+        mapPoints = 0;     // รีคะแนนแมพ
     }
-    else
-    {
-        Destroy(gameObject);
-    }
-}
-
 
     private void Start()
     {
-
         UpdateHeartsUI();
         if (restartButton != null)
             restartButton.onClick.AddListener(RestartFromGameOver);
@@ -66,88 +51,94 @@ public class GameManager : MonoBehaviour
         RestartFromScene();
     }
 
-    public void RestartFromPause()
+    public void RestartFromScene()
 {
-    Time.timeScale = 1f;
-    SceneManager.LoadScene("Map01");
+    // รีหัวใจเต็ม
+    lives = maxLives;
+    UpdateHeartsUI();
+
+    // รี GameOver Panel
+    if (gameOverPanel != null)
+        gameOverPanel.SetActive(false);
+
+    // รี Pause Menu ถ้ามี
+    PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+    if (pause != null)
+        pause.ResetPauseMenu();
+
+    // รีคะแนนแมพ
+    ScoreManage.Instance?.ResetMapScore();
+
+    // รี spawn player
+    Vector3 spawnPos = lastCheckpoint != Vector3.zero ? lastCheckpoint : spawnPoint.position;
+    SpawnPlayer(spawnPos);
 }
 
-public void RestartFromGameOver()
-{
-    Time.timeScale = 1f;
-    SceneManager.LoadScene("Map01");
-}
-
-
-    private void RestartFromScene()
-    {
-        // รีเซ็ตหัวใจเต็ม
-        lives = maxLives;
-        UpdateHeartsUI();
-
-        // ปิด panel ทุกอัน
-        if (gameOverPanel != null)
-            gameOverPanel.SetActive(false);
-
-        Vector3 spawnPos = lastCheckpoint != Vector3.zero ? lastCheckpoint : spawnPoint.position;
-        SpawnPlayer(spawnPos);
-
-        // รีเซ็ต checkpoint ทุกตัว
-    //     foreach (var cp in Object.FindObjectsByType<Checkpoint>(FindObjectsSortMode.None))
-
-    // cp.ResetCheckpoint();
-    }
 
     public void SpawnPlayer(Vector3 position)
-{
-    if (playerRef != null)
     {
-        playerRef.SetActive(true);
-        playerRef.transform.position = position;
-
-        // ✅ เปิดสคริปต์ PlayerMovement และ Rigidbody
-        var movement = playerRef.GetComponent<PlayerMovement>();
-        if (movement != null)
-            movement.enabled = true;
-
-        var rb = playerRef.GetComponent<Rigidbody2D>();
-        if (rb != null)
+        if (playerRef != null)
         {
-            rb.bodyType = RigidbodyType2D.Dynamic;
-            rb.linearVelocity = Vector2.zero;
-            rb.angularVelocity = 0f;
+            playerRef.SetActive(true);
+            playerRef.transform.position = position;
+
+            var movement = playerRef.GetComponent<PlayerMovement>();
+            if (movement != null)
+                movement.enabled = true;
+
+            var rb = playerRef.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.bodyType = RigidbodyType2D.Dynamic;
+                rb.linearVelocity = Vector2.zero;
+                rb.angularVelocity = 0f;
+            }
+            return;
         }
 
-        return;
-    }
+        GameObject toSpawn = null;
+if (SelectedCharacter.characterName == "Knight")
+    toSpawn = KnightPrefab;
+else if (SelectedCharacter.characterName == "Lumina")
+    toSpawn = MagePrefab;
 
-    GameObject toSpawn = null;
-    if (SelectedCharacter.characterName == "Knight")
-        toSpawn = KnightPrefab;
-    else if (SelectedCharacter.characterName == "Lumina")
-        toSpawn = MagePrefab;
+if (toSpawn != null)
+{
+    playerRef = Instantiate(toSpawn, position, Quaternion.identity);
 
-    if (toSpawn != null)
+    // ✅ เพิ่ม PlayerInput ถ้าไม่มี
+    if (playerRef.GetComponent<PlayerInput>() == null)
+        playerRef.AddComponent<PlayerInput>();
+
+    // ✅ เปิด PlayerMovement และ Rigidbody
+    var movement = playerRef.GetComponent<PlayerMovement>();
+    if (movement != null)
     {
-        playerRef = Instantiate(toSpawn, position, Quaternion.identity);
-
-        if (playerRef.GetComponent<PlayerInput>() == null)
-            playerRef.AddComponent<PlayerInput>();
-
-        var movement = playerRef.GetComponent<PlayerMovement>();
-        if (movement != null && movement.rb == null)
+        movement.enabled = true;
+        if (movement.rb == null)
             movement.rb = playerRef.GetComponent<Rigidbody2D>();
+    }
 
-        var camFollow = Camera.main.GetComponent<CameraFollow>();
-        if (camFollow != null)
-            camFollow.target = playerRef.transform;
-    }
-    else
+    var rb = playerRef.GetComponent<Rigidbody2D>();
+    if (rb != null)
     {
-        Debug.LogWarning("Prefab ไม่ถูกตั้งค่า หรือ characterName ผิด!");
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.simulated = true;
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
     }
+
+    // ✅ ให้กล้องตาม player ใหม่
+    var camFollow = Camera.main.GetComponent<CameraFollow>();
+    if (camFollow != null)
+        camFollow.target = playerRef.transform;
 }
 
+        else
+        {
+            Debug.LogWarning("Prefab ไม่ถูกตั้งค่า หรือ characterName ผิด!");
+        }
+    }
 
     public void TakeDamage(int amount)
     {
@@ -174,66 +165,9 @@ public void RestartFromGameOver()
             playerRef.SetActive(false);
     }
 
-//     public void ResetToCurrentCheckpoint()
-// {
-//     if (currentCheckpoint == null)
-//     {
-//         // ถ้ายังไม่มี checkpoint → รีสตาร์ททั้งแมพ
-//         RestartFromScene();
-//         return;
-//     }
-
-//     // รีเซ็ตตำแหน่ง player
-//     playerRef.transform.position = currentCheckpoint.checkpointPoint.position;
-//     playerRef.SetActive(true);
-
-//     // รีหัวใจ
-//     lives = maxLives;
-//     UpdateHeartsUI();
-
-//     // รีสิ่งของ/มอนสเตอร์ใน zone หลัง checkpoint ปัจจุบัน
-//     currentCheckpoint.ResetZone();
-// }
-
-//  public void RestartFromPauseOrGameOver()
-//     {
-//         if (currentCheckpoint == null || currentCheckpoint.isFirstCheckpoint)
-//         {
-//             // รีสตาร์ททั้งแมพ
-//             RestartFromScene();
-//         }
-//         else
-//         {
-//             // รีเฉพาะ zone หลัง checkpoint ปัจจุบัน
-//             ResetToCurrentCheckpoint();
-//         }
-//     }
-
-
-// private Checkpoint FindCurrentCheckpoint()
-// {
-//     Checkpoint nearestCP = null;
-//     float minDist = float.MaxValue;
-//     foreach (var cp in Object.FindObjectsByType<Checkpoint>(FindObjectsSortMode.None))
-//     {
-//         float dist = Vector3.Distance(playerRef.transform.position, cp.checkpointPoint.position);
-//         if (dist < minDist)
-//         {
-//             minDist = dist;
-//             nearestCP = cp;
-//         }
-//     }
-//     return nearestCP;
-// }
-
-
-
-
-
-
-    
+    public void RestartFromGameOver()
+    {
+        ScoreManage.Instance?.ResetMapScore();
+        SceneManager.LoadScene("Map01");
+    }
 }
-
-
-
-

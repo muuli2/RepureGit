@@ -165,6 +165,18 @@ if (pause != null)
 
 }
 
+// ตัวอย่างใน MiniGame01.cs หรือฟังก์ชันจบมินิเกม
+void FinishMinigame()
+{
+    // คืนการควบคุมแมพหลัก
+    if (GameManager.Instance != null)
+        GameManager.Instance.isMiniGameActive = false;
+
+    // ปิด scene มินิเกม
+    SceneManager.UnloadSceneAsync("MiniGame01");
+}
+
+
 
 
     // ปุ่ม Win Panel: เล่นมินิเกมใหม่

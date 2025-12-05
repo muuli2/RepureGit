@@ -59,12 +59,14 @@ public class Monster : MonoBehaviour
             Instantiate(d.item, transform.position, Quaternion.identity);
     }
 
-    // เพิ่มคะแนนเมื่อมอนตาย
-    ScoreManage.Instance.AddScore(150);
+    // เพิ่มคะแนน
+    if (ScoreManage.Instance != null)
+        ScoreManage.Instance.AddScore(scoreOnDeath); // ใช้ค่าที่ตั้งไว้ใน Inspector
 
     // ปิดมอนสเตอร์
     gameObject.SetActive(false);
 }
+
 
 
     private void OnCollisionStay2D(Collision2D collision)

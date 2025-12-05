@@ -1,6 +1,6 @@
-// PauseManager.cs
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class PauseManager : MonoBehaviour
 {
@@ -8,7 +8,7 @@ public class PauseManager : MonoBehaviour
     public GameObject confirmPanel;
 
     [HideInInspector]
-    public bool isMiniGameActive = false; // ✅ เช็คมินิเกม
+    public bool isMiniGameActive = false;
 
     private enum ConfirmAction { None, Restart, Home }
     private ConfirmAction pendingAction = ConfirmAction.None;
@@ -21,11 +21,19 @@ public class PauseManager : MonoBehaviour
 
     void Update()
     {
-        if (UnityEngine.InputSystem.Keyboard.current.escapeKey.wasPressedThisFrame)
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            if (!isMiniGameActive) // ❌ บล็อก Pause ตอนมินิเกม
+            if (!isMiniGameActive)
                 TogglePauseMenu();
         }
+    }
+
+    public void TogglePauseMenu()
+    {
+        if (pauseMenu.activeSelf)
+            ClosePauseMenu();
+        else
+            OpenPauseMenu();
     }
 
     public void OpenPauseMenu()
@@ -38,14 +46,6 @@ public class PauseManager : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-    }
-
-    public void TogglePauseMenu()
-    {
-        if (pauseMenu.activeSelf)
-            ClosePauseMenu();
-        else
-            OpenPauseMenu();
     }
 
     public void ResumeGame() => ClosePauseMenu();
@@ -68,38 +68,41 @@ public class PauseManager : MonoBehaviour
         pendingAction = ConfirmAction.None;
     }
 
-   public void ConfirmYes() 
+    public void ConfirmYes()
 {
     confirmPanel.SetActive(false);
     Time.timeScale = 1f;
 
     if (pendingAction == ConfirmAction.Restart)
     {
-        // รีสตาร์ทซีน Map01 แบบเต็ม ๆ
-        // GameManager จะรีเซ็ตตัวเองใน Start หรือ Awake
+        // ✅ ปิด pause ก่อนโหลดซีน
+        pauseMenu.SetActive(false);
+
+        // รีคะแนนแมพ
+        ScoreManage.Instance?.ResetMapScore();
+
+        // โหลดแมพใหม่
         SceneManager.LoadScene("Map01");
-    } 
-    else if (pendingAction == ConfirmAction.Home)
-    {
-        // กลับหน้า MainMenu
-        SceneManager.LoadScene("MainMenu");
     }
-
-    pendingAction = ConfirmAction.None; 
-}
-
-
-    
-    public void RestartFromPause()
+    else if (pendingAction == ConfirmAction.Home)
 {
+    pauseMenu.SetActive(false);
+    confirmPanel.SetActive(false);
     Time.timeScale = 1f;
 
-    // ลบ GameManager ตัวปัจจุบัน
-    Destroy(GameManager.Instance.gameObject);
-
-    // โหลดซีนใหม่
-    SceneManager.LoadScene("Map01");
+    SceneManager.LoadScene("MainMenu");
 }
+
+}
+
+public void ResetPauseMenu()
+{
+    pauseMenu.SetActive(false);
+    confirmPanel.SetActive(false);
+    Time.timeScale = 1f;
+    pendingAction = ConfirmAction.None;
+}
+
 
 
 }

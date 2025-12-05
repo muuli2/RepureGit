@@ -75,38 +75,35 @@ public class PlayerTrash : MonoBehaviour
 
     // วางขยะลงถัง
     public void DropTrashIntoBin(TrashType binType)
+{
+    if (!hasTrash) return;
+
+    if (currentTrashType != binType)
     {
-        if (!hasTrash) return;
+        feedbackText.text = "<color=red>ผิดประเภทแล้วล่ะ...</color>";
+        Invoke("ClearFeedback", 2f);
 
-        // ตรวจสอบชนิดขยะ
-        if (currentTrashType != binType)
-        {
-            // แสดงข้อความผิดประเภท
-            feedbackText.text = "<color=red>ผิดประเภทแล้วล่ะ...</color>";
-            Invoke("ClearFeedback", 5f); // หายไปหลัง 2 วินาที
-
-            // ลดหัวใจผู้เล่น
-            GameManager.Instance.TakeDamage(1);
-
-            // วางขยะลงพื้นแทน
-            DropTrashOnGround();
-            return;
-        }
-
-        hasTrash = false;
-        Destroy(currentTrashIcon);
-
-        // คะแนน + combo
-        int points = 100;
-        if (comboCount >= 4) points *= 2; // Combo 5+ = x2
-        ScoreManage.Instance.AddScore(points);
-
-        comboCount++;
-        comboTimer = comboTime;
-        comboText.text = comboCount >= 5 ? $"Combo x{comboCount}! (x2!)" : $"Combo x{comboCount}!";
-
-        currentTrashIcon = null;
+        GameManager.Instance.TakeDamage(1);
+        DropTrashOnGround();
+        return;
     }
+
+    hasTrash = false;
+    Destroy(currentTrashIcon);
+
+    int points = 100;
+    if (comboCount >= 4) points *= 2;
+
+    if (ScoreManage.Instance != null)
+        ScoreManage.Instance.AddScore(points); // เพิ่มคะแนนทันที
+
+    comboCount++;
+    comboTimer = comboTime;
+    comboText.text = comboCount >= 5 ? $"Combo x{comboCount}! (x2!)" : $"Combo x{comboCount}!";
+
+    currentTrashIcon = null;
+}
+
 
     // วางขยะลงพื้น (ไม่ให้คะแนน)
     private void DropTrashOnGround()
