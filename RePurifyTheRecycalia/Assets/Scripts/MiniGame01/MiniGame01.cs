@@ -27,7 +27,8 @@ public class MiniGame01 : MonoBehaviour
 
     private void Start()
 {
-    PauseManager pause = FindObjectOfType<PauseManager>();
+    PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+
     if (pause != null)
         pause.isMiniGameActive = true; // บล็อก pause
 
@@ -156,9 +157,10 @@ SceneManager.UnloadSceneAsync("MiniGame01").completed += (op) =>
         Boss.Instance.BossDefeated();
     }
 
-    PauseManager pause = FindObjectOfType<PauseManager>();
-    if (pause != null)
-        pause.isMiniGameActive = false;
+    PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+if (pause != null)
+    pause.isMiniGameActive = false;
+
 };
 
 }
@@ -179,53 +181,20 @@ SceneManager.UnloadSceneAsync("MiniGame01").completed += (op) =>
 public void RetryMap()
 {
     Time.timeScale = 1;
-
-    // ซ่อน GameOver UI
-    if (gameOverPanel != null)
-        gameOverPanel.SetActive(false);
-
-    // unload minigame
-    SceneManager.UnloadSceneAsync("MiniGame01").completed += (op) =>
-    {
-
-         PauseManager pause = FindObjectOfType<PauseManager>();
-        if (pause != null)
-        pause.isMiniGameActive = false;
-        // ทำให้แมพหลักเป็น active scene
-        Scene mainMapScene = SceneManager.GetSceneByName(mapSceneName);
-        SceneManager.SetActiveScene(mainMapScene);
-
-        // รีเซ็ต Player ไปยัง lastCheckpoint ของ GameManager
-        GameObject player = GameManager.Instance.GetPlayer();
-        if (player != null)
-        {
-            player.SetActive(true); 
-            player.transform.position = GameManager.Instance.lastCheckpoint;
-
-            // ✅ เปิด PlayerMovement ถ้ามันถูกปิด
-            PlayerMovement pm = player.GetComponent<PlayerMovement>();
-            if (pm != null)
-                pm.enabled = true;
-
-            // ✅ เปิด PlayerInput ถ้ามันถูกปิด
-           
-            // รีเซ็ตหัวใจเต็ม
-            GameManager.Instance.lives = GameManager.Instance.maxLives;
-            GameManager.Instance.UpdateHeartsUI();
-
-            // ปิด panel เผื่อเปิดอยู่
-            if (GameManager.Instance.gameOverPanel != null)
-                GameManager.Instance.gameOverPanel.SetActive(false);
-        }
-        else
-        {
-            // ถ้า playerRef ยัง null → spawn ใหม่
-            Vector3 spawnPos = GameManager.Instance.lastCheckpoint != Vector3.zero ?
-                               GameManager.Instance.lastCheckpoint : GameManager.Instance.spawnPoint.position;
-            GameManager.Instance.SpawnPlayer(spawnPos);
-        }
-    };
+    SceneManager.LoadScene("Map01");
 }
+
+
+
+
+// public void RetryFromCheckpoint()
+// {
+//     Time.timeScale = 1;
+//     if (gameOverPanel != null) gameOverPanel.SetActive(false);
+
+//     GameManager.Instance.ResetToCurrentCheckpoint();
+// }
+
 
 
 

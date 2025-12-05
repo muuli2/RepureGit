@@ -26,59 +26,56 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public Vector3 lastCheckpoint;
 
+    [HideInInspector]
+    // public Checkpoint currentCheckpoint; // checkpoint ปัจจุบัน
+
     private GameObject playerRef;
+    public bool isMiniGameActive = false;
+
 
     public GameObject GetPlayer()
 {
     return playerRef;
 }
+    public int mapPoints = 0; // คะแนนสะสมในแมพ
 
 
-    private void Awake()
+
+   private void Awake()
+{
+    if (Instance == null)
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            lastCheckpoint = spawnPoint.position;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        Instance = this;
+        lives = maxLives;          // ✅ รีหัวใจเต็ม
+        mapPoints = 0;             // ✅ รีคะแนน
     }
+    else
+    {
+        Destroy(gameObject);
+    }
+}
+
 
     private void Start()
     {
+
+        UpdateHeartsUI();
         if (restartButton != null)
             restartButton.onClick.AddListener(RestartFromGameOver);
 
         RestartFromScene();
     }
 
-    public void RestartFromGameOver()
-    {
-        if (gameOverPanel != null)
-            gameOverPanel.SetActive(false);
-
-        RestartFromScene();
-    }
-
     public void RestartFromPause()
 {
-    // รีเซ็ตเวลา
     Time.timeScale = 1f;
+    SceneManager.LoadScene("Map01");
+}
 
-    // ปิด GameOver panel เผื่อเปิดอยู่
-    if (gameOverPanel != null)
-        gameOverPanel.SetActive(false);
-
-    // ปิด Pause Menu ถ้ามี
-    var pauseManager = FindObjectOfType<PauseManager>();
-    if (pauseManager != null)
-        pauseManager.ClosePauseMenu();
-
-    RestartFromScene();
+public void RestartFromGameOver()
+{
+    Time.timeScale = 1f;
+    SceneManager.LoadScene("Map01");
 }
 
 
@@ -96,8 +93,9 @@ public class GameManager : MonoBehaviour
         SpawnPlayer(spawnPos);
 
         // รีเซ็ต checkpoint ทุกตัว
-        foreach (var cp in FindObjectsOfType<Checkpoint>())
-            cp.ResetCheckpoint();
+    //     foreach (var cp in Object.FindObjectsByType<Checkpoint>(FindObjectsSortMode.None))
+
+    // cp.ResetCheckpoint();
     }
 
     public void SpawnPlayer(Vector3 position)
@@ -175,4 +173,67 @@ public class GameManager : MonoBehaviour
         if (playerRef != null)
             playerRef.SetActive(false);
     }
+
+//     public void ResetToCurrentCheckpoint()
+// {
+//     if (currentCheckpoint == null)
+//     {
+//         // ถ้ายังไม่มี checkpoint → รีสตาร์ททั้งแมพ
+//         RestartFromScene();
+//         return;
+//     }
+
+//     // รีเซ็ตตำแหน่ง player
+//     playerRef.transform.position = currentCheckpoint.checkpointPoint.position;
+//     playerRef.SetActive(true);
+
+//     // รีหัวใจ
+//     lives = maxLives;
+//     UpdateHeartsUI();
+
+//     // รีสิ่งของ/มอนสเตอร์ใน zone หลัง checkpoint ปัจจุบัน
+//     currentCheckpoint.ResetZone();
+// }
+
+//  public void RestartFromPauseOrGameOver()
+//     {
+//         if (currentCheckpoint == null || currentCheckpoint.isFirstCheckpoint)
+//         {
+//             // รีสตาร์ททั้งแมพ
+//             RestartFromScene();
+//         }
+//         else
+//         {
+//             // รีเฉพาะ zone หลัง checkpoint ปัจจุบัน
+//             ResetToCurrentCheckpoint();
+//         }
+//     }
+
+
+// private Checkpoint FindCurrentCheckpoint()
+// {
+//     Checkpoint nearestCP = null;
+//     float minDist = float.MaxValue;
+//     foreach (var cp in Object.FindObjectsByType<Checkpoint>(FindObjectsSortMode.None))
+//     {
+//         float dist = Vector3.Distance(playerRef.transform.position, cp.checkpointPoint.position);
+//         if (dist < minDist)
+//         {
+//             minDist = dist;
+//             nearestCP = cp;
+//         }
+//     }
+//     return nearestCP;
+// }
+
+
+
+
+
+
+    
 }
+
+
+
+

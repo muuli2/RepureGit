@@ -84,6 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1138582561881957730}
+  - component: {fileID: -1199377101719335518}
   - component: {fileID: 1594723534088508106}
   - component: {fileID: 257210899650455638}
   - component: {fileID: 5222363316033032003}
@@ -91,7 +92,7 @@ GameObject:
   - component: {fileID: -6922141348333141083}
   m_Layer: 0
   m_Name: mon_0
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,6 +113,20 @@ Transform:
   - {fileID: 5653963216231714477}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1199377101719335518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605397172573836818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09604c580575d040989b781664d9742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterMovement
+  speed: 2
+  followRadius: 4
 --- !u!212 &1594723534088508106
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -184,9 +199,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Monster
   maxHealth: 1
   healthBarFill: {fileID: 1791056172081892207}
-  drops: []
+  drops:
+  - item: {fileID: 5589730318865043885, guid: e7be8764167968945943981b875278d3, type: 3}
+    dropChance: 45
   damageToPlayer: 1
   attackCooldown: 1
+  scoreOnDeath: 150
 --- !u!50 &5222363316033032003
 Rigidbody2D:
   serializedVersion: 5

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4095679535436719518}
+  - component: {fileID: 5720401436803665231}
   - component: {fileID: 3994873302083037344}
   - component: {fileID: 3726580992206031958}
   - component: {fileID: 4128650072473016892}
@@ -34,6 +35,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5720401436803665231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5589730318865043885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1297cc202a49dd7488c94f6d97f63593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeartItem
+  healAmount: 1
 --- !u!212 &3994873302083037344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80,8 +94,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -82933903
   m_SortingLayer: 4
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -107649609528648016, guid: 1ef225d7153dd3146a19b83125ac4785, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -8886713217412807493, guid: 7ac626e6343a22d4eb515a083a04b7a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -155,4 +169,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

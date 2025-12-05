@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class DropData
 {
     public GameObject item;
-    public float dropChance;
+    public float dropChance; // 0-100%
 }
 
 public class Monster : MonoBehaviour
@@ -23,6 +23,9 @@ public class Monster : MonoBehaviour
     public int damageToPlayer = 1;      
     public float attackCooldown = 1f;   
     private float lastAttackTime = 0f;
+
+    [Header("Score Settings")]
+    public int scoreOnDeath = 150;
 
     void Awake()
     {
@@ -47,24 +50,23 @@ public class Monster : MonoBehaviour
     }
 
     void Die()
+{
+    // สุ่มดรอปไอเท็ม
+    foreach (var d in drops)
     {
-        foreach (var d in drops)
-        {
-            float roll = Random.Range(0f, 100f);
-
-            if (roll <= d.dropChance)
-                Instantiate(d.item, transform.position, Quaternion.identity);
-        }
-
-        
-
-        MonsterManage.Instance.EnemyKilled();
-        Destroy(gameObject);
+        float roll = Random.Range(0f, 100f);
+        if (roll <= d.dropChance)
+            Instantiate(d.item, transform.position, Quaternion.identity);
     }
 
-    // -------------------------
-    // ทำดาเมจผู้เล่นเมื่อชน
-    // -------------------------
+    // เพิ่มคะแนนเมื่อมอนตาย
+    ScoreManage.Instance.AddScore(150);
+
+    // ปิดมอนสเตอร์
+    gameObject.SetActive(false);
+}
+
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -78,13 +80,14 @@ public class Monster : MonoBehaviour
         if (Time.time - lastAttackTime >= attackCooldown)
         {
             lastAttackTime = Time.time;
-
             GameManager.Instance.TakeDamage(damageToPlayer);
-
-            Debug.Log("Player ถูกมอนโจมตี! ลด " + damageToPlayer);
         }
     }
 
-   
-
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+        UpdateHealthBar();
+        gameObject.SetActive(true);
+    }
 }

@@ -68,21 +68,38 @@ public class PauseManager : MonoBehaviour
         pendingAction = ConfirmAction.None;
     }
 
-    public void ConfirmYes()
-    {
-        confirmPanel.SetActive(false);
-        Time.timeScale = 1f;
-
-        if (pendingAction == ConfirmAction.Restart)
+   public void ConfirmYes() 
 {
-    GameManager.Instance.RestartFromPause();
+    confirmPanel.SetActive(false);
+    Time.timeScale = 1f;
+
+    if (pendingAction == ConfirmAction.Restart)
+    {
+        // รีสตาร์ทซีน Map01 แบบเต็ม ๆ
+        // GameManager จะรีเซ็ตตัวเองใน Start หรือ Awake
+        SceneManager.LoadScene("Map01");
+    } 
+    else if (pendingAction == ConfirmAction.Home)
+    {
+        // กลับหน้า MainMenu
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    pendingAction = ConfirmAction.None; 
 }
 
-        else if (pendingAction == ConfirmAction.Home)
-        {
-            SceneManager.LoadScene("MainMenu");
-        }
 
-        pendingAction = ConfirmAction.None;
-    }
+    
+    public void RestartFromPause()
+{
+    Time.timeScale = 1f;
+
+    // ลบ GameManager ตัวปัจจุบัน
+    Destroy(GameManager.Instance.gameObject);
+
+    // โหลดซีนใหม่
+    SceneManager.LoadScene("Map01");
+}
+
+
 }

@@ -181,5 +181,82 @@ private IEnumerator FinishBossDeath(float delay)
     Destroy(gameObject);
 }
 
+public void ResetBossState()
+{
+    if (state == BossState.Dead)
+    {
+        // รี spawn boss
+        state = BossState.Normal;
+        gameObject.SetActive(true);
+
+        // รีเซ็ต health
+        currentHealth = maxHealth;
+        UpdateHealthBar();
+
+        // เปิด collider และ physics
+        Collider2D[] cols = GetComponentsInChildren<Collider2D>();
+        foreach (var c in cols)
+            c.enabled = true;
+
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+            rb.bodyType = RigidbodyType2D.Dynamic;
+
+        if (glowEffect != null)
+            glowEffect.SetActive(false);
+
+        if (bossAnimator != null)
+            bossAnimator.Rebind();
+    }
+}
+public static void ForceUnfreezeMap()
+{
+    Rigidbody2D[] bodies = Object.FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
+
+    foreach (var rb in bodies)
+    {
+        rb.bodyType = RigidbodyType2D.Dynamic;
+    }
+
+    // เปิด PlayerMovement ด้วย
+    PlayerMovement pm = Object.FindFirstObjectByType<PlayerMovement>();
+    if (pm != null) pm.enabled = true;
+}
+public void ResetBoss()
+{
+    // ถ้าบอสเคยตาย → ต้องเปิดใหม่
+    gameObject.SetActive(true);
+
+    // รีสถานะ
+    state = BossState.Normal;
+
+    // รีเลือด
+    currentHealth = maxHealth;
+    UpdateHealthBar();
+
+    // ปิด glow
+    if (glowEffect != null)
+        glowEffect.SetActive(false);
+
+    // เปิด collider
+    Collider2D[] cols = GetComponentsInChildren<Collider2D>();
+    foreach (var c in cols)
+        c.enabled = true;
+
+    // เปิด Rigidbody
+    Rigidbody2D rb = GetComponent<Rigidbody2D>();
+    if (rb != null)
+        rb.bodyType = RigidbodyType2D.Dynamic;
+
+    // รีอนิเมชัน
+    if (bossAnimator != null)
+        bossAnimator.Rebind();
+
+    Debug.Log("Boss reset completed.");
+}
+
+
+
+
 
 }
