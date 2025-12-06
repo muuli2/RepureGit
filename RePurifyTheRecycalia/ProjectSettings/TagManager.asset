@@ -9,6 +9,7 @@ TagManager:
   - RespawnPoint
   - Trash2
   - RespawnPoint2
+  - RespawnpointMap02
   layers:
   - Default
   - TransparentFX

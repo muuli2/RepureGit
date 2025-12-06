@@ -115,6 +115,7 @@ public class GameManager : MonoBehaviour
 
             if (playerRef.GetComponent<PlayerInput>() == null)
                 playerRef.AddComponent<PlayerInput>();
+                 DontDestroyOnLoad(playerRef); 
 
             var movement = playerRef.GetComponent<PlayerMovement>();
             if (movement != null)
@@ -210,11 +211,18 @@ public class GameManager : MonoBehaviour
     // หา spawnPoint ใหม่ถ้า null
     if (spawnPoint == null)
     {
-        GameObject sp = GameObject.Find("Respawnpoint2"); // ตั้งชื่อ Object ใน Scene ว่า "PlayerSpawnPoint"
-        if (sp != null)
-            spawnPoint = sp.transform;
-        else
-            Debug.LogWarning("SpawnPoint ไม่พบใน Scene");
+        GameObject[] spawns = GameObject.FindGameObjectsWithTag("RespawnPoint2");
+        foreach (var sp in spawns)
+        {
+            if (sp.scene.name == scene.name)  // เลือก spawn point ของซีนปัจจุบัน
+            {
+                spawnPoint = sp.transform;
+                break;
+            }
+        }
+
+        if (spawnPoint == null)
+            Debug.LogWarning("SpawnPoint ไม่พบใน Scene " + scene.name);
     }
 
     // รี spawn player
@@ -227,7 +235,6 @@ public class GameManager : MonoBehaviour
     TrashManage.Instance?.ResetAllTrash();
     Boss.Instance?.ResetBoss();
 }
-
 
     private void RefreshUI()
     {

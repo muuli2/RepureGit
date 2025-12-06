@@ -82,8 +82,12 @@ public class PauseManager : MonoBehaviour
     else if (pendingAction == ConfirmAction.Home)
     {
 
-        Destroy(GameManager.Instance.gameObject);
-        SceneManager.LoadScene("MainMenu");
+        if (GameManager.Instance != null)
+{
+    Destroy(GameManager.Instance.gameObject);
+}
+SceneManager.LoadScene("MainMenu");
+
     }
 
     pendingAction = ConfirmAction.None;

@@ -40,7 +40,7 @@ public class BoatTrigger : MonoBehaviour
         }
     }
 
-    private void OnYes()
+    public void OnYes()
 {
     int currentScore = ScoreManage.Instance.totalScore;
     if(currentScore < requiredPoints)
@@ -71,7 +71,7 @@ private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 
 
 
-    private void OnNo()
+    public void OnNo()
     {
         confirmPanel.SetActive(false);
         warningText.gameObject.SetActive(false);
