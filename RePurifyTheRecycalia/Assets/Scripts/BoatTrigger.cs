@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections; // ✅ ต้องมีอันนี้
 
 public class BoatTrigger : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class BoatTrigger : MonoBehaviour
     public Button noButton;
     public TMP_Text warningText;
 
-    private int requiredPoints = 2500;
+    private int requiredPoints = 0;
 
     private void Start()
     {
@@ -40,28 +41,35 @@ public class BoatTrigger : MonoBehaviour
     }
 
     private void OnYes()
+{
+    int currentScore = ScoreManage.Instance.totalScore;
+    if(currentScore < requiredPoints)
     {
-        // 🔥 สำคัญ: รีเซ็ต warning ก่อนเช็กแต้ม
-        warningText.gameObject.SetActive(false);
-
-        int currentScore = ScoreManage.Instance.totalScore;
-
-        if (currentScore < requiredPoints)
-        {
-            warningText.text = "ค่าชำระล้างยังไม่ถึงนะ…";
-            warningText.gameObject.SetActive(true);
-            return;
-        }
-
-        // หักแต้ม 2500
-        ScoreManage.Instance.AddScore(-requiredPoints);
-
-        // 🔥 ปิด panel ทันที กัน UI กระพริบ
-        confirmPanel.SetActive(false);
-
-        // โหลดซีนถัดไป
-        SceneManager.LoadScene("Map02");
+        warningText.text = "ค่าชำระล้างยังไม่ถึงนะ…";
+        warningText.gameObject.SetActive(true);
+        return;
     }
+
+    ScoreManage.Instance.AddScore(-requiredPoints);
+    confirmPanel.SetActive(false);
+
+    SceneManager.sceneLoaded += OnSceneLoaded;
+    SceneManager.LoadScene("Map02");
+}
+
+private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+{
+    if (scene.name != "Map02") return;
+
+    // เมื่อซีนโหลดเสร็จ
+    GameManager.Instance.SpawnPlayer(GameManager.Instance.spawnPoint.position);
+    MonsterManage.Instance?.ResetAllMonsters();
+    // GameManager.Instance.ResetAllTrash();
+
+    SceneManager.sceneLoaded -= OnSceneLoaded;
+}
+
+
 
     private void OnNo()
     {

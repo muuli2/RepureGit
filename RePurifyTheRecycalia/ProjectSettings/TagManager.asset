@@ -7,6 +7,8 @@ TagManager:
   - Trash
   - Monster
   - RespawnPoint
+  - Trash2
+  - RespawnPoint2
   layers:
   - Default
   - TransparentFX

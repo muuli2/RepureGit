@@ -27,8 +27,11 @@ public class Monster : MonoBehaviour
     [Header("Score Settings")]
     public int scoreOnDeath = 150;
 
+      private Vector3 startPosition;
+
     void Awake()
     {
+         startPosition = transform.position;
         currentHealth = maxHealth;
         UpdateHealthBar();
     }
@@ -50,31 +53,26 @@ public class Monster : MonoBehaviour
     }
 
     void Die()
-{
-    // สุ่มดรอปไอเท็ม
-    foreach (var d in drops)
     {
-        float roll = Random.Range(0f, 100f);
-        if (roll <= d.dropChance)
-            Instantiate(d.item, transform.position, Quaternion.identity);
+        // สุ่มดรอปไอเท็ม
+        foreach (var d in drops)
+        {
+            float roll = Random.Range(0f, 100f);
+            if (roll <= d.dropChance)
+                Instantiate(d.item, transform.position, Quaternion.identity);
+        }
+
+        // เพิ่มคะแนน
+        ScoreManage.Instance?.AddScore(scoreOnDeath);
+
+        // ปิดมอนสเตอร์
+        gameObject.SetActive(false);
     }
-
-    // เพิ่มคะแนน
-    if (ScoreManage.Instance != null)
-        ScoreManage.Instance.AddScore(scoreOnDeath); // ใช้ค่าที่ตั้งไว้ใน Inspector
-
-    // ปิดมอนสเตอร์
-    gameObject.SetActive(false);
-}
-
-
 
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-        {
             TryDamagePlayer();
-        }
     }
 
     void TryDamagePlayer()
@@ -86,10 +84,16 @@ public class Monster : MonoBehaviour
         }
     }
 
-    public void ResetHealth()
+    // ฟังก์ชันรีเซ็ตมอนสเตอร์
+    public void ResetMonster()
     {
         currentHealth = maxHealth;
         UpdateHealthBar();
         gameObject.SetActive(true);
+        lastAttackTime = 0f;
+
+        // กลับไปตำแหน่งเริ่มต้น
+        transform.position = startPosition;
     }
+
 }

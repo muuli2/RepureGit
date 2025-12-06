@@ -2,13 +2,25 @@ using UnityEngine;
 
 public class Trash : MonoBehaviour
 {
-    public TrashType trashType;          // ชนิดขยะ
-    public float interactRange = 1.5f;   // ระยะเก็บขยะ
-    private InteractionPrompt prompt;
+    public TrashType trashType;
+    public float interactRange = 1.5f;
 
-    void Start()
+    private InteractionPrompt prompt;
+    private Vector3 startPos;
+    private Quaternion startRot;
+
+    private void Awake()
     {
         prompt = GetComponent<InteractionPrompt>();
+        startPos = transform.position;
+        startRot = transform.rotation;
+    }
+
+    public void ResetTrash()
+    {
+        gameObject.SetActive(true);
+        transform.position = startPos;
+        transform.rotation = startRot;
     }
 
     void Update()
@@ -34,11 +46,5 @@ public class Trash : MonoBehaviour
         {
             prompt?.HidePrompt();
         }
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, interactRange);
     }
 }

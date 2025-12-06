@@ -89,7 +89,8 @@ public class PlayerTrash : MonoBehaviour
     }
 
     hasTrash = false;
-    Destroy(currentTrashIcon);
+   currentTrashIcon.SetActive(false);
+
 
     int points = 100;
     if (comboCount >= 4) points *= 2;

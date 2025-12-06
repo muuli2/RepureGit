@@ -65,28 +65,33 @@ public class MiniGame01 : MonoBehaviour
         }
     }
 
-    public void CollectTrash(TrashItem trash)
+   public void CollectTrash(TrashItem trash)
+{
+    int points = 1000;
+    if (trash.trashType == targetTrashType)
     {
-        int points = 100; // คะแนนคงที่, หรือใช้ trash.scoreValue ถ้ามี
-        if (trash.trashType == targetTrashType)
-        {
-            AddScore(points);
-        }
-        else
-        {
-            // ลดเลือดใน GameManager โดยตรง
-            GameManager.Instance.TakeDamage(1);
-            UpdateHeartsUI();
-        }
-
-        Destroy(trash.gameObject);
-
-        // เช็คหัวใจหมด -> GameOver มินิเกม
-        if (GameManager.Instance.lives <= 0)
-        {
-            GameOver();
-        }
+        AddScore(points);
     }
+    else
+    {
+        // ลดหัวใจแมพหลัก
+        GameManager.Instance.TakeDamage(1);
+        UpdateHeartsUI();
+    }
+
+    Destroy(trash.gameObject);
+
+    // เช็คหัวใจหมด -> เรียก GameOver ของแมพหลัก
+    if (GameManager.Instance.lives <= 0)
+    {
+        // ปิด scene มินิเกมก่อน
+        SceneManager.UnloadSceneAsync("MiniGame01");
+
+        // เรียก GameOver ของแมพหลัก
+        GameManager.Instance.PlayerDied();
+    }
+}
+
 
     void DestroyAllTrash()
     {
@@ -196,6 +201,31 @@ public void RetryMap()
     SceneManager.LoadScene("Map01");
 }
 
+void MiniGameOver()
+{
+    gameOverPanel.SetActive(true);
+
+    // หยุดสปอนขยะ
+    var spawner = Object.FindFirstObjectByType<TrashSpawner>();
+    if (spawner != null)
+        spawner.StopSpawn();
+
+    // ทำลายขยะทั้งหมดของมินิเกม
+    DestroyAllTrash();
+
+    // ❌ ไม่ไปเรียก GameManager.PlayerDied()
+    Time.timeScale = 0;
+}
+
+// UI หัวใจของมินิเกม
+// public void UpdateHeartsUI()
+// {
+//     int currentLives = GameManager.Instance.lives;
+//     for (int i = 0; i < heartImages.Length; i++)
+//     {
+//         heartImages[i].sprite = i < currentLives ? heartFull : heartEmpty;
+//     }
+
 
 
 
@@ -211,3 +241,4 @@ public void RetryMap()
 
 
 }
+
