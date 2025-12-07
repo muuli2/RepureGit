@@ -102,6 +102,7 @@ public class PlayerTrash : MonoBehaviour
     comboTimer = comboTime;
     comboText.text = comboCount >= 5 ? $"Combo x{comboCount}! (x2!)" : $"Combo x{comboCount}!";
 
+     TrashCheck.Instance.AddCollected();
     currentTrashIcon = null;
 }
 

@@ -6,8 +6,8 @@ public class IntroMinigame : MonoBehaviour
 {
     public TMP_Text text;
     public float moveSpeed = 900f;
-    public float blinkDuration = 1.5f;  // เวลากระพริบ
-    public float blinkSpeed = 6f;       // ความถี่กระพริบ
+    public float blinkDuration = 1.5f;
+    public float blinkSpeed = 6f;
 
     public IEnumerator ShowText(string message)
     {
@@ -28,13 +28,12 @@ public class IntroMinigame : MonoBehaviour
             rect.anchoredPosition = Vector2.MoveTowards(
                 rect.anchoredPosition,
                 target,
-                moveSpeed * Time.deltaTime
+                moveSpeed * Time.unscaledDeltaTime  // ✅ ใช้ unscaled
             );
 
             yield return null;
         }
 
-        // ตั้งให้พอดีกลางชัวร์ ๆ
         rect.anchoredPosition = target;
 
         // เอฟเฟ็กต์กระพริบ
@@ -43,17 +42,14 @@ public class IntroMinigame : MonoBehaviour
 
         while (timer < blinkDuration)
         {
-            float alpha = Mathf.Abs(Mathf.Sin(Time.time * blinkSpeed));
+            float alpha = Mathf.Abs(Mathf.Sin(Time.unscaledTime * blinkSpeed)); // ✅ ใช้ unscaled
             text.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
 
-            timer += Time.deltaTime;
+            timer += Time.unscaledDeltaTime; // ✅ ใช้ unscaled
             yield return null;
         }
 
-        // คืนสี
         text.color = originalColor;
-
-        // ซ่อนข้อความ
         text.gameObject.SetActive(false);
     }
 }

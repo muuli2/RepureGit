@@ -28,19 +28,20 @@ public class MiniGame012 : MonoBehaviour
     private void Awake() { Instance = this; }
 
     private void Start()
-    {
-        PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+{
+    PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
 
-        if (pause != null)
-            pause.isMiniGameActive = true;
+    if (pause != null)
+        pause.isMiniGameActive = true;
 
-        UpdateHeartsUI();
-        UpdateScoreUI();
-        gameStarted = true;
+    UpdateHeartsUI();
+    UpdateScoreUI();
 
-        gameOverPanel.SetActive(false);
-        if (winPanel != null) winPanel.SetActive(false);
-    }
+    gameOverPanel.SetActive(false);
+    if (winPanel != null) winPanel.SetActive(false);
+
+    // ❌ ลบ gameStarted = true; ออก
+}
 
     public void AddScore(int amount)
     {

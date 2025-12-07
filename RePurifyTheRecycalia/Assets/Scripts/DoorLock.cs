@@ -21,18 +21,19 @@ public class DoorLock : MonoBehaviour
         if (!other.CompareTag("Player"))
             return;
 
-        if (MonsterManage.Instance.AllEnemiesCleared())
-        {
-            // เปิดประตู
-            doorSprite.SetActive(false);
-            Destroy(gameObject);
-        }
-        else
-        {
-            // แสดงข้อความ
-            StartFade(true);
-        }
+       if (MonsterManage.Instance.AllEnemiesCleared() &&
+    TrashCheck.Instance.AllTrashCollected())
+{
+    // เปิดประตู
+    doorSprite.SetActive(false);
+    Destroy(gameObject);
+}
+else
+{
+    StartFade(true);
+}
     }
+
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -73,3 +74,4 @@ public class DoorLock : MonoBehaviour
             messagePanel.blocksRaycasts = false;
     }
 }
+

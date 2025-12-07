@@ -32,44 +32,70 @@ public class Boss : MonoBehaviour
     }
 
     // -------------------------------------
-    // ❄ Freeze / Unfreeze
+    // ❄ Freeze / Unfreeze Map & Player
     // -------------------------------------
+    // Boss.cs
+void FreezeMapAndPlayer()
+{
+    Scene mapScene = SceneManager.GetSceneByName("Map01");
+    if (!mapScene.isLoaded) return;
 
-    void FreezeAllMapObjects()
+    // Freeze ทั้งแมพ
+    GameObject[] rootObjects = mapScene.GetRootGameObjects();
+    foreach (var obj in rootObjects)
     {
-        Rigidbody2D[] bodies = Object.FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
-
-        foreach (var rb in bodies)
+        foreach (var rb in obj.GetComponentsInChildren<Rigidbody2D>())
         {
             rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
             rb.bodyType = RigidbodyType2D.Static;
         }
-
-        // Freeze PlayerMovement script
-        PlayerMovement player = Object.FindFirstObjectByType<PlayerMovement>();
-        if (player != null)
-            player.enabled = false;
     }
 
-    void UnfreezeAllMapObjects()
+    // Freeze Player ทุกตัวที่มี Tag = "Player"
+    GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+    foreach (var player in players)
     {
-        Rigidbody2D[] bodies = Object.FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
-
-        foreach (var rb in bodies)
+        if (player.scene.name == "Map01")
         {
-            rb.bodyType = RigidbodyType2D.Dynamic;
-        }
+            PlayerMovement pm = player.GetComponent<PlayerMovement>();
+            if (pm != null) pm.enabled = false;
 
-        // Unfreeze PlayerMovement
-        PlayerMovement player = Object.FindFirstObjectByType<PlayerMovement>();
-        if (player != null)
-            player.enabled = true;
+            Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector2.zero;
+                rb.angularVelocity = 0f;
+                rb.bodyType = RigidbodyType2D.Static;
+            }
+        }
     }
+}
+
+public void UnfreezeMapAndPlayer()
+{
+    // Unfreeze Rigidbody ทั้งแมพ
+    foreach (var rb in Object.FindObjectsOfType<Rigidbody2D>())
+    {
+        if (rb.gameObject.scene.name == "Map01")
+            rb.bodyType = RigidbodyType2D.Dynamic;
+    }
+
+    // Unfreeze Player ทุกตัว
+    GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+    foreach (var player in players)
+    {
+        if (player.scene.name == "Map01")
+        {
+            PlayerMovement pm = player.GetComponent<PlayerMovement>();
+            if (pm != null) pm.enabled = true;
+        }
+    }
+}
 
     // -------------------------------------
     // ❤️ Damage / Health
     // -------------------------------------
-
     public void TakeDamage(int damage)
     {
         if (state != BossState.Normal) return;
@@ -79,9 +105,7 @@ public class Boss : MonoBehaviour
         UpdateHealthBar();
 
         if (currentHealth <= 0)
-        {
             StartCoroutine(TriggerMinigameTransition());
-        }
     }
 
     private void UpdateHealthBar()
@@ -90,93 +114,107 @@ public class Boss : MonoBehaviour
             healthBarFill.fillAmount = (float)currentHealth / maxHealth;
     }
 
+    // -------------------------------------
+    // 🔹 Trigger Minigame
+    // -------------------------------------
     private IEnumerator TriggerMinigameTransition()
-{
-    state = BossState.WaitingMinigame;
-
-    FreezeAllMapObjects();
-
-    if (glowEffect != null) glowEffect.SetActive(true);
-    if (bossAnimator != null) bossAnimator.SetTrigger("PhaseTransition");
-
-    // แสดง SHOWDOWN
-    IntroMinigame tt = Object.FindFirstObjectByType<IntroMinigame>();
-    if (tt != null)
-        yield return tt.ShowText("SHOWDOWN"); // ❌ ต้อง yield รอให้แสดงจบ
-
-    yield return new WaitForSeconds(0.5f); // รอเล็กน้อยก่อนโหลดมินิเกม
-
-    // บอก GameManager ว่าเป็นมินิเกม
-    if (GameManager.Instance != null)
-        GameManager.Instance.isMiniGameActive = true;
-
-    // โหลดมินิเกม Additive
-    SceneManager.LoadScene(miniGameSceneName, LoadSceneMode.Additive);
-}
-
-    // -------------------------------------
-    // 💀 Boss Died After Minigame
-    // -------------------------------------
-
-    // -------------------------------------
-// 💀 Boss Died After Minigame
-// -------------------------------------
- public void BossDefeated()
-{
-    if (state == BossState.Dead) return;
-    state = BossState.Dead;
-
-    // ให้คะแนนบอส 1000
-    ScoreManage.Instance?.AddScore(1000);
-
-    // ปิด collider / physics / effect
-    foreach (var c in GetComponentsInChildren<Collider2D>())
-        c.enabled = false;
-
-    Rigidbody2D rb = GetComponent<Rigidbody2D>();
-    if (rb != null) rb.bodyType = RigidbodyType2D.Kinematic;
-
-    if (glowEffect != null)
-        glowEffect.SetActive(false);
-
-    if (bossAnimator != null)
-        bossAnimator.SetTrigger("Die");
-
-    // ❌ ไม่ Destroy ทันที
-    StartCoroutine(FinishBossDeath(2f));
-}
-
-private IEnumerator FinishBossDeath(float delay)
-{
-    yield return new WaitForSeconds(delay);
-
-    // คืนการควบคุม player / map
-    UnfreezeAllMapObjects();
-
-    // แจ้ง MonsterManager
-    if (MonsterManage.Instance != null)
-        MonsterManage.Instance.EnemyKilled();
-
-    // ลบตัวบอส
-    Destroy(gameObject);
-}
-
-
-public void ResetBossState()
-{
-    if (state == BossState.Dead)
     {
-        // รี spawn boss
-        state = BossState.Normal;
-        gameObject.SetActive(true);
 
-        // รีเซ็ต health
+                       
+        state = BossState.WaitingMinigame;
+
+        // Freeze everything at current position
+        FreezeMapAndPlayer();
+
+        if (glowEffect != null) glowEffect.SetActive(true);
+        if (bossAnimator != null) bossAnimator.SetTrigger("PhaseTransition");
+
+        // แสดง SHOWDOWN ขณะ freeze (ใช้ Realtime)
+        IntroMinigame tt = Object.FindFirstObjectByType<IntroMinigame>();
+        if (tt != null)
+            yield return tt.ShowText("SHOWDOWN");
+
+        // รอเล็กน้อยเพื่อให้ player เห็น effect
+        yield return new WaitForSecondsRealtime(0.5f);
+
+        // บอก GameManager ว่าเป็นมินิเกม
+        if (GameManager.Instance != null)
+            GameManager.Instance.isMiniGameActive = true;
+
+        // โหลดมินิเกม Additive
+        SceneManager.LoadScene(miniGameSceneName, LoadSceneMode.Additive);
+
+        
+    }
+
+    // -------------------------------------
+    // 💀 Boss Defeated
+    // -------------------------------------
+    public void BossDefeated()
+    {
+        if (state == BossState.Dead) return;
+        state = BossState.Dead;
+
+        ScoreManage.Instance?.AddScore(1000);
+
+        foreach (var c in GetComponentsInChildren<Collider2D>())
+            c.enabled = false;
+
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null) rb.bodyType = RigidbodyType2D.Kinematic;
+
+        if (glowEffect != null) glowEffect.SetActive(false);
+        if (bossAnimator != null) bossAnimator.SetTrigger("Die");
+
+        StartCoroutine(FinishBossDeath(2f));
+    }
+
+    private IEnumerator FinishBossDeath(float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+
+        UnfreezeMapAndPlayer();
+
+        if (MonsterManage.Instance != null)
+            MonsterManage.Instance.EnemyKilled();
+
+        Destroy(gameObject);
+    }
+
+    // -------------------------------------
+    // 🔄 Reset Boss
+    // -------------------------------------
+    public void ResetBossState()
+    {
+        if (state == BossState.Dead)
+        {
+            state = BossState.Normal;
+            gameObject.SetActive(true);
+            currentHealth = maxHealth;
+            UpdateHealthBar();
+
+            foreach (var c in GetComponentsInChildren<Collider2D>())
+                c.enabled = true;
+
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            if (rb != null)
+                rb.bodyType = RigidbodyType2D.Dynamic;
+
+            if (glowEffect != null)
+                glowEffect.SetActive(false);
+            if (bossAnimator != null)
+                bossAnimator.Rebind();
+        }
+    }
+
+    public void ResetBoss()
+    {
+        gameObject.SetActive(true);
+        state = BossState.Normal;
         currentHealth = maxHealth;
         UpdateHealthBar();
 
-        // เปิด collider และ physics
-        Collider2D[] cols = GetComponentsInChildren<Collider2D>();
-        foreach (var c in cols)
+        foreach (var c in GetComponentsInChildren<Collider2D>())
             c.enabled = true;
 
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
@@ -185,63 +223,26 @@ public void ResetBossState()
 
         if (glowEffect != null)
             glowEffect.SetActive(false);
-
         if (bossAnimator != null)
             bossAnimator.Rebind();
-    }
-}
-public static void ForceUnfreezeMap()
-{
-    Rigidbody2D[] bodies = Object.FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
 
-    foreach (var rb in bodies)
+        Debug.Log("Boss reset completed.");
+    }
+
+    // -------------------------------------
+    // 🔹 Helper Static
+    // -------------------------------------
+    public static void ForceUnfreezeMap()
     {
-        rb.bodyType = RigidbodyType2D.Dynamic;
+        Rigidbody2D[] bodies = Object.FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
+        foreach (var rb in bodies)
+            rb.bodyType = RigidbodyType2D.Dynamic;
+
+        PlayerMovement pm = Object.FindFirstObjectByType<PlayerMovement>();
+        if (pm != null)
+            pm.enabled = true;
+
+        Time.timeScale = 1f;
     }
-
-    // เปิด PlayerMovement ด้วย
-    PlayerMovement pm = Object.FindFirstObjectByType<PlayerMovement>();
-    if (pm != null) pm.enabled = true;
-}
-public void ResetBoss()
-{
-    // ถ้าบอสเคยตาย → ต้องเปิดใหม่
-    gameObject.SetActive(true);
-
-    // รีสถานะ
-    state = BossState.Normal;
-
-    // รีเลือด
-    currentHealth = maxHealth;
-    UpdateHealthBar();
-
-    // ปิด glow
-    if (glowEffect != null)
-        glowEffect.SetActive(false);
-
-    // เปิด collider
-    Collider2D[] cols = GetComponentsInChildren<Collider2D>();
-    foreach (var c in cols)
-        c.enabled = true;
-
-    // เปิด Rigidbody
-    Rigidbody2D rb = GetComponent<Rigidbody2D>();
-    if (rb != null)
-        rb.bodyType = RigidbodyType2D.Dynamic;
-
-    // รีอนิเมชัน
-    if (bossAnimator != null)
-        bossAnimator.Rebind();
-
-    Debug.Log("Boss reset completed.");
-}
-
-
-
-
-
-
-
-
 
 }

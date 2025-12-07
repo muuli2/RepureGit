@@ -19,6 +19,8 @@ public class DialogueManage : MonoBehaviour
     private int index = 0;
     private PlayerMovement player;
     private PlayerShoot playerShoot; // 🔒 ตัวแปรยิง
+    private DialogueTrigger currentTrigger;
+
 
     void Start()
     {
@@ -29,21 +31,24 @@ public class DialogueManage : MonoBehaviour
         nextButton.onClick.AddListener(NextSentence);
     }
 
-    public void StartDialogue(string[] lines, PlayerMovement pm)
-    {
-        sentences = lines;
-        player = pm;
+   public void StartDialogue(string[] lines, PlayerMovement pm, DialogueTrigger trigger)
+{
+    sentences = lines;
+    player = pm;
+    currentTrigger = trigger;
 
-        // ปิดการเดินและยิงตอน Dialogue
-        player.SetCanMove(false);
-        playerShoot = player.GetComponent<PlayerShoot>();
-        if (playerShoot != null)
-            playerShoot.canShoot = false;
+    player.SetCanMove(false);
+    playerShoot = player.GetComponent<PlayerShoot>();
+    if (playerShoot != null)
+        playerShoot.canShoot = false;
 
-        index = 0;
-        dialogueBox.SetActive(true);
-        ShowSentence();
-    }
+    index = 0;
+    dialogueBox.SetActive(true);
+    ShowSentence();
+   
+
+}
+
 
     void Update()
     {
@@ -126,18 +131,26 @@ public class DialogueManage : MonoBehaviour
     }
 
     void EndDialogue()
+{
+    dialogueBox.SetActive(false);
+    choicesPanel.SetActive(false);
+
+    if (player != null)
     {
-        dialogueBox.SetActive(false);
-        choicesPanel.SetActive(false);
+        player.SetCanMove(true);
 
-        if (player != null)
-        {
-            // เปิดเดิน
-            player.SetCanMove(true);
-
-            // เปิดยิง
-            if (playerShoot != null)
-                playerShoot.canShoot = true;
-        }
+        if (playerShoot != null)
+            playerShoot.canShoot = true;
     }
+
+    // เรียกอัพเกรดจาก trigger
+    if (currentTrigger != null)
+    {
+        PlayerShoot ps = player.GetComponent<PlayerShoot>();
+        currentTrigger.AfterDialogueUpgrade(ps);
+    }
+}
+
+
+    
 }

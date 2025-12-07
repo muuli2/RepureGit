@@ -65,6 +65,10 @@ public class Monster : MonoBehaviour
         // เพิ่มคะแนน
         ScoreManage.Instance?.AddScore(scoreOnDeath);
 
+         MonsterManage.Instance.EnemyKilled();
+
+ 
+
         // ปิดมอนสเตอร์
         gameObject.SetActive(false);
     }

@@ -7,6 +7,8 @@ public class DialogueTrigger : MonoBehaviour
     public string[] sentences;
 
     private bool triggered = false;
+    public bool upgradeGunAfterDialogue = false;
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,7 +25,29 @@ public class DialogueTrigger : MonoBehaviour
             if (ps != null)
                 ps.canShoot = false; // 🔒 หยุดยิง
 
-            dialogueManager.StartDialogue(sentences, pm);
+           dialogueManager.StartDialogue(sentences, pm, this);
+
+            
         }
     }
+
+    public void OnDialogueFinished(PlayerMovement player)
+{
+    if (upgradeGunAfterDialogue)
+    {
+        PlayerShoot ps = player.GetComponent<PlayerShoot>();
+        if (ps != null)
+        {
+            ps.UpgradeGun();
+        }
+    }
+}
+
+public void AfterDialogueUpgrade(PlayerShoot ps)
+{
+    ps.UpgradeGun();
+    ToastMessage.Instance.Show("ได้รับการอัพเกรด!");
+}
+
+
 }

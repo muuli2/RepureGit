@@ -39,6 +39,7 @@ public class RhythmMiniGame : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("MiniGame02 Start เรียกแล้ว");   // <--- เพิ่ม
         gameOverPanel.SetActive(false);
         winPanel.SetActive(false);
         countdownText.gameObject.SetActive(false);
@@ -124,7 +125,7 @@ if (keyboard.kKey.wasPressedThisFrame) HitTrash(Key.K);
         }
 
         // ตั้งชนิดขยะ (ถ้ามี)
-        note.trashType = Random.value > 0.5f ? TrashNote.TrashType.General : TrashNote.TrashType.Wet;
+        // note.trashType = Random.value > 0.5f ? TrashNote.TrashType.General : TrashNote.TrashType.Wet;
     }
 }
 
@@ -209,7 +210,7 @@ KeyCode ConvertKey(Key key)
     public void ContinueToMap()
     {
         winPanel.SetActive(false);
-        SceneManager.UnloadSceneAsync("RhythmMiniGame");
+        SceneManager.UnloadSceneAsync("Minigame02");
     }
 
     public void RetryMap()

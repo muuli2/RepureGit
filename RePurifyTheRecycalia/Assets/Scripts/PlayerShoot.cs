@@ -3,46 +3,74 @@ using UnityEngine.InputSystem;
 
 public class PlayerShoot : MonoBehaviour
 {
-    public Transform firePoint;        // จุดเกิดกระสุน
-    public GameObject bulletPrefab;    // prefab กระสุน
-    public float bulletSpeed = 10f;
-    public float shootCooldown = 1f;   // เวลา cooldown
+    public Transform firePoint;
+    private PauseManager pauseManager;
+
+
+    [Header("Bullet Settings (Normal)")]
+    public GameObject normalBulletPrefab;   // กระสุนธรรมดา
+    public float normalBulletSpeed = 10f;
+
+    [Header("Bullet Settings (Upgraded)")]
+    public GameObject upgradedBulletPrefab; // กระสุนหลังอัพเกรด
+    public float upgradedBulletSpeed = 18f; // ยิงแรงขึ้นหรือเร็วขึ้น
+
+    [Header("Gun Upgrade")]
+    public bool gunUpgraded = false;        // เริ่มต้นยังไม่อัพเกรด
+
+    public float shootCooldown = 1f;
     private float lastShootTime = -Mathf.Infinity;
 
-    [HideInInspector]
-    public bool canShoot = true;       // 🔹 ควบคุมยิง
+    [HideInInspector] public bool canShoot = true;
+
+      void Start()
+    {
+         pauseManager = FindObjectOfType<PauseManager>();
+    }
 
     void Update()
     {
-        if (!canShoot) return; // ถ้าไม่สามารถยิงได้ ให้ return
 
-        // ตรวจสอบว่า cooldown ครบและกด Spacebar หรือคลิกเมาส์
-        if ((Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame) 
+        if (!canShoot || (pauseManager != null && (pauseManager.pauseMenu.activeSelf || pauseManager.confirmPanel.activeSelf)))
+        return;
+      
+
+        if ((Keyboard.current.spaceKey.wasPressedThisFrame ||
+            Mouse.current.leftButton.wasPressedThisFrame)
             && Time.time >= lastShootTime + shootCooldown)
         {
             Shoot();
-            lastShootTime = Time.time;  // รีเซ็ตเวลา cooldown
+            lastShootTime = Time.time;
         }
     }
 
     void Shoot()
     {
-        // ตำแหน่งเมาส์ในโลก
+        // หาทิศยิง
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         mousePos.z = 0f;
-
-        // ทิศทางจาก firePoint ไปเมาส์
         Vector3 direction = (mousePos - firePoint.position).normalized;
 
-        // สร้างกระสุน
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        // เลือก Prefab ตามอัพเกรด
+        GameObject prefab = gunUpgraded ? upgradedBulletPrefab : normalBulletPrefab;
+        float speed = gunUpgraded ? upgradedBulletSpeed : normalBulletSpeed;
 
-        // หมุนกระสุนให้หันไปทางเมาส์
+        // สร้างกระสุน
+        GameObject bullet = Instantiate(prefab, firePoint.position, Quaternion.identity);
+
+        // หมุน
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         bullet.transform.rotation = Quaternion.Euler(0, 0, angle);
 
-        // ขับกระสุน
+        // ยิง
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = direction * bulletSpeed;
+        rb.linearVelocity = direction * speed;
+    }
+
+    // ฟังก์ชันนี้จะถูกเรียกตอนคุยกับอาจารย์
+    public void UpgradeGun()
+    {
+        gunUpgraded = true;
+        Debug.Log("🔥 ปืนอัพเกรดแล้ว!");
     }
 }

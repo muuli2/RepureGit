@@ -134,9 +134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TrashNote
   trashType: 0
   correctKey: 106
-  speed: 6
-  hitY: -1.2
-  hitRange: 2
+  speed: 0.5
+  hitY: -1.4
+  hitRange: 1
 --- !u!58 &-1112881487755340973
 CircleCollider2D:
   m_ObjectHideFlags: 0

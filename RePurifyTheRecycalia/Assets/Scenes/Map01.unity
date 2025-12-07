@@ -807,7 +807,7 @@ MonoBehaviour:
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
+  m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
 --- !u!1 &138712043
 GameObject:
@@ -1925,6 +1925,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &310045148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 310045150}
+  - component: {fileID: 310045149}
+  m_Layer: 0
+  m_Name: TrashCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &310045149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310045148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3775be7971fd89b40b6900a3f9b0dbdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrashCheck
+  totalTrash: 10
+  collectedTrash: 0
+--- !u!4 &310045150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310045148}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 85.65694, y: 84.53487, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339338414
 GameObject:
   m_ObjectHideFlags: 0
@@ -72792,6 +72838,7 @@ MonoBehaviour:
     \u0E2D\u0E32\u0E08\u0E08\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E17\u0E48\u0E32\u0E19\u0E44\u0E14\u0E49\u0E44\u0E21\u0E48\u0E21\u0E32\u0E01\u0E01\u0E47\u0E19\u0E49\u0E2D\u0E22"
   - "\u0E2D\u0E31\u0E28\u0E27\u0E34\u0E19\u0E19\u0E30\u0E08\u0E4A\u0E30: \u0E02\u0E2D\u0E43\u0E2B\u0E49\u0E42\u0E0A\u0E04\u0E14\u0E35
     \u0E17\u0E48\u0E32\u0E19\u0E1C\u0E39\u0E49\u0E01\u0E25\u0E49\u0E32 \u0E0A\u0E48\u0E27\u0E22\u0E2D\u0E07\u0E04\u0E4C\u0E0A\u0E32\u0E22\u0E21\u0E32\u0E43\u0E2B\u0E49\u0E08\u0E07\u0E44\u0E14\u0E49 "
+  upgradeGunAfterDialogue: 0
 --- !u!50 &780116705
 Rigidbody2D:
   serializedVersion: 5
@@ -74650,6 +74697,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
+--- !u!114 &1114760757 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
+  m_PrefabInstance: {fileID: 1114760756}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1132358502
 GameObject:
   m_ObjectHideFlags: 0
@@ -75963,6 +76021,7 @@ MonoBehaviour:
   lastCheckpoint: {x: 0, y: 0, z: 0}
   isMiniGameActive: 0
   mapPoints: 0
+  skillUnlocked: 0
 --- !u!4 &1382038265
 Transform:
   m_ObjectHideFlags: 0
@@ -76505,6 +76564,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
+--- !u!114 &1483848998 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
+  m_PrefabInstance: {fileID: 1483848997}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1485012944
 GameObject:
   m_ObjectHideFlags: 0
@@ -79069,6 +79139,8 @@ MonoBehaviour:
   - {fileID: 832619773}
   - {fileID: 574929821}
   - {fileID: 109232355}
+  - {fileID: 1483848998}
+  - {fileID: 1114760757}
 --- !u!4 &1743455259
 Transform:
   m_ObjectHideFlags: 0
@@ -224420,7 +224492,6 @@ GameObject:
   - component: {fileID: 2060821263}
   - component: {fileID: 2060821266}
   - component: {fileID: 2060821265}
-  - component: {fileID: 2060821264}
   m_Layer: 0
   m_Name: prop2_7
   m_TagString: Untagged
@@ -224517,33 +224588,6 @@ MonoBehaviour:
   yesButton: {fileID: 466430498}
   noButton: {fileID: 132171699}
   warningText: {fileID: 252987435}
---- !u!50 &2060821264
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2060821260}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &2060821265
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -224991,7 +225035,6 @@ SceneRoots:
   - {fileID: 241028777}
   - {fileID: 2058241919}
   - {fileID: 1913109335}
-  - {fileID: 1743455259}
   - {fileID: 682223967}
   - {fileID: 1485012946}
   - {fileID: 1792861909}
@@ -225005,6 +225048,7 @@ SceneRoots:
   - {fileID: 591207889}
   - {fileID: 2060821262}
   - {fileID: 87460428}
+  - {fileID: 1743455259}
   - {fileID: 679593585}
   - {fileID: 832619772}
   - {fileID: 574929820}
@@ -225014,3 +225058,4 @@ SceneRoots:
   - {fileID: 1562208918}
   - {fileID: 109232354}
   - {fileID: 235567171}
+  - {fileID: 310045150}

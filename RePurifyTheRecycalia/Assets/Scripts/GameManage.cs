@@ -31,6 +31,9 @@ public class GameManager : MonoBehaviour
 
     public int mapPoints = 0; // คะแนนในแมพ
 
+    public bool skillUnlocked = false;
+
+
     public GameObject GetPlayer() => playerRef;
 
     private void Awake()
@@ -224,6 +227,10 @@ public class GameManager : MonoBehaviour
         if (spawnPoint == null)
             Debug.LogWarning("SpawnPoint ไม่พบใน Scene " + scene.name);
     }
+
+   if (scene.name == "Minigame01" || scene.name == "Minigame012")
+    return;
+
 
     // รี spawn player
     Vector3 spawnPos = lastCheckpoint != Vector3.zero ? lastCheckpoint :

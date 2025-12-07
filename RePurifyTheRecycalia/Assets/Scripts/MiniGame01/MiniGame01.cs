@@ -151,35 +151,34 @@ public class MiniGame01 : MonoBehaviour
     // ปุ่ม Win Panel: ไปต่อ (กลับ Map01)
     // ปุ่ม Continue ใน WinPanel
 public void ContinueToMap()
-{
-    Time.timeScale = 1;
-    if (winPanel != null)
-        winPanel.SetActive(false);
-SceneManager.UnloadSceneAsync("MiniGame01").completed += (op) =>
-{
-    if (Boss.Instance != null && Boss.Instance.state != Boss.BossState.Dead)
     {
-        Boss.Instance.BossDefeated();
+        Time.timeScale = 1;
+        if (winPanel != null)
+            winPanel.SetActive(false);
+
+        SceneManager.UnloadSceneAsync("Minigame01").completed += (op) =>
+        {
+            if (Boss.Instance != null && Boss.Instance.state != Boss.BossState.Dead)
+            {
+                Boss.Instance.BossDefeated();
+            }
+
+            PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+            if (pause != null)
+                pause.isMiniGameActive = false;
+        };
     }
 
-    PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
-if (pause != null)
-    pause.isMiniGameActive = false;
+// // ตัวอย่างใน MiniGame01.cs หรือฟังก์ชันจบมินิเกม
+// public void FinishMinigame()
+// {
+//     // รีแมพหลัก
+//     Boss.Instance?.UnfreezeMapAndPlayer();
 
-};
+//     // ปิดมินิเกม
+//     SceneManager.UnloadSceneAsync("Minigame01");
+// }
 
-}
-
-// ตัวอย่างใน MiniGame01.cs หรือฟังก์ชันจบมินิเกม
-void FinishMinigame()
-{
-    // คืนการควบคุมแมพหลัก
-    if (GameManager.Instance != null)
-        GameManager.Instance.isMiniGameActive = false;
-
-    // ปิด scene มินิเกม
-    SceneManager.UnloadSceneAsync("MiniGame01");
-}
 
 
 

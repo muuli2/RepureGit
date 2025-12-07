@@ -201,7 +201,7 @@ MonoBehaviour:
   healthBarFill: {fileID: 1791056172081892207}
   drops:
   - item: {fileID: 5589730318865043885, guid: e7be8764167968945943981b875278d3, type: 3}
-    dropChance: 45
+    dropChance: 35
   damageToPlayer: 1
   attackCooldown: 1
   scoreOnDeath: 150
@@ -231,7 +231,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &5327083697844408213
 CircleCollider2D:
   m_ObjectHideFlags: 0
