@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+
 public class Boss : MonoBehaviour
 {
     public static Boss Instance;
@@ -13,6 +14,7 @@ public class Boss : MonoBehaviour
 
     public enum BossState { Normal, WaitingMinigame, Dead }  
     public BossState state = BossState.Normal;  
+    public AudioSource bgmSource;
 
     [Header("UI")]  
     public Image healthBarFill;
@@ -142,6 +144,8 @@ public void UnfreezeMapAndPlayer()
             GameManager.Instance.isMiniGameActive = true;
 
         // โหลดมินิเกม Additive
+        bgmSource.Stop();
+
         SceneManager.LoadScene(miniGameSceneName, LoadSceneMode.Additive);
 
         
@@ -156,6 +160,8 @@ public void UnfreezeMapAndPlayer()
         state = BossState.Dead;
 
         ScoreManage.Instance?.AddScore(1000);
+         bgmSource.Play();
+
 
         foreach (var c in GetComponentsInChildren<Collider2D>())
             c.enabled = false;

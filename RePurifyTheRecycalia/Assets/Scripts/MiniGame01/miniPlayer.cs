@@ -7,6 +7,11 @@ public class miniPlayer : MonoBehaviour
     public float leftLimit = -8f;
     public float rightLimit = 8f;
 
+    [Header("Sound Effects")]
+    public AudioSource audioSource;
+    public AudioClip correctSFX;
+    public AudioClip wrongSFX;
+
     void Update()
     {
         if (!MiniGame01.Instance.gameStarted)
@@ -19,33 +24,38 @@ public class miniPlayer : MonoBehaviour
 
         transform.Translate(Vector3.right * move * speed * Time.deltaTime);
 
-        // wrap-around
         if (transform.position.x < leftLimit)
             transform.position = new Vector3(rightLimit, transform.position.y, transform.position.z);
         else if (transform.position.x > rightLimit)
             transform.position = new Vector3(leftLimit, transform.position.y, transform.position.z);
     }
 
-   void OnTriggerEnter2D(Collider2D col)
-{
-    TrashItem item = col.GetComponent<TrashItem>();
-    if (item == null) return;
-
-    if (item.trashType == MiniGame01.Instance.targetTrashType)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        MiniGame01.Instance.AddScore(100); // ได้คะแนน
+        TrashItem item = col.GetComponent<TrashItem>();
+        if (item == null) return;
+
+        if (item.trashType == MiniGame01.Instance.targetTrashType)
+        {
+            MiniGame01.Instance.AddScore(100);
+
+            // 🔊 เล่นเสียงเก็บถูก
+            if (correctSFX != null)
+                audioSource.PlayOneShot(correctSFX);
+        }
+        else
+        {
+            GameManager.Instance.TakeDamage(1);
+            MiniGame01.Instance.UpdateHeartsUI();
+
+            // 🔊 เล่นเสียงเก็บผิด
+            if (wrongSFX != null)
+                audioSource.PlayOneShot(wrongSFX);
+
+            if (GameManager.Instance.lives <= 0)
+                MiniGame01.Instance.GameOver();
+        }
+
+        Destroy(col.gameObject);
     }
-    else
-    {
-        // เก็บขยะผิด → ลดหัวใจ
-        GameManager.Instance.TakeDamage(1);
-        MiniGame01.Instance.UpdateHeartsUI();
-
-        if (GameManager.Instance.lives <= 0)
-            MiniGame01.Instance.GameOver();
-    }
-
-    Destroy(col.gameObject);
-}
-
 }
