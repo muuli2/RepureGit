@@ -8,6 +8,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private bool triggered = false;
     public bool upgradeGunAfterDialogue = false;
+    
 
 
     void OnTriggerEnter2D(Collider2D other)
@@ -45,6 +46,7 @@ public class DialogueTrigger : MonoBehaviour
 
 public void AfterDialogueUpgrade(PlayerShoot ps)
 {
+    if (upgradeGunAfterDialogue && ps != null)
     ps.UpgradeGun();
     ToastMessage.Instance.Show("ได้รับการอัพเกรด!");
 }

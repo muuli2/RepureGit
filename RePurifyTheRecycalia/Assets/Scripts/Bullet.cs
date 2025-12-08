@@ -4,14 +4,19 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 8f;
     public int damage = 1;
+    public float maxDistance = 10f; // ← ระยะยิงสูงสุด
+
     private Rigidbody2D rb;
+    private Vector3 startPos;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.linearVelocity = transform.right * speed;
 
-        // ทำลายตัวเองหลังจบ Animation
+        startPos = transform.position;
+
+        // ทำลายตัวเองหลังจบ Animation (optional)
         Animator anim = GetComponent<Animator>();
         if (anim != null)
         {
@@ -21,6 +26,16 @@ public class Bullet : MonoBehaviour
         else
         {
             Destroy(gameObject, 3f); // fallback
+        }
+    }
+
+    void Update()
+    {
+        // ตรวจสอบระยะ
+        float traveled = Vector3.Distance(startPos, transform.position);
+        if (traveled >= maxDistance)
+        {
+            Destroy(gameObject);
         }
     }
 

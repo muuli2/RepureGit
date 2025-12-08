@@ -6,34 +6,33 @@ public class PlayerShoot : MonoBehaviour
     public Transform firePoint;
     private PauseManager pauseManager;
 
-
     [Header("Bullet Settings (Normal)")]
-    public GameObject normalBulletPrefab;   // กระสุนธรรมดา
+    public GameObject normalBulletPrefab;
     public float normalBulletSpeed = 10f;
+    public int normalBulletDamage = 10;  // ← เพิ่มดาเมจ
 
     [Header("Bullet Settings (Upgraded)")]
-    public GameObject upgradedBulletPrefab; // กระสุนหลังอัพเกรด
-    public float upgradedBulletSpeed = 18f; // ยิงแรงขึ้นหรือเร็วขึ้น
+    public GameObject upgradedBulletPrefab;
+    public float upgradedBulletSpeed = 18f;
+    public int upgradedBulletDamage = 25; // ← เพิ่มดาเมจ
 
     [Header("Gun Upgrade")]
-    public bool gunUpgraded = false;        // เริ่มต้นยังไม่อัพเกรด
+    public bool gunUpgraded = false;
 
     public float shootCooldown = 1f;
     private float lastShootTime = -Mathf.Infinity;
 
     [HideInInspector] public bool canShoot = true;
 
-      void Start()
+    void Start()
     {
-         pauseManager = FindObjectOfType<PauseManager>();
+        pauseManager = FindObjectOfType<PauseManager>();
     }
 
     void Update()
     {
-
         if (!canShoot || (pauseManager != null && (pauseManager.pauseMenu.activeSelf || pauseManager.confirmPanel.activeSelf)))
-        return;
-      
+            return;
 
         if ((Keyboard.current.spaceKey.wasPressedThisFrame ||
             Mouse.current.leftButton.wasPressedThisFrame)
@@ -46,28 +45,33 @@ public class PlayerShoot : MonoBehaviour
 
     void Shoot()
     {
-        // หาทิศยิง
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         mousePos.z = 0f;
         Vector3 direction = (mousePos - firePoint.position).normalized;
 
-        // เลือก Prefab ตามอัพเกรด
+        // เลือก Prefab และค่าต่าง ๆ ตามอัพเกรด
         GameObject prefab = gunUpgraded ? upgradedBulletPrefab : normalBulletPrefab;
         float speed = gunUpgraded ? upgradedBulletSpeed : normalBulletSpeed;
+        int damage = gunUpgraded ? upgradedBulletDamage : normalBulletDamage;
 
-        // สร้างกระสุน
         GameObject bullet = Instantiate(prefab, firePoint.position, Quaternion.identity);
 
-        // หมุน
+        // หมุนกระสุน
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         bullet.transform.rotation = Quaternion.Euler(0, 0, angle);
 
         // ยิง
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.linearVelocity = direction * speed;
+
+        // ตั้งค่าดาเมจให้กระสุน (สมมติกระสุนมีสคริป Bullet)
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
+        if (bulletScript != null)
+        {
+            bulletScript.damage = damage;
+        }
     }
 
-    // ฟังก์ชันนี้จะถูกเรียกตอนคุยกับอาจารย์
     public void UpgradeGun()
     {
         gunUpgraded = true;
