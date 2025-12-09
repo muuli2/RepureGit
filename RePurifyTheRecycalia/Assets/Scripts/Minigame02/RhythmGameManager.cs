@@ -177,27 +177,34 @@ public class RhythmMiniGame : MonoBehaviour
     }
 
     IEnumerator FlashBin(GameObject bin)
+{
+    var img = bin.GetComponent<Image>();
+    var sr = bin.GetComponent<SpriteRenderer>();
+
+    Color original = img ? img.color : sr.color;
+
+    float t = 0f;
+
+    // ทำให้สว่างขึ้นทันที
+    if (img) img.color = highlightColor;
+    if (sr) sr.color = highlightColor;
+
+    // รอก่อนที่จะค่อยๆเฟดกลับ
+    yield return new WaitForSeconds(highlightTime);
+
+    // ค่อยๆเฟดกลับเป็นสีปกติ (ไม่ค้างอีกต่อไป)
+    while (t < 1f)
     {
-        var img = bin.GetComponent<Image>();
-        var sr = bin.GetComponent<SpriteRenderer>();
+        t += Time.deltaTime * 10f;
+        Color newColor = Color.Lerp(highlightColor, original, t);
 
-        Color original;
+        if (img) img.color = newColor;
+        if (sr) sr.color = newColor;
 
-        if (img != null)
-        {
-            original = img.color;
-            img.color = highlightColor;
-            yield return new WaitForSeconds(highlightTime);
-            img.color = original;
-        }
-        else if (sr != null)
-        {
-            original = sr.color;
-            sr.color = highlightColor;
-            yield return new WaitForSeconds(highlightTime);
-            sr.color = original;
-        }
+        yield return null;
     }
+}
+
 
     // ============================
     //       จับจังหวะกดถูก

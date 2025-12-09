@@ -1632,6 +1632,10 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
+      propertyPath: miniGameSceneName
+      value: Minigame02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: spreadBulletCount
       value: 20
       objectReference: {fileID: 0}

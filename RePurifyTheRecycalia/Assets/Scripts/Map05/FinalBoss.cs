@@ -315,7 +315,7 @@ void ShootSpread()
 
         GameManager.Instance.isMiniGameActive = true;
 
-        bgmSource?.Stop();
+        // bgmSource?.Stop();
 
         SceneManager.LoadScene(miniGameSceneName, LoadSceneMode.Additive);
     }
