@@ -20,7 +20,7 @@ public class IntroMinigame : MonoBehaviour
         rect.anchoredPosition = new Vector2(-Screen.width, 0);
 
         // เป้าหมาย (ตรงกลางจอ)
-        Vector2 target = new Vector2(0, 5);
+        Vector2 target = new Vector2(0, -2);
 
         // เลื่อนจากซ้าย → กลาง
         while (Vector2.Distance(rect.anchoredPosition, target) > 20f)

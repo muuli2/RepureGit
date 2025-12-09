@@ -1338,6 +1338,12 @@ MonoBehaviour:
   winPanel: {fileID: 1930475767}
   rulesPanel: {fileID: 1011610467}
   countdownText: {fileID: 1765422863}
+  binD: {fileID: 935069931}
+  binF: {fileID: 460294107}
+  binJ: {fileID: 905460286}
+  binK: {fileID: 1269557543}
+  highlightTime: 0.15
+  highlightColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &945980336
 Transform:
   m_ObjectHideFlags: 0

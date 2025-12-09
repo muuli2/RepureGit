@@ -3,16 +3,16 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections;
-using UnityEngine.InputSystem; // <--- สำคัญ
+using UnityEngine.InputSystem;
 
 public class RhythmMiniGame : MonoBehaviour
 {
     public static RhythmMiniGame Instance;
 
     [Header("Gameplay")]
-    public GameObject[] trashPrefabs;      // Prefab ขยะทุกชนิด
-    public Transform[] spawnPositions;     // 4 lane: D F J K
-    public float spawnInterval = 0.8f;     // ความถี่สปอนขยะ
+    public GameObject[] trashPrefabs;
+    public Transform[] spawnPositions;
+    public float spawnInterval = 0.8f;
 
     [Header("Score / Lives")]
     public int targetScore = 2500;
@@ -32,14 +32,31 @@ public class RhythmMiniGame : MonoBehaviour
     public GameObject rulesPanel;
     public TMP_Text countdownText;
 
+    [Header("Bins FX")]
+    public GameObject binD;
+    public GameObject binF;
+    public GameObject binJ;
+    public GameObject binK;
+
+    // เก็บ coroutine แยกกันสำหรับ D F J K
+    private Coroutine flashD;
+    private Coroutine flashF;
+    private Coroutine flashJ;
+    private Coroutine flashK;
+
+    public float highlightTime = 0.15f;
+    public Color highlightColor = Color.white;
+
     private bool gameStarted = false;
     private float timer = 0f;
 
-    private void Awake() { Instance = this; }
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
-        Debug.Log("MiniGame02 Start เรียกแล้ว");   // <--- เพิ่ม
         gameOverPanel.SetActive(false);
         winPanel.SetActive(false);
         countdownText.gameObject.SetActive(false);
@@ -74,109 +91,152 @@ public class RhythmMiniGame : MonoBehaviour
         gameStarted = true;
     }
 
-   void Update()
-{
-    if (!gameStarted) return;
-
-    timer += Time.deltaTime;
-    if (timer >= spawnInterval)
+    private void Update()
     {
-        SpawnTrash();
-        timer = 0f;
+        if (!gameStarted) return;
+
+        // Spawn note
+        timer += Time.deltaTime;
+        if (timer >= spawnInterval)
+        {
+            SpawnTrash();
+            timer = 0f;
+        }
+
+        var keyboard = Keyboard.current;
+
+        // --- กดปุ่ม + เล่นเอฟเฟกต์แสงถังแบบไม่ค้าง ---
+        if (keyboard.dKey.wasPressedThisFrame)
+        {
+            HitTrash(Key.D);
+            StartHighlight(ref flashD, binD);
+        }
+
+        if (keyboard.fKey.wasPressedThisFrame)
+        {
+            HitTrash(Key.F);
+            StartHighlight(ref flashF, binF);
+        }
+
+        if (keyboard.jKey.wasPressedThisFrame)
+        {
+            HitTrash(Key.J);
+            StartHighlight(ref flashJ, binJ);
+        }
+
+        if (keyboard.kKey.wasPressedThisFrame)
+        {
+            HitTrash(Key.K);
+            StartHighlight(ref flashK, binK);
+        }
     }
 
-   var keyboard = Keyboard.current;
-
-if (keyboard.dKey.wasPressedThisFrame) HitTrash(Key.D);
-if (keyboard.fKey.wasPressedThisFrame) HitTrash(Key.F);
-if (keyboard.jKey.wasPressedThisFrame) HitTrash(Key.J);
-if (keyboard.kKey.wasPressedThisFrame) HitTrash(Key.K);
-}
     void SpawnTrash()
-{
-    int numberOfLanes = Random.Range(1, 3); // 1 หรือ 2 เลน
-    int[] lanes = new int[] {0, 1, 2, 3};
-
-    // สุ่มลำดับเลน
-    for (int i = 0; i < lanes.Length; i++)
     {
-        int j = Random.Range(i, lanes.Length);
-        int temp = lanes[i];
-        lanes[i] = lanes[j];
-        lanes[j] = temp;
-    }
+        int numberOfLanes = Random.Range(1, 3); // 1–2 notes ต่อรอบ
+        int[] lanes = new int[] { 0, 1, 2, 3 };
 
-    for (int i = 0; i < numberOfLanes; i++)
-    {
-        int lane = lanes[i];
-
-        // สุ่ม prefab ขยะ
-        int prefabIndex = Random.Range(0, trashPrefabs.Length);
-        GameObject trash = Instantiate(trashPrefabs[prefabIndex], spawnPositions[lane].position, Quaternion.identity);
-        TrashNote note = trash.GetComponent<TrashNote>();
-
-        // ตั้งปุ่มตามเลน
-        switch (lane)
+        // shuffle lanes
+        for (int i = 0; i < lanes.Length; i++)
         {
-            case 0: note.correctKey = Key.D; break;
-            case 1: note.correctKey = Key.F; break;
-            case 2: note.correctKey = Key.J; break;
-            case 3: note.correctKey = Key.K; break;
+            int j = Random.Range(i, lanes.Length);
+            int temp = lanes[i];
+            lanes[i] = lanes[j];
+            lanes[j] = temp;
         }
 
-        // ตั้งชนิดขยะ (ถ้ามี)
-        // note.trashType = Random.value > 0.5f ? TrashNote.TrashType.General : TrashNote.TrashType.Wet;
-    }
-}
-
-
- void HitTrash(Key key)
-{
-    TrashNote[] notes = FindObjectsOfType<TrashNote>();
-
-    foreach (var note in notes)
-    {
-        if (Mathf.Abs(note.transform.position.y - note.hitY) <= note.hitRange &&
-            note.correctKey == key)
+        for (int i = 0; i < numberOfLanes; i++)
         {
-            // ส่งชนิดขยะเป้าหมายของด่านด้วย
-            note.TryHit(key, targetTrashType);
+            int lane = lanes[i];
+            int prefabIndex = Random.Range(0, trashPrefabs.Length);
+
+            GameObject trash = Instantiate(trashPrefabs[prefabIndex], spawnPositions[lane].position, Quaternion.identity);
+            TrashNote note = trash.GetComponent<TrashNote>();
+
+            switch (lane)
+            {
+                case 0: note.correctKey = Key.D; break;
+                case 1: note.correctKey = Key.F; break;
+                case 2: note.correctKey = Key.J; break;
+                case 3: note.correctKey = Key.K; break;
+            }
         }
     }
-}
 
-
-
-
-KeyCode ConvertKey(Key key)
-{
-    switch (key)
+    // ============================
+    //   กดถังแล้วสว่าง (ไม่ค้าง)
+    // ============================
+    void StartHighlight(ref Coroutine routine, GameObject bin)
     {
-        case Key.D: return KeyCode.D;
-        case Key.F: return KeyCode.F;
-        case Key.J: return KeyCode.J;
-        case Key.K: return KeyCode.K;
-        default: return KeyCode.None;
-    }
-}
+        if (bin == null) return;
 
+        if (routine != null)
+            StopCoroutine(routine);
+
+        routine = StartCoroutine(FlashBin(bin));
+    }
+
+    IEnumerator FlashBin(GameObject bin)
+    {
+        var img = bin.GetComponent<Image>();
+        var sr = bin.GetComponent<SpriteRenderer>();
+
+        Color original;
+
+        if (img != null)
+        {
+            original = img.color;
+            img.color = highlightColor;
+            yield return new WaitForSeconds(highlightTime);
+            img.color = original;
+        }
+        else if (sr != null)
+        {
+            original = sr.color;
+            sr.color = highlightColor;
+            yield return new WaitForSeconds(highlightTime);
+            sr.color = original;
+        }
+    }
+
+    // ============================
+    //       จับจังหวะกดถูก
+    // ============================
+    void HitTrash(Key key)
+    {
+        TrashNote[] notes = FindObjectsOfType<TrashNote>();
+
+        foreach (var note in notes)
+        {
+            if (Mathf.Abs(note.transform.position.y - note.hitY) <= note.hitRange &&
+                note.correctKey == key)
+            {
+                note.TryHit(key, targetTrashType);
+            }
+        }
+    }
+
+    // ============================
+    //    Score / Health / UI
+    // ============================
     public void AddScore(int amount)
     {
         score += amount;
         UpdateScoreUI();
 
-        if (score >= targetScore) WinGame();
+        if (score >= targetScore)
+            WinGame();
     }
 
     void UpdateScoreUI()
     {
-        if (scoreText != null)
-            scoreText.text = "Score: " + score;
+        if (scoreText) scoreText.text = "Score: " + score;
     }
 
     public void UpdateHeartsUI()
     {
         int lives = GameManager.Instance.lives;
+
         for (int i = 0; i < heartImages.Length; i++)
             heartImages[i].sprite = i < lives ? heartFull : heartEmpty;
     }
@@ -186,7 +246,8 @@ KeyCode ConvertKey(Key key)
         GameManager.Instance.TakeDamage(1);
         UpdateHeartsUI();
 
-        if (GameManager.Instance.lives <= 0) GameOver();
+        if (GameManager.Instance.lives <= 0)
+            GameOver();
     }
 
     void GameOver()
@@ -194,8 +255,8 @@ KeyCode ConvertKey(Key key)
         gameStarted = false;
         gameOverPanel.SetActive(true);
 
-        TrashNote[] notes = FindObjectsOfType<TrashNote>();
-        foreach (var t in notes) Destroy(t);
+        foreach (var t in FindObjectsOfType<TrashNote>())
+            Destroy(t.gameObject);
     }
 
     void WinGame()
@@ -203,10 +264,13 @@ KeyCode ConvertKey(Key key)
         gameStarted = false;
         winPanel.SetActive(true);
 
-        TrashNote[] notes = FindObjectsOfType<TrashNote>();
-        foreach (var t in notes) Destroy(t);
+        foreach (var t in FindObjectsOfType<TrashNote>())
+            Destroy(t.gameObject);
     }
 
+    // ============================
+    //       Navigation
+    // ============================
     public void ContinueToMap()
     {
         winPanel.SetActive(false);
@@ -217,7 +281,4 @@ KeyCode ConvertKey(Key key)
     {
         SceneManager.LoadScene("Map03");
     }
-
-    
-
 }

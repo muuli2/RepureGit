@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
         TrashManage.Instance?.ResetAllTrash();
 
         // รีบอส
-        Boss.Instance?.ResetBoss();
+        // Boss.Instance?.ResetBoss();
     }
 
     public void RestartGame()
@@ -183,11 +183,11 @@ public class GameManager : MonoBehaviour
         RestartFromScene();
     }
 
-    public void ResetBossIfExists()
-    {
-        if (Boss.Instance != null)
-            Boss.Instance.ResetBoss();
-    }
+    // public void ResetBossIfExists()
+    // {
+    //     if (Boss.Instance != null)
+    //         Boss.Instance.ResetBoss();
+    // }
 
     private void OnEnable()
     {
@@ -240,7 +240,7 @@ public class GameManager : MonoBehaviour
     // รีมอนสเตอร์และขยะ
     MonsterManage.Instance?.ResetAllMonsters();
     TrashManage.Instance?.ResetAllTrash();
-    Boss.Instance?.ResetBoss();
+    // Boss.Instance?.ResetBoss();
 }
 
     private void RefreshUI()

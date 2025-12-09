@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4288183279913859232}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 5232919767010867512}
   - component: {fileID: 8341236522867162633}
   - component: {fileID: 5596725412614779944}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1874655305155267861}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HoldBin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: -4477079373585018228}
   - component: {fileID: 6095920675187557497}
   - component: {fileID: -6234047075464961451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MagePrefab
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ MonoBehaviour:
   firePoint: {fileID: 1899831185692085207}
   normalBulletPrefab: {fileID: 4460072555350427435, guid: 51b00971b99a2b540ba8a65e36b2bbad, type: 3}
   normalBulletSpeed: 10
-  normalBulletDamage: 10
+  normalBulletDamage: 1
   upgradedBulletPrefab: {fileID: 7433119479684178215, guid: 177baec8b45bc4d4da64f29ed590527f, type: 3}
   upgradedBulletSpeed: 20
   upgradedBulletDamage: 25
@@ -461,6 +461,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 6
   rb: {fileID: -4477079373585018228}
+  dashSpeed: 12
+  dashDuration: 0.15
+  dashCooldown: 3
   movement: {x: 0, y: 0}
 --- !u!95 &-6234047075464961451
 Animator:
@@ -493,7 +496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899831185692085207}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +530,7 @@ GameObject:
   - component: {fileID: 5812756603524610169}
   - component: {fileID: 6442879657354325808}
   - component: {fileID: 1398520123059443840}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

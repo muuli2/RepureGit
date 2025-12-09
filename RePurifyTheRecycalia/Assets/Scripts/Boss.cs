@@ -213,27 +213,27 @@ public void UnfreezeMapAndPlayer()
         }
     }
 
-    public void ResetBoss()
-    {
-        gameObject.SetActive(true);
-        state = BossState.Normal;
-        currentHealth = maxHealth;
-        UpdateHealthBar();
+    // public void ResetBoss()
+    // {
+    //     gameObject.SetActive(true);
+    //     state = BossState.Normal;
+    //     currentHealth = maxHealth;
+    //     UpdateHealthBar();
 
-        foreach (var c in GetComponentsInChildren<Collider2D>())
-            c.enabled = true;
+    //     foreach (var c in GetComponentsInChildren<Collider2D>())
+    //         c.enabled = true;
 
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        if (rb != null)
-            rb.bodyType = RigidbodyType2D.Dynamic;
+    //     Rigidbody2D rb = GetComponent<Rigidbody2D>();
+    //     if (rb != null)
+    //         rb.bodyType = RigidbodyType2D.Dynamic;
 
-        if (glowEffect != null)
-            glowEffect.SetActive(false);
-        if (bossAnimator != null)
-            bossAnimator.Rebind();
+    //     if (glowEffect != null)
+    //         glowEffect.SetActive(false);
+    //     if (bossAnimator != null)
+    //         bossAnimator.Rebind();
 
-        Debug.Log("Boss reset completed.");
-    }
+    //     Debug.Log("Boss reset completed.");
+    // }
 
     // -------------------------------------
     // 🔹 Helper Static

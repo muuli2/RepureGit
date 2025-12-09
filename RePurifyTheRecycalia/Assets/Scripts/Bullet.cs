@@ -57,5 +57,12 @@ public class Bullet : MonoBehaviour
             boss.TakeDamage(damage);
             Destroy(gameObject);
         }
+
+         FinalBoss finalboss = col.GetComponent<FinalBoss>();
+        if (finalboss != null)
+        {
+            finalboss.TakeDamage(damage);
+            Destroy(gameObject);
+        }
     }
 }
