@@ -670,7 +670,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -708,7 +708,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -736,12 +736,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_0
       rect:
         serializedVersion: 2
-        x: 387
-        y: 388
-        width: 123
-        height: 120
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -758,12 +758,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_1
       rect:
         serializedVersion: 2
-        x: 513
-        y: 385
-        width: 126
-        height: 127
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -780,12 +780,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_2
       rect:
         serializedVersion: 2
-        x: 697
-        y: 506
-        width: 7
-        height: 6
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -802,12 +802,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_3
       rect:
         serializedVersion: 2
-        x: 701
-        y: 503
-        width: 7
-        height: 7
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -824,12 +824,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_4
       rect:
         serializedVersion: 2
-        x: 774
-        y: 393
-        width: 117
-        height: 116
+        x: 512
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -846,12 +846,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_5
       rect:
         serializedVersion: 2
-        x: 267
-        y: 394
-        width: 106
-        height: 106
+        x: 640
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -868,12 +868,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_6
       rect:
         serializedVersion: 2
-        x: 639
-        y: 383
-        width: 134
-        height: 122
+        x: 768
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -890,12 +890,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_7
       rect:
         serializedVersion: 2
-        x: 951
-        y: 475
-        width: 6
-        height: 8
+        x: 896
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -912,12 +912,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_8
       rect:
         serializedVersion: 2
-        x: 954
-        y: 482
-        width: 6
-        height: 8
+        x: 1024
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -934,12 +934,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_9
       rect:
         serializedVersion: 2
-        x: 958
-        y: 474
-        width: 6
-        height: 9
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -956,12 +956,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_10
       rect:
         serializedVersion: 2
-        x: 1031
-        y: 384
-        width: 115
-        height: 100
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -978,12 +978,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_11
       rect:
         serializedVersion: 2
-        x: 159
-        y: 420
-        width: 64
-        height: 56
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1000,12 +1000,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_12
       rect:
         serializedVersion: 2
-        x: 943
-        y: 466
-        width: 10
-        height: 11
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1022,12 +1022,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_13
       rect:
         serializedVersion: 2
-        x: 944
-        y: 427
-        width: 32
-        height: 40
+        x: 512
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1044,12 +1044,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_14
       rect:
         serializedVersion: 2
-        x: 947
-        y: 460
-        width: 10
-        height: 12
+        x: 640
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1066,12 +1066,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_15
       rect:
         serializedVersion: 2
-        x: 956
-        y: 464
-        width: 6
-        height: 7
+        x: 768
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1088,12 +1088,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_16
       rect:
         serializedVersion: 2
-        x: 962
-        y: 464
-        width: 14
-        height: 13
+        x: 896
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1110,12 +1110,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_17
       rect:
         serializedVersion: 2
-        x: 48
-        y: 432
-        width: 32
-        height: 30
+        x: 1024
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1132,12 +1132,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_18
       rect:
         serializedVersion: 2
-        x: 922
-        y: 442
-        width: 6
-        height: 8
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1154,12 +1154,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_19
       rect:
         serializedVersion: 2
-        x: 929
-        y: 443
-        width: 7
-        height: 8
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1176,12 +1176,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_20
       rect:
         serializedVersion: 2
-        x: 935
-        y: 436
-        width: 10
-        height: 11
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1198,12 +1198,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_21
       rect:
         serializedVersion: 2
-        x: 938
-        y: 447
-        width: 6
-        height: 8
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1220,12 +1220,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_22
       rect:
         serializedVersion: 2
-        x: 975
-        y: 444
-        width: 6
-        height: 8
+        x: 512
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1242,12 +1242,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_23
       rect:
         serializedVersion: 2
-        x: 981
-        y: 441
-        width: 13
-        height: 8
+        x: 640
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1264,12 +1264,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_24
       rect:
         serializedVersion: 2
-        x: 993
-        y: 443
-        width: 6
-        height: 7
+        x: 768
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1286,12 +1286,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_25
       rect:
         serializedVersion: 2
-        x: 999
-        y: 443
-        width: 7
-        height: 7
+        x: 896
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1308,12 +1308,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_26
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 440
-        width: 11
-        height: 8
+        x: 1024
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1330,12 +1330,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_27
       rect:
         serializedVersion: 2
-        x: 881
-        y: 435
-        width: 15
-        height: 11
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1352,12 +1352,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_28
       rect:
         serializedVersion: 2
-        x: 903
-        y: 434
-        width: 7
-        height: 8
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1374,12 +1374,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_29
       rect:
         serializedVersion: 2
-        x: 910
-        y: 439
-        width: 9
-        height: 7
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1396,12 +1396,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_30
       rect:
         serializedVersion: 2
-        x: 926
-        y: 429
-        width: 7
-        height: 10
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1418,12 +1418,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_31
       rect:
         serializedVersion: 2
-        x: 990
-        y: 428
-        width: 16
-        height: 13
+        x: 512
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1440,12 +1440,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_32
       rect:
         serializedVersion: 2
-        x: 915
-        y: 431
-        width: 6
-        height: 7
+        x: 640
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1462,12 +1462,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_33
       rect:
         serializedVersion: 2
-        x: 920
-        y: 427
-        width: 6
-        height: 8
+        x: 768
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1484,12 +1484,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_34
       rect:
         serializedVersion: 2
-        x: 938
-        y: 427
-        width: 7
-        height: 8
+        x: 896
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1506,12 +1506,12 @@ TextureImporter:
       name: Slime_boss1_Attack2_with_shadow_35
       rect:
         serializedVersion: 2
-        x: 946
-        y: 426
-        width: 6
-        height: 8
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1524,3883 +1524,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_36
-      rect:
-        serializedVersion: 2
-        x: 969
-        y: 423
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0a95e6ab58323cb00800000000000000
-      internalID: 847560212141201824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_37
-      rect:
-        serializedVersion: 2
-        x: 976
-        y: 428
-        width: 13
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fc8b586bbb19a28d0800000000000000
-      internalID: -2870321577088141105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_38
-      rect:
-        serializedVersion: 2
-        x: 1012
-        y: 431
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1484089a0f2b7d120800000000000000
-      internalID: 2438614469950064705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_39
-      rect:
-        serializedVersion: 2
-        x: 947
-        y: 413
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50eae352c1fba7270800000000000000
-      internalID: 8249115795087339013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_40
-      rect:
-        serializedVersion: 2
-        x: 958
-        y: 417
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bdfa0c08bca324ab0800000000000000
-      internalID: -5025389588479168549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_41
-      rect:
-        serializedVersion: 2
-        x: 968
-        y: 409
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a206aa73c652c590800000000000000
-      internalID: -7655461019000110427
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_42
-      rect:
-        serializedVersion: 2
-        x: 945
-        y: 406
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9662612cb5befc2b0800000000000000
-      internalID: -5561968235448490391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_43
-      rect:
-        serializedVersion: 2
-        x: 951
-        y: 404
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9862804c1369b1840800000000000000
-      internalID: 5195911735588431497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_44
-      rect:
-        serializedVersion: 2
-        x: 958
-        y: 409
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa5356376e1d9a010800000000000000
-      internalID: 1200721563379643823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_45
-      rect:
-        serializedVersion: 2
-        x: 963
-        y: 400
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b97a73b908445f780800000000000000
-      internalID: -8649932190144551013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_46
-      rect:
-        serializedVersion: 2
-        x: 821
-        y: 387
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d88719fd282ea8250800000000000000
-      internalID: 5947815309620639885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_47
-      rect:
-        serializedVersion: 2
-        x: 828
-        y: 373
-        width: 15
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eefa0675e34e04110800000000000000
-      internalID: 1243244453559316462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_48
-      rect:
-        serializedVersion: 2
-        x: 947
-        y: 391
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e5fb1cc04f142100800000000000000
-      internalID: 82225056362264032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_49
-      rect:
-        serializedVersion: 2
-        x: 953
-        y: 394
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10cd7cd596fc470a0800000000000000
-      internalID: -6884649878890750975
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_50
-      rect:
-        serializedVersion: 2
-        x: 961
-        y: 392
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 695e7b711e2f38650800000000000000
-      internalID: 6234093357790389654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_51
-      rect:
-        serializedVersion: 2
-        x: 966
-        y: 391
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e539fc7139e65bb30800000000000000
-      internalID: 4302466597061104478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_52
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 378
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a8a068f8edc7c4c0800000000000000
-      internalID: -4267215721427064671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_53
-      rect:
-        serializedVersion: 2
-        x: 955
-        y: 385
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fb283484285a91e70800000000000000
-      internalID: 9086475702173401791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_54
-      rect:
-        serializedVersion: 2
-        x: 386
-        y: 260
-        width: 123
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78124f5d416ad55c0800000000000000
-      internalID: -4225038266984554105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_55
-      rect:
-        serializedVersion: 2
-        x: 513
-        y: 257
-        width: 126
-        height: 127
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 588d0debd49faa300800000000000000
-      internalID: 264297640463751301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_56
-      rect:
-        serializedVersion: 2
-        x: 639
-        y: 255
-        width: 130
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b79dda83c64523a80800000000000000
-      internalID: -8488629523855844997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_57
-      rect:
-        serializedVersion: 2
-        x: 700
-        y: 375
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 82ce54c769b104f60800000000000000
-      internalID: 8016437669863484456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_58
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 266
-        width: 106
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 095f4d23be2cec5c0800000000000000
-      internalID: -4193199887609432688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_59
-      rect:
-        serializedVersion: 2
-        x: 773
-        y: 265
-        width: 123
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f3cbbb45b1e66e510800000000000000
-      internalID: 1578069783104699455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_60
-      rect:
-        serializedVersion: 2
-        x: 956
-        y: 346
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 410315d0c41086be0800000000000000
-      internalID: -1483934651066011628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_61
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 354
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cda71f87a2f010940800000000000000
-      internalID: 5260502514837584604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_62
-      rect:
-        serializedVersion: 2
-        x: 963
-        y: 347
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab3abb2534061a090800000000000000
-      internalID: -8025027218730409030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_63
-      rect:
-        serializedVersion: 2
-        x: 1030
-        y: 256
-        width: 115
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5192c9e66c3cd5460800000000000000
-      internalID: 7232151833653553429
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_64
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 292
-        width: 64
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7e9b7f2d03e8cd30800000000000000
-      internalID: 4452057877426445949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_65
-      rect:
-        serializedVersion: 2
-        x: 944
-        y: 336
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e74eef35b2ce96f00800000000000000
-      internalID: 1110678453960500350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_66
-      rect:
-        serializedVersion: 2
-        x: 944
-        y: 299
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0bd12de4900c34ce0800000000000000
-      internalID: -1422081911109313104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_67
-      rect:
-        serializedVersion: 2
-        x: 958
-        y: 336
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0d44568df7835ac70800000000000000
-      internalID: 8981647153602839760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_68
-      rect:
-        serializedVersion: 2
-        x: 963
-        y: 332
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 320ede831ae9d54d0800000000000000
-      internalID: -3144182549552701405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_69
-      rect:
-        serializedVersion: 2
-        x: 967
-        y: 338
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 29a97febe0bd4b690800000000000000
-      internalID: -7587198615832520046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_70
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 304
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 44e45a37c900ff3f0800000000000000
-      internalID: -864971931476734396
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_71
-      rect:
-        serializedVersion: 2
-        x: 902
-        y: 312
-        width: 11
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a823e9b78b7e81090800000000000000
-      internalID: -8063440353272909174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_72
-      rect:
-        serializedVersion: 2
-        x: 914
-        y: 315
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62535405876729520800000000000000
-      internalID: 2707356585117955366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_73
-      rect:
-        serializedVersion: 2
-        x: 921
-        y: 315
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 97b0b0a9d6f561970800000000000000
-      internalID: 8725266252417403769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_74
-      rect:
-        serializedVersion: 2
-        x: 926
-        y: 313
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 51c086640058a50e0800000000000000
-      internalID: -2280364025082016747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_75
-      rect:
-        serializedVersion: 2
-        x: 939
-        y: 316
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0bde487544ecfffd0800000000000000
-      internalID: -2305897691268977232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_76
-      rect:
-        serializedVersion: 2
-        x: 975
-        y: 308
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 755cb826215fa3940800000000000000
-      internalID: 5276799372729501015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_77
-      rect:
-        serializedVersion: 2
-        x: 976
-        y: 319
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70d405fe145fcb8e0800000000000000
-      internalID: -1676195297751970553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_78
-      rect:
-        serializedVersion: 2
-        x: 984
-        y: 315
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e4bcfb1f44a99aa0800000000000000
-      internalID: -6153706756146154267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_79
-      rect:
-        serializedVersion: 2
-        x: 992
-        y: 314
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 15014c53864a283a0800000000000000
-      internalID: -6664583731069317039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_80
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 307
-        width: 15
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c221a9d87e62d6460800000000000000
-      internalID: 7236482952209240620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_81
-      rect:
-        serializedVersion: 2
-        x: 914
-        y: 300
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 42e653d7404c910d0800000000000000
-      internalID: -3451512115843207644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_82
-      rect:
-        serializedVersion: 2
-        x: 987
-        y: 301
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b00d1fe8ce4ba8c00800000000000000
-      internalID: 903733603344699403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_83
-      rect:
-        serializedVersion: 2
-        x: 1001
-        y: 311
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 133ddf87ece2084e0800000000000000
-      internalID: -1981532371714976975
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_84
-      rect:
-        serializedVersion: 2
-        x: 1010
-        y: 306
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: de576eab967e2ae80800000000000000
-      internalID: -8168712332803410451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_85
-      rect:
-        serializedVersion: 2
-        x: 902
-        y: 303
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fb097fb6da0541bb0800000000000000
-      internalID: -4966255783311863617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_86
-      rect:
-        serializedVersion: 2
-        x: 931
-        y: 300
-        width: 13
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db80c4659cf503250800000000000000
-      internalID: 5922338828333091005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_87
-      rect:
-        serializedVersion: 2
-        x: 945
-        y: 295
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5567d21f47dee92c0800000000000000
-      internalID: -4422836697512970667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_88
-      rect:
-        serializedVersion: 2
-        x: 968
-        y: 298
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94da3231c8f098380800000000000000
-      internalID: -8968620088640688823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_89
-      rect:
-        serializedVersion: 2
-        x: 975
-        y: 299
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dcfff917b9614d440800000000000000
-      internalID: 4959613946523811789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_90
-      rect:
-        serializedVersion: 2
-        x: 994
-        y: 299
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 096b0f7b10d824f00800000000000000
-      internalID: 1099596297552311952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_91
-      rect:
-        serializedVersion: 2
-        x: 999
-        y: 303
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ddfb5439589a9a60800000000000000
-      internalID: 7681619623331757527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_92
-      rect:
-        serializedVersion: 2
-        x: 946
-        y: 281
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17aa9e7f6716e59d0800000000000000
-      internalID: -2783680356075066767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_93
-      rect:
-        serializedVersion: 2
-        x: 956
-        y: 289
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 207781e0f65177ee0800000000000000
-      internalID: -1263517603732097278
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_94
-      rect:
-        serializedVersion: 2
-        x: 962
-        y: 285
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 300639ffa45ac5b00800000000000000
-      internalID: 818710973808599043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_95
-      rect:
-        serializedVersion: 2
-        x: 950
-        y: 272
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 515150e51d23a1c50800000000000000
-      internalID: 6636672875690792213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_96
-      rect:
-        serializedVersion: 2
-        x: 956
-        y: 281
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9e7fa4b12a17b39c0800000000000000
-      internalID: -3946435707403569175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_97
-      rect:
-        serializedVersion: 2
-        x: 962
-        y: 276
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aee5603a9e467da30800000000000000
-      internalID: 4239968528817872618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_98
-      rect:
-        serializedVersion: 2
-        x: 969
-        y: 278
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 987e2c248142d0b50800000000000000
-      internalID: 6560939918766565257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_99
-      rect:
-        serializedVersion: 2
-        x: 821
-        y: 245
-        width: 15
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 88230e00e8535f300800000000000000
-      internalID: 285193035424215688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_100
-      rect:
-        serializedVersion: 2
-        x: 831
-        y: 259
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da8d28e70a3530ee0800000000000000
-      internalID: -1296100318970193747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_101
-      rect:
-        serializedVersion: 2
-        x: 948
-        y: 263
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 196fe7ad91d3b1880800000000000000
-      internalID: -8639244278930934127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_102
-      rect:
-        serializedVersion: 2
-        x: 953
-        y: 264
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78d4b7669d3536c30800000000000000
-      internalID: 4351413858162396551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_103
-      rect:
-        serializedVersion: 2
-        x: 961
-        y: 266
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 598dd99b6edc16d70800000000000000
-      internalID: 9034728718322227349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_104
-      rect:
-        serializedVersion: 2
-        x: 966
-        y: 263
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 948c75e965df31810800000000000000
-      internalID: 1735008829933340745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_105
-      rect:
-        serializedVersion: 2
-        x: 698
-        y: 250
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aaa8a4f4366cf6580800000000000000
-      internalID: -8831622214415906134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_106
-      rect:
-        serializedVersion: 2
-        x: 955
-        y: 257
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2916b7f40f6e372d0800000000000000
-      internalID: -3282025783622934126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_107
-      rect:
-        serializedVersion: 2
-        x: 388
-        y: 132
-        width: 123
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5155a8af550017aa0800000000000000
-      internalID: -6165146045617908459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_108
-      rect:
-        serializedVersion: 2
-        x: 514
-        y: 129
-        width: 126
-        height: 127
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8cb2eb9d451dae590800000000000000
-      internalID: -7644067255147418680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_109
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 127
-        width: 134
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a9b7a600e6e92cac0800000000000000
-      internalID: -3836329737275671654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_110
-      rect:
-        serializedVersion: 2
-        x: 702
-        y: 247
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cbe1570b758f9c940800000000000000
-      internalID: 5317053890593889980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_111
-      rect:
-        serializedVersion: 2
-        x: 268
-        y: 138
-        width: 106
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd1787a4e01d02e30800000000000000
-      internalID: 4476807888915427805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_112
-      rect:
-        serializedVersion: 2
-        x: 775
-        y: 137
-        width: 117
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a29edc8f74c827a40800000000000000
-      internalID: 5364504346896492842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_113
-      rect:
-        serializedVersion: 2
-        x: 952
-        y: 219
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d2da9add50c3baae0800000000000000
-      internalID: -1537068851925504723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_114
-      rect:
-        serializedVersion: 2
-        x: 955
-        y: 226
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fee4f734355fc2200800000000000000
-      internalID: 156769825014632175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_115
-      rect:
-        serializedVersion: 2
-        x: 959
-        y: 218
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 15a4eb718b885afd0800000000000000
-      internalID: -2331306907840656815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_116
-      rect:
-        serializedVersion: 2
-        x: 1032
-        y: 128
-        width: 115
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 73ef4d6843cd2cac0800000000000000
-      internalID: -3836261814407725513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_117
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 164
-        width: 64
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4cd6c391020bef5e0800000000000000
-      internalID: -1873866743030714940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_118
-      rect:
-        serializedVersion: 2
-        x: 944
-        y: 210
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b890345d7436b2e0800000000000000
-      internalID: -2110441662488471376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_119
-      rect:
-        serializedVersion: 2
-        x: 945
-        y: 171
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c937917c3ae16960800000000000000
-      internalID: 7593607992048040387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_120
-      rect:
-        serializedVersion: 2
-        x: 948
-        y: 204
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4adc25bb2e14bca60800000000000000
-      internalID: 7695316830353804708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_121
-      rect:
-        serializedVersion: 2
-        x: 957
-        y: 208
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2074a641d30d1a400800000000000000
-      internalID: 333776808156219138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_122
-      rect:
-        serializedVersion: 2
-        x: 963
-        y: 208
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 011a2d4a59468d710800000000000000
-      internalID: 1718233851720016144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_123
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 176
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f25aaa3be22710f10800000000000000
-      internalID: 2234192435060843823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_124
-      rect:
-        serializedVersion: 2
-        x: 923
-        y: 186
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fcd8080acc8d7940800000000000000
-      internalID: 5295543536203652339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_125
-      rect:
-        serializedVersion: 2
-        x: 930
-        y: 187
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2eec5d71621b8b060800000000000000
-      internalID: 6969515200522604258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_126
-      rect:
-        serializedVersion: 2
-        x: 936
-        y: 180
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d29fa15a96abe700800000000000000
-      internalID: 570732959518135001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_127
-      rect:
-        serializedVersion: 2
-        x: 939
-        y: 191
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 88dee9fb926c357d0800000000000000
-      internalID: -2930781049877238392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_128
-      rect:
-        serializedVersion: 2
-        x: 976
-        y: 188
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a19aac40bea994e0800000000000000
-      internalID: -1974354889401527897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_129
-      rect:
-        serializedVersion: 2
-        x: 982
-        y: 185
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 364b1e73e495e48a0800000000000000
-      internalID: -6319015034674367389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_130
-      rect:
-        serializedVersion: 2
-        x: 994
-        y: 187
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa3d3e6d09b1b9710800000000000000
-      internalID: 1700983593156989866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_131
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 187
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 554ff5e2d373df670800000000000000
-      internalID: 8574070001493865557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_132
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 184
-        width: 11
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba2b89121a37eb490800000000000000
-      internalID: -7728612774630608213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_133
-      rect:
-        serializedVersion: 2
-        x: 882
-        y: 179
-        width: 15
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba8d96c1b7a6aa910800000000000000
-      internalID: 1849407673979230379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_134
-      rect:
-        serializedVersion: 2
-        x: 904
-        y: 178
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47b84084cc79d0280800000000000000
-      internalID: -9075430770444301452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_135
-      rect:
-        serializedVersion: 2
-        x: 911
-        y: 183
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9de3e752e8ac8fdc0800000000000000
-      internalID: -3604908789846884647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_136
-      rect:
-        serializedVersion: 2
-        x: 927
-        y: 173
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: daa73b30516f346c0800000000000000
-      internalID: -4160211060643366227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_137
-      rect:
-        serializedVersion: 2
-        x: 991
-        y: 172
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c0bbd1dfac2a43e0800000000000000
-      internalID: -2068791945171586875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_138
-      rect:
-        serializedVersion: 2
-        x: 916
-        y: 175
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e489df703d1bd0660800000000000000
-      internalID: 7353729286496163918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_139
-      rect:
-        serializedVersion: 2
-        x: 921
-        y: 171
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 19baf13b60ae5dff0800000000000000
-      internalID: -11846109502657647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_140
-      rect:
-        serializedVersion: 2
-        x: 939
-        y: 171
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e0535c17e63252b90800000000000000
-      internalID: -7267363466430302962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_141
-      rect:
-        serializedVersion: 2
-        x: 947
-        y: 170
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 83dc6d492aa279620800000000000000
-      internalID: 2780738172694744376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_142
-      rect:
-        serializedVersion: 2
-        x: 970
-        y: 167
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: edd891365b2cf9c00800000000000000
-      internalID: 909659734059617758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_143
-      rect:
-        serializedVersion: 2
-        x: 977
-        y: 172
-        width: 13
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8c5c5c8ba7777200800000000000000
-      internalID: 177742288982400141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_144
-      rect:
-        serializedVersion: 2
-        x: 1013
-        y: 175
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d28fd01f1d1f5530800000000000000
-      internalID: 3845824626061968084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_145
-      rect:
-        serializedVersion: 2
-        x: 948
-        y: 157
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ef1cd2b42e455a80800000000000000
-      internalID: -8478784803928530968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_146
-      rect:
-        serializedVersion: 2
-        x: 959
-        y: 161
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69c3ec755b66bcd00800000000000000
-      internalID: 994001071813573782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_147
-      rect:
-        serializedVersion: 2
-        x: 969
-        y: 153
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 771c7205045b9a4c0800000000000000
-      internalID: -4275687083384258185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_148
-      rect:
-        serializedVersion: 2
-        x: 946
-        y: 150
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0100a5ce805a72b00800000000000000
-      internalID: 803792516252565520
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_149
-      rect:
-        serializedVersion: 2
-        x: 952
-        y: 148
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d85d4b255165bef60800000000000000
-      internalID: 8064634207318889869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_150
-      rect:
-        serializedVersion: 2
-        x: 959
-        y: 153
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8548a56b3814156b0800000000000000
-      internalID: -5309390451737197480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_151
-      rect:
-        serializedVersion: 2
-        x: 964
-        y: 144
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c903c4031f4c89980800000000000000
-      internalID: -8531852953876942692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_152
-      rect:
-        serializedVersion: 2
-        x: 822
-        y: 131
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fde3f9fee14f8e80800000000000000
-      internalID: -8174242304002626061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_153
-      rect:
-        serializedVersion: 2
-        x: 828
-        y: 117
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07023430073ad34a0800000000000000
-      internalID: -6611948976423624592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_154
-      rect:
-        serializedVersion: 2
-        x: 948
-        y: 135
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 314c0ab71d876b4f0800000000000000
-      internalID: -813329841576164333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_155
-      rect:
-        serializedVersion: 2
-        x: 954
-        y: 138
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eec714cfa58b76480800000000000000
-      internalID: -8905947037183148818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_156
-      rect:
-        serializedVersion: 2
-        x: 962
-        y: 136
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c48c7aec8fea03840800000000000000
-      internalID: 5201849953255147596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_157
-      rect:
-        serializedVersion: 2
-        x: 967
-        y: 135
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1966300bd933c7f20800000000000000
-      internalID: 3421666569250629265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_158
-      rect:
-        serializedVersion: 2
-        x: 703
-        y: 122
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a3514af8d72fd2870800000000000000
-      internalID: 8659844279598060858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_159
-      rect:
-        serializedVersion: 2
-        x: 956
-        y: 129
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 66ff817eca103f6d0800000000000000
-      internalID: -2958018688129106074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_160
-      rect:
-        serializedVersion: 2
-        x: 385
-        y: 4
-        width: 123
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77c2a96eb77799ff0800000000000000
-      internalID: -28860548567651209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_161
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1
-        width: 126
-        height: 127
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 56fddd02bf312f460800000000000000
-      internalID: 7273898317465902949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_162
-      rect:
-        serializedVersion: 2
-        x: 639
-        y: 0
-        width: 129
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 66535b1ac993eb730800000000000000
-      internalID: 4016711262551749990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_163
-      rect:
-        serializedVersion: 2
-        x: 699
-        y: 119
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3dff525dc19f3c310800000000000000
-      internalID: 1424255809409646547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_164
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 10
-        width: 106
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef71b38cde4a23b50800000000000000
-      internalID: 6571496147460495358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_165
-      rect:
-        serializedVersion: 2
-        x: 772
-        y: 9
-        width: 123
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d4d60603177109d50800000000000000
-      internalID: 6741914417084001613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_166
-      rect:
-        serializedVersion: 2
-        x: 955
-        y: 90
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f8247ee9f01a3bfd0800000000000000
-      internalID: -2327339493957877105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_167
-      rect:
-        serializedVersion: 2
-        x: 959
-        y: 98
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62e0a479b193bdbd0800000000000000
-      internalID: -2604425168838586842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_168
-      rect:
-        serializedVersion: 2
-        x: 962
-        y: 91
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e8f8ca7d0e5cd76a0800000000000000
-      internalID: -6449781521842925682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_169
-      rect:
-        serializedVersion: 2
-        x: 1029
-        y: 0
-        width: 115
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e0a4db98ce4fad90800000000000000
-      internalID: -7084357065315671838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_170
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 36
-        width: 64
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eca4abf4d8771ae00800000000000000
-      internalID: 1054255236593109710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_171
-      rect:
-        serializedVersion: 2
-        x: 943
-        y: 80
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8665820c9fa4c10e0800000000000000
-      internalID: -2297879273334614424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_172
-      rect:
-        serializedVersion: 2
-        x: 943
-        y: 43
-        width: 32
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9988dfc09f031ed70800000000000000
-      internalID: 9070584970723821721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_173
-      rect:
-        serializedVersion: 2
-        x: 957
-        y: 80
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9fe54ffbb68a7c3e0800000000000000
-      internalID: -2033471525999059207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_174
-      rect:
-        serializedVersion: 2
-        x: 962
-        y: 76
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c91e5d63d7a2a8c80800000000000000
-      internalID: -8319790644334304868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_175
-      rect:
-        serializedVersion: 2
-        x: 966
-        y: 82
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 499ed18f328dd3b30800000000000000
-      internalID: 4268805670815263124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_176
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 48
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f3260051059602c0800000000000000
-      internalID: -4465718147621182473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_177
-      rect:
-        serializedVersion: 2
-        x: 901
-        y: 56
-        width: 11
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c68355d427faf0c0800000000000000
-      internalID: -4541045536679819579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_178
-      rect:
-        serializedVersion: 2
-        x: 913
-        y: 59
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3dc945474e1a14df0800000000000000
-      internalID: -197698906051273517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_179
-      rect:
-        serializedVersion: 2
-        x: 920
-        y: 59
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: de6d0a43ba28b2200800000000000000
-      internalID: 156362283908388589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_180
-      rect:
-        serializedVersion: 2
-        x: 925
-        y: 57
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 327075a9989688b40800000000000000
-      internalID: 5442716189398075171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_181
-      rect:
-        serializedVersion: 2
-        x: 938
-        y: 60
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6f64c361501724b0800000000000000
-      internalID: -5465381681038594196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_182
-      rect:
-        serializedVersion: 2
-        x: 974
-        y: 52
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2481f5a790b8bb930800000000000000
-      internalID: 4160071553630804034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_183
-      rect:
-        serializedVersion: 2
-        x: 975
-        y: 63
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 71eb42479e5db65c0800000000000000
-      internalID: -4221045027077046761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_184
-      rect:
-        serializedVersion: 2
-        x: 983
-        y: 59
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abe1120b2f6406280800000000000000
-      internalID: -9052157242863706438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_185
-      rect:
-        serializedVersion: 2
-        x: 991
-        y: 58
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9c497a63e45546740800000000000000
-      internalID: 5144330468776711369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_186
-      rect:
-        serializedVersion: 2
-        x: 767
-        y: 51
-        width: 15
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 140eb473651e08810800000000000000
-      internalID: 1765658814340390977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_187
-      rect:
-        serializedVersion: 2
-        x: 913
-        y: 44
-        width: 16
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c06db67715baecbe0800000000000000
-      internalID: -1455037263209834996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_188
-      rect:
-        serializedVersion: 2
-        x: 986
-        y: 45
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3ce311c263a377cc0800000000000000
-      internalID: -3713435363401711933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_189
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 55
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aff8df7ce024b6580800000000000000
-      internalID: -8832893612904837126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_190
-      rect:
-        serializedVersion: 2
-        x: 1009
-        y: 50
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a74d35f78c7d24a20800000000000000
-      internalID: 3045233554185507962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_191
-      rect:
-        serializedVersion: 2
-        x: 901
-        y: 47
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c6a2e817800a0690800000000000000
-      internalID: -7635289638015162685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_192
-      rect:
-        serializedVersion: 2
-        x: 930
-        y: 44
-        width: 13
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf6ac22f16a16c1e0800000000000000
-      internalID: -2178024361809893636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_193
-      rect:
-        serializedVersion: 2
-        x: 944
-        y: 39
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47fb5d4bdffcf08d0800000000000000
-      internalID: -2877852948298875020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_194
-      rect:
-        serializedVersion: 2
-        x: 967
-        y: 42
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 68e8c4346cdb2c6e0800000000000000
-      internalID: -1818682640273994106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_195
-      rect:
-        serializedVersion: 2
-        x: 974
-        y: 43
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59d6548341f99ec70800000000000000
-      internalID: 9000900239468883349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_196
-      rect:
-        serializedVersion: 2
-        x: 993
-        y: 43
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03977202794d14650800000000000000
-      internalID: 6215482706292603184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_197
-      rect:
-        serializedVersion: 2
-        x: 998
-        y: 47
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3a9809bc957bca5e0800000000000000
-      internalID: -1896939746734601821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_198
-      rect:
-        serializedVersion: 2
-        x: 945
-        y: 25
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ce7775f32a4f14130800000000000000
-      internalID: 3549386959029237740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_199
-      rect:
-        serializedVersion: 2
-        x: 955
-        y: 33
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6878ac83daf8c2530800000000000000
-      internalID: 3831595357130360710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_200
-      rect:
-        serializedVersion: 2
-        x: 961
-        y: 29
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9cf4c665913a78b0800000000000000
-      internalID: -5153752305828037473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_201
-      rect:
-        serializedVersion: 2
-        x: 949
-        y: 16
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 31f10bf777ccc14a0800000000000000
-      internalID: -6621192538526048493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_202
-      rect:
-        serializedVersion: 2
-        x: 955
-        y: 25
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 901d0d9f71378d010800000000000000
-      internalID: 1213846646389002505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_203
-      rect:
-        serializedVersion: 2
-        x: 961
-        y: 20
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9bd50b8dee395470800000000000000
-      internalID: 8383801371287477147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_204
-      rect:
-        serializedVersion: 2
-        x: 968
-        y: 22
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa451a53ed21fe6e0800000000000000
-      internalID: -1806204179960474454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_205
-      rect:
-        serializedVersion: 2
-        x: 820
-        y: 0
-        width: 15
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 645763ec08f4b9370800000000000000
-      internalID: 8330339350385947974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_206
-      rect:
-        serializedVersion: 2
-        x: 830
-        y: 3
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d4796d6d4bf50450800000000000000
-      internalID: 6054521584036181209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_207
-      rect:
-        serializedVersion: 2
-        x: 947
-        y: 7
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ec336bda939bf5a80800000000000000
-      internalID: -8475852316309310514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_208
-      rect:
-        serializedVersion: 2
-        x: 952
-        y: 8
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 161d273e9b6dd7630800000000000000
-      internalID: 3926530544010187105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_209
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 10
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5827212c10e5ca3c0800000000000000
-      internalID: -4346996178675404155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_210
-      rect:
-        serializedVersion: 2
-        x: 965
-        y: 7
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abf31d9fc54d7ae20800000000000000
-      internalID: 3361889142648684474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Attack2_with_shadow_211
-      rect:
-        serializedVersion: 2
-        x: 954
-        y: 1
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a5c66085c873d3c0800000000000000
-      internalID: -4335989226569546331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5cb1bc8753ab3ed48a8694b42ad7ba94
     internalID: 0
     vertices: []
     indices: 
@@ -5408,135 +1536,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":4.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Slime_boss1_Attack2_with_shadow_0: -7220298620792808691
       Slime_boss1_Attack2_with_shadow_1: 9030439848520323397
       Slime_boss1_Attack2_with_shadow_10: 1152225544590821410
-      Slime_boss1_Attack2_with_shadow_100: -1296100318970193747
-      Slime_boss1_Attack2_with_shadow_101: -8639244278930934127
-      Slime_boss1_Attack2_with_shadow_102: 4351413858162396551
-      Slime_boss1_Attack2_with_shadow_103: 9034728718322227349
-      Slime_boss1_Attack2_with_shadow_104: 1735008829933340745
-      Slime_boss1_Attack2_with_shadow_105: -8831622214415906134
-      Slime_boss1_Attack2_with_shadow_106: -3282025783622934126
-      Slime_boss1_Attack2_with_shadow_107: -6165146045617908459
-      Slime_boss1_Attack2_with_shadow_108: -7644067255147418680
-      Slime_boss1_Attack2_with_shadow_109: -3836329737275671654
       Slime_boss1_Attack2_with_shadow_11: -4993636261689734567
-      Slime_boss1_Attack2_with_shadow_110: 5317053890593889980
-      Slime_boss1_Attack2_with_shadow_111: 4476807888915427805
-      Slime_boss1_Attack2_with_shadow_112: 5364504346896492842
-      Slime_boss1_Attack2_with_shadow_113: -1537068851925504723
-      Slime_boss1_Attack2_with_shadow_114: 156769825014632175
-      Slime_boss1_Attack2_with_shadow_115: -2331306907840656815
-      Slime_boss1_Attack2_with_shadow_116: -3836261814407725513
-      Slime_boss1_Attack2_with_shadow_117: -1873866743030714940
-      Slime_boss1_Attack2_with_shadow_118: -2110441662488471376
-      Slime_boss1_Attack2_with_shadow_119: 7593607992048040387
       Slime_boss1_Attack2_with_shadow_12: -5659163283471063669
-      Slime_boss1_Attack2_with_shadow_120: 7695316830353804708
-      Slime_boss1_Attack2_with_shadow_121: 333776808156219138
-      Slime_boss1_Attack2_with_shadow_122: 1718233851720016144
-      Slime_boss1_Attack2_with_shadow_123: 2234192435060843823
-      Slime_boss1_Attack2_with_shadow_124: 5295543536203652339
-      Slime_boss1_Attack2_with_shadow_125: 6969515200522604258
-      Slime_boss1_Attack2_with_shadow_126: 570732959518135001
-      Slime_boss1_Attack2_with_shadow_127: -2930781049877238392
-      Slime_boss1_Attack2_with_shadow_128: -1974354889401527897
-      Slime_boss1_Attack2_with_shadow_129: -6319015034674367389
       Slime_boss1_Attack2_with_shadow_13: 4469552686521216672
-      Slime_boss1_Attack2_with_shadow_130: 1700983593156989866
-      Slime_boss1_Attack2_with_shadow_131: 8574070001493865557
-      Slime_boss1_Attack2_with_shadow_132: -7728612774630608213
-      Slime_boss1_Attack2_with_shadow_133: 1849407673979230379
-      Slime_boss1_Attack2_with_shadow_134: -9075430770444301452
-      Slime_boss1_Attack2_with_shadow_135: -3604908789846884647
-      Slime_boss1_Attack2_with_shadow_136: -4160211060643366227
-      Slime_boss1_Attack2_with_shadow_137: -2068791945171586875
-      Slime_boss1_Attack2_with_shadow_138: 7353729286496163918
-      Slime_boss1_Attack2_with_shadow_139: -11846109502657647
       Slime_boss1_Attack2_with_shadow_14: 4317649451469853971
-      Slime_boss1_Attack2_with_shadow_140: -7267363466430302962
-      Slime_boss1_Attack2_with_shadow_141: 2780738172694744376
-      Slime_boss1_Attack2_with_shadow_142: 909659734059617758
-      Slime_boss1_Attack2_with_shadow_143: 177742288982400141
-      Slime_boss1_Attack2_with_shadow_144: 3845824626061968084
-      Slime_boss1_Attack2_with_shadow_145: -8478784803928530968
-      Slime_boss1_Attack2_with_shadow_146: 994001071813573782
-      Slime_boss1_Attack2_with_shadow_147: -4275687083384258185
-      Slime_boss1_Attack2_with_shadow_148: 803792516252565520
-      Slime_boss1_Attack2_with_shadow_149: 8064634207318889869
       Slime_boss1_Attack2_with_shadow_15: -3266799436566578507
-      Slime_boss1_Attack2_with_shadow_150: -5309390451737197480
-      Slime_boss1_Attack2_with_shadow_151: -8531852953876942692
-      Slime_boss1_Attack2_with_shadow_152: -8174242304002626061
-      Slime_boss1_Attack2_with_shadow_153: -6611948976423624592
-      Slime_boss1_Attack2_with_shadow_154: -813329841576164333
-      Slime_boss1_Attack2_with_shadow_155: -8905947037183148818
-      Slime_boss1_Attack2_with_shadow_156: 5201849953255147596
-      Slime_boss1_Attack2_with_shadow_157: 3421666569250629265
-      Slime_boss1_Attack2_with_shadow_158: 8659844279598060858
-      Slime_boss1_Attack2_with_shadow_159: -2958018688129106074
       Slime_boss1_Attack2_with_shadow_16: -478160412120281465
-      Slime_boss1_Attack2_with_shadow_160: -28860548567651209
-      Slime_boss1_Attack2_with_shadow_161: 7273898317465902949
-      Slime_boss1_Attack2_with_shadow_162: 4016711262551749990
-      Slime_boss1_Attack2_with_shadow_163: 1424255809409646547
-      Slime_boss1_Attack2_with_shadow_164: 6571496147460495358
-      Slime_boss1_Attack2_with_shadow_165: 6741914417084001613
-      Slime_boss1_Attack2_with_shadow_166: -2327339493957877105
-      Slime_boss1_Attack2_with_shadow_167: -2604425168838586842
-      Slime_boss1_Attack2_with_shadow_168: -6449781521842925682
-      Slime_boss1_Attack2_with_shadow_169: -7084357065315671838
       Slime_boss1_Attack2_with_shadow_17: 114561669467765388
-      Slime_boss1_Attack2_with_shadow_170: 1054255236593109710
-      Slime_boss1_Attack2_with_shadow_171: -2297879273334614424
-      Slime_boss1_Attack2_with_shadow_172: 9070584970723821721
-      Slime_boss1_Attack2_with_shadow_173: -2033471525999059207
-      Slime_boss1_Attack2_with_shadow_174: -8319790644334304868
-      Slime_boss1_Attack2_with_shadow_175: 4268805670815263124
-      Slime_boss1_Attack2_with_shadow_176: -4465718147621182473
-      Slime_boss1_Attack2_with_shadow_177: -4541045536679819579
-      Slime_boss1_Attack2_with_shadow_178: -197698906051273517
-      Slime_boss1_Attack2_with_shadow_179: 156362283908388589
       Slime_boss1_Attack2_with_shadow_18: 4923997432918706731
-      Slime_boss1_Attack2_with_shadow_180: 5442716189398075171
-      Slime_boss1_Attack2_with_shadow_181: -5465381681038594196
-      Slime_boss1_Attack2_with_shadow_182: 4160071553630804034
-      Slime_boss1_Attack2_with_shadow_183: -4221045027077046761
-      Slime_boss1_Attack2_with_shadow_184: -9052157242863706438
-      Slime_boss1_Attack2_with_shadow_185: 5144330468776711369
-      Slime_boss1_Attack2_with_shadow_186: 1765658814340390977
-      Slime_boss1_Attack2_with_shadow_187: -1455037263209834996
-      Slime_boss1_Attack2_with_shadow_188: -3713435363401711933
-      Slime_boss1_Attack2_with_shadow_189: -8832893612904837126
       Slime_boss1_Attack2_with_shadow_19: 5692470282707624969
-      Slime_boss1_Attack2_with_shadow_190: 3045233554185507962
-      Slime_boss1_Attack2_with_shadow_191: -7635289638015162685
-      Slime_boss1_Attack2_with_shadow_192: -2178024361809893636
-      Slime_boss1_Attack2_with_shadow_193: -2877852948298875020
-      Slime_boss1_Attack2_with_shadow_194: -1818682640273994106
-      Slime_boss1_Attack2_with_shadow_195: 9000900239468883349
-      Slime_boss1_Attack2_with_shadow_196: 6215482706292603184
-      Slime_boss1_Attack2_with_shadow_197: -1896939746734601821
-      Slime_boss1_Attack2_with_shadow_198: 3549386959029237740
-      Slime_boss1_Attack2_with_shadow_199: 3831595357130360710
       Slime_boss1_Attack2_with_shadow_2: 4481136038043812862
       Slime_boss1_Attack2_with_shadow_20: -1614903083246828232
-      Slime_boss1_Attack2_with_shadow_200: -5153752305828037473
-      Slime_boss1_Attack2_with_shadow_201: -6621192538526048493
-      Slime_boss1_Attack2_with_shadow_202: 1213846646389002505
-      Slime_boss1_Attack2_with_shadow_203: 8383801371287477147
-      Slime_boss1_Attack2_with_shadow_204: -1806204179960474454
-      Slime_boss1_Attack2_with_shadow_205: 8330339350385947974
-      Slime_boss1_Attack2_with_shadow_206: 6054521584036181209
-      Slime_boss1_Attack2_with_shadow_207: -8475852316309310514
-      Slime_boss1_Attack2_with_shadow_208: 3926530544010187105
-      Slime_boss1_Attack2_with_shadow_209: -4346996178675404155
       Slime_boss1_Attack2_with_shadow_21: -4582632036907942969
-      Slime_boss1_Attack2_with_shadow_210: 3361889142648684474
-      Slime_boss1_Attack2_with_shadow_211: -4335989226569546331
       Slime_boss1_Attack2_with_shadow_22: 4987695388029660799
       Slime_boss1_Attack2_with_shadow_23: 7179099305456886817
       Slime_boss1_Attack2_with_shadow_24: 3371223416216307091
@@ -5552,76 +1570,12 @@ TextureImporter:
       Slime_boss1_Attack2_with_shadow_33: -2527594950053868943
       Slime_boss1_Attack2_with_shadow_34: -7953042284186767577
       Slime_boss1_Attack2_with_shadow_35: 2308382503964949132
-      Slime_boss1_Attack2_with_shadow_36: 847560212141201824
-      Slime_boss1_Attack2_with_shadow_37: -2870321577088141105
-      Slime_boss1_Attack2_with_shadow_38: 2438614469950064705
-      Slime_boss1_Attack2_with_shadow_39: 8249115795087339013
       Slime_boss1_Attack2_with_shadow_4: 3889382005609618748
-      Slime_boss1_Attack2_with_shadow_40: -5025389588479168549
-      Slime_boss1_Attack2_with_shadow_41: -7655461019000110427
-      Slime_boss1_Attack2_with_shadow_42: -5561968235448490391
-      Slime_boss1_Attack2_with_shadow_43: 5195911735588431497
-      Slime_boss1_Attack2_with_shadow_44: 1200721563379643823
-      Slime_boss1_Attack2_with_shadow_45: -8649932190144551013
-      Slime_boss1_Attack2_with_shadow_46: 5947815309620639885
-      Slime_boss1_Attack2_with_shadow_47: 1243244453559316462
-      Slime_boss1_Attack2_with_shadow_48: 82225056362264032
-      Slime_boss1_Attack2_with_shadow_49: -6884649878890750975
       Slime_boss1_Attack2_with_shadow_5: 3155060892246731929
-      Slime_boss1_Attack2_with_shadow_50: 6234093357790389654
-      Slime_boss1_Attack2_with_shadow_51: 4302466597061104478
-      Slime_boss1_Attack2_with_shadow_52: -4267215721427064671
-      Slime_boss1_Attack2_with_shadow_53: 9086475702173401791
-      Slime_boss1_Attack2_with_shadow_54: -4225038266984554105
-      Slime_boss1_Attack2_with_shadow_55: 264297640463751301
-      Slime_boss1_Attack2_with_shadow_56: -8488629523855844997
-      Slime_boss1_Attack2_with_shadow_57: 8016437669863484456
-      Slime_boss1_Attack2_with_shadow_58: -4193199887609432688
-      Slime_boss1_Attack2_with_shadow_59: 1578069783104699455
       Slime_boss1_Attack2_with_shadow_6: -8381359586601226824
-      Slime_boss1_Attack2_with_shadow_60: -1483934651066011628
-      Slime_boss1_Attack2_with_shadow_61: 5260502514837584604
-      Slime_boss1_Attack2_with_shadow_62: -8025027218730409030
-      Slime_boss1_Attack2_with_shadow_63: 7232151833653553429
-      Slime_boss1_Attack2_with_shadow_64: 4452057877426445949
-      Slime_boss1_Attack2_with_shadow_65: 1110678453960500350
-      Slime_boss1_Attack2_with_shadow_66: -1422081911109313104
-      Slime_boss1_Attack2_with_shadow_67: 8981647153602839760
-      Slime_boss1_Attack2_with_shadow_68: -3144182549552701405
-      Slime_boss1_Attack2_with_shadow_69: -7587198615832520046
       Slime_boss1_Attack2_with_shadow_7: 1333339570253847744
-      Slime_boss1_Attack2_with_shadow_70: -864971931476734396
-      Slime_boss1_Attack2_with_shadow_71: -8063440353272909174
-      Slime_boss1_Attack2_with_shadow_72: 2707356585117955366
-      Slime_boss1_Attack2_with_shadow_73: 8725266252417403769
-      Slime_boss1_Attack2_with_shadow_74: -2280364025082016747
-      Slime_boss1_Attack2_with_shadow_75: -2305897691268977232
-      Slime_boss1_Attack2_with_shadow_76: 5276799372729501015
-      Slime_boss1_Attack2_with_shadow_77: -1676195297751970553
-      Slime_boss1_Attack2_with_shadow_78: -6153706756146154267
-      Slime_boss1_Attack2_with_shadow_79: -6664583731069317039
       Slime_boss1_Attack2_with_shadow_8: 8193232096063322362
-      Slime_boss1_Attack2_with_shadow_80: 7236482952209240620
-      Slime_boss1_Attack2_with_shadow_81: -3451512115843207644
-      Slime_boss1_Attack2_with_shadow_82: 903733603344699403
-      Slime_boss1_Attack2_with_shadow_83: -1981532371714976975
-      Slime_boss1_Attack2_with_shadow_84: -8168712332803410451
-      Slime_boss1_Attack2_with_shadow_85: -4966255783311863617
-      Slime_boss1_Attack2_with_shadow_86: 5922338828333091005
-      Slime_boss1_Attack2_with_shadow_87: -4422836697512970667
-      Slime_boss1_Attack2_with_shadow_88: -8968620088640688823
-      Slime_boss1_Attack2_with_shadow_89: 4959613946523811789
       Slime_boss1_Attack2_with_shadow_9: 4389973703231854173
-      Slime_boss1_Attack2_with_shadow_90: 1099596297552311952
-      Slime_boss1_Attack2_with_shadow_91: 7681619623331757527
-      Slime_boss1_Attack2_with_shadow_92: -2783680356075066767
-      Slime_boss1_Attack2_with_shadow_93: -1263517603732097278
-      Slime_boss1_Attack2_with_shadow_94: 818710973808599043
-      Slime_boss1_Attack2_with_shadow_95: 6636672875690792213
-      Slime_boss1_Attack2_with_shadow_96: -3946435707403569175
-      Slime_boss1_Attack2_with_shadow_97: 4239968528817872618
-      Slime_boss1_Attack2_with_shadow_98: 6560939918766565257
-      Slime_boss1_Attack2_with_shadow_99: 285193035424215688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
