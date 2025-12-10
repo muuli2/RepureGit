@@ -37,6 +37,7 @@ public class CharacterSelect : MonoBehaviour
 
     void Start()
     {
+        
         // บันทึกตำแหน่งปกติของ Info Panel
         characterLeft.panelBasePosition = characterLeft.infoPanelRect.anchoredPosition;
         characterRight.panelBasePosition = characterRight.infoPanelRect.anchoredPosition;

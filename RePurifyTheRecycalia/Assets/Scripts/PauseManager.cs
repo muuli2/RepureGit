@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using System.Linq;
 
 public class PauseManager : MonoBehaviour
 {
@@ -9,9 +10,20 @@ public class PauseManager : MonoBehaviour
 
     [HideInInspector]
     public bool isMiniGameActive = false;
+      // 🔥 รายชื่อซีนที่ห้าม Pause
+    private readonly string[] noPauseScenes = 
+    {
+        "MainMenu",
+        "CharacterSelect",
+        "CutScenes",
+        "End"
+    };
+
 
     private enum ConfirmAction { None, Restart, Home }
     private ConfirmAction pendingAction = ConfirmAction.None;
+
+   
 
     void Start()
     {
@@ -19,14 +31,22 @@ public class PauseManager : MonoBehaviour
         confirmPanel.SetActive(false);
     }
 
-    void Update()
+ void Update()
     {
+        string scene = SceneManager.GetActiveScene().name;
+
+        // ❌ ซีนเหล่านี้กด ESC แล้วไม่ต้อง Pause
+        if (noPauseScenes.Contains(scene))
+            return;
+
+        // ✔ ซีนอื่น Pause ได้
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             if (!isMiniGameActive)
                 TogglePauseMenu();
         }
     }
+
 
     public void TogglePauseMenu()
     {

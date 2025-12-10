@@ -1468,8 +1468,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1776116139}
   - {fileID: 690967526}
+  - {fileID: 1776116139}
   m_Father: {fileID: 2144080604}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2921,8 +2921,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -538.00806, y: 110.5}
-  m_SizeDelta: {x: 463.8855, y: 567}
+  m_AnchoredPosition: {x: -360.05194, y: 366.84076}
+  m_SizeDelta: {x: 613.0356, y: 671.9657}
   m_Pivot: {x: 0.99999994, y: 0.5}
 --- !u!114 &690967527
 MonoBehaviour:
@@ -3132,8 +3132,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 793.097, y: 98.99591}
-  m_SizeDelta: {x: 438.4822, y: 580.2724}
+  m_AnchoredPosition: {x: 579.2918, y: 368.63617}
+  m_SizeDelta: {x: 737.4823, y: 737.2724}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773707243
 MonoBehaviour:
@@ -4534,7 +4534,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &1124536403
 RectTransform:
@@ -4636,7 +4636,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1126481448
 RectTransform:
@@ -17141,7 +17141,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &1689571173
 MonoBehaviour:
@@ -18190,11 +18190,11 @@ MonoBehaviour:
   - speaker: 1
     speakerName: Lumina
     text: ...
-    portrait: {fileID: -4902695134445092299, guid: df542d6252391884d9dbe5d67abd1997, type: 3}
+    portrait: {fileID: 3225516077630529773, guid: cf465f5e948199b428ef90edac6f9d05, type: 3}
   - speaker: 1
     speakerName: Lumina
     text: "\u0E2D\u0E07\u0E04\u0E4C\u0E0A\u0E32\u0E22 \u0E17\u0E48\u0E32\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E30\u0E44\u0E23\u0E21\u0E32\u0E01\u0E44\u0E2B\u0E21"
-    portrait: {fileID: -4902695134445092299, guid: df542d6252391884d9dbe5d67abd1997, type: 3}
+    portrait: {fileID: 3225516077630529773, guid: cf465f5e948199b428ef90edac6f9d05, type: 3}
   - speaker: 0
     speakerName: Aelior
     text: ....
@@ -18206,7 +18206,7 @@ MonoBehaviour:
   - speaker: 1
     speakerName: Lumina
     text: '!!??'
-    portrait: {fileID: -6451425678666688265, guid: c0382446ae402a348a13a75fe03089ae, type: 3}
+    portrait: {fileID: 3225516077630529773, guid: cf465f5e948199b428ef90edac6f9d05, type: 3}
   - speaker: 1
     speakerName: Lumina
     text: "\u0E17\u0E48\u0E32\u0E19\u0E23\u0E39\u0E49\u0E0A\u0E37\u0E48\u0E2D\u0E02\u0E49\u0E32..?!"
@@ -18215,7 +18215,7 @@ MonoBehaviour:
   - speaker: 0
     speakerName: Aelior
     text: ...
-    portrait: {fileID: -6451425678666688265, guid: c0382446ae402a348a13a75fe03089ae, type: 3}
+    portrait: {fileID: 3225516077630529773, guid: cf465f5e948199b428ef90edac6f9d05, type: 3}
 --- !u!212 &1880218147
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -5,10 +5,20 @@ public class MainMenu : MonoBehaviour
 {
     public SettingsManager settingsManager;
 
+    void start ()
+    {
+        PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+
+    if (pause != null)
+        pause.isMiniGameActive = true; // บล็อก pause
+    }
+
     public void GoToScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    
 
     public void QuitApp()
     {

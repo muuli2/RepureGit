@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isDashing = false;
     private float dashTime;
-    private float dashCDTimer;
+    public float dashCDTimer;
 
     [HideInInspector]
     public Vector2 movement;

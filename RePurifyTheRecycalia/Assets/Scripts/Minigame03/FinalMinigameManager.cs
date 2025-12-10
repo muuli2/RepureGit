@@ -39,6 +39,11 @@ public class FinalMinigameManager : MonoBehaviour
 
     void Start()
     {
+
+         PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+
+    if (pause != null)
+        pause.isMiniGameActive = true; // บล็อก pause
         fastText.gameObject.SetActive(false);
     feedbackText.gameObject.SetActive(false);
     winPanel.SetActive(false);   // ✅ ปิด winPanel ก่อนเริ่ม
