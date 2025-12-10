@@ -268,12 +268,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_0
       rect:
         serializedVersion: 2
-        x: 70
-        y: 462
-        width: 9
-        height: 9
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -290,12 +290,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_1
       rect:
         serializedVersion: 2
-        x: 200
-        y: 464
-        width: 8
-        height: 8
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_2
       rect:
         serializedVersion: 2
-        x: 305
-        y: 432
-        width: 37
-        height: 38
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,12 +334,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_3
       rect:
         serializedVersion: 2
-        x: 331
-        y: 467
-        width: 6
-        height: 6
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -356,12 +356,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_4
       rect:
         serializedVersion: 2
-        x: 431
-        y: 432
-        width: 39
-        height: 42
+        x: 512
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -378,12 +378,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_5
       rect:
         serializedVersion: 2
-        x: 558
-        y: 432
-        width: 38
-        height: 42
+        x: 640
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -400,12 +400,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_6
       rect:
         serializedVersion: 2
-        x: 45
-        y: 432
-        width: 35
-        height: 30
+        x: 768
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -422,12 +422,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_7
       rect:
         serializedVersion: 2
-        x: 77
-        y: 457
-        width: 7
-        height: 7
+        x: 896
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -444,12 +444,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_8
       rect:
         serializedVersion: 2
-        x: 173
-        y: 432
-        width: 34
-        height: 34
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -466,12 +466,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_9
       rect:
         serializedVersion: 2
-        x: 207
-        y: 459
-        width: 6
-        height: 6
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -488,12 +488,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_10
       rect:
         serializedVersion: 2
-        x: 684
-        y: 432
-        width: 43
-        height: 22
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -510,12 +510,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_11
       rect:
         serializedVersion: 2
-        x: 811
-        y: 432
-        width: 45
-        height: 19
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -532,12 +532,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_12
       rect:
         serializedVersion: 2
-        x: 815
-        y: 447
-        width: 8
-        height: 8
+        x: 512
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -554,12 +554,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_13
       rect:
         serializedVersion: 2
-        x: 942
-        y: 432
-        width: 37
-        height: 25
+        x: 640
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -576,12 +576,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_14
       rect:
         serializedVersion: 2
-        x: 49
-        y: 334
-        width: 9
-        height: 9
+        x: 768
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -598,12 +598,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_15
       rect:
         serializedVersion: 2
-        x: 176
-        y: 336
-        width: 8
-        height: 8
+        x: 896
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -620,12 +620,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_16
       rect:
         serializedVersion: 2
-        x: 298
-        y: 304
-        width: 37
-        height: 38
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -642,12 +642,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_17
       rect:
         serializedVersion: 2
-        x: 303
-        y: 339
-        width: 6
-        height: 6
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -664,12 +664,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_18
       rect:
         serializedVersion: 2
-        x: 426
-        y: 304
-        width: 39
-        height: 42
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -686,12 +686,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_19
       rect:
         serializedVersion: 2
-        x: 556
-        y: 304
-        width: 38
-        height: 42
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -708,12 +708,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_20
       rect:
         serializedVersion: 2
-        x: 44
-        y: 329
-        width: 7
-        height: 7
+        x: 512
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -730,12 +730,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_21
       rect:
         serializedVersion: 2
-        x: 48
-        y: 304
-        width: 35
-        height: 30
+        x: 640
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -752,12 +752,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_22
       rect:
         serializedVersion: 2
-        x: 171
-        y: 331
-        width: 6
-        height: 6
+        x: 768
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -774,12 +774,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_23
       rect:
         serializedVersion: 2
-        x: 177
-        y: 304
-        width: 34
-        height: 34
+        x: 896
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -796,12 +796,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_24
       rect:
         serializedVersion: 2
-        x: 681
-        y: 304
-        width: 43
-        height: 22
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -818,12 +818,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_25
       rect:
         serializedVersion: 2
-        x: 808
-        y: 304
-        width: 45
-        height: 19
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -840,12 +840,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_26
       rect:
         serializedVersion: 2
-        x: 841
-        y: 319
-        width: 8
-        height: 8
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -862,12 +862,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_27
       rect:
         serializedVersion: 2
-        x: 941
-        y: 304
-        width: 37
-        height: 25
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -884,12 +884,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_28
       rect:
         serializedVersion: 2
-        x: 174
-        y: 176
-        width: 32
-        height: 34
+        x: 512
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -906,12 +906,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_29
       rect:
         serializedVersion: 2
-        x: 295
-        y: 176
-        width: 37
-        height: 38
+        x: 640
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -928,12 +928,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_30
       rect:
         serializedVersion: 2
-        x: 441
-        y: 208
-        width: 9
-        height: 9
+        x: 768
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -950,12 +950,12 @@ TextureImporter:
       name: Slime_boss1_Walk_with_shadow_31
       rect:
         serializedVersion: 2
-        x: 448
-        y: 204
-        width: 6
-        height: 6
+        x: 896
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -968,539 +968,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_32
-      rect:
-        serializedVersion: 2
-        x: 571
-        y: 206
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 271b6f8f9da6f5420800000000000000
-      internalID: 2620930992570282354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_33
-      rect:
-        serializedVersion: 2
-        x: 702
-        y: 208
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3a7ecf83126105ed0800000000000000
-      internalID: -2427415867206867037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_34
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 191
-        width: 13
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0f02026be44d9300800000000000000
-      internalID: 260440131209662221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_35
-      rect:
-        serializedVersion: 2
-        x: 962
-        y: 198
-        width: 11
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e1ab0d29ea74c030800000000000000
-      internalID: 3514068751157535203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_36
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 176
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6f10997807291c00800000000000000
-      internalID: 871770920225611628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_37
-      rect:
-        serializedVersion: 2
-        x: 423
-        y: 176
-        width: 37
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f598e58d5d45f560800000000000000
-      internalID: 7346863431198742003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_38
-      rect:
-        serializedVersion: 2
-        x: 545
-        y: 176
-        width: 43
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 04dd73177e025cd40800000000000000
-      internalID: 5603921489741471040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_39
-      rect:
-        serializedVersion: 2
-        x: 677
-        y: 176
-        width: 44
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a7886fb393f3cc60800000000000000
-      internalID: 7837375592451835813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_40
-      rect:
-        serializedVersion: 2
-        x: 811
-        y: 176
-        width: 40
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 54639781000bab820800000000000000
-      internalID: 2934851621642384965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_41
-      rect:
-        serializedVersion: 2
-        x: 944
-        y: 176
-        width: 38
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 18936a26d2fb7b170800000000000000
-      internalID: 8194228248673401217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_42
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 48
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a549e222d09ff5e20800000000000000
-      internalID: 3341663283335566426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_43
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 48
-        width: 37
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0a005c43271985f0800000000000000
-      internalID: -754046022236239348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_44
-      rect:
-        serializedVersion: 2
-        x: 442
-        y: 76
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 41724e97de9e32d10800000000000000
-      internalID: 2099779057446299412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_45
-      rect:
-        serializedVersion: 2
-        x: 446
-        y: 80
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b8b7d3eb52383a40800000000000000
-      internalID: 5348079927748442290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_46
-      rect:
-        serializedVersion: 2
-        x: 570
-        y: 78
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3e87063803de5830800000000000000
-      internalID: 4061915946154430012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_47
-      rect:
-        serializedVersion: 2
-        x: 698
-        y: 80
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ad88f9dd68bd9710800000000000000
-      internalID: 1701719016163806630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_48
-      rect:
-        serializedVersion: 2
-        x: 819
-        y: 63
-        width: 13
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c9f364cd5bee0ec40800000000000000
-      internalID: 5539690006517792668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_49
-      rect:
-        serializedVersion: 2
-        x: 947
-        y: 70
-        width: 11
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9f3fe81271a817180800000000000000
-      internalID: -9119355938496646151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_50
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 48
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b4374d1293255bd30800000000000000
-      internalID: 4446550612432417611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_51
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 48
-        width: 37
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 06677bcb32ad48ff0800000000000000
-      internalID: -34663050087270816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_52
-      rect:
-        serializedVersion: 2
-        x: 564
-        y: 48
-        width: 43
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab7d0645c89c06a00800000000000000
-      internalID: 747819142691739578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_53
-      rect:
-        serializedVersion: 2
-        x: 687
-        y: 48
-        width: 44
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac312c37daa982a50800000000000000
-      internalID: 6496612532244059082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_54
-      rect:
-        serializedVersion: 2
-        x: 813
-        y: 48
-        width: 40
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 018ec1be4945940d0800000000000000
-      internalID: -3438123841944229872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_boss1_Walk_with_shadow_55
-      rect:
-        serializedVersion: 2
-        x: 938
-        y: 48
-        width: 38
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c9be7dfcfddfe4290800000000000000
-      internalID: -7904101158282073188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1b05f060d32b7f845b98dc1dd1262fda
     internalID: 0
     vertices: []
     indices: 
@@ -1508,7 +980,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":4.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Slime_boss1_Walk_with_shadow_0: -1921415128653852939
       Slime_boss1_Walk_with_shadow_1: -2451101253944373730
@@ -1536,32 +1010,8 @@ TextureImporter:
       Slime_boss1_Walk_with_shadow_3: 1901179784641341029
       Slime_boss1_Walk_with_shadow_30: 6074567633800219762
       Slime_boss1_Walk_with_shadow_31: -5263211544863650589
-      Slime_boss1_Walk_with_shadow_32: 2620930992570282354
-      Slime_boss1_Walk_with_shadow_33: -2427415867206867037
-      Slime_boss1_Walk_with_shadow_34: 260440131209662221
-      Slime_boss1_Walk_with_shadow_35: 3514068751157535203
-      Slime_boss1_Walk_with_shadow_36: 871770920225611628
-      Slime_boss1_Walk_with_shadow_37: 7346863431198742003
-      Slime_boss1_Walk_with_shadow_38: 5603921489741471040
-      Slime_boss1_Walk_with_shadow_39: 7837375592451835813
       Slime_boss1_Walk_with_shadow_4: 7352288864073252605
-      Slime_boss1_Walk_with_shadow_40: 2934851621642384965
-      Slime_boss1_Walk_with_shadow_41: 8194228248673401217
-      Slime_boss1_Walk_with_shadow_42: 3341663283335566426
-      Slime_boss1_Walk_with_shadow_43: -754046022236239348
-      Slime_boss1_Walk_with_shadow_44: 2099779057446299412
-      Slime_boss1_Walk_with_shadow_45: 5348079927748442290
-      Slime_boss1_Walk_with_shadow_46: 4061915946154430012
-      Slime_boss1_Walk_with_shadow_47: 1701719016163806630
-      Slime_boss1_Walk_with_shadow_48: 5539690006517792668
-      Slime_boss1_Walk_with_shadow_49: -9119355938496646151
       Slime_boss1_Walk_with_shadow_5: -8939381307003623812
-      Slime_boss1_Walk_with_shadow_50: 4446550612432417611
-      Slime_boss1_Walk_with_shadow_51: -34663050087270816
-      Slime_boss1_Walk_with_shadow_52: 747819142691739578
-      Slime_boss1_Walk_with_shadow_53: 6496612532244059082
-      Slime_boss1_Walk_with_shadow_54: -3438123841944229872
-      Slime_boss1_Walk_with_shadow_55: -7904101158282073188
       Slime_boss1_Walk_with_shadow_6: -4108423657234831242
       Slime_boss1_Walk_with_shadow_7: 620308583690975371
       Slime_boss1_Walk_with_shadow_8: -2602876509745235577
