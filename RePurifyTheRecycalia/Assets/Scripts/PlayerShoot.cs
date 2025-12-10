@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class PlayerShoot : MonoBehaviour
 {
     public Transform firePoint;
     private PauseManager pauseManager;
+     private Animator anim;
 
     [Header("Bullet Settings (Normal)")]
     public GameObject normalBulletPrefab;
@@ -27,6 +29,7 @@ public class PlayerShoot : MonoBehaviour
     void Start()
     {
         pauseManager = FindObjectOfType<PauseManager>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -45,6 +48,8 @@ public class PlayerShoot : MonoBehaviour
 
     void Shoot()
     {
+        anim.SetTrigger("isAttack");
+
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         mousePos.z = 0f;
         Vector3 direction = (mousePos - firePoint.position).normalized;

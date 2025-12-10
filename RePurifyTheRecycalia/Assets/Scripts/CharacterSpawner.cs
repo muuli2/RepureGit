@@ -3,7 +3,7 @@ using UnityEngine;
 public class CharacterSpawner : MonoBehaviour
 {
     [Header("Character Prefabs")]
-    public GameObject KnightPrefab;
+    public GameObject MalePrefab;
     public GameObject MagePrefab;
 
     [Header("Spawn Point")]
@@ -15,7 +15,7 @@ public class CharacterSpawner : MonoBehaviour
 
         GameObject toSpawn = null;
         if(selected == "Knight")
-            toSpawn = KnightPrefab;
+            toSpawn = MalePrefab;
         else if(selected == "Lumina")
             toSpawn = MagePrefab;
 

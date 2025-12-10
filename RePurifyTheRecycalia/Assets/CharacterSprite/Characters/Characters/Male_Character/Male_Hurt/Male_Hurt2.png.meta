@@ -115,12 +115,12 @@ TextureImporter:
       name: Male_Hurt2_0
       rect:
         serializedVersion: 2
-        x: 159
-        y: 459
-        width: 12
-        height: 12
+        x: 0
+        y: 0
+        width: 640
+        height: 640
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -133,99 +133,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Male_Hurt2_1
-      rect:
-        serializedVersion: 2
-        x: 179
-        y: 19
-        width: 282
-        height: 522
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7785e412030c6a290800000000000000
-      internalID: -7879399185088358281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Male_Hurt2_2
-      rect:
-        serializedVersion: 2
-        x: 469
-        y: 459
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 18aa9cbef283accc0800000000000000
-      internalID: -3690075166206219647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Male_Hurt2_3
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 279
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf05d7c45534bdd70800000000000000
-      internalID: 9068916308275187964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Male_Hurt2_4
-      rect:
-        serializedVersion: 2
-        x: 439
-        y: 279
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8721c19dff0ff720800000000000000
-      internalID: 2882039868286904205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 618454555a1ec254f95cab91b579e53a
     internalID: 0
     vertices: []
     indices: 
@@ -233,13 +145,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":640.0,"y":640.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Male_Hurt2_0: -6581627411064579870
-      Male_Hurt2_1: -7879399185088358281
-      Male_Hurt2_2: -3690075166206219647
-      Male_Hurt2_3: 9068916308275187964
-      Male_Hurt2_4: 2882039868286904205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

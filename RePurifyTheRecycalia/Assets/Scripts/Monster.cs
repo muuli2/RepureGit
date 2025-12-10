@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 [System.Serializable]
 public class DropData
@@ -20,20 +21,25 @@ public class Monster : MonoBehaviour
     public DropData[] drops;
 
     [Header("Attack Settings")]
-    public int damageToPlayer = 1;      
-    public float attackCooldown = 1f;   
+    public int damageToPlayer = 1;
+    public float attackCooldown = 1f;
     private float lastAttackTime = 0f;
 
     [Header("Score Settings")]
     public int scoreOnDeath = 150;
 
-      private Vector3 startPosition;
+    private Vector3 startPosition;
+    private Animator anim;
+    private Collider2D col;
 
     void Awake()
     {
-         startPosition = transform.position;
+        startPosition = transform.position;
         currentHealth = maxHealth;
         UpdateHealthBar();
+
+        anim = GetComponent<Animator>();
+        col = GetComponent<Collider2D>();
     }
 
     public void TakeDamage(int damage)
@@ -42,8 +48,15 @@ public class Monster : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         UpdateHealthBar();
 
-        if (currentHealth <= 0)
+        if (currentHealth > 0)
+        {
+            if (anim != null)
+                anim.SetTrigger("Hurt");
+        }
+        else
+        {
             Die();
+        }
     }
 
     void UpdateHealthBar()
@@ -54,6 +67,21 @@ public class Monster : MonoBehaviour
 
     void Die()
     {
+        if (anim != null)
+            anim.SetTrigger("Die");
+
+        // ปิด collider เพื่อไม่ให้โดนซ้ำ
+        if (col != null)
+            col.enabled = false;
+
+        StartCoroutine(DieRoutine());
+    }
+
+    IEnumerator DieRoutine()
+    {
+        // รออนิเมชันตาย (แก้ตามความยาวคลิป)
+        yield return new WaitForSeconds(0.6f);
+
         // สุ่มดรอปไอเท็ม
         foreach (var d in drops)
         {
@@ -64,10 +92,7 @@ public class Monster : MonoBehaviour
 
         // เพิ่มคะแนน
         ScoreManage.Instance?.AddScore(scoreOnDeath);
-
-         MonsterManage.Instance.EnemyKilled();
-
- 
+        MonsterManage.Instance.EnemyKilled();
 
         // ปิดมอนสเตอร์
         gameObject.SetActive(false);
@@ -88,7 +113,6 @@ public class Monster : MonoBehaviour
         }
     }
 
-    // ฟังก์ชันรีเซ็ตมอนสเตอร์
     public void ResetMonster()
     {
         currentHealth = maxHealth;
@@ -96,8 +120,17 @@ public class Monster : MonoBehaviour
         gameObject.SetActive(true);
         lastAttackTime = 0f;
 
-        // กลับไปตำแหน่งเริ่มต้น
         transform.position = startPosition;
-    }
 
+        // เปิด collider กลับ
+        if (col != null)
+            col.enabled = true;
+
+        // รีเซ็ตอนิเมชันให้กลับ Idle
+        if (anim != null)
+        {
+            anim.Rebind();
+            anim.Update(0f);
+        }
+    }
 }

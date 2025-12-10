@@ -308,8 +308,8 @@ Transform:
   m_GameObject: {fileID: 6963518532464458281}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.3867, y: -5.5085, z: 0}
-  m_LocalScale: {x: 0.3315657, y: 0.3315657, z: 0.3315657}
+  m_LocalPosition: {x: -10.225202, y: -5.274689, z: 0}
+  m_LocalScale: {x: 0.4119041, y: 0.4119041, z: 0.4119041}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1899831185692085207}
@@ -418,11 +418,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShoot
   firePoint: {fileID: 1899831185692085207}
-  normalBulletPrefab: {fileID: 4460072555350427435, guid: 51b00971b99a2b540ba8a65e36b2bbad, type: 3}
+  normalBulletPrefab: {fileID: 1826745053541367027, guid: 30d23f6c278d8554c9e72773af18b431, type: 3}
   normalBulletSpeed: 10
   normalBulletDamage: 1
-  upgradedBulletPrefab: {fileID: 7433119479684178215, guid: 177baec8b45bc4d4da64f29ed590527f, type: 3}
-  upgradedBulletSpeed: 20
+  upgradedBulletPrefab: {fileID: 2898786881710506192, guid: a92dedae13f82aa479faf8b4c7dfda4c, type: 3}
+  upgradedBulletSpeed: 25
   upgradedBulletDamage: 25
   gunUpgraded: 0
   shootCooldown: 1

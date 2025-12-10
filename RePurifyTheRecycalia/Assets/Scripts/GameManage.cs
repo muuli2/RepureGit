@@ -6,9 +6,10 @@ using UnityEngine.InputSystem;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+     private Animator anim;
 
     [Header("Player Prefabs")]
-    public GameObject KnightPrefab;
+    public GameObject MalePrefab;
     public GameObject MagePrefab;
     public Transform spawnPoint;
 
@@ -108,7 +109,7 @@ public class GameManager : MonoBehaviour
 
         GameObject toSpawn = null;
         if (SelectedCharacter.characterName == "Knight")
-            toSpawn = KnightPrefab;
+            toSpawn = MalePrefab;
         else if (SelectedCharacter.characterName == "Lumina")
             toSpawn = MagePrefab;
 
@@ -148,15 +149,22 @@ public class GameManager : MonoBehaviour
     }
 
     public void TakeDamage(int amount)
-    {
-        lives -= amount;
-        lives = Mathf.Clamp(lives, 0, maxLives);
-        UpdateHeartsUI();
+{
+    lives -= amount;
+    lives = Mathf.Clamp(lives, 0, maxLives);
+    UpdateHeartsUI();
 
-        if (lives <= 0)
-            PlayerDied();
+    // 🔥 เล่นอนิเมชันท่าเจ็บ
+    if (playerRef != null)
+    {
+        Animator anim = playerRef.GetComponent<Animator>();
+        if (anim != null)
+            anim.SetTrigger("isHurt");
     }
 
+    if (lives <= 0)
+        PlayerDied();
+}
     public void UpdateHeartsUI()
     {
         if (heartImages == null || heartImages.Length == 0)

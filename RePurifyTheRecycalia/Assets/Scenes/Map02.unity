@@ -49951,7 +49951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e09788ae730a504a94ba81a2655f17b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  KnightPrefab: {fileID: 4308123605859093903, guid: ce8252e14c044f341a7c0d84222cd331, type: 3}
+  MalePrefab: {fileID: 6963518532464458281, guid: c77773a014537e3479ee2e731ec7f2c8, type: 3}
   MagePrefab: {fileID: 6963518532464458281, guid: 06944a9a7e4d9b1449b61503313d5862, type: 3}
   spawnPoint: {fileID: 1833425743}
   maxLives: 5
@@ -49969,6 +49969,7 @@ MonoBehaviour:
   lastCheckpoint: {x: 0, y: 0, z: 0}
   isMiniGameActive: 0
   mapPoints: 0
+  skillUnlocked: 0
 --- !u!4 &705772707
 Transform:
   m_ObjectHideFlags: 0
@@ -50777,7 +50778,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -82933903
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 7168540986364394743, guid: 0f63871e0872a0b4598321a6040d65ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -68435,7 +68436,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -82933903
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -2371127243453515034, guid: 4bd9f572b4ccf774f95206e474df74cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -68749,7 +68750,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -82933903
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -7809943541567517189, guid: 104a6941c53506747b4825c4ba0a56ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -69027,7 +69028,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E43\u0E0A\u0E49 2500 \u0E04\u0E48\u0E32\u0E0A\u0E33\u0E23\u0E30\u0E25\u0E49\u0E32\u0E07"
+  m_text: "\u0E02\u0E31\u0E49\u0E19\u0E15\u0E48\u0E33 2500 \u0E04\u0E48\u0E32\u0E0A\u0E33\u0E23\u0E30\u0E25\u0E49\u0E32\u0E07"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}
   m_sharedMaterial: {fileID: -878521081088741051, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}
@@ -70359,7 +70360,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -82933903
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 7168540986364394743, guid: 0f63871e0872a0b4598321a6040d65ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -72043,6 +72044,7 @@ MonoBehaviour:
     \u0E2D\u0E32\u0E08\u0E08\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E17\u0E48\u0E32\u0E19\u0E44\u0E14\u0E49\u0E44\u0E21\u0E48\u0E21\u0E32\u0E01\u0E01\u0E47\u0E19\u0E49\u0E2D\u0E22"
   - "\u0E2D\u0E31\u0E28\u0E27\u0E34\u0E19\u0E19\u0E30\u0E08\u0E4A\u0E30: \u0E02\u0E2D\u0E43\u0E2B\u0E49\u0E42\u0E0A\u0E04\u0E14\u0E35
     \u0E17\u0E48\u0E32\u0E19\u0E1C\u0E39\u0E49\u0E01\u0E25\u0E49\u0E32 \u0E0A\u0E48\u0E27\u0E22\u0E2D\u0E07\u0E04\u0E4C\u0E0A\u0E32\u0E22\u0E21\u0E32\u0E43\u0E2B\u0E49\u0E08\u0E07\u0E44\u0E14\u0E49 "
+  upgradeGunAfterDialogue: 0
 --- !u!4 &2018650043
 Transform:
   m_ObjectHideFlags: 0
