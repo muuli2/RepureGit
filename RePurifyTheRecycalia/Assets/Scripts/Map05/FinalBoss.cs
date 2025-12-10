@@ -67,7 +67,7 @@ public float spreadBulletSpeed = 4f;
     public AudioSource bgmSource;
 
     [Header("Minigame")]
-    public string miniGameSceneName = "MiniGameFinal";
+    public string miniGameSceneName = "MinigameFinal";
 
 
     private void Awake()
@@ -313,7 +313,14 @@ void ShootSpread()
 
         yield return new WaitForSecondsRealtime(0.5f);
 
-        GameManager.Instance.isMiniGameActive = true;
+        // GameManager.Instance.isMiniGameActive = true;
+
+        if (GameManager.Instance != null)
+            GameManager.Instance.isMiniGameActive = true;
+
+            
+
+            
 
         // bgmSource?.Stop();
 
@@ -324,39 +331,44 @@ void ShootSpread()
     // -------------------------------------
     // ❄ Freeze/Unfreeze
     // -------------------------------------
-    void FreezeMapAndPlayer()
+   void FreezeMapAndPlayer()
+{
+    // Freeze map/object อื่น ๆ
+    foreach (var rb in FindObjectsOfType<Rigidbody2D>())
     {
-        foreach (var rb in FindObjectsOfType<Rigidbody2D>())
-        {
-            rb.linearVelocity = Vector2.zero;
-            rb.bodyType = RigidbodyType2D.Static;
-        }
-
-        foreach (var p in GameObject.FindGameObjectsWithTag("Player"))
-        {
-            PlayerMovement pm = p.GetComponent<PlayerMovement>();
-            if (pm) pm.enabled = false;
-
-            Rigidbody2D prb = p.GetComponent<Rigidbody2D>();
-            if (prb)
-            {
-                prb.linearVelocity = Vector2.zero;
-                prb.bodyType = RigidbodyType2D.Static;
-            }
-        }
+        if (rb.CompareTag("Player")) continue; // ไม่ freeze player
+        rb.linearVelocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Static;
     }
+
+    // Freeze Player movement
+    foreach (var p in GameObject.FindGameObjectsWithTag("Player"))
+    {
+        PlayerMovement pm = p.GetComponent<PlayerMovement>();
+        if (pm) pm.enabled = false;
+
+        // ปิด velocity แค่ชั่วคราว ไม่ต้องเป็น Static
+        Rigidbody2D prb = p.GetComponent<Rigidbody2D>();
+        if (prb) prb.linearVelocity = Vector2.zero;
+    }
+}
+
 
     void UnfreezeMapAndPlayer()
+{
+    foreach (var rb in FindObjectsOfType<Rigidbody2D>())
     {
-        foreach (var rb in FindObjectsOfType<Rigidbody2D>())
-            rb.bodyType = RigidbodyType2D.Dynamic;
-
-        foreach (var p in GameObject.FindGameObjectsWithTag("Player"))
-        {
-            PlayerMovement pm = p.GetComponent<PlayerMovement>();
-            if (pm) pm.enabled = true;
-        }
+        if (rb.CompareTag("Player")) continue; // ไม่เปลี่ยน Player
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
+
+    foreach (var p in GameObject.FindGameObjectsWithTag("Player"))
+    {
+        PlayerMovement pm = p.GetComponent<PlayerMovement>();
+        if (pm) pm.enabled = true;
+    }
+}
+
 
     // -------------------------------------
     // 🪦 Boss Defeated
@@ -370,14 +382,14 @@ void ShootSpread()
 
         ScoreManage.Instance?.AddScore(1000);
 
-        bgmSource?.Play();
+        // bgmSource?.Play();
 
         foreach (var c in GetComponentsInChildren<Collider2D>())
             c.enabled = false;
 
         rb.bodyType = RigidbodyType2D.Kinematic;
 
-        glowEffect?.SetActive(false);
+        // glowEffect?.SetActive(false);
         bossAnimator?.SetTrigger("Die");
 
         StartCoroutine(FinishBossDeath(2f));
@@ -388,7 +400,9 @@ void ShootSpread()
         yield return new WaitForSecondsRealtime(delay);
 
         UnfreezeMapAndPlayer();
-        MonsterManage.Instance?.EnemyKilled();
+
+        if (MonsterManage.Instance != null)
+            MonsterManage.Instance.EnemyKilled();
 
         Destroy(gameObject);
     }

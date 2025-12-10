@@ -126,7 +126,7 @@ public void UnfreezeMapAndPlayer()
         state = BossState.WaitingMinigame;
 
         // Freeze everything at current position
-        FreezeMapAndPlayer();
+        // FreezeMapAndPlayer();
 
         if (glowEffect != null) glowEffect.SetActive(true);
         if (bossAnimator != null) bossAnimator.SetTrigger("PhaseTransition");
@@ -179,7 +179,7 @@ public void UnfreezeMapAndPlayer()
     {
         yield return new WaitForSecondsRealtime(delay);
 
-        UnfreezeMapAndPlayer();
+        // UnfreezeMapAndPlayer();
 
         if (MonsterManage.Instance != null)
             MonsterManage.Instance.EnemyKilled();

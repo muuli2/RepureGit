@@ -591,6 +591,8 @@ GameObject:
   - component: {fileID: 76329659}
   - component: {fileID: 76329658}
   - component: {fileID: 76329657}
+  - component: {fileID: 76329661}
+  - component: {fileID: 76329660}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -712,6 +714,125 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76329655}
   m_CullTransparentMesh: 1
+--- !u!225 &76329660
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76329655}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &76329661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76329655}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da0ed549eab673489d8e1b4d42f6811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkipButton
+  skipButtonGroup: {fileID: 0}
+  fadeTime: 1
+  delayBeforeShow: 2
+  nextSceneName: MainMenu
+--- !u!1 &86589825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 86589829}
+  - component: {fileID: 86589828}
+  - component: {fileID: 86589827}
+  - component: {fileID: 86589826}
+  m_Layer: 5
+  m_Name: Blackfade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &86589826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86589825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0520e76a8fb2043a3667e692192afa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FadePanel
+  fadeImage: {fileID: 86589827}
+  fadeDuration: 3
+  holdTime: 2
+--- !u!114 &86589827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86589825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &86589828
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86589825}
+  m_CullTransparentMesh: 1
+--- !u!224 &86589829
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86589825}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 960, y: 540}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &87460424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,6 +2899,10 @@ PrefabInstance:
     - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: attackDistance
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
+      propertyPath: miniGameSceneName
+      value: MinigameFinal
       objectReference: {fileID: 0}
     - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: rangeAttackDistance
@@ -239450,6 +239575,7 @@ SceneRoots:
   - {fileID: 272437492}
   - {fileID: 282378046}
   - {fileID: 1741035978}
+  - {fileID: 86589829}
   - {fileID: 463550838}
   - {fileID: 35540638}
   - {fileID: 889588596}

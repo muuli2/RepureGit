@@ -54,12 +54,12 @@ public class BoatTrigger : MonoBehaviour
     confirmPanel.SetActive(false);
 
     SceneManager.sceneLoaded += OnSceneLoaded;
-    SceneManager.LoadScene("Map03");
+    SceneManager.LoadScene("Map05");
 }
 
 private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 {
-    if (scene.name != "Map03") return;
+    if (scene.name != "Map05") return;
 
     // เมื่อซีนโหลดเสร็จ
     GameManager.Instance.SpawnPlayer(GameManager.Instance.spawnPoint.position);

@@ -1,4 +1,4 @@
-using UnityEngine;
+using UnityEngine; 
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
@@ -8,7 +8,7 @@ public class FinalMinigameManager : MonoBehaviour
 {
     public static FinalMinigameManager Instance;
 
-      [Header("Question Data")]
+    [Header("Question Data")]
     public QuizQuestion[] questions;
     private int currentIndex = 0;
 
@@ -18,8 +18,9 @@ public class FinalMinigameManager : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text timerText;
     public TMP_Text fastText;   // โชว์ข้อความ “ไวมาก!”
+    public TMP_Text feedbackText; // โชว์ข้อความ “ผิดแล้ว!”
     public GameObject[] answerButtons;
-     public GameObject winPanel;
+    public GameObject winPanel;
 
     [Header("Start Panel")]
     public GameObject startPanel;
@@ -39,7 +40,9 @@ public class FinalMinigameManager : MonoBehaviour
     void Start()
     {
         fastText.gameObject.SetActive(false);
-        StartCoroutine(StartCountdown());
+    feedbackText.gameObject.SetActive(false);
+    winPanel.SetActive(false);   // ✅ ปิด winPanel ก่อนเริ่ม
+    StartCoroutine(StartCountdown());
     }
 
     IEnumerator StartCountdown()
@@ -58,13 +61,17 @@ public class FinalMinigameManager : MonoBehaviour
         StartQuiz();
     }
 
-    void StartQuiz()
-    {
-        score = 0;
-        UpdateScoreUI();
-        currentIndex = 0;
-        ShowQuestion();
-    }
+   void StartQuiz()
+{
+    score = 0;
+    UpdateScoreUI();
+    currentIndex = 0;
+    fastText.gameObject.SetActive(false);
+    feedbackText.gameObject.SetActive(false);
+
+    ShowQuestion();
+}
+
 
     void Update()
     {
@@ -76,50 +83,49 @@ public class FinalMinigameManager : MonoBehaviour
             if (questionTimer <= 0)
             {
                 isPlaying = false;
-                NextQuestion();
+                OnAnswerClicked(-1); // หมดเวลา = ตอบผิด
             }
         }
     }
 
     void ShowQuestion()
+{
+    if (currentIndex >= questions.Length)
     {
-        if (currentIndex >= questions.Length)
-        {
-            currentIndex = 0; // หรือสับใหม่ก็ได้
-        }
-
-        QuizQuestion q = questions[currentIndex];
-
-        questionImage.sprite = q.picture;
-        questionText.text = q.question;
-
-        for (int i = 0; i < answerButtons.Length; i++)
-        {
-            answerButtons[i].GetComponentInChildren<TMP_Text>().text = q.answers[i];
-            int index = i;
-            answerButtons[i].GetComponent<Button>().onClick.RemoveAllListeners();
-            answerButtons[i].GetComponent<Button>().onClick.AddListener(() => OnAnswerClicked(index));
-        }
-
-        questionTimer = answerTimeLimit;
-        isPlaying = true;
+        currentIndex = 0; // หรือสับใหม่ก็ได้
     }
+
+    QuizQuestion q = questions[currentIndex];
+
+    questionImage.sprite = q.picture;
+    questionText.text = q.question;
+
+    for (int i = 0; i < answerButtons.Length; i++)
+    {
+        answerButtons[i].GetComponentInChildren<TMP_Text>().text = q.answers[i];
+        int index = i;
+        answerButtons[i].GetComponent<Button>().onClick.RemoveAllListeners();
+        answerButtons[i].GetComponent<Button>().onClick.AddListener(() => OnAnswerClicked(index));
+    }
+
+    questionTimer = answerTimeLimit;
+    isPlaying = true;  // ✅ เปิดให้เริ่มจับเวลาและตอบคำถามทันที
+}
+
 
     void OnAnswerClicked(int index)
     {
         isPlaying = false;
-
         QuizQuestion q = questions[currentIndex];
 
         if (index == q.correctIndex)
         {
             int gained = baseScore;
 
-            // ได้โบนัสเพราะตอบไว
             if (questionTimer >= answerTimeLimit - bonusLimitSeconds)
             {
                 gained += bonusScore;
-                ShowFastText();
+                StartCoroutine(ShowFastText());
             }
 
             score += gained;
@@ -131,12 +137,13 @@ public class FinalMinigameManager : MonoBehaviour
                 return;
             }
         }
+        else
+        {
+            // ตอบผิด ลดหัวใจ + ข้อความ “ผิดแล้ว!”
+            GameManager.Instance.TakeDamage(1);
+            StartCoroutine(ShowFeedbackText("ผิดแล้ว!"));
+        }
 
-        NextQuestion();
-    }
-
-    void NextQuestion()
-    {
         currentIndex++;
         ShowQuestion();
     }
@@ -146,12 +153,7 @@ public class FinalMinigameManager : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
-    void ShowFastText()
-    {
-        StartCoroutine(FastTextRoutine());
-    }
-
-    IEnumerator FastTextRoutine()
+    IEnumerator ShowFastText()
     {
         fastText.text = "ไวมาก!";
         fastText.gameObject.SetActive(true);
@@ -159,17 +161,53 @@ public class FinalMinigameManager : MonoBehaviour
         fastText.gameObject.SetActive(false);
     }
 
+    IEnumerator ShowFeedbackText(string text)
+    {
+        feedbackText.text = text;
+        feedbackText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1.2f);
+        feedbackText.gameObject.SetActive(false);
+    }
+
     void WinGame()
     {
         isPlaying = false;
         timerText.text = "You Win!";
-         winPanel.SetActive(true);
-        // ใส่เปิดแพเนลหรือเปลี่ยนซีนตรงนี้ได้
+        winPanel.SetActive(true);
     }
 
-      public void ContinueToMap()
+  public void ContinueToMap()
     {
         winPanel.SetActive(false);
+
+        // ❌ ไม่ต้องย้าย Player, ใช้ตำแหน่งเดิม
+        // Unfreeze Player + Map
+        // UnfreezePlayerAndMap();
+      Vector3 bossPos = FinalBoss.Instance.transform.position;
+
+Transform player = GameObject.FindGameObjectWithTag("Player")?.transform;
+if (player != null)
+{
+    Vector3 offset = new Vector3(8f, -3.5f, 0);
+    player.position = bossPos + offset;
+}
+
+        // เรียกบอสตาย
+        if (FinalBoss.Instance != null && FinalBoss.Instance.state != FinalBoss.BossState.Dead)
+        {
+            FinalBoss.Instance.BossDefeated();
+        }
+        // เก็บตำแหน่ง Player
+
+
+
+        // Unload มินิเกม
         SceneManager.UnloadSceneAsync("MinigameFinal");
-    }
+
+        // ปิด MiniGame Active
+        PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+        if (pause != null)
+            pause.isMiniGameActive = false;
+
+}
 }

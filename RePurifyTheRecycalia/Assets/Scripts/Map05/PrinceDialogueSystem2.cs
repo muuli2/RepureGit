@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.InputSystem;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PrinceDialogueSystem2 : MonoBehaviour
 {
@@ -30,6 +32,9 @@ public class PrinceDialogueSystem2 : MonoBehaviour
 
     private PlayerMovement pm;
     private PlayerShoot ps;
+    public FadeController fadeController;
+    public CameraPan cameraPan;
+
 
 
     void Awake()
@@ -112,12 +117,32 @@ else
     }
 
 
-    void EndDialogue()
-    {
-        active = false;
-        dialoguePanel.SetActive(false);
+   void EndDialogue()
+{
+    active = false;
 
-        pm.SetCanMove(true);
-        if (ps != null) ps.canShoot = true;
-    }
+    // คืนการควบคุมผู้เล่นก่อน
+    pm.SetCanMove(true);
+    if (ps != null) ps.canShoot = true;
+
+    // ⭐ เริ่มเอฟเฟกต์ก่อน (อย่าปิด dialoguePanel ตอนนี้)
+    StartCoroutine(DoEndingEffects());
+
+    //    SceneManager.LoadScene("End");
+    
+}
+
+private IEnumerator DoEndingEffects()
+{
+    // เฟดดำ 1.5 วิ
+    yield return StartCoroutine(fadeController.FadeInBlack());
+
+    // แพนกล้องขึ้น 2 วิ
+    if (cameraPan != null)
+        yield return StartCoroutine(cameraPan.PanUp());
+
+         SceneManager.LoadScene("End");
+}
+
+
 }
