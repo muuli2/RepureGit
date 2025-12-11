@@ -9468,7 +9468,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 9c9d9d577313a734bab15a7e2bf28789, type: 3}
+  m_Resource: {fileID: 8300000, guid: f935c1fc68b665441ac5bae82ff2233b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -10105,6 +10105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PauseManager
   pauseMenu: {fileID: 954214494}
   confirmPanel: {fileID: 449369185}
+  bgmSlider: {fileID: 0}
   isMiniGameActive: 0
 --- !u!224 &1866084948
 RectTransform:
