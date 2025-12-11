@@ -51,7 +51,7 @@ public class Monster : MonoBehaviour
         if (currentHealth > 0)
         {
             if (anim != null)
-                anim.SetTrigger("Hurt");
+                anim.SetTrigger("hurt");
         }
         else
         {
@@ -68,7 +68,7 @@ public class Monster : MonoBehaviour
     void Die()
     {
         if (anim != null)
-            anim.SetTrigger("Die");
+            anim.SetTrigger("die");
 
         // ปิด collider เพื่อไม่ให้โดนซ้ำ
         if (col != null)

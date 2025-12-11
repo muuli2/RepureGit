@@ -220,7 +220,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -258,7 +258,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -286,12 +286,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_0
       rect:
         serializedVersion: 2
-        x: 145
-        y: 213
-        width: 31
-        height: 30
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -308,12 +308,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_1
       rect:
         serializedVersion: 2
-        x: 205
-        y: 213
-        width: 37
-        height: 33
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -330,12 +330,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_2
       rect:
         serializedVersion: 2
-        x: 269
-        y: 208
-        width: 36
-        height: 38
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -352,12 +352,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_3
       rect:
         serializedVersion: 2
-        x: 280
-        y: 240
-        width: 6
-        height: 6
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -374,12 +374,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_4
       rect:
         serializedVersion: 2
-        x: 292
-        y: 241
-        width: 6
-        height: 6
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -396,12 +396,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_5
       rect:
         serializedVersion: 2
-        x: 333
-        y: 198
-        width: 39
-        height: 51
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -418,12 +418,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_6
       rect:
         serializedVersion: 2
-        x: 401
-        y: 198
-        width: 34
-        height: 52
+        x: 384
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -440,12 +440,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_7
       rect:
         serializedVersion: 2
-        x: 22
-        y: 213
-        width: 20
-        height: 19
+        x: 448
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -462,12 +462,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_8
       rect:
         serializedVersion: 2
-        x: 85
-        y: 213
-        width: 23
-        height: 18
+        x: 512
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -484,12 +484,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_9
       rect:
         serializedVersion: 2
-        x: 101
-        y: 230
-        width: 6
-        height: 6
+        x: 576
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -506,12 +506,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_10
       rect:
         serializedVersion: 2
-        x: 302
-        y: 228
-        width: 6
-        height: 6
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -528,12 +528,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_11
       rect:
         serializedVersion: 2
-        x: 459
-        y: 195
-        width: 40
-        height: 41
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -550,12 +550,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_12
       rect:
         serializedVersion: 2
-        x: 528
-        y: 209
-        width: 33
-        height: 29
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -572,12 +572,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_13
       rect:
         serializedVersion: 2
-        x: 592
-        y: 211
-        width: 32
-        height: 28
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -594,12 +594,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_14
       rect:
         serializedVersion: 2
-        x: 396
-        y: 202
-        width: 9
-        height: 7
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -616,12 +616,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_15
       rect:
         serializedVersion: 2
-        x: 403
-        y: 197
-        width: 7
-        height: 6
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -638,12 +638,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_16
       rect:
         serializedVersion: 2
-        x: 409
-        y: 197
-        width: 9
-        height: 6
+        x: 384
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -660,12 +660,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_17
       rect:
         serializedVersion: 2
-        x: 23
-        y: 149
-        width: 20
-        height: 19
+        x: 448
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -682,12 +682,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_18
       rect:
         serializedVersion: 2
-        x: 85
-        y: 149
-        width: 23
-        height: 17
+        x: 512
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -704,12 +704,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_19
       rect:
         serializedVersion: 2
-        x: 145
-        y: 149
-        width: 31
-        height: 28
+        x: 576
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -726,12 +726,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_20
       rect:
         serializedVersion: 2
-        x: 205
-        y: 149
-        width: 37
-        height: 31
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -748,12 +748,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_21
       rect:
         serializedVersion: 2
-        x: 269
-        y: 150
-        width: 35
-        height: 35
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -770,12 +770,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_22
       rect:
         serializedVersion: 2
-        x: 303
-        y: 164
-        width: 6
-        height: 6
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -792,12 +792,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_23
       rect:
         serializedVersion: 2
-        x: 334
-        y: 150
-        width: 39
-        height: 36
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -814,12 +814,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_24
       rect:
         serializedVersion: 2
-        x: 399
-        y: 149
-        width: 37
-        height: 38
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -836,12 +836,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_25
       rect:
         serializedVersion: 2
-        x: 462
-        y: 147
-        width: 38
-        height: 36
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -858,12 +858,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_26
       rect:
         serializedVersion: 2
-        x: 529
-        y: 151
-        width: 32
-        height: 34
+        x: 384
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -880,12 +880,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_27
       rect:
         serializedVersion: 2
-        x: 593
-        y: 149
-        width: 32
-        height: 37
+        x: 448
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -902,12 +902,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_28
       rect:
         serializedVersion: 2
-        x: 149
-        y: 85
-        width: 26
-        height: 28
+        x: 512
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -924,12 +924,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_29
       rect:
         serializedVersion: 2
-        x: 217
-        y: 85
-        width: 28
-        height: 31
+        x: 576
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -946,12 +946,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_30
       rect:
         serializedVersion: 2
-        x: 264
-        y: 85
-        width: 45
-        height: 31
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -968,12 +968,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_31
       rect:
         serializedVersion: 2
-        x: 289
-        y: 113
-        width: 6
-        height: 6
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -990,12 +990,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_32
       rect:
         serializedVersion: 2
-        x: 320
-        y: 80
-        width: 53
-        height: 41
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1012,12 +1012,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_33
       rect:
         serializedVersion: 2
-        x: 389
-        y: 83
-        width: 41
-        height: 39
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1034,12 +1034,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_34
       rect:
         serializedVersion: 2
-        x: 447
-        y: 78
-        width: 40
-        height: 35
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1056,12 +1056,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_35
       rect:
         serializedVersion: 2
-        x: 468
-        y: 112
-        width: 6
-        height: 6
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1078,12 +1078,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_36
       rect:
         serializedVersion: 2
-        x: 517
-        y: 85
-        width: 36
-        height: 35
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1100,12 +1100,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_37
       rect:
         serializedVersion: 2
-        x: 581
-        y: 85
-        width: 36
-        height: 35
+        x: 448
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1122,12 +1122,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_38
       rect:
         serializedVersion: 2
-        x: 87
-        y: 85
-        width: 22
-        height: 20
+        x: 512
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1144,12 +1144,12 @@ TextureImporter:
       name: Slime3_Attack_with_shadow_39
       rect:
         serializedVersion: 2
-        x: 212
-        y: 105
-        width: 6
-        height: 6
+        x: 576
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1162,495 +1162,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_40
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 85
-        width: 19
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ab10af1b70ba7160800000000000000
-      internalID: 7024120611695762344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_41
-      rect:
-        serializedVersion: 2
-        x: 383
-        y: 85
-        width: 10
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 788b7eb31055f4de0800000000000000
-      internalID: -1346764299772118905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_42
-      rect:
-        serializedVersion: 2
-        x: 387
-        y: 80
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6b13ee6f46fd5bfc0800000000000000
-      internalID: -3479629512341311050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_43
-      rect:
-        serializedVersion: 2
-        x: 394
-        y: 79
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fe6f788ff1587a2a0800000000000000
-      internalID: -6726261146094405905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_44
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 80
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 36cf21b3e2bc9d110800000000000000
-      internalID: 1286282568011021411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_45
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 21
-        width: 26
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c2826c4d6638ab20800000000000000
-      internalID: 3145824182779151044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_46
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 21
-        width: 28
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b91174ac72206cd10800000000000000
-      internalID: 2145404642409255323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_47
-      rect:
-        serializedVersion: 2
-        x: 268
-        y: 21
-        width: 45
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 937a4fc10ee3ed060800000000000000
-      internalID: 6980085604750239545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_48
-      rect:
-        serializedVersion: 2
-        x: 282
-        y: 49
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 502157732ee1eaef0800000000000000
-      internalID: -95104585186340347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_49
-      rect:
-        serializedVersion: 2
-        x: 332
-        y: 16
-        width: 53
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72d41385587c90270800000000000000
-      internalID: 8217318370638384423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_50
-      rect:
-        serializedVersion: 2
-        x: 403
-        y: 19
-        width: 41
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9018398a1566ac430800000000000000
-      internalID: 3803965336174428425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_51
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 14
-        width: 39
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 978358c86db149400800000000000000
-      internalID: 329919280999381113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_52
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 48
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d9f3935d93c77ad80800000000000000
-      internalID: -8239480405418754147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_53
-      rect:
-        serializedVersion: 2
-        x: 536
-        y: 21
-        width: 36
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a5d95de4b03a8820800000000000000
-      internalID: 2921200861937522087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_54
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 21
-        width: 36
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e903e56daa4940f50800000000000000
-      internalID: 6846760794971844766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_55
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 21
-        width: 22
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 686f8d1e4d5981290800000000000000
-      internalID: -7919415203176319354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_56
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 41
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e77fbc5df661f720800000000000000
-      internalID: 2878194875235268580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_57
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 21
-        width: 19
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0781e3bacdbef2290800000000000000
-      internalID: -7912846687268366224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_58
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 16
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39374cbbad29faa70800000000000000
-      internalID: 8840446061702312851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_59
-      rect:
-        serializedVersion: 2
-        x: 431
-        y: 15
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6567917db9c304970800000000000000
-      internalID: 8737049917125129814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_60
-      rect:
-        serializedVersion: 2
-        x: 440
-        y: 21
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af357629556a016f0800000000000000
-      internalID: -715889454293232646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime3_Attack_with_shadow_61
-      rect:
-        serializedVersion: 2
-        x: 440
-        y: 16
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0f732d084d86c2a0800000000000000
-      internalID: -6717526453578924276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 904e979610dfd674cb14f4a04b7cd7be
     internalID: 0
     vertices: []
     indices: 
@@ -1658,7 +1174,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Slime3_Attack_with_shadow_0: 9222797083647354598
       Slime3_Attack_with_shadow_1: 8221024335601940042
@@ -1695,30 +1213,8 @@ TextureImporter:
       Slime3_Attack_with_shadow_38: 8710002140279912533
       Slime3_Attack_with_shadow_39: -8365940801426511963
       Slime3_Attack_with_shadow_4: 4241942466057411267
-      Slime3_Attack_with_shadow_40: 7024120611695762344
-      Slime3_Attack_with_shadow_41: -1346764299772118905
-      Slime3_Attack_with_shadow_42: -3479629512341311050
-      Slime3_Attack_with_shadow_43: -6726261146094405905
-      Slime3_Attack_with_shadow_44: 1286282568011021411
-      Slime3_Attack_with_shadow_45: 3145824182779151044
-      Slime3_Attack_with_shadow_46: 2145404642409255323
-      Slime3_Attack_with_shadow_47: 6980085604750239545
-      Slime3_Attack_with_shadow_48: -95104585186340347
-      Slime3_Attack_with_shadow_49: 8217318370638384423
       Slime3_Attack_with_shadow_5: -4108978090759532366
-      Slime3_Attack_with_shadow_50: 3803965336174428425
-      Slime3_Attack_with_shadow_51: 329919280999381113
-      Slime3_Attack_with_shadow_52: -8239480405418754147
-      Slime3_Attack_with_shadow_53: 2921200861937522087
-      Slime3_Attack_with_shadow_54: 6846760794971844766
-      Slime3_Attack_with_shadow_55: -7919415203176319354
-      Slime3_Attack_with_shadow_56: 2878194875235268580
-      Slime3_Attack_with_shadow_57: -7912846687268366224
-      Slime3_Attack_with_shadow_58: 8840446061702312851
-      Slime3_Attack_with_shadow_59: 8737049917125129814
       Slime3_Attack_with_shadow_6: -1561349429965858385
-      Slime3_Attack_with_shadow_60: -715889454293232646
-      Slime3_Attack_with_shadow_61: -6717526453578924276
       Slime3_Attack_with_shadow_7: 8417638310390853108
       Slime3_Attack_with_shadow_8: 972011944154265629
       Slime3_Attack_with_shadow_9: -8474141959484657470

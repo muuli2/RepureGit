@@ -505,8 +505,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MiniGame01, Assembly-CSharp
+      - m_Target: {fileID: 945980335}
+        m_TargetAssemblyTypeName: RhythmMiniGame, Assembly-CSharp
         m_MethodName: ContinueToMap
         m_Mode: 1
         m_Arguments:
@@ -1328,7 +1328,7 @@ MonoBehaviour:
   - {fileID: 231081309}
   - {fileID: 1609065946}
   spawnInterval: 1.5
-  targetScore: 100000
+  targetScore: 1000
   targetTrashType: 0
   scoreText: {fileID: 140771014}
   heartImages: []
