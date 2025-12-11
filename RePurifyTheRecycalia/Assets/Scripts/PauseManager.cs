@@ -2,11 +2,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using System.Linq;
+using UnityEngine.UI;   // ← ต้องมี
 
 public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject confirmPanel;
+    
+public Slider bgmSlider;
+// public Slider sfxSlider;
 
     [HideInInspector]
     public bool isMiniGameActive = false;
@@ -26,10 +30,20 @@ public class PauseManager : MonoBehaviour
    
 
     void Start()
+{
+    pauseMenu.SetActive(false);
+    confirmPanel.SetActive(false);
+
+    if (AudioManager.Instance != null)
     {
-        pauseMenu.SetActive(false);
-        confirmPanel.SetActive(false);
+        bgmSlider.value = AudioManager.Instance.bgmSource.volume;
+        // sfxSlider.value = AudioManager.Instance.sfxSource.volume;
+
+        bgmSlider.onValueChanged.AddListener((v) => AudioManager.Instance.SetBGMVolume(v));
+        // sfxSlider.onValueChanged.AddListener((v) => AudioManager.Instance.SetSFXVolume(v));
     }
+}
+
 
  void Update()
     {

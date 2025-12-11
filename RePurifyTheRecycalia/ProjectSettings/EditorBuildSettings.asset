@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Map04.unity
     guid: 3347118ddebddc64bbe6d419f0871aa5
   - enabled: 1
+    path: Assets/Scenes/Minigame022.unity
+    guid: d54c825847acce24480b48e23bf8d8e6
+  - enabled: 1
     path: Assets/Scenes/Map05.unity
     guid: 8823c3d3b4e88f54ab489f2036f9a86f
   - enabled: 1

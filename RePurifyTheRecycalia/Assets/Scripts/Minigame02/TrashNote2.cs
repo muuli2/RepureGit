@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class TrashNote : MonoBehaviour
+public class TrashNote2 : MonoBehaviour
 {
-    public enum TrashType { General, Wet, Recycle, Hazard }
+    public enum TrashType2 { General, Wet, Recycle, Hazard }
 
-    public TrashType trashType;      
+    public TrashType2 trashType;      
     public Key correctKey;           
     public float speed = 1f;
 
@@ -36,7 +36,7 @@ public class TrashNote : MonoBehaviour
     }
 
     // ถูกเรียกตอนผู้เล่นกดปุ่ม
-    public void TryHit(Key key, TrashType targetType)
+    public void TryHit(Key key, TrashType2 targetType)
     {
         if (processed) return;
 
@@ -52,12 +52,12 @@ public class TrashNote : MonoBehaviour
         if (trashType == targetType)
         {
             // ✔ ถูกชนิด → ได้แต้ม
-            RhythmMiniGame.Instance.AddScore(250);
+            RhythmGame2.Instance.AddScore(250);
         }
         else
         {
             // ❌ ผิดชนิด → ไม่ได้แต้ม และโดนลดใจ
-            RhythmMiniGame.Instance.LoseLife();
+            RhythmGame2.Instance.LoseLife();
         }
 
         Destroy(gameObject);
@@ -67,9 +67,9 @@ public class TrashNote : MonoBehaviour
     private void OnMiss()
     {
         // ถูกชนิด → ลดใจ
-        if (trashType == RhythmMiniGame.Instance.targetTrashType)
+        if (trashType == RhythmGame2.Instance.targetTrashType)
         {
-            RhythmMiniGame.Instance.LoseLife();
+            RhythmGame2.Instance.LoseLife();
         }
         // ผิดชนิด → ปล่อยตกได้ ไม่ลดใจ
 
