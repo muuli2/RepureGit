@@ -126,7 +126,7 @@ public void UnfreezeMapAndPlayer()
         state = BossState.WaitingMinigame;
 
         // Freeze everything at current position
-        // FreezeMapAndPlayer();
+        FreezeMapAndPlayer();
 
         if (glowEffect != null) glowEffect.SetActive(true);
         if (bossAnimator != null) bossAnimator.SetTrigger("PhaseTransition");
@@ -179,7 +179,7 @@ public void UnfreezeMapAndPlayer()
     {
         yield return new WaitForSecondsRealtime(delay);
 
-        // UnfreezeMapAndPlayer();
+        UnfreezeMapAndPlayer();
 
         if (MonsterManage.Instance != null)
             MonsterManage.Instance.EnemyKilled();
@@ -213,27 +213,34 @@ public void UnfreezeMapAndPlayer()
         }
     }
 
-    // public void ResetBoss()
-    // {
-    //     gameObject.SetActive(true);
-    //     state = BossState.Normal;
-    //     currentHealth = maxHealth;
-    //     UpdateHealthBar();
+   public void ResetBoss()
+{
+    gameObject.SetActive(true);
+    state = BossState.Normal;
+    currentHealth = maxHealth;
+    UpdateHealthBar();
 
-    //     foreach (var c in GetComponentsInChildren<Collider2D>())
-    //         c.enabled = true;
+    foreach (var c in GetComponentsInChildren<Collider2D>())
+        c.enabled = true;
 
-    //     Rigidbody2D rb = GetComponent<Rigidbody2D>();
-    //     if (rb != null)
-    //         rb.bodyType = RigidbodyType2D.Dynamic;
+    Rigidbody2D rb = GetComponent<Rigidbody2D>();
+    if (rb != null)
+        rb.bodyType = RigidbodyType2D.Dynamic;
 
-    //     if (glowEffect != null)
-    //         glowEffect.SetActive(false);
-    //     if (bossAnimator != null)
-    //         bossAnimator.Rebind();
+    if (glowEffect != null)
+        glowEffect.SetActive(false);
 
-    //     Debug.Log("Boss reset completed.");
-    // }
+    if (bossAnimator != null)
+    {
+        bossAnimator.Rebind();
+        bossAnimator.ResetTrigger("Die");
+        // bossAnimator.ResetTrigger("PhaseTransition");
+        // bossAnimator.SetBool("isWalking", false);
+    }
+
+    Debug.Log("Boss reset completed.");
+}
+
 
     // -------------------------------------
     // 🔹 Helper Static

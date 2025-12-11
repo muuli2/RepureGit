@@ -151,23 +151,35 @@ public class MiniGame01 : MonoBehaviour
     // ปุ่ม Win Panel: ไปต่อ (กลับ Map01)
     // ปุ่ม Continue ใน WinPanel
 public void ContinueToMap()
+{
+    Time.timeScale = 1;
+    if (winPanel != null)
+        winPanel.SetActive(false);
+
+        Vector3 bossPos = BossMap01.Instance.transform.position;
+
+Transform player = GameObject.FindGameObjectWithTag("Player")?.transform;
+if (player != null)
+{
+    Vector3 offset = new Vector3(7f, -6f, 0);
+    player.position = bossPos + offset;
+}
+
+    // Unload scene แล้วเรียกบอส
+    SceneManager.UnloadSceneAsync("MiniGame01").completed += (op) =>
     {
-        Time.timeScale = 1;
-        if (winPanel != null)
-            winPanel.SetActive(false);
-
-        SceneManager.UnloadSceneAsync("Minigame01").completed += (op) =>
+        // ตรวจสอบว่าบอสยังไม่ตาย
+        if (BossMap01.Instance != null)
         {
-            if (Boss.Instance != null && Boss.Instance.state != Boss.BossState.Dead)
-            {
-                Boss.Instance.BossDefeated();
-            }
+            BossMap01.Instance.BossDefeated();
+        }
 
-            PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
-            if (pause != null)
-                pause.isMiniGameActive = false;
-        };
-    }
+        PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+        if (pause != null)
+            pause.isMiniGameActive = false;
+    };
+}
+
 
 // // ตัวอย่างใน MiniGame01.cs หรือฟังก์ชันจบมินิเกม
 // public void FinishMinigame()

@@ -64,5 +64,12 @@ public class Bullet : MonoBehaviour
             finalboss.TakeDamage(damage);
             Destroy(gameObject);
         }
+
+        BossMap01 bossMap01 = col.GetComponent<BossMap01>();
+        if (bossMap01 != null)
+        {
+            bossMap01.TakeDamage(damage);
+            Destroy(gameObject);
+        }
     }
 }
