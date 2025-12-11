@@ -77990,7 +77990,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   bgmSource: {fileID: 1329612089}
-  sfxSource: {fileID: 0}
 --- !u!4 &1000495741
 Transform:
   m_ObjectHideFlags: 0
@@ -80910,7 +80909,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 7b94c7c7da6d8324eb3c17f0188ba35c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 30c405fb9a896134ba256d194867a7fa, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -88872,7 +88871,6 @@ MonoBehaviour:
   pauseMenu: {fileID: 1225585146}
   confirmPanel: {fileID: 708596744}
   bgmSlider: {fileID: 1697024603}
-  sfxSlider: {fileID: 0}
   isMiniGameActive: 0
 --- !u!114 &1741035980
 MonoBehaviour:
