@@ -17191,7 +17191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef51124a1570e43469402454c51801f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicTriggerZone
-  musicToPlay: {fileID: 8300000, guid: 3a5c776635fa7f444a41a456cf956730, type: 3}
+  musicToPlay: {fileID: 8300000, guid: e4215e0a33f765a448db0c70ac4270a9, type: 3}
   playOnce: 0
 --- !u!4 &1519865305
 Transform:
