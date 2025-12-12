@@ -14,7 +14,7 @@ public class CharacterSpawner : MonoBehaviour
         string selected = SelectedCharacter.characterName;
 
         GameObject toSpawn = null;
-        if(selected == "Knight")
+        if(selected == "Lucias")
             toSpawn = MalePrefab;
         else if(selected == "Lumina")
             toSpawn = MagePrefab;

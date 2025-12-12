@@ -2122,8 +2122,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ro
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b617d4abbed8fb0488037bb42bbcd011, type: 2}
-  m_sharedMaterial: {fileID: -6100682161778018343, guid: b617d4abbed8fb0488037bb42bbcd011, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}
+  m_sharedMaterial: {fileID: -878521081088741051, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2733,7 +2733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSelect
   characterLeft:
-    characterName: Knight
+    characterName: Lucias
     description: "\u0E40\u0E01\u0E48\u0E07\u0E21\u0E32\u0E01 \u0E46\u0E46 \u0E46
       \u0E46 \u0E46 \u0E46"
     characterButton: {fileID: 1632493000}
@@ -3427,7 +3427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 618.78784, y: -195.46925}
+  m_AnchoredPosition: {x: 637.3347, y: -210.45451}
   m_SizeDelta: {x: 483.3668, y: 89.1645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1391569462
@@ -3452,8 +3452,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ro
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b617d4abbed8fb0488037bb42bbcd011, type: 2}
-  m_sharedMaterial: {fileID: -6100682161778018343, guid: b617d4abbed8fb0488037bb42bbcd011, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}
+  m_sharedMaterial: {fileID: -878521081088741051, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4090,7 +4090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1213, y: 626}
+  m_AnchoredPosition: {x: 1224.1057, y: 626}
   m_SizeDelta: {x: 218.4357, y: 314.9908}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1524421776
@@ -4418,7 +4418,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 697.2205, y: 602.5811}
+  m_AnchoredPosition: {x: 686.53937, y: 622.81177}
   m_SizeDelta: {x: 168.0376, y: 333.8394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1632493000

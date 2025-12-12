@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
             Destroy(playerRef);
 
         GameObject toSpawn = null;
-        if (SelectedCharacter.characterName == "Knight")
+        if (SelectedCharacter.characterName == "Lucias")
             toSpawn = MalePrefab;
         else if (SelectedCharacter.characterName == "Lumina")
             toSpawn = MagePrefab;
