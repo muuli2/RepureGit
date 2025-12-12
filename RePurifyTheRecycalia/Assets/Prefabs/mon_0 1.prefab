@@ -106,8 +106,8 @@ Transform:
   m_GameObject: {fileID: 1605397172573836818}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 976.7659, y: 451.6923, z: 0}
-  m_LocalScale: {x: 3.3882275, y: 3.3598247, z: 2.6183422}
+  m_LocalPosition: {x: 976.72815, y: 451.72504, z: 0}
+  m_LocalScale: {x: 3.151955, y: 3.1255326, z: 2.4357562}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5653963216231714477}
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Monster
-  maxHealth: 2
+  maxHealth: 3
   healthBarFill: {fileID: 1791056172081892207}
   drops:
   - item: {fileID: 5589730318865043885, guid: e7be8764167968945943981b875278d3, type: 3}

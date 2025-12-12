@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4571a45e35a38d04891d31c5f7618b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossMap01
-  maxHealth: 10
+  maxHealth: 45
   state: 0
   moveSpeed: 4
   chaseDistance: 10

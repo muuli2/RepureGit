@@ -423,7 +423,7 @@ MonoBehaviour:
   normalBulletDamage: 1
   upgradedBulletPrefab: {fileID: 2898786881710506192, guid: a92dedae13f82aa479faf8b4c7dfda4c, type: 3}
   upgradedBulletSpeed: 25
-  upgradedBulletDamage: 25
+  upgradedBulletDamage: 3
   gunUpgraded: 0
   shootCooldown: 1
   canShoot: 1

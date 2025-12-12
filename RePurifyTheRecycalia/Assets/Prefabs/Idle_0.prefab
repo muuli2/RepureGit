@@ -160,9 +160,10 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1684732667910442027, guid: c6fe773ac26342e44bcda96f1b2470cb, type: 3}
   bulletSpawnPoint: {fileID: 3915327498507497184}
   bulletSpeed: 5
-  maxHealth: 10
+  rangeAttackDistance: 4
+  maxHealth: 60
   state: 0
-  moveSpeed: 1.95
+  moveSpeed: 2.29
   chaseDistance: 20
   attackDistance: 20
   attackCooldown: 1.2
@@ -172,6 +173,11 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+  firePoint: {fileID: 0}
+  specialAttackCooldown: 5
+  spreadDetectDistance: 5
+  spreadBulletCount: 12
+  spreadBulletSpeed: 4
   healthBarFill: {fileID: 7584179294301298477}
   bossAnimator: {fileID: 8644396092610067737}
   glowEffect: {fileID: 0}

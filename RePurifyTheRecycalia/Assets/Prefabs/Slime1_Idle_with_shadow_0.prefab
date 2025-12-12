@@ -319,7 +319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossMap01
   maxHealth: 10
   state: 0
-  moveSpeed: 3
+  moveSpeed: 2
   chaseDistance: 10
   attackDistance: 10
   attackCooldown: 2

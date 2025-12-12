@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Monster
-  maxHealth: 2
+  maxHealth: 3
   healthBarFill: {fileID: 1791056172081892207}
   drops:
   - item: {fileID: 5589730318865043885, guid: e7be8764167968945943981b875278d3, type: 3}

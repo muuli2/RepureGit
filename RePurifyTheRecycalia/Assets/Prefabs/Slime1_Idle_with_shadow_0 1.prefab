@@ -317,12 +317,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4571a45e35a38d04891d31c5f7618b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossMap01
-  maxHealth: 10
+  maxHealth: 50
   state: 0
   moveSpeed: 3
   chaseDistance: 10
-  attackDistance: 10
-  attackCooldown: 1
+  attackDistance: 8
+  attackCooldown: 0.7
   damage: 1
   waterPrefab: {fileID: 0}
   waterRange: 2
