@@ -319,10 +319,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossMap01
   maxHealth: 50
   state: 0
-  moveSpeed: 3
+  moveSpeed: 4
   chaseDistance: 10
-  attackDistance: 8
-  attackCooldown: 0.7
+  attackDistance: 5
+  attackCooldown: 0.5
   damage: 1
   waterPrefab: {fileID: 0}
   waterRange: 2
