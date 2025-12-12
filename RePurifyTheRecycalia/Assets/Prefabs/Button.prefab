@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -60.551, y: -10.5964}
+  m_AnchoredPosition: {x: 29.21556, y: 5}
+  m_SizeDelta: {x: -133.2123, y: -26.874}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2024743286561262717
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E2B\u0E48\u0E27\u0E07 \u0E02\u0E49\u0E32\u0E21\u0E31\u0E48\u0E19\u0E43\u0E08\u0E27\u0E48\u0E32\u0E02\u0E49\u0E32\u0E21\u0E35\u0E17\u0E31\u0E01\u0E29\u0E30\u0E1E\u0E23\u0E49\u0E2D\u0E21"
+  m_text: "\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E2B\u0E48\u0E27\u0E07 \u0E02\u0E49\u0E32\u0E21\u0E31\u0E48\u0E19\u0E43\u0E08\u0E27\u0E48\u0E32\u0E02\u0E49\u0E32\u0E21\u0E35\u0E17\u0E31\u0E01\u0E29\u0E30\u0E1E\u0E23\u0E49\u0E2D\u0E21\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}
   m_sharedMaterial: {fileID: -878521081088741051, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}
@@ -74,8 +74,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -172,8 +172,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1897.2063, y: 376.52454}
-  m_SizeDelta: {x: 847.2548, y: 155.6434}
+  m_AnchoredPosition: {x: 1809.0444, y: 401.52716}
+  m_SizeDelta: {x: 1022.0837, y: 239.2283}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8109687032819337046
 CanvasRenderer:
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8673756312040429146, guid: f9fadf0dfd11fa045b2018a4e47cd37b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -234,7 +234,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.5157841, g: 0.6132076, b: 0.49461555, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.47391257, g: 0.6226415, b: 0.44348523, a: 1}
     m_PressedColor: {r: 0.31838444, g: 0.38679248, b: 0.31198826, a: 0.7176471}
     m_SelectedColor: {r: 0.31764707, g: 0.38823533, b: 0.3137255, a: 0.7019608}

@@ -5267,7 +5267,7 @@ MonoBehaviour:
   target: {fileID: 0}
   offset: {x: 0, y: 0, z: -1}
   smoothSpeed: 0
-  zoom: 6.5
+  zoom: 7.5
 --- !u!1001 &482826077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9468,7 +9468,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: f935c1fc68b665441ac5bae82ff2233b, type: 3}
+  m_Resource: {fileID: 8300000, guid: 30c405fb9a896134ba256d194867a7fa, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

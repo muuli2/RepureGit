@@ -949,7 +949,7 @@ MonoBehaviour:
   target: {fileID: 0}
   offset: {x: 0, y: 0, z: -1}
   smoothSpeed: 0
-  zoom: 6.5
+  zoom: 7.5
 --- !u!114 &108953522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2419,6 +2419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PauseManager
   pauseMenu: {fileID: 1715635563}
   confirmPanel: {fileID: 568593197}
+  bgmSlider: {fileID: 0}
   isMiniGameActive: 0
 --- !u!224 &430426539
 RectTransform:

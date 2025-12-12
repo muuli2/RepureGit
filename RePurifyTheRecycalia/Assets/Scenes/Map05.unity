@@ -1671,11 +1671,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3932825060358847365, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0693994
+      value: 37.05373
       objectReference: {fileID: 0}
     - target: {fileID: 3932825060358847365, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.368984
+      value: 7.872307
       objectReference: {fileID: 0}
     - target: {fileID: 3932825060358847365, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3152,8 +3152,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -360.05194, y: 366.84076}
-  m_SizeDelta: {x: 613.0356, y: 671.9657}
+  m_AnchoredPosition: {x: -183.96448, y: 438.7871}
+  m_SizeDelta: {x: 723.0356, y: 679.9657}
   m_Pivot: {x: 0.99999994, y: 0.5}
 --- !u!114 &690967527
 MonoBehaviour:
@@ -3688,9 +3688,9 @@ CanvasGroup:
   m_GameObject: {fileID: 858575016}
   m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 1
 --- !u!1 &869500289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,7 +4538,7 @@ MonoBehaviour:
   target: {fileID: 0}
   offset: {x: 0, y: 0, z: -1}
   smoothSpeed: 0
-  zoom: 6.5
+  zoom: 7.5
 --- !u!114 &992996817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17024,7 +17024,7 @@ GameObject:
   - component: {fileID: 1461685088}
   - component: {fileID: 1461685087}
   m_Layer: 5
-  m_Name: Fade
+  m_Name: fadeCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17125,6 +17125,7 @@ GameObject:
   - component: {fileID: 1519865304}
   - component: {fileID: 1519865306}
   - component: {fileID: 1519865303}
+  - component: {fileID: 1519865307}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -17190,7 +17191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef51124a1570e43469402454c51801f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicTriggerZone
-  musicToPlay: {fileID: 8300000, guid: ce0c0cfd1e86a3a47b92bbddb2f8ee98, type: 3}
+  musicToPlay: {fileID: 8300000, guid: 3a5c776635fa7f444a41a456cf956730, type: 3}
   playOnce: 0
 --- !u!4 &1519865305
 Transform:
@@ -17220,6 +17221,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaNameTrigger
   areaName: MORROTTE
+--- !u!82 &1519865307
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519865302}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 134
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1543239182
 GameObject:
   m_ObjectHideFlags: 0
@@ -17821,7 +17919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e7d0772b50f974699cb41e40309054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  bgmSource: {fileID: 505330250}
+  bgmSource: {fileID: 1519865307}
 --- !u!4 &1727912388
 Transform:
   m_ObjectHideFlags: 0
@@ -18847,7 +18945,7 @@ MonoBehaviour:
   - speaker: 1
     speakerName: Lumina
     text: ...
-    portrait: {fileID: 3225516077630529773, guid: cf465f5e948199b428ef90edac6f9d05, type: 3}
+    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
   - speaker: 1
     speakerName: Lumina
     text: "\u0E2D\u0E07\u0E04\u0E4C\u0E0A\u0E32\u0E22 \u0E17\u0E48\u0E32\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E30\u0E44\u0E23\u0E21\u0E32\u0E01\u0E44\u0E2B\u0E21"
@@ -19611,7 +19709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AreaTextController
   areaText: {fileID: 2038593200}
   moveSpeed: 1500
-  blinkSpeed: 0.5
+  blinkSpeed: 0.2
   blinkDuration: 3
   fadeOutTime: 1
 --- !u!114 &2038593200
@@ -19661,8 +19759,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 400
-  m_fontSizeBase: 400
+  m_fontSize: 550
+  m_fontSizeBase: 550
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -4,7 +4,9 @@ using System.Collections;
 public class FadeController : MonoBehaviour
 {
     public CanvasGroup fadeCanvas;
-    public float fadeDuration = 1.0f;
+    public float fadeDuration = 2.0f;
+    private bool isFading = false;
+
 
     void Awake()
     {
@@ -13,9 +15,10 @@ public class FadeController : MonoBehaviour
             fadeCanvas.alpha = 0f;
     }
 
-    public IEnumerator FadeInBlack()
+   public IEnumerator FadeInBlack()
 {
-    Debug.Log("FadeInBlack ถูกเรียกแล้ว!");
+    if (isFading) yield break; // ❌ ถ้ากำลังเฟดอยู่ ให้หยุดเลย
+    isFading = true; // 🔒 ล็อกเฟด
 
     float t = 0;
     fadeCanvas.gameObject.SetActive(true);
@@ -24,12 +27,16 @@ public class FadeController : MonoBehaviour
     {
         t += Time.deltaTime;
         fadeCanvas.alpha = Mathf.Lerp(0f, 1f, t / fadeDuration);
-        Debug.Log("Alpha = " + fadeCanvas.alpha);
         yield return null;
     }
 
     fadeCanvas.alpha = 1f;
-    Debug.Log("Fade เสร็จ!");
+
+    // 🔓 จะปลดล็อกไหม?
+    // ถ้าเฟดดำถาวรจนไปฉากใหม่ ไม่ต้องปลดล็อก
+    // isFading = false;
 }
+
+
 
 }
