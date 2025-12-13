@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   speed: 8
   damage: 1
-  maxDistance: 5
+  maxDistance: 3.5
 --- !u!50 &-7410558863809331341
 Rigidbody2D:
   serializedVersion: 5

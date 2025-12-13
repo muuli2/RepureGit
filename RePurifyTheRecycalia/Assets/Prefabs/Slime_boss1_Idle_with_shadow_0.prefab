@@ -383,7 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossMap01
   maxHealth: 12
   state: 0
-  moveSpeed: 3
+  moveSpeed: 3.5
   chaseDistance: 10
   attackDistance: 4.5
   attackCooldown: 2
@@ -391,7 +391,7 @@ MonoBehaviour:
   waterPrefab: {fileID: 0}
   waterRange: 2
   waterDuration: 0.6
-  attackRange: 8
+  attackRange: 8.5
   attackPoint: {fileID: 6626684154882959779}
   anim: {fileID: 383280512874692040}
   sr: {fileID: 4439720261454824840}
