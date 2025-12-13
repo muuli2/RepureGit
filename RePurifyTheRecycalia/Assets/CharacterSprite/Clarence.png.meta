@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1d92a090cdfa80e49956367cc68fbdc1
+guid: 99fa7bc09b822a1428c60dfcb3760ed7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5774501616662186930
-    second: Lumina_0
+      213: -5304066153669314135
+    second: Clarence_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lumina_0
+      name: Clarence_0
       rect:
         serializedVersion: 2
-        x: 13
+        x: 461
         y: 0
-        width: 3040
-        height: 2598
+        width: 2515
+        height: 2577
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e447eefcf59dcdfa0800000000000000
-      internalID: -5774501616662186930
+      spriteID: 9a93e557feb2466b0800000000000000
+      internalID: -5304066153669314135
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 413baac70db09dd45bd2fe6a5bb65388
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lumina_0: -5774501616662186930
+      Clarence_0: -5304066153669314135
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 1d92a090cdfa80e49956367cc68fbdc1
+guid: b1e1cb5eb2824ea4583d49d41e5438d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5774501616662186930
-    second: Lumina_0
+      213: -4443154573315160347
+    second: Lucias_0
+  - first:
+      213: 676981580817996705
+    second: Lucias_1
+  - first:
+      213: -957890567053526060
+    second: Lucias_2
+  - first:
+      213: 6282668527614070669
+    second: Lucias_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lumina_0
+      name: Lucias_0
       rect:
         serializedVersion: 2
-        x: 13
+        x: 587
         y: 0
-        width: 3040
+        width: 1906
         height: 2598
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e447eefcf59dcdfa0800000000000000
-      internalID: -5774501616662186930
+      spriteID: 5e6c567d47eb652c0800000000000000
+      internalID: -4443154573315160347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lucias_1
+      rect:
+        serializedVersion: 2
+        x: 2505
+        y: 265
+        width: 37
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab9324392f156900800000000000000
+      internalID: 676981580817996705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lucias_2
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 286
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dbb319ba93e4b2f0800000000000000
+      internalID: -957890567053526060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lucias_3
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 0
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f86f52db5803750800000000000000
+      internalID: 6282668527614070669
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 413baac70db09dd45bd2fe6a5bb65388
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lumina_0: -5774501616662186930
+      Lucias_0: -4443154573315160347
+      Lucias_1: 676981580817996705
+      Lucias_2: -957890567053526060
+      Lucias_3: 6282668527614070669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

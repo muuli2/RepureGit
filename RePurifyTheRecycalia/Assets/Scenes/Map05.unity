@@ -3133,6 +3133,7 @@ GameObject:
   - component: {fileID: 690967526}
   - component: {fileID: 690967528}
   - component: {fileID: 690967527}
+  - component: {fileID: 690967529}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -3156,9 +3157,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -183.96448, y: 438.7871}
-  m_SizeDelta: {x: 723.0356, y: 679.9657}
-  m_Pivot: {x: 0.99999994, y: 0.5}
+  m_AnchoredPosition: {x: -563.9536, y: 519.92426}
+  m_SizeDelta: {x: 819.7234, y: 711.9507}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690967527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3179,9 +3180,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3197,6 +3198,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690967525}
   m_CullTransparentMesh: 1
+--- !u!114 &690967529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690967525}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.AspectRatioFitter
+  m_AspectMode: 3
+  m_AspectRatio: 1.1645063
 --- !u!1 &717334343
 GameObject:
   m_ObjectHideFlags: 0
@@ -3367,8 +3382,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 579.2918, y: 368.63617}
-  m_SizeDelta: {x: 737.4823, y: 737.2724}
+  m_AnchoredPosition: {x: 562.25885, y: 411.6624}
+  m_SizeDelta: {x: 689.4823, y: 746.2724}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773707243
 MonoBehaviour:
@@ -18953,28 +18968,36 @@ MonoBehaviour:
   - speaker: 1
     speakerName: Lumina
     text: "\u0E2D\u0E07\u0E04\u0E4C\u0E0A\u0E32\u0E22 \u0E17\u0E48\u0E32\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E30\u0E44\u0E23\u0E21\u0E32\u0E01\u0E44\u0E2B\u0E21"
-    portrait: {fileID: 3225516077630529773, guid: cf465f5e948199b428ef90edac6f9d05, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 0
-    speakerName: Aelior
+    speakerName: Clarence
     text: ....
-    portrait: {fileID: -6451425678666688265, guid: c0382446ae402a348a13a75fe03089ae, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Aelior
     text: Lumina..?
-    portrait: {fileID: -6451425678666688265, guid: c0382446ae402a348a13a75fe03089ae, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 1
     speakerName: Lumina
     text: '!!??'
-    portrait: {fileID: 3225516077630529773, guid: cf465f5e948199b428ef90edac6f9d05, type: 3}
+    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
   - speaker: 1
     speakerName: Lumina
     text: "\u0E17\u0E48\u0E32\u0E19\u0E23\u0E39\u0E49\u0E0A\u0E37\u0E48\u0E2D\u0E02\u0E49\u0E32..?!"
-    portrait: {fileID: -6451425678666688265, guid: c0382446ae402a348a13a75fe03089ae, type: 3}
+    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
   dialogueForB:
   - speaker: 0
     speakerName: Aelior
     text: ...
-    portrait: {fileID: 3225516077630529773, guid: cf465f5e948199b428ef90edac6f9d05, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+  - speaker: 1
+    speakerName: Aelior
+    text: ...
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
+  - speaker: 1
+    speakerName: Aelior
+    text: ...
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
 --- !u!212 &1880218147
 SpriteRenderer:
   m_ObjectHideFlags: 0
