@@ -843,7 +843,7 @@ TextureImporter:
         width: 184
         height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -865,7 +865,7 @@ TextureImporter:
         width: 184
         height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -887,7 +887,7 @@ TextureImporter:
         width: 184
         height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -896,6 +896,28 @@ TextureImporter:
       bones: []
       spriteID: 6261daf73143ab548ac72cf8659683b7
       internalID: 282584299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hilll_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 353
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2a388f99e774d4f9df8908aef74d4e
+      internalID: 233996916
       vertices: []
       indices: 
       edges: []
@@ -946,6 +968,7 @@ TextureImporter:
       Hilll_33: 1792092360
       Hilll_34: 2134646736
       Hilll_35: 282584299
+      Hilll_36: 233996916
       Hilll_4: 1151860022
       Hilll_5: 18524713
       Hilll_6: 1408402865
