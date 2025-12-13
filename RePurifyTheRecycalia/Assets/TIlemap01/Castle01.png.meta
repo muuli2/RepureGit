@@ -541,8 +541,8 @@ TextureImporter:
       name: Castle01_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1607
+        x: 414
+        y: 1002
         width: 688
         height: 1243
       alignment: 0
@@ -568,7 +568,7 @@ TextureImporter:
         width: 201
         height: 201
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -577,6 +577,28 @@ TextureImporter:
       bones: []
       spriteID: f8c0d9de0b38fc44d8df0a424f72ef49
       internalID: 1212395750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Castle01_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2191
+        width: 100
+        height: 615
+      alignment: 9
+      pivot: {x: 0.49999982, y: 0.4677643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31f2bfbe64614a28ab340cd57c5c7a5
+      internalID: -217795327
       vertices: []
       indices: 
       edges: []
@@ -608,6 +630,7 @@ TextureImporter:
       Castle01_18: -706879848
       Castle01_19: 1212395750
       Castle01_2: -5483556277174394794
+      Castle01_20: -217795327
       Castle01_3: -3085615979300576305
       Castle01_4: -6170649971197055580
       Castle01_5: -937889079981880621
