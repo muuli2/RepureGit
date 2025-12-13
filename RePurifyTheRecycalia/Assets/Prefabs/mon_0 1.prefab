@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.47, y: 0.13}
+  m_SizeDelta: {x: 2.31, y: 0.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1317483644208008237
 CanvasRenderer:
@@ -106,8 +106,8 @@ Transform:
   m_GameObject: {fileID: 1605397172573836818}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 976.72815, y: 451.72504, z: 0}
-  m_LocalScale: {x: 3.151955, y: 3.1255326, z: 2.4357562}
+  m_LocalPosition: {x: 974.9698, y: 453.4687, z: 0}
+  m_LocalScale: {x: 2.3279638, y: 2.308449, z: 1.7989953}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5653963216231714477}
@@ -174,7 +174,7 @@ SpriteRenderer:
   m_SortingLayerID: 2050373311
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1148734496223618474, guid: 48180a4e302e78c4a903a0ee4ebdc6bb, type: 3}
+  m_Sprite: {fileID: 7135061724225640242, guid: c6be2d3685fc6804591faeb7f70f356a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -266,8 +266,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.006672172, y: 0.0003902173}
-  m_Radius: 0.1587456
+  m_Offset: {x: -0.014787097, y: 0.00039019503}
+  m_Radius: 0.46605575
 --- !u!95 &-6922141348333141083
 Animator:
   serializedVersion: 7
@@ -427,8 +427,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.967386, y: -87.71209}
-  m_SizeDelta: {x: 1.47, y: 0.13}
+  m_AnchoredPosition: {x: 16.951143, y: -87.16312}
+  m_SizeDelta: {x: 2.31, y: 0.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3218415736178284321
 CanvasRenderer:
