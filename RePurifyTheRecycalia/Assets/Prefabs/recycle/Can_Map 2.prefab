@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 3655062986504027945}
   - component: {fileID: -4569823144572529373}
   m_Layer: 0
-  m_Name: Can_0 1
+  m_Name: Can_Map 2
   m_TagString: Trash2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,7 +186,7 @@ SpriteRenderer:
   m_SortingLayerID: -82933903
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7032184553362833509, guid: 4d0569faa76b231418bb0db7048fc93e, type: 3}
+  m_Sprite: {fileID: 4727633781103762509, guid: 1ba4dcaed5e911c44aa18a20ff5e924c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
