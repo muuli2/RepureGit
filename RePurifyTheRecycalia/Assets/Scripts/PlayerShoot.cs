@@ -20,6 +20,11 @@ public class PlayerShoot : MonoBehaviour
 
     [Header("Gun Upgrade")]
     public bool gunUpgraded = false;
+    
+    [Header("Sound")]
+public AudioClip shootSound;
+private AudioSource audioSource;
+
 
     public float shootCooldown = 1f;
     private float lastShootTime = -Mathf.Infinity;
@@ -27,10 +32,12 @@ public class PlayerShoot : MonoBehaviour
     [HideInInspector] public bool canShoot = true;
 
     void Start()
-    {
-        pauseManager = FindObjectOfType<PauseManager>();
-        anim = GetComponent<Animator>();
-    }
+{
+    pauseManager = FindObjectOfType<PauseManager>();
+    anim = GetComponent<Animator>();
+    audioSource = GetComponent<AudioSource>();
+}
+
 
     void Update()
     {
@@ -47,35 +54,33 @@ public class PlayerShoot : MonoBehaviour
     }
 
     void Shoot()
-    {
-        anim.SetTrigger("isAttack");
+{
+    anim.SetTrigger("isAttack");
 
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        mousePos.z = 0f;
-        Vector3 direction = (mousePos - firePoint.position).normalized;
+    if (shootSound != null)
+        audioSource.PlayOneShot(shootSound);
 
-        // เลือก Prefab และค่าต่าง ๆ ตามอัพเกรด
-        GameObject prefab = gunUpgraded ? upgradedBulletPrefab : normalBulletPrefab;
-        float speed = gunUpgraded ? upgradedBulletSpeed : normalBulletSpeed;
-        int damage = gunUpgraded ? upgradedBulletDamage : normalBulletDamage;
+    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+    mousePos.z = 0f;
+    Vector3 direction = (mousePos - firePoint.position).normalized;
 
-        GameObject bullet = Instantiate(prefab, firePoint.position, Quaternion.identity);
+    GameObject prefab = gunUpgraded ? upgradedBulletPrefab : normalBulletPrefab;
+    float speed = gunUpgraded ? upgradedBulletSpeed : normalBulletSpeed;
+    int damage = gunUpgraded ? upgradedBulletDamage : normalBulletDamage;
 
-        // หมุนกระสุน
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        bullet.transform.rotation = Quaternion.Euler(0, 0, angle);
+    GameObject bullet = Instantiate(prefab, firePoint.position, Quaternion.identity);
 
-        // ยิง
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = direction * speed;
+    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+    bullet.transform.rotation = Quaternion.Euler(0, 0, angle);
 
-        // ตั้งค่าดาเมจให้กระสุน (สมมติกระสุนมีสคริป Bullet)
-        Bullet bulletScript = bullet.GetComponent<Bullet>();
-        if (bulletScript != null)
-        {
-            bulletScript.damage = damage;
-        }
-    }
+    Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+    rb.linearVelocity = direction * speed;
+
+    Bullet bulletScript = bullet.GetComponent<Bullet>();
+    if (bulletScript != null)
+        bulletScript.damage = damage;
+}
+
 
     public void UpgradeGun()
     {
