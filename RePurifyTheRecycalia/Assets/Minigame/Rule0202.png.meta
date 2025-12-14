@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 14f6d8912c4da3141bb670fb2ef2143b
+guid: 0d3e973bc97e07a4b88c5e124e671346
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 879526750475198573
-    second: Tokjai2_0
+      213: 3500913534974829360
+    second: Rule0202_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tokjai2_0
+      name: Rule0202_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 0
-        width: 226
-        height: 220
+        x: 128
+        y: 117
+        width: 2101
+        height: 1150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d60278c6be4b43c00800000000000000
-      internalID: 879526750475198573
+      spriteID: 0332889bf4eb59030800000000000000
+      internalID: 3500913534974829360
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 951a78ae800120a4e935f2b9fd45b269
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tokjai2_0: 879526750475198573
+      Rule0202_0: 3500913534974829360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
