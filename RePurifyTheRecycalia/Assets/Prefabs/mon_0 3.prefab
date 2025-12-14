@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterMovement
   speed: 2
-  followRadius: 4
+  followRadius: 9
 --- !u!212 &1594723534088508106
 SpriteRenderer:
   m_ObjectHideFlags: 0

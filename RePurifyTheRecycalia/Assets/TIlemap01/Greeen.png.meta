@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cf465f5e948199b428ef90edac6f9d05
+guid: c8eb3680e6b1c9d47a511a7ddaf255c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3225516077630529773
-    second: Girll_0
+      213: -3647537212429081249
+    second: Greeen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 669
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Girll_0
+      name: Greeen_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2625
-        height: 2318
+        width: 669
+        height: 669
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de0aa7878c553cc20800000000000000
-      internalID: 3225516077630529773
+      spriteID: f5565241b38516dc0800000000000000
+      internalID: -3647537212429081249
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Girll_0: 3225516077630529773
+      Greeen_0: -3647537212429081249
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

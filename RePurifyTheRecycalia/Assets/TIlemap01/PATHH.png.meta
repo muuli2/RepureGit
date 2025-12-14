@@ -1,0 +1,1065 @@
+fileFormatVersion: 2
+guid: 59fd993e727a8514a9b89d01c2d57589
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3972194941492750405
+    second: PATHH_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 931
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PATHH_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2793
+        width: 931
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb798bd0fbdefd8c0800000000000000
+      internalID: -3972194941492750405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_1
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 2793
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873323a15ce2ff44a9747f697d93f318
+      internalID: -977644144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_2
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 2793
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ef179fe65543e43a02cbb773f21e88
+      internalID: -1581209854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_3
+      rect:
+        serializedVersion: 2
+        x: 2916
+        y: 2793
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5191af9712b93c2448ba0e550fd3902a
+      internalID: 1278693652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_4
+      rect:
+        serializedVersion: 2
+        x: 3888
+        y: 2793
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53a6d00bfa4722418cdaee58c878749
+      internalID: -2059989699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_5
+      rect:
+        serializedVersion: 2
+        x: 4860
+        y: 2793
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fae155876d7f94458073c15b24405ec
+      internalID: -786540032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_6
+      rect:
+        serializedVersion: 2
+        x: 5832
+        y: 2793
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09c02a92af5def4c8ec0ea5c54e1f42
+      internalID: -27398560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_7
+      rect:
+        serializedVersion: 2
+        x: 6804
+        y: 2793
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468371fc4c761a94ebb02df8bdad9f9f
+      internalID: -1303287155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_8
+      rect:
+        serializedVersion: 2
+        x: 7776
+        y: 2793
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c8056927326374a9db2ff45321c587
+      internalID: 560364387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_9
+      rect:
+        serializedVersion: 2
+        x: 8748
+        y: 2793
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3232c7237665343bdfeb30340eb5ea
+      internalID: 1411154259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_10
+      rect:
+        serializedVersion: 2
+        x: 9720
+        y: 2793
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c255915789a179443b0a9b290476771c
+      internalID: 1156461691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1862
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62b30b0aff165c4f958378f53f8175d
+      internalID: -132212686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_12
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1862
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893fc2ef9264e0444b124259de47ae92
+      internalID: -787798216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_13
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1862
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3d5cf201eb32c48863dca0cbb6e31b
+      internalID: 729961829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_14
+      rect:
+        serializedVersion: 2
+        x: 2916
+        y: 1862
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7876b0bbbd10447bd38a9ff52f0880
+      internalID: 1362516998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_15
+      rect:
+        serializedVersion: 2
+        x: 3888
+        y: 1862
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd05b9b504e58ae4d9f41685d7dc04f9
+      internalID: 631200907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_16
+      rect:
+        serializedVersion: 2
+        x: 4860
+        y: 1862
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da42a35e0a4a2a444b9d9235ab09d4e4
+      internalID: 1099628631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_17
+      rect:
+        serializedVersion: 2
+        x: 5832
+        y: 1862
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5380ac181e9334448a0ab3f0a9cd582
+      internalID: 366792302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_18
+      rect:
+        serializedVersion: 2
+        x: 6804
+        y: 1862
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610ad29ed8c1bba4e8b23382c98f430b
+      internalID: 2044833081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_19
+      rect:
+        serializedVersion: 2
+        x: 7776
+        y: 1862
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955133181e9ae0245b5bd54c7f8aebdf
+      internalID: -1640967718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_20
+      rect:
+        serializedVersion: 2
+        x: 8748
+        y: 1862
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabb4c056622dd84e9b793423445c0eb
+      internalID: 701036501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_21
+      rect:
+        serializedVersion: 2
+        x: 9720
+        y: 1862
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bd4d65363cf074b99d81a538a44dd6
+      internalID: -1120243656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 931
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ff72a4343bae34788c3e5cf99fd48f
+      internalID: -1802116156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_23
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 931
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0406d674ca1296409ac6a132241c3ca
+      internalID: -1090102806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_24
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 931
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ba6a0a84a03364da8fd85c9517b7cc
+      internalID: 1598569030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_25
+      rect:
+        serializedVersion: 2
+        x: 2916
+        y: 931
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09056d25cfabffb4a88f2771e5c1a32c
+      internalID: -1680111904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_26
+      rect:
+        serializedVersion: 2
+        x: 3888
+        y: 931
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00255ee37cad72a4497331ae4fdf5ed0
+      internalID: 1744974775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_27
+      rect:
+        serializedVersion: 2
+        x: 4860
+        y: 931
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b06e3885c59a9348b7bd4ebef63bc1f
+      internalID: 1659259038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_28
+      rect:
+        serializedVersion: 2
+        x: 5832
+        y: 931
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23f0eb41a4a8f24faa27242fbfafa8d
+      internalID: 651752826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_29
+      rect:
+        serializedVersion: 2
+        x: 6804
+        y: 931
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcfe5f7f72d2c741b99ca049754f2d7
+      internalID: 1880545333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_30
+      rect:
+        serializedVersion: 2
+        x: 7776
+        y: 931
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379bb30e5741ba54aa852eb6ba4fb2c2
+      internalID: -1230943365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_31
+      rect:
+        serializedVersion: 2
+        x: 8748
+        y: 931
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd8499f952bd8344b1f3dc7b6fd94c5
+      internalID: 1382533991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_32
+      rect:
+        serializedVersion: 2
+        x: 9720
+        y: 931
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d402d40ddba5324cbaebbd6fabcbb26
+      internalID: -789014530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f274844f2541af546b64bac6994da1dd
+      internalID: 2009075030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_34
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 0
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb39fb34eca08e54b883b93735150720
+      internalID: -140958727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_35
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 0
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcefee88b7789340ac045916ab01817
+      internalID: 1956680257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_36
+      rect:
+        serializedVersion: 2
+        x: 2916
+        y: 0
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d448a32a5de8cf34da8aec7bafe25048
+      internalID: -872562217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_37
+      rect:
+        serializedVersion: 2
+        x: 6804
+        y: 0
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f570b194681ddd74b8d0ce75020c3b85
+      internalID: -1865104846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_38
+      rect:
+        serializedVersion: 2
+        x: 7776
+        y: 0
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5ecb7390535c04e9d85e02f17a5cad
+      internalID: 1228486328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_39
+      rect:
+        serializedVersion: 2
+        x: 8748
+        y: 0
+        width: 972
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a951217d6a8d1d4fa37cc88ff848d46
+      internalID: -486843684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PATHH_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1864
+        width: 1852
+        height: 929
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b988309d5d147eb41a7565d29a4f4f5d
+      internalID: 495397998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 95acf131050c77145a3db5f5f8e76c54
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":11.0,"y":4.0},"gridSpriteSize":{"x":972.0,"y":931.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PATHH_0: -3972194941492750405
+      PATHH_1: -977644144
+      PATHH_10: 1156461691
+      PATHH_11: -132212686
+      PATHH_12: -787798216
+      PATHH_13: 729961829
+      PATHH_14: 1362516998
+      PATHH_15: 631200907
+      PATHH_16: 1099628631
+      PATHH_17: 366792302
+      PATHH_18: 2044833081
+      PATHH_19: -1640967718
+      PATHH_2: -1581209854
+      PATHH_20: 701036501
+      PATHH_21: -1120243656
+      PATHH_22: -1802116156
+      PATHH_23: -1090102806
+      PATHH_24: 1598569030
+      PATHH_25: -1680111904
+      PATHH_26: 1744974775
+      PATHH_27: 1659259038
+      PATHH_28: 651752826
+      PATHH_29: 1880545333
+      PATHH_3: 1278693652
+      PATHH_30: -1230943365
+      PATHH_31: 1382533991
+      PATHH_32: -789014530
+      PATHH_33: 2009075030
+      PATHH_34: -140958727
+      PATHH_35: 1956680257
+      PATHH_36: -872562217
+      PATHH_37: -1865104846
+      PATHH_38: 1228486328
+      PATHH_39: -486843684
+      PATHH_4: -2059989699
+      PATHH_40: 495397998
+      PATHH_5: -786540032
+      PATHH_6: -27398560
+      PATHH_7: -1303287155
+      PATHH_8: 560364387
+      PATHH_9: 1411154259
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
