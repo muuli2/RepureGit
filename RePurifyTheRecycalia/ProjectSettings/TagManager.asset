@@ -56,11 +56,11 @@ TagManager:
   - name: Bullet
     uniqueID: 4099094017
     locked: 0
-  - name: Monster
-    uniqueID: 2050373311
-    locked: 0
   - name: Prop
     uniqueID: 4212033393
+    locked: 0
+  - name: Monster
+    uniqueID: 2050373311
     locked: 0
   - name: Player
     uniqueID: 1531782037
