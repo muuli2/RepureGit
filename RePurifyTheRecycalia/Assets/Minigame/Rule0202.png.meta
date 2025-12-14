@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7f02a85599284a14b95251ec939c06c6
+guid: 0d3e973bc97e07a4b88c5e124e671346
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5589436419742275315
-    second: TokJai_0
+      213: 3500913534974829360
+    second: Rule0202_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TokJai_0
+      name: Rule0202_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 332
-        height: 340
+        x: 128
+        y: 117
+        width: 2101
+        height: 1150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0961aab0355e62b0800000000000000
-      internalID: -5589436419742275315
+      spriteID: 0332889bf4eb59030800000000000000
+      internalID: 3500913534974829360
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TokJai_0: -5589436419742275315
+      Rule0202_0: 3500913534974829360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
