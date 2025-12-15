@@ -205,11 +205,34 @@ public AudioClip deathSound;
     if (deathSound != null && audioSource != null)
         audioSource.PlayOneShot(deathSound);
 
+    // 🔓 ปลดสถานะมินิเกม (สำคัญมาก)
+    isMiniGameActive = false;
+
+    PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+    if (pause != null)
+        pause.isMiniGameActive = false;
+
     if (gameOverPanel != null)
         gameOverPanel.SetActive(true);
 
     if (playerRef != null)
         playerRef.SetActive(false);
+}
+
+
+void EnablePlayerCombat()
+{
+    if (playerRef == null) return;
+
+    // ถ้าเธอปิดยิงด้วย script
+    var shooter = playerRef.GetComponent<PlayerShoot>();
+    if (shooter != null)
+        shooter.enabled = true;
+
+    // ถ้าใช้ Input System
+    var input = playerRef.GetComponent<PlayerInput>();
+    if (input != null)
+        input.enabled = true;
 }
 
 
