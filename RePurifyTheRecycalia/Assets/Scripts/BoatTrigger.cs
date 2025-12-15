@@ -66,12 +66,12 @@ private void OnTriggerExit2D(Collider2D col)
     confirmPanel.SetActive(false);
 
     SceneManager.sceneLoaded += OnSceneLoaded;
-    SceneManager.LoadScene("Map04");
+    SceneManager.LoadScene("Map02");
 }
 
 private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 {
-    if (scene.name != "Map04") return;
+    if (scene.name != "Map02") return;
 
     // เมื่อซีนโหลดเสร็จ
     GameManager.Instance.SpawnPlayer(GameManager.Instance.spawnPoint.position);

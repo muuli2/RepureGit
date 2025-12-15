@@ -2,16 +2,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
-using System.Collections; // ✅ ต้องมีอันนี้
 
 public class MapTrigger : MonoBehaviour
 {
-    public GameObject confirmPanel;    
+    [Header("UI")]
+    public GameObject confirmPanel;
     public Button yesButton;
     public Button noButton;
     public TMP_Text warningText;
 
-    private int requiredPoints = 0;
+    [Header("Map Settings")]
+    public string targetSceneName;     // ← ซีนปลายทาง
+    public int requiredPoints = 0;     // ← คะแนนที่ต้องใช้
+
+     private PlayerShoot playerShoot;
 
     private void Start()
     {
@@ -27,7 +31,11 @@ public class MapTrigger : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             confirmPanel.SetActive(true);
-            warningText.gameObject.SetActive(false);  // 🔥 รีเซ็ตทุกครั้ง
+            warningText.gameObject.SetActive(false);
+
+              playerShoot = col.GetComponent<PlayerShoot>();
+        if (playerShoot != null)
+            playerShoot.canShoot = false; // ❌ ห้ามยิง
         }
     }
 
@@ -37,39 +45,52 @@ public class MapTrigger : MonoBehaviour
         {
             confirmPanel.SetActive(false);
             warningText.gameObject.SetActive(false);
+
+            
+        if (playerShoot != null)
+            playerShoot.canShoot = true; // ✅ ยิงได้อีก
         }
     }
 
     public void OnYes()
-{
-    int currentScore = ScoreManage.Instance.totalScore;
-    if(currentScore < requiredPoints)
     {
-        warningText.text = "ค่าชำระล้างยังไม่ถึงนะ…";
-        warningText.gameObject.SetActive(true);
-        return;
+
+         if (playerShoot != null)
+        playerShoot.canShoot = false;
+        int currentScore = ScoreManage.Instance.totalScore;
+
+        if (currentScore < requiredPoints)
+        {
+            warningText.text = "ค่าชำระล้างยังไม่ถึงนะ…";
+            warningText.gameObject.SetActive(true);
+            return;
+        }
+
+        // หักแต้ม
+        ScoreManage.Instance.AddScore(-requiredPoints);
+
+        confirmPanel.SetActive(false);
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.LoadScene(targetSceneName);
     }
 
-    ScoreManage.Instance.AddScore(-requiredPoints);
-    confirmPanel.SetActive(false);
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name != targetSceneName) return;
 
-    SceneManager.sceneLoaded += OnSceneLoaded;
-    SceneManager.LoadScene("Map03");
-}
+        // กลับมาจุด Spawn ปกติของ GameManager
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.SpawnPlayer(
+                GameManager.Instance.spawnPoint.position
+            );
+        }
 
-private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-{
-    if (scene.name != "Map03") return;
+        MonsterManage.Instance?.ResetAllMonsters();
 
-    // เมื่อซีนโหลดเสร็จ
-    GameManager.Instance.SpawnPlayer(GameManager.Instance.spawnPoint.position);
-    MonsterManage.Instance?.ResetAllMonsters();
-    // GameManager.Instance.ResetAllTrash();
-
-    SceneManager.sceneLoaded -= OnSceneLoaded;
-}
-
-
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 
     public void OnNo()
     {
