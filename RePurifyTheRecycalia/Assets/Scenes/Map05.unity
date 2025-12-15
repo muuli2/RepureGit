@@ -18317,8 +18317,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 516.0738, y: 534.5166}
-  m_SizeDelta: {x: 783.99, y: 823.689}
+  m_AnchoredPosition: {x: 516.4985, y: 528.6465}
+  m_SizeDelta: {x: 784.8413, y: 811.9489}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773707243
 MonoBehaviour:
@@ -95495,18 +95495,18 @@ MonoBehaviour:
     speakerName: Lumina
     text: ...
     portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+  - speaker: 0
+    speakerName: Clarence
+    text: ....
+    portrait: {fileID: -6176266228772638158, guid: 96bb0bb8b0830324284e8806ecefe11a, type: 3}
   - speaker: 1
     speakerName: Lumina
     text: "\u0E2D\u0E07\u0E04\u0E4C\u0E0A\u0E32\u0E22 \u0E17\u0E48\u0E32\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E30\u0E44\u0E23\u0E21\u0E32\u0E01\u0E44\u0E2B\u0E21"
     portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 0
     speakerName: Clarence
-    text: ....
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
-  - speaker: 0
-    speakerName: Clarence
-    text: Lumina..?
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    text: "\u0E2D\u0E36\u0E01.."
+    portrait: {fileID: -6176266228772638158, guid: 96bb0bb8b0830324284e8806ecefe11a, type: 3}
   - speaker: 1
     speakerName: Lumina
     text: '!!??'
