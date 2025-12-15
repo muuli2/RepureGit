@@ -26,4 +26,9 @@ public class AudioManager : MonoBehaviour
     bgmSource.Play();    // เล่นเพลงใหม่
 }
 
+ public void StopMusic()
+    {
+        bgmSource.Stop();
+    }
+
 }

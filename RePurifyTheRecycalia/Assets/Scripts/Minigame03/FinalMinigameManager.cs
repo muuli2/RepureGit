@@ -37,6 +37,15 @@ public class FinalMinigameManager : MonoBehaviour
     private bool isPlaying = false;
     private int score = 0;
 
+    [Header("End FX")]
+public Image fadeImage;
+public TMP_Text bossResultText;
+public float fadeDuration = 1f;
+
+[Header("Audio")]
+public AudioSource miniGameBGM;
+
+
     void Start()
     {
 
@@ -174,12 +183,105 @@ public class FinalMinigameManager : MonoBehaviour
         feedbackText.gameObject.SetActive(false);
     }
 
+    // void WinGame()
+    // {
+    //     isPlaying = false;
+    //     timerText.text = "You Win!";
+    //     winPanel.SetActive(true);
+    // }
+
     void WinGame()
+{
+    isPlaying = false;
+    StartCoroutine(WinSequence());
+}
+
+IEnumerator WinSequence()
+{
+    isPlaying = false;
+
+    // 🔇 ปิดเพลงทั้งหมด
+    if (miniGameBGM != null)
+        miniGameBGM.Stop();
+
+    if (AudioManager.Instance != null)
+        AudioManager.Instance.StopMusic();
+
+    // 🖤 เฟดดำ
+    yield return StartCoroutine(FadeImage(0f, 1f));
+
+    // 👑 ชื่อบอส
+    yield return StartCoroutine(ShowBossText("Morrotte"));
+
+    // เว้นจังหวะนิดนึงให้หายใจ
+    yield return new WaitForSeconds(1f);
+
+    // ☠️ Defeated
+    yield return StartCoroutine(ShowBossText("Defeated"));
+
+    // เว้นอีกนิดก่อนกลับแมพ
+    yield return new WaitForSeconds(2.5f);
+
+    ReturnToMap();
+}
+
+
+
+IEnumerator FadeImage(float from, float to)
+{
+    float t = 0f;
+    Color c = fadeImage.color;
+
+    while (t < fadeDuration)
     {
-        isPlaying = false;
-        timerText.text = "You Win!";
-        winPanel.SetActive(true);
+        t += Time.deltaTime;
+        c.a = Mathf.Lerp(from, to, t / fadeDuration);
+        fadeImage.color = c;
+        yield return null;
     }
+
+    c.a = to;
+    fadeImage.color = c;
+}
+
+
+IEnumerator ShowBossText(string text)
+{
+    bossResultText.text = text;
+    bossResultText.alpha = 0f;
+
+    // Fade In
+    float t = 0f;
+    float fadeInTime = 0.6f;
+
+    while (t < fadeInTime)
+    {
+        t += Time.deltaTime;
+        bossResultText.alpha = Mathf.Lerp(0f, 1f, t / fadeInTime);
+        yield return null;
+    }
+
+    bossResultText.alpha = 1f;
+
+    // ⏸ ค้างข้อความ
+    yield return new WaitForSeconds(1.4f);
+
+    // Fade Out
+    t = 0f;
+    float fadeOutTime = 0.6f;
+
+    while (t < fadeOutTime)
+    {
+        t += Time.deltaTime;
+        bossResultText.alpha = Mathf.Lerp(1f, 0f, t / fadeOutTime);
+        yield return null;
+    }
+
+    bossResultText.alpha = 0f;
+}
+
+
+
 
   public void ContinueToMap()
     {
@@ -218,4 +320,36 @@ if (player != null)
             pause.isMiniGameActive = false;
 
 }
+
+void ReturnToMap()
+{
+    // ย้าย player ใกล้บอส
+    Vector3 bossPos = FinalBoss.Instance.transform.position;
+
+    Transform player = GameObject.FindGameObjectWithTag("Player")?.transform;
+    if (player != null)
+    {
+        Vector3 offset = new Vector3(8f, -3.5f, 0);
+        player.position = bossPos + offset;
+    }
+
+    // เรียกบอสตาย
+    if (FinalBoss.Instance != null &&
+        FinalBoss.Instance.state != FinalBoss.BossState.Dead)
+    {
+        FinalBoss.Instance.BossDefeated();
+    }
+
+    // unload มินิเกม
+    SceneManager.UnloadSceneAsync("MinigameFinal");
+
+    // ปลดสถานะมินิเกม
+    if (GameManager.Instance != null)
+        GameManager.Instance.isMiniGameActive = false;
+
+    PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+    if (pause != null)
+        pause.isMiniGameActive = false;
+}
+
 }

@@ -7,6 +7,11 @@ public class ScoreManage : MonoBehaviour
     public static ScoreManage Instance;
     public TMP_Text scoreText;
 
+    [Header("SFX")]
+public AudioSource audioSource;
+public AudioClip scoreClip;
+
+
     private int score = 3000;
     public int totalScore = 0;
 
@@ -39,12 +44,17 @@ public class ScoreManage : MonoBehaviour
         UpdateScoreUI();
     }
 
-    public void AddScore(int amount)
-    {
-        score += amount;
-        totalScore += amount;
-        UpdateScoreUI();
-    }
+   public void AddScore(int amount)
+{
+    score += amount;
+    totalScore += amount;
+
+    if (audioSource && scoreClip)
+        audioSource.PlayOneShot(scoreClip);
+
+    UpdateScoreUI();
+}
+
 
     public void ResetMapScore()
     {
