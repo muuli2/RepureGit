@@ -7,7 +7,7 @@ public class MiniGame012 : MonoBehaviour
 {
     public static MiniGame012 Instance;
 
-    public int targetScore = 1000;
+    public int targetScore = 1500;
     public int score = 0;
     public bool gameStarted = false;
 
@@ -72,7 +72,7 @@ public class MiniGame012 : MonoBehaviour
     // ✅ แก้ CollectTrash ให้ใช้ TrashItem2 (ไม่ใช่ TrashItem)
     public void CollectTrash(TrashItem2 trash)
     {
-        int points = 1000;
+        int points = 1500;
 
         if (trash.trashType2 == targetTrashType)
         {
