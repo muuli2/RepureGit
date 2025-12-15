@@ -29,7 +29,7 @@ public class FinalMinigameManager : MonoBehaviour
     [Header("Game Settings")]
     public float answerTimeLimit = 10f;
     public int baseScore = 10;
-    public int bonusScore = 5;
+    public int bonusScore = 500;
     public int bonusLimitSeconds = 3;
     public int targetScore = 100;
 
@@ -62,7 +62,7 @@ public AudioSource miniGameBGM;
     IEnumerator StartCountdown()
     {
         startPanel.SetActive(true);
-        int count = 4;
+        int count = 7;
 
         while (count > 0)
         {
