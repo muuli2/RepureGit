@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 1d92a090cdfa80e49956367cc68fbdc1
+guid: c75b698b99b339e44843e4e976bfd901
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5774501616662186930
-    second: Lumina_0
+      213: 1223445571209356845
+    second: Llucias_0
+  - first:
+      213: 3910968390773792504
+    second: Llucias_1
+  - first:
+      213: -204302509636193900
+    second: Llucias_2
+  - first:
+      213: 2101185441081334947
+    second: Llucias_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lumina_0
+      name: Llucias_0
       rect:
         serializedVersion: 2
-        x: 13
+        x: 615
         y: 0
-        width: 3040
-        height: 2625
+        width: 2004
+        height: 2731
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e447eefcf59dcdfa0800000000000000
-      internalID: -5774501616662186930
+      spriteID: d2665f1d34d8af010800000000000000
+      internalID: 1223445571209356845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llucias_1
+      rect:
+        serializedVersion: 2
+        x: 2638
+        y: 279
+        width: 37
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe5adbb70d864630800000000000000
+      internalID: 3910968390773792504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llucias_2
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 300
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491f96e23fb2a2df0800000000000000
+      internalID: -204302509636193900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Llucias_3
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 0
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac10eea609e82d10800000000000000
+      internalID: 2101185441081334947
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 413baac70db09dd45bd2fe6a5bb65388
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lumina_0: -5774501616662186930
+      Llucias_0: 1223445571209356845
+      Llucias_1: 3910968390773792504
+      Llucias_2: -204302509636193900
+      Llucias_3: 2101185441081334947
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

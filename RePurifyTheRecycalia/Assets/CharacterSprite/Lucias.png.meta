@@ -112,9 +112,9 @@ TextureImporter:
       name: Lucias_0
       rect:
         serializedVersion: 2
-        x: 445
+        x: 585
         y: 0
-        width: 2735
+        width: 2090
         height: 2758
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
