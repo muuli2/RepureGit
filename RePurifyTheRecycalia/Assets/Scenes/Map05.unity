@@ -6262,11 +6262,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3932825060358847365, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6
+      value: 1.1477758
       objectReference: {fileID: 0}
     - target: {fileID: 3932825060358847365, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.2
+      value: 22.227081
       objectReference: {fileID: 0}
     - target: {fileID: 3932825060358847365, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6322,7 +6322,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: chaseDistance
-      value: 15
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
+      propertyPath: attackCooldown
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: attackDistance
@@ -6334,7 +6338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: spreadBulletCount
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: rangeAttackDistance
