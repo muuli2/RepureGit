@@ -10,6 +10,8 @@ public class BoatTrigger : MonoBehaviour
     public Button yesButton;
     public Button noButton;
     public TMP_Text warningText;
+    private PlayerShoot playerShoot;
+
 
     private int requiredPoints = 0;
 
@@ -22,26 +24,36 @@ public class BoatTrigger : MonoBehaviour
         noButton.onClick.AddListener(OnNo);
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+   private void OnTriggerEnter2D(Collider2D col)
+{
+    if (col.CompareTag("Player"))
     {
-        if (col.CompareTag("Player"))
-        {
-            confirmPanel.SetActive(true);
-            warningText.gameObject.SetActive(false);  // 🔥 รีเซ็ตทุกครั้ง
-        }
-    }
+        confirmPanel.SetActive(true);
+        warningText.gameObject.SetActive(false);
 
-    private void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.CompareTag("Player"))
-        {
-            confirmPanel.SetActive(false);
-            warningText.gameObject.SetActive(false);
-        }
+        playerShoot = col.GetComponent<PlayerShoot>();
+        if (playerShoot != null)
+            playerShoot.canShoot = false; // ❌ ห้ามยิง
     }
+}
+
+private void OnTriggerExit2D(Collider2D col)
+{
+    if (col.CompareTag("Player"))
+    {
+        confirmPanel.SetActive(false);
+        warningText.gameObject.SetActive(false);
+
+        if (playerShoot != null)
+            playerShoot.canShoot = true; // ✅ ยิงได้อีก
+    }
+}
+
 
     public void OnYes()
 {
+    if (playerShoot != null)
+        playerShoot.canShoot = false;
     int currentScore = ScoreManage.Instance.totalScore;
     if(currentScore < requiredPoints)
     {

@@ -209,6 +209,9 @@ if (player != null)
         // Unload มินิเกม
         SceneManager.UnloadSceneAsync("MinigameFinal");
 
+        if (GameManager.Instance != null)
+    GameManager.Instance.isMiniGameActive = false;
+
         // ปิด MiniGame Active
         PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
         if (pause != null)

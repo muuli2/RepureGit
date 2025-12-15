@@ -164,6 +164,8 @@ if (player != null)
         {
             BossMap01.Instance.BossDefeated();
         }
+         if (GameManager.Instance != null)
+    GameManager.Instance.isMiniGameActive = false;
 
         PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
         if (pause != null)

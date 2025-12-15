@@ -296,11 +296,15 @@ if (player != null)
     // Unload scene แล้วเรียกบอส
     SceneManager.UnloadSceneAsync("MiniGame02").completed += (op) =>
     {
+
+        
         // ตรวจสอบว่าบอสยังไม่ตาย
         if (BossMap01.Instance != null)
         {
             BossMap01.Instance.BossDefeated();
         }
+         if (GameManager.Instance != null)
+    GameManager.Instance.isMiniGameActive = false;
 
         PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
         if (pause != null)

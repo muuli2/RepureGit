@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+
 
 
 public class PlayerShoot : MonoBehaviour
@@ -7,6 +9,7 @@ public class PlayerShoot : MonoBehaviour
     public Transform firePoint;
     private PauseManager pauseManager;
      private Animator anim;
+     
 
     [Header("Bullet Settings (Normal)")]
     public GameObject normalBulletPrefab;
@@ -31,6 +34,21 @@ private AudioSource audioSource;
 
     [HideInInspector] public bool canShoot = true;
 
+//     [Header("Disable Shoot In Scenes")]
+// public string[] noShootScenes =
+// {
+//     "Minigame01",
+//     "Minigame02",
+//     "Minigame012",
+//     "Minigame022",
+//     "MiniGameFinal",
+//     "MainMenu",
+//     "CharacterSelect",
+//     "CutScenes",
+//     "End"
+// };
+
+
     void Start()
 {
     pauseManager = FindObjectOfType<PauseManager>();
@@ -39,19 +57,25 @@ private AudioSource audioSource;
 }
 
 
-    void Update()
-    {
-        if (!canShoot || (pauseManager != null && (pauseManager.pauseMenu.activeSelf || pauseManager.confirmPanel.activeSelf)))
-            return;
+   void Update()
+{
+    if (!canShoot) return;
+    // if (IsNoShootScene()) return;
+     if (GameManager.Instance != null && GameManager.Instance.isMiniGameActive)
+        return;
 
-        if ((Keyboard.current.spaceKey.wasPressedThisFrame ||
-            Mouse.current.leftButton.wasPressedThisFrame)
-            && Time.time >= lastShootTime + shootCooldown)
-        {
-            Shoot();
-            lastShootTime = Time.time;
-        }
+    if (pauseManager != null &&
+        (pauseManager.pauseMenu.activeSelf || pauseManager.confirmPanel.activeSelf))
+        return;
+
+    if ((Keyboard.current.spaceKey.wasPressedThisFrame ||
+         Mouse.current.leftButton.wasPressedThisFrame)
+        && Time.time >= lastShootTime + shootCooldown)
+    {
+        Shoot();
+        lastShootTime = Time.time;
     }
+}
 
     void Shoot()
 {
@@ -80,6 +104,23 @@ private AudioSource audioSource;
     if (bulletScript != null)
         bulletScript.damage = damage;
 }
+
+// bool IsNoShootScene()
+// {
+//     for (int i = 0; i < SceneManager.sceneCount; i++)
+//     {
+//         string sceneName = SceneManager.GetSceneAt(i).name;
+//         foreach (string s in noShootScenes)
+//         {
+//             if (sceneName == s)
+//                 return true;
+//         }
+//     }
+//     return false;
+// }
+
+
+
 
 
     public void UpgradeGun()
