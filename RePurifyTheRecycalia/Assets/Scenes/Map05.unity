@@ -16783,8 +16783,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -518.9857, y: 495.3545}
-  m_SizeDelta: {x: 910.4799, y: 879.381}
+  m_AnchoredPosition: {x: -527.57214, y: 529.54895}
+  m_SizeDelta: {x: 945.2802, y: 811.2481}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690967527
 MonoBehaviour:
@@ -16806,7 +16806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -16836,8 +16836,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.AspectRatioFitter
-  m_AspectMode: 3
-  m_AspectRatio: 1.1645063
+  m_AspectMode: 4
+  m_AspectRatio: 0.001
 --- !u!1 &698615243
 GameObject:
   m_ObjectHideFlags: 0
@@ -18313,8 +18313,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 526.2963, y: 527.44934}
-  m_SizeDelta: {x: 770.5415, y: 809.5544}
+  m_AnchoredPosition: {x: 516.0738, y: 534.5166}
+  m_SizeDelta: {x: 783.99, y: 823.689}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773707243
 MonoBehaviour:
@@ -18336,7 +18336,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -40260,7 +40260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6650944, g: 1, b: 0.7283893, a: 0.5686275}
+  m_Color: {r: 0.6650944, g: 1, b: 0.7283893, a: 0.5803922}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -101208,10 +101208,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 186519306}
   - {fileID: 2126108740}
   - {fileID: 75094566}
   - {fileID: 94666916}
+  - {fileID: 186519306}
   - {fileID: 75054074}
   m_Father: {fileID: 1126481448}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

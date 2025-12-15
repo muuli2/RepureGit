@@ -502,7 +502,7 @@ MonoBehaviour:
   upgradedBulletSpeed: 25
   upgradedBulletDamage: 3
   gunUpgraded: 0
-  shootSound: {fileID: 8300000, guid: 1cf473cbfd4024d4397fc63111f2f151, type: 3}
+  shootSound: {fileID: 8300000, guid: a106b83488d637349a6e285b353946f0, type: 3}
   shootCooldown: 1
   canShoot: 1
 --- !u!114 &4220586032757294533
