@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5119488456630331321}
   - component: {fileID: 207198899171310443}
-  - component: {fileID: 7425480668753933589}
-  - component: {fileID: 3009451313786361512}
+  - component: {fileID: -8274668243312084200}
   - component: {fileID: 7854840089305202649}
   - component: {fileID: 9097039278746652863}
   m_Layer: 6
-  m_Name: recy
+  m_Name: General3 2
   m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 58954146303904838}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.6021, y: -1.7791297, z: 0}
+  m_LocalScale: {x: 0.554, y: 0.5097, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,18 +82,18 @@ SpriteRenderer:
   m_SortingLayerID: 1531782037
   m_SortingLayer: 6
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2328326524008958691, guid: 0d2f69b1fbb7e394bb0126d02f31d4b4, type: 3}
+  m_Sprite: {fileID: 2307259148946123962, guid: a1b9f1d9ba960914496fc74c70d533e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.9066667, y: 2.6666667}
+  m_Size: {x: 2.7, y: 1.53}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7425480668753933589
+--- !u!114 &-8274668243312084200
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,23 +102,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 58954146303904838}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73291fdf477c7de49839a47bc2c39c8e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d963d89c894cc549bbdb46487e6a8c7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TrashFall
-  fallSpeed: 1
---- !u!114 &3009451313786361512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58954146303904838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a9a0f0f45f7f304b98566ece2c661c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TrashItem
-  trashType: 2
+  m_EditorClassIdentifier: Assembly-CSharp::TrashNote
+  trashType: 0
+  correctKey: 107
+  speed: 0.2
+  hitY: -1.4
+  hitRange: 1
 --- !u!61 &7854840089305202649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -158,8 +148,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9066667, y: 2.6666667}
-    newSize: {x: 0.9066667, y: 2.6666667}
+    oldSize: {x: 1.2, y: 1.5277778}
+    newSize: {x: 2.7, y: 1.53}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

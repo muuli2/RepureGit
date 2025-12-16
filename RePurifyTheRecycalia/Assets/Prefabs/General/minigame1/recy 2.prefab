@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7854840089305202649}
   - component: {fileID: 9097039278746652863}
   m_Layer: 6
-  m_Name: recy
+  m_Name: recy 2
   m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,12 +83,12 @@ SpriteRenderer:
   m_SortingLayerID: 1531782037
   m_SortingLayer: 6
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2328326524008958691, guid: 0d2f69b1fbb7e394bb0126d02f31d4b4, type: 3}
+  m_Sprite: {fileID: 8559275051199653319, guid: bcaf906a46484d140bd312ca168edc15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.9066667, y: 2.6666667}
+  m_Size: {x: 1.74, y: 2.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -158,8 +158,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9066667, y: 2.6666667}
-    newSize: {x: 0.9066667, y: 2.6666667}
+    oldSize: {x: 1.74, y: 2.12}
+    newSize: {x: 1.74, y: 2.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

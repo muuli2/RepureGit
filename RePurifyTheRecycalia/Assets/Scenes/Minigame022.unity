@@ -1344,7 +1344,7 @@ MonoBehaviour:
   - {fileID: 1609065946}
   spawnInterval: 1
   targetScore: 1000
-  targetTrashType: 1
+  targetTrashType: 3
   scoreText: {fileID: 140771014}
   heartImages: []
   heartFull: {fileID: 0}
