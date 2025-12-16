@@ -292,7 +292,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2050373311
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -722599793751962752, guid: c002ec5c3d849fd44926859a71dfa6fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -327,7 +327,7 @@ MonoBehaviour:
   waterPrefab: {fileID: 0}
   waterRange: 2
   waterDuration: 0.6
-  attackRange: 8
+  attackRange: 4.5
   attackPoint: {fileID: 5776872665053782180}
   anim: {fileID: 8323545267748005772}
   sr: {fileID: 7976725583357911479}
@@ -337,6 +337,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   miniGameSceneName: Minigame02
+  audioSource: {fileID: 0}
+  showdownClip: {fileID: 0}
 --- !u!95 &8323545267748005772
 Animator:
   serializedVersion: 7

@@ -234741,7 +234741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1489625773645765732, guid: d59a6f070a4a6fd4c977b8118eacbcaa, type: 3}
       propertyPath: attackRange
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1489625773645765732, guid: d59a6f070a4a6fd4c977b8118eacbcaa, type: 3}
       propertyPath: chaseDistance
@@ -234749,7 +234749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1489625773645765732, guid: d59a6f070a4a6fd4c977b8118eacbcaa, type: 3}
       propertyPath: attackDistance
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3066090635855691282, guid: d59a6f070a4a6fd4c977b8118eacbcaa, type: 3}
       propertyPath: m_LocalPosition.x
