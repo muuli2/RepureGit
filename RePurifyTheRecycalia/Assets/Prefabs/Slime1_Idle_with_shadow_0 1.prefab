@@ -321,13 +321,13 @@ MonoBehaviour:
   state: 0
   moveSpeed: 4
   chaseDistance: 10
-  attackDistance: 5
+  attackDistance: 7
   attackCooldown: 0.5
   damage: 1
   waterPrefab: {fileID: 0}
   waterRange: 2
   waterDuration: 0.6
-  attackRange: 4.5
+  attackRange: 5
   attackPoint: {fileID: 5776872665053782180}
   anim: {fileID: 8323545267748005772}
   sr: {fileID: 7976725583357911479}
@@ -525,8 +525,8 @@ Transform:
   m_GameObject: {fileID: 8985675446315943609}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.02, z: 0}
-  m_LocalScale: {x: 9.28, y: 0.2139559, z: 0.2139559}
+  m_LocalPosition: {x: 0, y: -0.07, z: 0}
+  m_LocalScale: {x: -88.04805, y: -2.03, z: -2.03}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 437879152943116350}

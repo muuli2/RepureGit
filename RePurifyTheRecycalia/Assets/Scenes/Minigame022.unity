@@ -1348,7 +1348,7 @@ MonoBehaviour:
   - {fileID: 383406844}
   - {fileID: 231081309}
   - {fileID: 1609065946}
-  spawnInterval: 0.8
+  spawnInterval: 0.5
   targetScore: 5000
   targetTrashType: 3
   scoreText: {fileID: 140771014}
