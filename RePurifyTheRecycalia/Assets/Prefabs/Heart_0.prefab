@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HeartItem
   healAmount: 1
+  lifetime: 10
 --- !u!212 &3994873302083037344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94,7 +95,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -82933903
   m_SortingLayer: 4
-  m_SortingOrder: 2
+  m_SortingOrder: 1000
   m_Sprite: {fileID: -8886713217412807493, guid: 7ac626e6343a22d4eb515a083a04b7a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
