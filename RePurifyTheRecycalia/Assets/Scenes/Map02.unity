@@ -232671,7 +232671,7 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652218905}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -234741,7 +234741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1489625773645765732, guid: d59a6f070a4a6fd4c977b8118eacbcaa, type: 3}
       propertyPath: attackRange
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1489625773645765732, guid: d59a6f070a4a6fd4c977b8118eacbcaa, type: 3}
       propertyPath: chaseDistance
@@ -234753,11 +234753,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3066090635855691282, guid: d59a6f070a4a6fd4c977b8118eacbcaa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 98.56123
+      value: 43.067024
       objectReference: {fileID: 0}
     - target: {fileID: 3066090635855691282, guid: d59a6f070a4a6fd4c977b8118eacbcaa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 91.17364
+      value: 18.960915
       objectReference: {fileID: 0}
     - target: {fileID: 3066090635855691282, guid: d59a6f070a4a6fd4c977b8118eacbcaa, type: 3}
       propertyPath: m_LocalPosition.z

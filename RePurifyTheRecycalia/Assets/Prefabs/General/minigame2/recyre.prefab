@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a02b3289292a94b9653fd02356c713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashFall2
-  fallSpeed: 1
+  fallSpeed: 3
 --- !u!114 &5002789833385667311
 MonoBehaviour:
   m_ObjectHideFlags: 0

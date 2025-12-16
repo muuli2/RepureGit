@@ -151,6 +151,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TrashSpawner
   trashPrefabs:
   - {fileID: 1366959234916267614, guid: 40f067c5e1c77c8408fb23142f29af96, type: 3}
+  - {fileID: 58954146303904838, guid: ae23bbe8e900ac645b12d95800cbf508, type: 3}
+  - {fileID: 58954146303904838, guid: d104896975643704e8dd30d22ed5a384, type: 3}
+  - {fileID: 58954146303904838, guid: 764638eec55fe464ab5ae1fb1b346847, type: 3}
+  - {fileID: 58954146303904838, guid: c8b8c8ab0077e294a827257ab5c58626, type: 3}
+  - {fileID: 58954146303904838, guid: 8c4ac042c70b19245a7b3a25aa5594c6, type: 3}
+  - {fileID: 58954146303904838, guid: 6a28b0b669b1474438a4d64a74fa0a49, type: 3}
+  - {fileID: 58954146303904838, guid: 2fe4658470123fb419761d9709ecf3a4, type: 3}
+  - {fileID: 58954146303904838, guid: 68d08f7b5171c7847bd365efed9cf31c, type: 3}
+  - {fileID: 58954146303904838, guid: 68ea6bf0af0a8c348907070c67642adf, type: 3}
   spawnInterval: 0.8
   spawnRangeX: 8
   spawnY: 6

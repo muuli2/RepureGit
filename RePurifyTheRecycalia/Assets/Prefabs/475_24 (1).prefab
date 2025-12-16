@@ -193,4 +193,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   speed: 8
   damage: 1
-  maxDistance: 3
+  maxDistance: 3.5
