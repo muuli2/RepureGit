@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d963d89c894cc549bbdb46487e6a8c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashNote
-  trashType: 2
+  trashType: 3
   correctKey: 107
   speed: 0.2
   hitY: -1.4

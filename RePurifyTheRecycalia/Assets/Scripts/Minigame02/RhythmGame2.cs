@@ -50,7 +50,7 @@ public class RhythmGame2 : MonoBehaviour
     private bool gameStarted = false;
     private float timer = 0f;
 
-   private void Awake()
+  private void Awake()
 {
     if (Instance != null && Instance != this)
     {
@@ -59,6 +59,7 @@ public class RhythmGame2 : MonoBehaviour
     }
     Instance = this;
 }
+
 
 
    private void Start()
@@ -203,7 +204,7 @@ gameStarted = true;
             int prefabIndex = Random.Range(0, trashPrefabs.Length);
 
             GameObject trash = Instantiate(trashPrefabs[prefabIndex], spawnPositions[lane].position, Quaternion.identity);
-            TrashNote note = trash.GetComponent<TrashNote>();
+            TrashNote2 note = trash.GetComponent<TrashNote2>();
 
             switch (lane)
             {
@@ -314,7 +315,7 @@ gameStarted = true;
         gameStarted = false;
         gameOverPanel.SetActive(true);
 
-        foreach (var t in FindObjectsOfType<TrashNote>())
+        foreach (var t in FindObjectsOfType<TrashNote2>())
             Destroy(t.gameObject);
     }
 
@@ -323,7 +324,7 @@ gameStarted = true;
         gameStarted = false;
         winPanel.SetActive(true);
 
-        foreach (var t in FindObjectsOfType<TrashNote>())
+        foreach (var t in FindObjectsOfType<TrashNote2>())
             Destroy(t.gameObject);
     }
 
