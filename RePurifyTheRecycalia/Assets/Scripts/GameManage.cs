@@ -27,12 +27,26 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public Vector3 lastCheckpoint;
 
+    [Header("SFX")]
+public AudioClip hurtSound;
+private AudioSource audioSource;
+public AudioClip deathSound; 
+
+
     private GameObject playerRef;
     public bool isMiniGameActive = false;
 
     public int mapPoints = 0; // คะแนนในแมพ
 
     public bool skillUnlocked = false;
+
+    private readonly string[] noPlayerScenes =
+{
+    "MainMenu",
+    "CharacterSelect",
+    "CutScenes",
+    "End"
+};
 
 
     public GameObject GetPlayer() => playerRef;
@@ -51,6 +65,9 @@ public class GameManager : MonoBehaviour
         }
 
         lives = maxLives;
+         audioSource = GetComponent<AudioSource>();
+    if (audioSource == null)
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     private void Start()
@@ -148,11 +165,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int amount)
+   public void TakeDamage(int amount)
 {
     lives -= amount;
     lives = Mathf.Clamp(lives, 0, maxLives);
     UpdateHeartsUI();
+
+    // 🔊 เล่นเสียงเจ็บ
+    if (hurtSound != null && audioSource != null)
+        audioSource.PlayOneShot(hurtSound);
 
     // 🔥 เล่นอนิเมชันท่าเจ็บ
     if (playerRef != null)
@@ -165,6 +186,7 @@ public class GameManager : MonoBehaviour
     if (lives <= 0)
         PlayerDied();
 }
+
     public void UpdateHeartsUI()
     {
         if (heartImages == null || heartImages.Length == 0)
@@ -177,14 +199,42 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void PlayerDied()
-    {
-        if (gameOverPanel != null)
-            gameOverPanel.SetActive(true);
+   public void PlayerDied()
+{
+    // 🔊 เสียงตาย
+    if (deathSound != null && audioSource != null)
+        audioSource.PlayOneShot(deathSound);
 
-        if (playerRef != null)
-            playerRef.SetActive(false);
-    }
+    // 🔓 ปลดสถานะมินิเกม (สำคัญมาก)
+    isMiniGameActive = false;
+
+    PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+    if (pause != null)
+        pause.isMiniGameActive = false;
+
+    if (gameOverPanel != null)
+        gameOverPanel.SetActive(true);
+
+    if (playerRef != null)
+        playerRef.SetActive(false);
+}
+
+
+void EnablePlayerCombat()
+{
+    if (playerRef == null) return;
+
+    // ถ้าเธอปิดยิงด้วย script
+    var shooter = playerRef.GetComponent<PlayerShoot>();
+    if (shooter != null)
+        shooter.enabled = true;
+
+    // ถ้าใช้ Input System
+    var input = playerRef.GetComponent<PlayerInput>();
+    if (input != null)
+        input.enabled = true;
+}
+
 
     public void RestartFromGameOver()
     {
@@ -207,8 +257,18 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+   private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 {
+    // ถ้าเป็นซีนที่ไม่ควรมี Player
+    foreach (var s in noPlayerScenes)
+    {
+        if (scene.name == s)
+        {
+            if (playerRef != null)
+                Destroy(playerRef);
+            return;
+        }
+    }
     // รีหัวใจเต็ม
     lives = maxLives;
 

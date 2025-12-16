@@ -28,6 +28,11 @@ public class Monster : MonoBehaviour
     [Header("Score Settings")]
     public int scoreOnDeath = 150;
 
+    [Header("SFX")]
+public AudioSource audioSource;
+public AudioClip dieClip;
+
+
     private Vector3 startPosition;
     private Animator anim;
     private Collider2D col;
@@ -65,17 +70,20 @@ public class Monster : MonoBehaviour
             healthBarFill.fillAmount = (float)currentHealth / maxHealth;
     }
 
-    void Die()
-    {
-        if (anim != null)
-            anim.SetTrigger("die");
+   void Die()
+{
+    if (audioSource && dieClip)
+        audioSource.PlayOneShot(dieClip);
 
-        // ปิด collider เพื่อไม่ให้โดนซ้ำ
-        if (col != null)
-            col.enabled = false;
+    if (anim != null)
+        anim.SetTrigger("die");
 
-        StartCoroutine(DieRoutine());
-    }
+    if (col != null)
+        col.enabled = false;
+
+    StartCoroutine(DieRoutine());
+}
+
 
     IEnumerator DieRoutine()
     {

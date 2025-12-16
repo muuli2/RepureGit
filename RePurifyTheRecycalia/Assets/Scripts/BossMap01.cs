@@ -42,6 +42,11 @@ public class BossMap01 : MonoBehaviour
     [Header("Minigame")]
     public string miniGameSceneName = "Minigame01";
 
+    [Header("SFX")]
+public AudioSource audioSource;
+public AudioClip showdownClip;
+
+
     private bool isDead = false;
      private Collider2D col;
        private Vector3 startPosition;
@@ -200,11 +205,14 @@ private void FreezeBoss()
         // glowEffect?.SetActive(true);
         // bossAnimator?.SetTrigger("PhaseTransition");
 
-        IntroMinigame tt = FindFirstObjectByType<IntroMinigame>();
-        if (tt != null)
-            yield return tt.ShowText("SHOWDOWN");
+       IntroMinigame tt = FindFirstObjectByType<IntroMinigame>();
+if (tt != null)
+{
+    if (audioSource && showdownClip)
+        audioSource.PlayOneShot(showdownClip);
 
-        yield return new WaitForSecondsRealtime(0.5f);
+    yield return tt.ShowText("SHOWDOWN");
+}
 
         // GameManager.Instance.isMiniGameActive = true;
 

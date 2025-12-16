@@ -7,6 +7,10 @@ public class ToastMessage : MonoBehaviour
     public static ToastMessage Instance;
     public TMP_Text toastText;
 
+    [Header("SFX")]
+    public AudioSource audioSource;
+    public AudioClip toastClip;
+
     void Awake()
     {
         Instance = this;
@@ -22,10 +26,15 @@ public class ToastMessage : MonoBehaviour
     IEnumerator ToastRoutine(string message)
     {
         toastText.text = message;
-        toastText.CrossFadeAlpha(1f, 0.4f, false);  // เฟดเข้า 0.4 วิ
-        
-        yield return new WaitForSeconds(2f);         // ค้างไว้ 2 วิ
 
-        toastText.CrossFadeAlpha(0f, 0.5f, false);  // เฟดออก 0.5 วิ
+        // 🔊 เล่นเสียงตอน Toast ขึ้น
+        if (audioSource && toastClip)
+            audioSource.PlayOneShot(toastClip);
+
+        toastText.CrossFadeAlpha(1f, 0.4f, false);  // เฟดเข้า
+        
+        yield return new WaitForSeconds(2f);       // ค้างไว้
+
+        toastText.CrossFadeAlpha(0f, 0.5f, false); // เฟดออก
     }
 }

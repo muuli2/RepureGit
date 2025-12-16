@@ -302,7 +302,7 @@ void ShootSpread()
     {
         state = BossState.WaitingMinigame;
 
-        FreezeMapAndPlayer();
+        // FreezeMapAndPlayer();
 
         // glowEffect?.SetActive(true);
         // bossAnimator?.SetTrigger("PhaseTransition");
@@ -399,7 +399,7 @@ void ShootSpread()
     {
         yield return new WaitForSecondsRealtime(delay);
 
-        UnfreezeMapAndPlayer();
+        // UnfreezeMapAndPlayer();
 
         if (MonsterManage.Instance != null)
             MonsterManage.Instance.EnemyKilled();
