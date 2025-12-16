@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9097039278746652863}
   - component: {fileID: 7244496986547627716}
   m_Layer: 6
-  m_Name: rere4
+  m_Name: hz4 3
   m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 1531782037
   m_SortingLayer: 6
   m_SortingOrder: 3
-  m_Sprite: {fileID: 1766247425710085925, guid: c00de8d35b88bdd4c9904c7417e851c0, type: 3}
+  m_Sprite: {fileID: 3604064088911348691, guid: 940376e0c65e96e42a384cfe96b8e6b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -131,7 +131,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.596, y: 0.936}
+    oldSize: {x: 1.3111111, y: 2.2666667}
     newSize: {x: 2.7, y: 1.53}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e29212a049a2ac43be20b0e4a887a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashNote2
-  trashType: 2
+  trashType: 3
   correctKey: 107
   speed: 0.2
   hitY: -1.4
