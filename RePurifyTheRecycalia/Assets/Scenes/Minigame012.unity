@@ -1268,8 +1268,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashSpawn2
   trashPrefabs:
-  - {fileID: 1366959234916267614, guid: 5709c62320acd8448b9050f98244b05d, type: 3}
-  spawnInterval: 3
+  - {fileID: 58954146303904838, guid: 118c87047a26d0b48acf036d099e9072, type: 3}
+  - {fileID: 58954146303904838, guid: 603351a7f16f88c4893cbd1fbcb463e3, type: 3}
+  - {fileID: 58954146303904838, guid: dfb6ad90fc4fcd241996b75f2f5847fa, type: 3}
+  - {fileID: 58954146303904838, guid: 9b554a53f6e1e6b4bb9492496c759ea5, type: 3}
+  - {fileID: 58954146303904838, guid: 97ffb5a332684574180bc973ea36493c, type: 3}
+  - {fileID: 58954146303904838, guid: ab42f65240de77e44ad527edbd18ae63, type: 3}
+  - {fileID: 58954146303904838, guid: a3de58e46d9ddbf459b30a02314fbf10, type: 3}
+  - {fileID: 58954146303904838, guid: db7337347203edd468842b5523dd4eec, type: 3}
+  - {fileID: 58954146303904838, guid: 9709dcaf7c1c84149ab80770b5c2a05e, type: 3}
+  spawnInterval: 2.5
   spawnRangeX: 8
   spawnY: 6
   canSpawn: 1
@@ -1286,7 +1294,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashSpawn2
   trashPrefabs:
-  - {fileID: 58954146303904838, guid: 9709dcaf7c1c84149ab80770b5c2a05e, type: 3}
+  - {fileID: 1366959234916267614, guid: 7cf1b7111fe45334f9aebfe511fb4c91, type: 3}
+  - {fileID: 1366959234916267614, guid: 92ea051c06f17a949aa2534a57cc67c3, type: 3}
+  - {fileID: 1366959234916267614, guid: bd4f3cf1dafd7434eaf949cfeb0dd3fa, type: 3}
+  - {fileID: 1366959234916267614, guid: 74ffd973efd0ead429d9bf56d60ed8bf, type: 3}
+  - {fileID: 1366959234916267614, guid: 5709c62320acd8448b9050f98244b05d, type: 3}
+  - {fileID: 1366959234916267614, guid: 7df2d67ab36180547a88f079c4788565, type: 3}
+  - {fileID: 1366959234916267614, guid: a3133b4cae79ef140979860fed1ac53b, type: 3}
+  - {fileID: 1366959234916267614, guid: 3416880211836b3499e9dca840e9ac44, type: 3}
   spawnInterval: 0.8
   spawnRangeX: 8
   spawnY: 6

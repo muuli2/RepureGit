@@ -333,12 +333,32 @@ public void ResetBoss()
     //     if (pm) pm.enabled = true;
     // }
 
-    private void OnDrawGizmosSelected()
+   private void OnDrawGizmosSelected()
+{
+    // 🟡 ระยะไล่ (Chase)
+    Gizmos.color = Color.yellow;
+    Gizmos.DrawWireSphere(transform.position, chaseDistance);
+
+    // 🔵 ระยะเริ่มโจมตี (Attack Distance)
+    Gizmos.color = Color.cyan;
+    Gizmos.DrawWireSphere(transform.position, attackDistance);
+
+    // 🔴 ระยะโดนจริง (Attack Range)
+    if (attackPoint != null)
     {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, attackDistance);
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, chaseDistance);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
+
+    // 🟢 จุดโจมตี (Attack Point)
+    if (attackPoint != null)
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(attackPoint.position, 0.05f);
+    }
+}
+
+
+    
 }
 

@@ -4101,10 +4101,10 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184000465}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &184000467
 MonoBehaviour:
@@ -18656,10 +18656,10 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904429301}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &904429303
 MonoBehaviour:
@@ -108532,10 +108532,10 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202130132}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &1202130134
 MonoBehaviour:
@@ -117177,10 +117177,10 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727666950}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &1727666952
 MonoBehaviour:
@@ -121843,10 +121843,10 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015545450}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &2015545452
 MonoBehaviour:

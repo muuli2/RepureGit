@@ -50,28 +50,72 @@ public class RhythmGame2 : MonoBehaviour
     private bool gameStarted = false;
     private float timer = 0f;
 
-    private void Awake()
+  private void Awake()
+{
+    if (Instance != null && Instance != this)
     {
-        Instance = this;
+        Destroy(gameObject);
+        return;
     }
+    Instance = this;
+}
 
-    private void Start()
-    {
-        gameOverPanel.SetActive(false);
-        winPanel.SetActive(false);
-        countdownText.gameObject.SetActive(false);
-        rulesPanel.SetActive(true);
 
-        score = 0;
-        UpdateScoreUI();
-        UpdateHeartsUI();
-        StartCoroutine(AutoStartAfterRules());
-    }
+
+   private void Start()
+{
+    gameOverPanel.SetActive(false);
+    winPanel.SetActive(false);
+
+    countdownText.gameObject.SetActive(false);
+    rulesPanel.SetActive(true);
+
+    score = 0;
+    UpdateScoreUI();
+    UpdateHeartsUI();
+
+    gameStarted = false;
+
+    StartCoroutine(RulesThenCountdown());
+}
+
 
    public void StartGameFromRules()
 {
     rulesPanel.SetActive(false);
     StartCoroutine(CountdownAndStart());
+}
+
+
+IEnumerator RulesThenCountdown()
+{
+    // 🟦 แสดงกติกา 5 วิ
+    rulesPanel.SetActive(true);
+    yield return new WaitForSeconds(5f);
+
+    // 🟦 ปิดกติกา
+    rulesPanel.SetActive(false);
+
+    // 🟨 เริ่มนับถอยหลัง
+    countdownText.gameObject.SetActive(true);
+
+    for (int i = 3; i > 0; i--)
+    {
+        countdownText.text = i.ToString();
+        yield return new WaitForSeconds(1f);
+    }
+
+    countdownText.text = "GO!";
+    yield return new WaitForSeconds(0.5f);
+
+    countdownText.gameObject.SetActive(false);
+
+    // 🟩 เริ่มเกมจริง
+    // 🟩 เริ่มเกมจริง
+timer = 0f;
+gameStarted = true;
+
+   
 }
 
 
@@ -160,7 +204,7 @@ public class RhythmGame2 : MonoBehaviour
             int prefabIndex = Random.Range(0, trashPrefabs.Length);
 
             GameObject trash = Instantiate(trashPrefabs[prefabIndex], spawnPositions[lane].position, Quaternion.identity);
-            TrashNote note = trash.GetComponent<TrashNote>();
+            TrashNote2 note = trash.GetComponent<TrashNote2>();
 
             switch (lane)
             {
@@ -271,7 +315,7 @@ public class RhythmGame2 : MonoBehaviour
         gameStarted = false;
         gameOverPanel.SetActive(true);
 
-        foreach (var t in FindObjectsOfType<TrashNote>())
+        foreach (var t in FindObjectsOfType<TrashNote2>())
             Destroy(t.gameObject);
     }
 
@@ -280,7 +324,7 @@ public class RhythmGame2 : MonoBehaviour
         gameStarted = false;
         winPanel.SetActive(true);
 
-        foreach (var t in FindObjectsOfType<TrashNote>())
+        foreach (var t in FindObjectsOfType<TrashNote2>())
             Destroy(t.gameObject);
     }
 
