@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7854840089305202649}
   - component: {fileID: 9097039278746652863}
   m_Layer: 6
-  m_Name: banana_0
+  m_Name: recy
   m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
