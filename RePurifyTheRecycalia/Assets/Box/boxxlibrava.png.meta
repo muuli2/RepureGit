@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1e4dbfce98c63c94c91d3945a04e5cf0
+guid: 1ef83109c10e01a469ddf9fd15010426
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8186893288763639407
-    second: boxlibrava_0
+      213: -4386274499368396602
+    second: boxxlibrava_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boxlibrava_0
+      name: boxxlibrava_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 18
-        width: 2308
-        height: 594
+        x: 65
+        y: 43
+        width: 6710
+        height: 1354
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 199b63d0eef426e80800000000000000
-      internalID: -8186893288763639407
+      spriteID: 6c8dac11592d023c0800000000000000
+      internalID: -4386274499368396602
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      boxlibrava_0: -8186893288763639407
+      boxxlibrava_0: -4386274499368396602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
