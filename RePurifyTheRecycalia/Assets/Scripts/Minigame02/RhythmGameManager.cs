@@ -32,6 +32,14 @@ public class RhythmMiniGame : MonoBehaviour
     public GameObject rulesPanel;
     public TMP_Text countdownText;
 
+    [Header("Sound FX")]
+public AudioSource sfxSource;
+
+public AudioClip keyPressSFX;     // 🔘 กดปุ่ม D F J K
+public AudioClip correctHitSFX;   // ✅ ตีโดน / ถูกชนิด
+public AudioClip winSFX;          // 🏆 ชนะมินิเกม
+
+
     [Header("Bins FX")]
     public GameObject binD;
     public GameObject binF;
@@ -57,6 +65,8 @@ public class RhythmMiniGame : MonoBehaviour
 
     private void Start()
     {
+        if (sfxSource == null)
+        sfxSource = GetComponent<AudioSource>();
         gameOverPanel.SetActive(false);
         winPanel.SetActive(false);
         countdownText.gameObject.SetActive(false);
@@ -108,24 +118,28 @@ public class RhythmMiniGame : MonoBehaviour
         // --- กดปุ่ม + เล่นเอฟเฟกต์แสงถังแบบไม่ค้าง ---
         if (keyboard.dKey.wasPressedThisFrame)
         {
+             PlayKeySound();
             HitTrash(Key.D);
             StartHighlight(ref flashD, binD);
         }
 
         if (keyboard.fKey.wasPressedThisFrame)
         {
+             PlayKeySound();
             HitTrash(Key.F);
             StartHighlight(ref flashF, binF);
         }
 
         if (keyboard.jKey.wasPressedThisFrame)
         {
+             PlayKeySound();
             HitTrash(Key.J);
             StartHighlight(ref flashJ, binJ);
         }
 
         if (keyboard.kKey.wasPressedThisFrame)
         {
+             PlayKeySound();
             HitTrash(Key.K);
             StartHighlight(ref flashK, binK);
         }
@@ -162,6 +176,13 @@ public class RhythmMiniGame : MonoBehaviour
             }
         }
     }
+
+    void PlayKeySound()
+{
+    if (sfxSource && keyPressSFX)
+        sfxSource.PlayOneShot(keyPressSFX, 0.6f);
+}
+
 
     // ============================
     //   กดถังแล้วสว่าง (ไม่ค้าง)
@@ -267,13 +288,17 @@ public class RhythmMiniGame : MonoBehaviour
     }
 
     void WinGame()
-    {
-        gameStarted = false;
-        winPanel.SetActive(true);
+{
+    gameStarted = false;
+    winPanel.SetActive(true);
 
-        foreach (var t in FindObjectsOfType<TrashNote>())
-            Destroy(t.gameObject);
-    }
+    if (sfxSource && winSFX)
+        sfxSource.PlayOneShot(winSFX, 0.8f);
+
+    foreach (var t in FindObjectsOfType<TrashNote>())
+        Destroy(t.gameObject);
+}
+
 
     // ============================
     //       Navigation

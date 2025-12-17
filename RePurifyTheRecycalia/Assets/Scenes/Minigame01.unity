@@ -1073,7 +1073,7 @@ MonoBehaviour:
   leftLimit: -8
   rightLimit: 8
   audioSource: {fileID: 746467881}
-  correctSFX: {fileID: 8300000, guid: b31214f87898a0840b49030b4da01ab8, type: 3}
+  correctSFX: {fileID: 8300000, guid: cd47c202d683368499ce102dc886dffe, type: 3}
   wrongSFX: {fileID: 0}
 --- !u!4 &746467877
 Transform:
@@ -2303,7 +2303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf12e6c708a3abc4c9750e0a7007d0f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MiniGame01
-  targetScore: 1000
+  targetScore: 1200
   score: 0
   gameStarted: 0
   sfxSource: {fileID: 1512921985}

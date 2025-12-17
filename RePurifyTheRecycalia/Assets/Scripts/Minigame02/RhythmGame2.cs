@@ -32,6 +32,14 @@ public class RhythmGame2 : MonoBehaviour
     public GameObject rulesPanel;
     public TMP_Text countdownText;
 
+    [Header("Sound FX")]
+public AudioSource sfxSource;
+
+public AudioClip keyPressSFX;     // 🔘 กดปุ่ม
+public AudioClip correctHitSFX;   // ✅ ตีโดน
+public AudioClip winSFX;          // 🏆 ชนะ
+
+
     [Header("Bins FX")]
     public GameObject binD;
     public GameObject binF;
@@ -64,6 +72,9 @@ public class RhythmGame2 : MonoBehaviour
 
    private void Start()
 {
+    if (sfxSource == null)
+    sfxSource = GetComponent<AudioSource>();
+
     gameOverPanel.SetActive(false);
     winPanel.SetActive(false);
 
@@ -161,28 +172,39 @@ gameStarted = true;
         // --- กดปุ่ม + เล่นเอฟเฟกต์แสงถังแบบไม่ค้าง ---
         if (keyboard.dKey.wasPressedThisFrame)
         {
+            PlayKeySound();
             HitTrash(Key.D);
             StartHighlight(ref flashD, binD);
         }
 
         if (keyboard.fKey.wasPressedThisFrame)
         {
+            PlayKeySound();
             HitTrash(Key.F);
             StartHighlight(ref flashF, binF);
         }
 
         if (keyboard.jKey.wasPressedThisFrame)
         {
+            PlayKeySound();
             HitTrash(Key.J);
             StartHighlight(ref flashJ, binJ);
         }
 
         if (keyboard.kKey.wasPressedThisFrame)
         {
+            PlayKeySound();
             HitTrash(Key.K);
             StartHighlight(ref flashK, binK);
         }
     }
+
+    void PlayKeySound()
+{
+    if (sfxSource && keyPressSFX)
+        sfxSource.PlayOneShot(keyPressSFX, 0.6f);
+}
+
 
     void SpawnTrash()
     {
@@ -320,13 +342,17 @@ gameStarted = true;
     }
 
     void WinGame()
-    {
-        gameStarted = false;
-        winPanel.SetActive(true);
+{
+    gameStarted = false;
+    winPanel.SetActive(true);
 
-        foreach (var t in FindObjectsOfType<TrashNote2>())
-            Destroy(t.gameObject);
-    }
+    if (sfxSource && winSFX)
+        sfxSource.PlayOneShot(winSFX, 0.8f);
+
+    foreach (var t in FindObjectsOfType<TrashNote2>())
+        Destroy(t.gameObject);
+}
+
 
     // ============================
     //       Navigation
