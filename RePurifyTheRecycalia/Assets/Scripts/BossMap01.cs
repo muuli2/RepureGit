@@ -58,6 +58,9 @@ public float fadeDuration = 1.5f;
 
 private Coroutine bgmCoroutine;
 
+private bool lockBossBGM = false;
+
+
 
 
     private bool isDead = false;
@@ -138,6 +141,8 @@ private Coroutine bgmCoroutine;
 private void OnTriggerExit2D(Collider2D other)
 {
     if (!other.CompareTag("Player")) return;
+
+    if (lockBossBGM) return; 
 
     StopBossBGM();
 }
@@ -233,6 +238,7 @@ private void FreezeBoss()
    private IEnumerator TriggerShowdown()
     {
         state = BossState.WaitingMinigame;
+        lockBossBGM = true;
         FreezeBoss(); 
 
         // FreezeMapAndPlayer();
@@ -272,6 +278,8 @@ if (tt != null)
    public void BossDefeated()
     {
         if (state == BossState.Dead) return;
+
+        lockBossBGM = false; 
 
         StopBossBGM();
 

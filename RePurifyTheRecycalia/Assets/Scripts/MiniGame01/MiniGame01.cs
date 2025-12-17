@@ -11,6 +11,12 @@ public class MiniGame01 : MonoBehaviour
     public int score = 0;
     public bool gameStarted = false;
 
+    [Header("SFX")]
+public AudioSource sfxSource;
+public AudioClip winClip;
+
+    
+
     [Header("UI")]
     public TMP_Text scoreText;
     public Image[] heartImages;
@@ -22,6 +28,7 @@ public class MiniGame01 : MonoBehaviour
 
     public string mapSceneName = "Map01"; // ซีนแมพหลัก
     public TrashItem.TrashType targetTrashType = TrashItem.TrashType.Wet;
+    
 
     private void Awake() { Instance = this; }
 
@@ -130,6 +137,9 @@ public class MiniGame01 : MonoBehaviour
 
     void WinGame()
 {
+    if (sfxSource && winClip)
+        sfxSource.PlayOneShot(winClip);
+
     if (winPanel != null) winPanel.SetActive(true);
 
     var spawner = Object.FindFirstObjectByType<TrashSpawner>();
@@ -139,12 +149,9 @@ public class MiniGame01 : MonoBehaviour
     FreezeAllTrash();
     DestroyAllTrash();
 
-    // ❌ เอาออก ห้ามฆ่าบอสตรงนี้ เพราะบอสไม่อยู่ในซีน
-    // if (Boss.Instance != null)
-    //     Boss.Instance.BossDefeated();
-
     Time.timeScale = 0;
 }
+
 
 
 

@@ -10,6 +10,12 @@ public class MiniGameStart : MonoBehaviour
 
     public float countdownTime = 3f;   // 3 2 1
 
+    [Header("SFX")]
+public AudioSource sfxSource;
+public AudioClip countClip;   // เสียง 3 2 1
+public AudioClip goClip;      // เสียง GO
+
+
     void Start()
     {
         rulesPanel.SetActive(true);
@@ -27,19 +33,28 @@ public class MiniGameStart : MonoBehaviour
     IEnumerator StartCountdown()
 {
     int count = 3;
-    while(count > 0)
+    while (count > 0)
     {
         countdownText.text = count.ToString();
+
+        if (sfxSource && countClip)
+            sfxSource.PlayOneShot(countClip);
+
         yield return new WaitForSeconds(1f);
         count--;
     }
 
     countdownText.text = "GO!";
+
+    if (sfxSource && goClip)
+        sfxSource.PlayOneShot(goClip);
+
     yield return new WaitForSeconds(1f);
 
     countdownText.gameObject.SetActive(false);
-    gameManager.SetActive(true);  // เปิด GameManager
-    MiniGame01.Instance.gameStarted = true; // เริ่ม Spawn ขยะ
+    gameManager.SetActive(true);
+    MiniGame01.Instance.gameStarted = true;
 }
+
 
 }

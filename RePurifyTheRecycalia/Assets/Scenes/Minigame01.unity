@@ -655,8 +655,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 849, y: 465.00043}
-  m_SizeDelta: {x: 222, y: 150}
+  m_AnchoredPosition: {x: 903.2954, y: 486.61768}
+  m_SizeDelta: {x: 113.4091, y: 87.6608}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361451896
 MonoBehaviour:
@@ -798,11 +798,11 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592644508}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 9c9d9d577313a734bab15a7e2bf28789, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1074,7 +1074,7 @@ MonoBehaviour:
   rightLimit: 8
   audioSource: {fileID: 746467881}
   correctSFX: {fileID: 8300000, guid: b31214f87898a0840b49030b4da01ab8, type: 3}
-  wrongSFX: {fileID: 8300000, guid: d4f8d9c796da81643b88c066c4c41d5c, type: 3}
+  wrongSFX: {fileID: 0}
 --- !u!4 &746467877
 Transform:
   m_ObjectHideFlags: 0
@@ -1135,7 +1135,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1531782037
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 6
   m_Sprite: {fileID: 7507011894936811572, guid: 7ca1ac0318202824db7e86e7e682f595, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2283,6 +2283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1512921984}
   - component: {fileID: 1512921983}
+  - component: {fileID: 1512921985}
   m_Layer: 0
   m_Name: Minigame
   m_TagString: Untagged
@@ -2305,6 +2306,8 @@ MonoBehaviour:
   targetScore: 1000
   score: 0
   gameStarted: 0
+  sfxSource: {fileID: 1512921985}
+  winClip: {fileID: 8300000, guid: c74921624ebc30b4ca80a1b7f9504a85, type: 3}
   scoreText: {fileID: 1547360533}
   heartImages: []
   heartFull: {fileID: -2496074564446706034, guid: c4192fa072694014c99c2d6ac26047af, type: 3}
@@ -2328,6 +2331,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1512921985
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512921982}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1547360531
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,7 +3123,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1531782037
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 2
   m_Sprite: {fileID: 42409656205368305, guid: a2e513b715185bd4db25728365365b34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3220,6 +3320,9 @@ MonoBehaviour:
   countdownText: {fileID: 1174493593}
   gameManager: {fileID: 1512921982}
   countdownTime: 3
+  sfxSource: {fileID: 0}
+  countClip: {fileID: 0}
+  goClip: {fileID: 0}
 --- !u!4 &2100722859
 Transform:
   m_ObjectHideFlags: 0

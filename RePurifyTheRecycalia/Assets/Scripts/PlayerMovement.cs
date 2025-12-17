@@ -45,6 +45,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
+        
         // ลดคูลดาวน์ Dash
         if (dashCDTimer > 0)
             dashCDTimer -= Time.deltaTime;
