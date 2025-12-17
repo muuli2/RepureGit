@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9135b40820ea2fe4ca4494b7a33ad37f
+guid: e4bed20dd6311ef47978ee6156053927
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8410926834102150482
-    second: kNIGHTbox_0
+      213: -6157779062412324289
+    second: boy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kNIGHTbox_0
+      name: boy_0
       rect:
         serializedVersion: 2
-        x: 245
-        y: 46
-        width: 7202
-        height: 1454
+        x: 23
+        y: 31
+        width: 908
+        height: 1193
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eaa5a8d7b92664b80800000000000000
-      internalID: -8410926834102150482
+      spriteID: f32539b619c2b8aa0800000000000000
+      internalID: -6157779062412324289
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      kNIGHTbox_0: -8410926834102150482
+      boy_0: -6157779062412324289
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
