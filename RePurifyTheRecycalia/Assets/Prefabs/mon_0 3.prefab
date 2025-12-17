@@ -173,7 +173,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2050373311
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7677870770000955044, guid: 507041951d6b2e8459686644a67fd290, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -206,8 +206,9 @@ MonoBehaviour:
   damageToPlayer: 1
   attackCooldown: 1
   scoreOnDeath: 150
-  audioSource: {fileID: 0}
-  dieClip: {fileID: 0}
+  audioSource: {fileID: 2369754028712691794}
+  hurtClip: {fileID: 8300000, guid: 971428491fda52047a1b34999bc71a72, type: 3}
+  dieClip: {fileID: 8300000, guid: 971428491fda52047a1b34999bc71a72, type: 3}
 --- !u!50 &5222363316033032003
 Rigidbody2D:
   serializedVersion: 5

@@ -207,8 +207,8 @@ MonoBehaviour:
   attackCooldown: 1
   scoreOnDeath: 150
   audioSource: {fileID: 7626600189208234094}
-  hurtClip: {fileID: 8300000, guid: 9472d9277916a0c40ab8463d8d209997, type: 3}
-  dieClip: {fileID: 0}
+  hurtClip: {fileID: 8300000, guid: 971428491fda52047a1b34999bc71a72, type: 3}
+  dieClip: {fileID: 8300000, guid: 971428491fda52047a1b34999bc71a72, type: 3}
 --- !u!50 &5222363316033032003
 Rigidbody2D:
   serializedVersion: 5
@@ -307,7 +307,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.544
   m_Pitch: 1
   Loop: 0
   Mute: 0
