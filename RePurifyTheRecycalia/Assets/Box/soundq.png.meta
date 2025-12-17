@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: e4bed20dd6311ef47978ee6156053927
+guid: 246a6aaca63a35b4488f707f2e1ef4f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6157779062412324289
-    second: boy_0
+      213: -963682952009447518
+    second: soundq_0
+  - first:
+      213: -1443339565809809561
+    second: soundq_1
+  - first:
+      213: -2063397256684031201
+    second: soundq_2
+  - first:
+      213: 1081618943927272022
+    second: soundq_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 3500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +109,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boy_0
+      name: soundq_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 31
-        width: 908
-        height: 1193
+        x: 0
+        y: 0
+        width: 312
+        height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f32539b619c2b8aa0800000000000000
-      internalID: -6157779062412324289
+      spriteID: 2a78061067f40a2f0800000000000000
+      internalID: -963682952009447518
       vertices: []
       indices: 
       edges: []
@@ -125,7 +134,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f1f9042909c324d4c939f82a5340693d
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +142,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":312.0,"y":272.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      boy_0: -6157779062412324289
+      soundq_0: -963682952009447518
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

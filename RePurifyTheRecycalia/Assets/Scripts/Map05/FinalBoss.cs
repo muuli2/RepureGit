@@ -66,6 +66,15 @@ public float spreadBulletSpeed = 4f;
     public GameObject glowEffect;
     public AudioSource bgmSource;
 
+    [Header("Sound FX")]
+public AudioSource sfxSource;
+
+public AudioClip hurtSFX;
+public AudioClip dieSFX;
+public AudioClip shootSFX;
+public AudioClip spreadShootSFX;
+
+
     [Header("Minigame")]
     public string miniGameSceneName = "MinigameFinal";
 
@@ -183,6 +192,10 @@ else
 
 void ShootSpread()
 {
+    // 🔊 เสียงยิงรอบตัว
+    if (sfxSource && spreadShootSFX)
+        sfxSource.PlayOneShot(spreadShootSFX);
+
     float angleStep = 360f / spreadBulletCount;
     float angle = 0f;
 
@@ -195,12 +208,12 @@ void ShootSpread()
 
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         Rigidbody2D brb = bullet.GetComponent<Rigidbody2D>();
-
         brb.linearVelocity = dir * spreadBulletSpeed;
 
         angle += angleStep;
     }
 }
+
 
 
     // -------------------------------------
@@ -254,19 +267,21 @@ void ShootSpread()
 {
     if (player == null) return;
 
+    // 🔊 เสียงยิง
+    if (sfxSource && shootSFX)
+        sfxSource.PlayOneShot(shootSFX);
+
     GameObject b = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
     FinalBossBullet bullet = b.GetComponent<FinalBossBullet>();
 
-    // ทิศไปหา player จริง
     Vector2 dir = (player.position - firePoint.position).normalized;
-
     bullet.SetDirection(dir);
 
-    // ฟลิปภาพกระสุน ถ้ามี sprite
     SpriteRenderer sr = b.GetComponent<SpriteRenderer>();
     if (sr != null)
         sr.flipX = (dir.x < 0);
 }
+
 
 
 
@@ -280,10 +295,11 @@ void ShootSpread()
         currentHealth -= dmg;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
-        if (bossAnimator != null)
-            bossAnimator.SetTrigger("hurt");
+         if (sfxSource && hurtSFX)
+        sfxSource.PlayOneShot(hurtSFX);
 
-        UpdateHealthBar();
+    bossAnimator?.SetTrigger("hurt");
+    UpdateHealthBar();
 
         if (currentHealth <= 0)
             StartCoroutine(TriggerMinigameTransition());
@@ -379,6 +395,9 @@ void ShootSpread()
 
         state = BossState.Dead;
         isDead = true;
+
+         if (sfxSource && dieSFX)
+        sfxSource.PlayOneShot(dieSFX);
 
         ScoreManage.Instance?.AddScore(1000);
 

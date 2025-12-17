@@ -4297,7 +4297,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.592761, y: 0.7202585}
+  m_Offset: {x: 0.6065706, y: -0.46438396}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4307,7 +4307,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 6.8142557, y: 2.6059098}
+  m_Size: {x: 5.6304417, y: 2.2753093}
   m_EdgeRadius: 0
 --- !u!70 &317459851
 CapsuleCollider2D:
@@ -4439,7 +4439,7 @@ Transform:
   m_GameObject: {fileID: 317459847}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.452633, y: 70.03522, z: 0}
+  m_LocalPosition: {x: 51.760235, y: 70.63423, z: 0}
   m_LocalScale: {x: 0.48885268, y: 0.46680182, z: 0.6448079}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -240131,7 +240131,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.31, y: 0.34}
+    oldSize: {x: 0.25942856, y: 0.34085715}
     newSize: {x: 0.31, y: 0.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -240223,7 +240223,7 @@ SpriteRenderer:
   m_SortingLayerID: 1531782037
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4495478712733764576, guid: df0066b833644cd41b4ea14a44cc408f, type: 3}
+  m_Sprite: {fileID: -6157779062412324289, guid: e4bed20dd6311ef47978ee6156053927, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -240248,11 +240248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   dialogueManager: {fileID: 1652218907}
   sentences:
-  - "\u0E2D\u0E31\u0E31\u0E28\u0E27\u0E34\u0E19\u0E19\u0E30\u0E08\u0E4A\u0E30: \u0E2B\u0E22\u0E38\u0E14\u0E01\u0E48\u0E2D\u0E19!
-    \u0E40\u0E08\u0E49\u0E32\u0E08\u0E30\u0E40\u0E02\u0E49\u0E32\u0E21\u0E32\u0E43\u0E19\u0E40\u0E02\u0E15\u0E19\u0E35\u0E49\u0E07\u0E31\u0E49\u0E19\u0E23\u0E36?
-    \u0E1B\u0E35\u0E28\u0E32\u0E08\u0E02\u0E22\u0E30\u0E14\u0E49\u0E32\u0E19\u0E43\u0E19\u0E19\u0E31\u0E49\u0E19\u0E14\u0E38\u0E23\u0E49\u0E32\u0E22\u0E21\u0E32\u0E01\L\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48\u0E41\u0E04\u0E48\u0E17\u0E31\u0E01\u0E29\u0E30\u0E01\u0E32\u0E23\u0E15\u0E48\u0E2D\u0E2A\u0E39\u0E49
-    \u0E40\u0E08\u0E49\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E41\u0E22\u0E01\u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17\u0E02\u0E22\u0E30\u0E14\u0E49\u0E27\u0E22
-    \u0E44\u0E21\u0E48\u0E07\u0E31\u0E49\u0E19\u0E2A\u0E39\u0E49\u0E44\u0E1B\u0E01\u0E47\u0E44\u0E23\u0E49\u0E1C\u0E25 "
+  - "???: \u0E17\u0E48\u0E32\u0E19!  "
   - "CHOICE: \u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E2B\u0E48\u0E27\u0E07 \u0E02\u0E49\u0E32\u0E21\u0E31\u0E48\u0E19\u0E43\u0E08\u0E27\u0E48\u0E32\u0E02\u0E49\u0E32\u0E21\u0E35\u0E17\u0E31\u0E01\u0E29\u0E30\u0E1E\u0E23\u0E49\u0E2D\u0E21"
   - "CHOICE: \u0E16\u0E36\u0E07\u0E44\u0E21\u0E48 \u0E02\u0E49\u0E32\u0E01\u0E47\u0E08\u0E30\u0E40\u0E02\u0E49\u0E32\u0E44\u0E1B
     \u0E40\u0E1E\u0E23\u0E32\u0E30\u0E02\u0E49\u0E32\u0E17\u0E19\u0E14\u0E39\u0E2D\u0E22\u0E39\u0E48\u0E40\u0E09\u0E22\u0E46\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E2B\u0E23\u0E2D\u0E01!\n"
@@ -240273,7 +240269,7 @@ Transform:
   m_GameObject: {fileID: 2018650036}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.3358, y: 31.86908, z: 0}
+  m_LocalPosition: {x: 73.4748, y: 31.86908, z: 0}
   m_LocalScale: {x: 7.6421585, y: 7.597885, z: 7.1408696}
   m_ConstrainProportionsScale: 0
   m_Children: []
