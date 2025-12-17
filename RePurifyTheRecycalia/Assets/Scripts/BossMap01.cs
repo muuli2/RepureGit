@@ -46,6 +46,14 @@ public class BossMap01 : MonoBehaviour
 public AudioSource audioSource;
 public AudioClip showdownClip;
 
+[Header("BGM Zone")]
+public AudioSource mapBgmSource;   // เพลงแมพ
+public AudioSource bossBgmSource;  // เพลงบอส
+public float fadeDuration = 1.5f;
+
+private Coroutine bgmCoroutine;
+
+
 
     private bool isDead = false;
      private Collider2D col;
@@ -113,6 +121,22 @@ public AudioClip showdownClip;
             Idle();
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+{
+    if (!other.CompareTag("Player")) return;
+    if (state != BossState.Normal || isDead) return;
+
+    StartBossBGM();
+}
+
+private void OnTriggerExit2D(Collider2D other)
+{
+    if (!other.CompareTag("Player")) return;
+
+    StopBossBGM();
+}
+
 
    void Idle()
 {
@@ -238,6 +262,9 @@ if (tt != null)
     {
         if (state == BossState.Dead) return;
 
+        StopBossBGM();
+
+
         state = BossState.Dead;
         isDead = true;
 
@@ -249,6 +276,7 @@ if (tt != null)
             c.enabled = false;
 
         rb.bodyType = RigidbodyType2D.Kinematic;
+        
 
         // glowEffect?.SetActive(false);
         anim?.SetTrigger("die");
@@ -356,6 +384,66 @@ public void ResetBoss()
         Gizmos.color = Color.green;
         Gizmos.DrawSphere(attackPoint.position, 0.05f);
     }
+}
+
+
+void StartBossBGM()
+{
+    if (bgmCoroutine != null)
+        StopCoroutine(bgmCoroutine);
+
+    bgmCoroutine = StartCoroutine(FadeBGM(
+        mapBgmSource, bossBgmSource,
+        fadeDuration
+    ));
+}
+
+void StopBossBGM()
+{
+    if (bgmCoroutine != null)
+        StopCoroutine(bgmCoroutine);
+
+    bgmCoroutine = StartCoroutine(FadeBGM(
+        bossBgmSource, mapBgmSource,
+        fadeDuration
+    ));
+}
+
+IEnumerator FadeBGM(AudioSource from, AudioSource to, float duration)
+{
+    float time = 0f;
+
+    if (to && !to.isPlaying)
+    {
+        to.volume = 0f;
+        to.Play();
+    }
+
+    float fromStart = from ? from.volume : 0f;
+    float toStart = to ? to.volume : 0f;
+
+    while (time < duration)
+    {
+        time += Time.deltaTime;
+        float t = time / duration;
+
+        if (from)
+            from.volume = Mathf.Lerp(fromStart, 0f, t);
+
+        if (to)
+            to.volume = Mathf.Lerp(toStart, 1f, t);
+
+        yield return null;
+    }
+
+    if (from)
+    {
+        from.volume = 0f;
+        from.Stop();
+    }
+
+    if (to)
+        to.volume = 1f;
 }
 
 
