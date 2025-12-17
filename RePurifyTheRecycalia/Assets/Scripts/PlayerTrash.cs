@@ -14,8 +14,17 @@ public class PlayerTrash : MonoBehaviour
     private float comboTimer = 0f;
     private int comboCount = 0;
 
+    [Header("Sound FX")]
+public AudioSource sfxSource;
+public AudioClip correctTrashSFX;
+public AudioClip wrongTrashSFX;
+
+
     void Start()
     {
+
+         if (sfxSource == null)
+        sfxSource = GetComponent<AudioSource>();
         if (comboText == null)
             comboText = GameObject.Find("ComboText").GetComponent<TMP_Text>();
 
@@ -78,8 +87,12 @@ public class PlayerTrash : MonoBehaviour
 {
     if (!hasTrash) return;
 
+    // ❌ ผิดถัง
     if (currentTrashType != binType)
     {
+        if (sfxSource && wrongTrashSFX)
+            sfxSource.PlayOneShot(wrongTrashSFX);
+
         feedbackText.text = "<color=red>ผิดประเภทแล้วล่ะ...</color>";
         Invoke("ClearFeedback", 2f);
 
@@ -88,24 +101,27 @@ public class PlayerTrash : MonoBehaviour
         return;
     }
 
-    hasTrash = false;
-   currentTrashIcon.SetActive(false);
+    // ✅ ถูกถัง
+    if (sfxSource && correctTrashSFX)
+        sfxSource.PlayOneShot(correctTrashSFX);
 
+    hasTrash = false;
+    currentTrashIcon.SetActive(false);
 
     int points = 100;
     if (comboCount >= 4) points *= 2;
 
-    if (ScoreManage.Instance != null)
-        ScoreManage.Instance.AddScore(points); // เพิ่มคะแนนทันที
+    ScoreManage.Instance?.AddScore(points);
 
     comboCount++;
     comboTimer = comboTime;
-    comboText.text = comboCount >= 5 ? $"Combo x{comboCount}! (x2!)" : $"Combo x{comboCount}!";
+    comboText.text = comboCount >= 5 
+        ? $"Combo x{comboCount}! (x2!)" 
+        : $"Combo x{comboCount}!";
 
-     TrashCheck.Instance.AddCollected();
+    TrashCheck.Instance.AddCollected();
     currentTrashIcon = null;
 }
-
 
     // วางขยะลงพื้น (ไม่ให้คะแนน)
     private void DropTrashOnGround()

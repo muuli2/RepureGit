@@ -2,17 +2,28 @@ using UnityEngine;
 
 public class MusicTriggerZone : MonoBehaviour
 {
-    public AudioClip musicToPlay;  // เพลงที่อยากให้เล่นเมื่อเดินเข้า
-    public bool playOnce = false;  // กันไม่ให้เล่นซ้ำๆ ถ้าต้องการ
+    public AudioClip musicToPlay;
+    public float fadeTime = 2f;
+
     private bool hasPlayed = false;
+    private Collider2D col;
+
+    void Awake()
+    {
+        col = GetComponent<Collider2D>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (hasPlayed) return;
         if (!other.CompareTag("Player")) return;
 
-        if (playOnce && hasPlayed) return;
-
-      AudioManager.Instance.PlayMusicFade(musicToPlay, 2f); // 🌊 เฟดขึ้น
         hasPlayed = true;
+
+        AudioManager.Instance.PlayMusicFade(musicToPlay, fadeTime);
+
+        // ❌ ปิด trigger ทิ้ง ไม่ให้ยิงซ้ำเด็ดขาด
+        if (col != null)
+            col.enabled = false;
     }
 }

@@ -3790,7 +3790,7 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110479613}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -3842,7 +3842,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110479613}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -126157,10 +126157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E1B\u0E35\u0E28\u0E32\u0E08\u0E40\u0E2B\u0E21\u0E47\u0E19\u0E40\u0E25\u0E47\u0E01\u0E08\u0E30\u0E2A\u0E38\u0E48\u0E21\u0E14\u0E23\u0E2D\u0E1B\u0E40\u0E25\u0E37\u0E2D\u0E14\u0E2B\u0E23\u0E37\u0E2D
-    ...\n\n\u0E43\u0E19\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E19\u0E35\u0E49
-    \u0E21\u0E35\u0E1B\u0E49\u0E32\u0E22\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14
-    3 \u0E41\u0E1C\u0E48\u0E19"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -128695,8 +128692,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 33.804443, y: 11.445435}
-  m_SizeDelta: {x: -870.4363, y: -634.9685}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -435.7177, y: -450.641}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &546852090
 MonoBehaviour:
@@ -128711,16 +128708,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 2875796426390071532, guid: 411f8c63e78737e448cd1a272028cfbd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -135870,7 +135867,7 @@ GameObject:
   - component: {fileID: 750130524}
   - component: {fileID: 750130523}
   m_Layer: 0
-  m_Name: knight_0 (2)
+  m_Name: boyboy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135978,7 +135975,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.31, y: 0.34}
+    oldSize: {x: 0.23571429, y: 0.23571429}
     newSize: {x: 0.31, y: 0.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -136070,7 +136067,7 @@ SpriteRenderer:
   m_SortingLayerID: 1531782037
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4495478712733764576, guid: df0066b833644cd41b4ea14a44cc408f, type: 3}
+  m_Sprite: {fileID: 8224124334607301300, guid: fc776737c7484174d97d7e87537ce861, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -148075,7 +148072,7 @@ GameObject:
   - component: {fileID: 1081862668}
   - component: {fileID: 1081862667}
   m_Layer: 0
-  m_Name: knight_0 (1)
+  m_Name: npc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148183,7 +148180,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.31, y: 0.34}
+    oldSize: {x: 0.28, y: 0.3475}
     newSize: {x: 0.31, y: 0.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -148275,7 +148272,7 @@ SpriteRenderer:
   m_SortingLayerID: 1531782037
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4495478712733764576, guid: df0066b833644cd41b4ea14a44cc408f, type: 3}
+  m_Sprite: {fileID: -3421700633595281804, guid: 06f970dff3ab26d4c9059eb716dce680, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -181088,7 +181085,7 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608946327}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -181154,7 +181151,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &1608946332
 RectTransform:
@@ -185313,8 +185310,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 33.804443, y: 11.445435}
-  m_SizeDelta: {x: -870.4363, y: -634.9685}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -562.2085, y: -504.2751}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708310456
 MonoBehaviour:
@@ -185329,16 +185326,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: -2070893693987500901, guid: 50eb28b0d10623448bbabb9e9336636a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -663255,10 +663252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E1B\u0E35\u0E28\u0E32\u0E08\u0E40\u0E2B\u0E21\u0E47\u0E19\u0E40\u0E25\u0E47\u0E01\u0E08\u0E30\u0E2A\u0E38\u0E48\u0E21\u0E14\u0E23\u0E2D\u0E1B\u0E40\u0E25\u0E37\u0E2D\u0E14\u0E2B\u0E23\u0E37\u0E2D
-    ...\n\n\u0E43\u0E19\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E19\u0E35\u0E49
-    \u0E21\u0E35\u0E1B\u0E49\u0E32\u0E22\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14
-    3 \u0E41\u0E1C\u0E48\u0E19"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

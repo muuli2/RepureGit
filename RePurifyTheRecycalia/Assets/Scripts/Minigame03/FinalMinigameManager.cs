@@ -211,7 +211,7 @@ IEnumerator WinSequence()
     yield return StartCoroutine(FadeImage(0f, 1f));
 
     // 👑 ชื่อบอส
-    yield return StartCoroutine(ShowBossText("Morrotte"));
+    yield return StartCoroutine(ShowBossText("Morrott"));
 
     // เว้นจังหวะนิดนึงให้หายใจ
     yield return new WaitForSeconds(1f);

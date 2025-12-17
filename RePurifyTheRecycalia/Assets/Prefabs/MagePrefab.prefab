@@ -542,6 +542,9 @@ MonoBehaviour:
   comboTime: 5
   comboText: {fileID: 5596725412614779944}
   feedbackText: {fileID: 5596725412614779944}
+  sfxSource: {fileID: 514169949692100668}
+  correctTrashSFX: {fileID: 0}
+  wrongTrashSFX: {fileID: 0}
 --- !u!50 &-4477079373585018228
 Rigidbody2D:
   serializedVersion: 5

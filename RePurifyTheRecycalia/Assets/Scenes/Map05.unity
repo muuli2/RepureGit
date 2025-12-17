@@ -6552,7 +6552,7 @@ PrefabInstance:
     - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: hurtSFX
       value: 
-      objectReference: {fileID: 8300000, guid: 9f63f3a802c9e37489add25a4a36f4b6, type: 3}
+      objectReference: {fileID: 8300000, guid: 9472d9277916a0c40ab8463d8d209997, type: 3}
     - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: shootSFX
       value: 
@@ -6652,7 +6652,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.783
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -20855,7 +20855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicTriggerZone
   musicToPlay: {fileID: 8300000, guid: cfe6face58086e6449d7bfa234e56826, type: 3}
-  playOnce: 0
+  fadeTime: 2
 --- !u!4 &835722922
 Transform:
   m_ObjectHideFlags: 0
@@ -22138,7 +22138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicTriggerZone
   musicToPlay: {fileID: 8300000, guid: db6eb9acef848f94bbab5679b736d3fd, type: 3}
-  playOnce: 0
+  fadeTime: 2
 --- !u!4 &890043138
 Transform:
   m_ObjectHideFlags: 0
@@ -224392,7 +224392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicTriggerZone
   musicToPlay: {fileID: 8300000, guid: f918d4313d108a242a33626d972a48cc, type: 3}
-  playOnce: 0
+  fadeTime: 2
 --- !u!4 &1519865305
 Transform:
   m_ObjectHideFlags: 0
