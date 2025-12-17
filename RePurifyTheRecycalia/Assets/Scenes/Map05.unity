@@ -101997,7 +101997,7 @@ MonoBehaviour:
     speakerName: Lumina
     text: "(\u0E1E\u0E22\u0E31\u0E01\u0E2B\u0E19\u0E49\u0E32) ..\u0E1E\u0E25\u0E31\u0E07\u0E02\u0E2D\u0E07\u0E02\u0E49\u0E32
       \u0E01\u0E33\u0E25\u0E31\u0E07\u0E1F\u0E37\u0E49\u0E19\u0E15\u0E31\u0E27"
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -6176266228772638158, guid: 96bb0bb8b0830324284e8806ecefe11a, type: 3}
   - speaker: 1
     speakerName: Lumina
     text: "..\u0E14\u0E35\u0E08\u0E23\u0E34\u0E07\u0E46"
@@ -102013,7 +102013,7 @@ MonoBehaviour:
   - speaker: 1
     speakerName: Lumina
     text: ....Lumina?
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 1
     speakerName: Lumina
     text: '!!?'
@@ -102025,25 +102025,25 @@ MonoBehaviour:
   - speaker: 1
     speakerName: Lumina
     text: "\u0E41\u0E1B\u0E25\u0E01\u0E2B\u0E23\u0E37\u0E2D \u0E17\u0E35\u0E48\u0E0A\u0E49\u0E32\u0E08\u0E30\u0E17\u0E23\u0E32\u0E1A\u0E0A\u0E37\u0E48\u0E2D\u0E04\u0E19\u0E02\u0E2D\u0E07\u0E02\u0E49\u0E32"
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 1
     speakerName: Lumina
     text: "\u0E41\u0E15\u0E48\u0E04\u0E27\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07\u0E41\u0E25\u0E49\u0E27
       \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E40\u0E08\u0E49\u0E32.."
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
-  - speaker: 1
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+  - speaker: 0
     speakerName: Lumina
     text: "\u0E17\u0E38\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\u0E17\u0E35\u0E48\u0E02\u0E49\u0E32\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E2B\u0E21\u0E39\u0E48\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E22\u0E40\u0E09\u0E37\u0E48\u0E2D\u0E22"
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -6176266228772638158, guid: 96bb0bb8b0830324284e8806ecefe11a, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: "\u0E17\u0E38\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\u0E17\u0E35\u0E48\u0E02\u0E49\u0E32\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E2B\u0E21\u0E39\u0E48\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E22\u0E40\u0E09\u0E37\u0E48\u0E2D\u0E22 
       \u0E02\u0E49\u0E32\u0E40\u0E2B\u0E47\u0E19\u0E40\u0E08\u0E49\u0E32 "
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -6176266228772638158, guid: 96bb0bb8b0830324284e8806ecefe11a, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: "\u0E04\u0E2D\u0E22\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E15\u0E25\u0E2D\u0E14"
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: "\u0E04\u0E2D\u0E22\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E15\u0E25\u0E2D\u0E14
