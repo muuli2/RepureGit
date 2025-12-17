@@ -12,7 +12,7 @@ public class MusicTriggerZone : MonoBehaviour
 
         if (playOnce && hasPlayed) return;
 
-        AudioManager.Instance.PlayMusic(musicToPlay);
+      AudioManager.Instance.PlayMusicFade(musicToPlay, 2f); // 🌊 เฟดขึ้น
         hasPlayed = true;
     }
 }
