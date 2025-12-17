@@ -3972,11 +3972,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1138582561881957730, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.362854
+      value: -19.307856
       objectReference: {fileID: 0}
     - target: {fileID: 1138582561881957730, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.885662
+      value: 12.210276
       objectReference: {fileID: 0}
     - target: {fileID: 1138582561881957730, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12965,11 +12965,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1138582561881957730, guid: 8261d32da53d10e4b93a85d1871a27a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.764118
+      value: 14.161832
       objectReference: {fileID: 0}
     - target: {fileID: 1138582561881957730, guid: 8261d32da53d10e4b93a85d1871a27a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.470979
+      value: 26.565556
       objectReference: {fileID: 0}
     - target: {fileID: 1138582561881957730, guid: 8261d32da53d10e4b93a85d1871a27a2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17916,8 +17916,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5147778}
-  m_AnchoredPosition: {x: 705.6869, y: 247.48712}
-  m_SizeDelta: {x: 606.66, y: 140.6734}
+  m_AnchoredPosition: {x: 741.826, y: 264.32135}
+  m_SizeDelta: {x: 758.66, y: 140.6734}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705426603
 MonoBehaviour:
@@ -20555,6 +20555,197 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.98, y: 0.1}
   m_EdgeRadius: 0
+--- !u!1 &835722918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 835722922}
+  - component: {fileID: 835722921}
+  - component: {fileID: 835722920}
+  - component: {fileID: 835722919}
+  m_Layer: 0
+  m_Name: GameObject (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &835722919
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835722918}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.722
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!61 &835722920
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835722918}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 2.36, y: 20.77}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 9.79, y: 1.5}
+  m_EdgeRadius: 0
+--- !u!114 &835722921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835722918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef51124a1570e43469402454c51801f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicTriggerZone
+  musicToPlay: {fileID: 8300000, guid: cfe6face58086e6449d7bfa234e56826, type: 3}
+  playOnce: 0
+--- !u!4 &835722922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835722918}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.9, y: 17.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845980899
 GameObject:
   m_ObjectHideFlags: 0
@@ -91777,7 +91968,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -2.46, y: 1.06}
+  m_Offset: {x: -4.2, y: 1.06}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -91787,7 +91978,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.96, y: 1}
+  m_Size: {x: 62.45, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1519865304
 MonoBehaviour:
@@ -102006,11 +102197,11 @@ MonoBehaviour:
     speakerName: Lumina
     text: "\u0E17\u0E35\u0E48\u0E17\u0E48\u0E32\u0E19\u0E1B\u0E25\u0E2D\u0E14\u0E20\u0E31\u0E22"
     portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
-  - speaker: 1
+  - speaker: 0
     speakerName: Lumina
     text: ...
     portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
-  - speaker: 1
+  - speaker: 0
     speakerName: Lumina
     text: ....Lumina?
     portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
@@ -102022,41 +102213,41 @@ MonoBehaviour:
     speakerName: Lumina
     text: "\u0E2D\u0E07\u0E04\u0E4C\u0E0A\u0E32\u0E22 ..\u0E17\u0E23\u0E32\u0E1A\u0E19\u0E32\u0E21\u0E02\u0E2D\u0E07\u0E02\u0E49\u0E32?"
     portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
-  - speaker: 1
+  - speaker: 0
     speakerName: Lumina
     text: "\u0E41\u0E1B\u0E25\u0E01\u0E2B\u0E23\u0E37\u0E2D \u0E17\u0E35\u0E48\u0E0A\u0E49\u0E32\u0E08\u0E30\u0E17\u0E23\u0E32\u0E1A\u0E0A\u0E37\u0E48\u0E2D\u0E04\u0E19\u0E02\u0E2D\u0E07\u0E02\u0E49\u0E32"
     portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
-  - speaker: 1
+  - speaker: 0
     speakerName: Lumina
     text: "\u0E41\u0E15\u0E48\u0E04\u0E27\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07\u0E41\u0E25\u0E49\u0E27
       \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E40\u0E08\u0E49\u0E32.."
     portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
-    text: "\u0E17\u0E38\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\u0E17\u0E35\u0E48\u0E02\u0E49\u0E32\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E2B\u0E21\u0E39\u0E48\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E22\u0E40\u0E09\u0E37\u0E48\u0E2D\u0E22"
+    text: "\u0E17\u0E38\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\u0E17\u0E35\u0E48\u0E02\u0E49\u0E32\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E2B\u0E21\u0E39\u0E48\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E22\u0E40\u0E09\u0E37\u0E48\u0E2D\u0E22 "
     portrait: {fileID: -6176266228772638158, guid: 96bb0bb8b0830324284e8806ecefe11a, type: 3}
   - speaker: 0
     speakerName: Lumina
-    text: "\u0E17\u0E38\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\u0E17\u0E35\u0E48\u0E02\u0E49\u0E32\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E2B\u0E21\u0E39\u0E48\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E22\u0E40\u0E09\u0E37\u0E48\u0E2D\u0E22 
+    text: "\u0E17\u0E38\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\u0E17\u0E35\u0E48\u0E02\u0E49\u0E32\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E2B\u0E21\u0E39\u0E48\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E22\u0E40\u0E09\u0E37\u0E48\u0E2D\u0E22
       \u0E02\u0E49\u0E32\u0E40\u0E2B\u0E47\u0E19\u0E40\u0E08\u0E49\u0E32 "
     portrait: {fileID: -6176266228772638158, guid: 96bb0bb8b0830324284e8806ecefe11a, type: 3}
   - speaker: 0
     speakerName: Lumina
-    text: "\u0E04\u0E2D\u0E22\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E15\u0E25\u0E2D\u0E14"
+    text: "\u0E04\u0E2D\u0E22\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E17\u0E38\u0E01\u0E04\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E15\u0E25\u0E2D\u0E14"
     portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
-    text: "\u0E04\u0E2D\u0E22\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E15\u0E25\u0E2D\u0E14
+    text: "\u0E04\u0E2D\u0E22\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E17\u0E38\u0E01\u0E04\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E15\u0E25\u0E2D\u0E14
       \u0E04\u0E2D\u0E22\u0E41\u0E22\u0E01\u0E02\u0E22\u0E30\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E21\u0E32\u0E15\u0E25\u0E2D\u0E14"
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: "\u0E41\u0E25\u0E30\u0E02\u0E49\u0E32\u0E40\u0E2D\u0E07..."
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: "\u0E01\u0E47\u0E0A\u0E37\u0E48\u0E19\u0E0A\u0E21\u0E40\u0E08\u0E49\u0E32\u0E21\u0E32\u0E15\u0E25\u0E2D\u0E14 "
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 1
     speakerName: Lumina
     text: '!!?'
@@ -102064,47 +102255,48 @@ MonoBehaviour:
   - speaker: 0
     speakerName: Lumina
     text: "\u0E40\u0E08\u0E49\u0E32\u0E01\u0E25\u0E49\u0E32\u0E2B\u0E32\u0E0D\u0E21\u0E32\u0E01"
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: "\u0E17\u0E31\u0E49\u0E07\u0E01\u0E25\u0E49\u0E32\u0E2B\u0E32\u0E0D "
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: " \u0E17\u0E31\u0E49\u0E07\u0E01\u0E25\u0E49\u0E32\u0E2B\u0E32\u0E0D \u0E2D\u0E48\u0E2D\u0E19\u0E42\u0E22\u0E19 "
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: "\u0E41\u0E25\u0E30\u0E22\u0E31\u0E07\u0E21\u0E35\u0E19\u0E49\u0E33\u0E43\u0E08.."
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: "\u0E41\u0E25\u0E30\u0E22\u0E31\u0E07\u0E21\u0E35\u0E19\u0E49\u0E33\u0E43\u0E08..\u0E16\u0E36\u0E07\u0E02\u0E31\u0E49\u0E19\u0E40\u0E2A\u0E35\u0E48\u0E22\u0E07\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E21\u0E32\u0E0A\u0E48\u0E27\u0E22\u0E02\u0E49\u0E32"
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
-    text: "\u0E43\u0E19\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E19\u0E35\u0E49 \u0E22\u0E34\u0E48\u0E07\u0E40\u0E27\u0E25\u0E32\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B "
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    text: "..\u0E43\u0E19\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E19\u0E35\u0E49 \u0E22\u0E34\u0E48\u0E07\u0E40\u0E27\u0E25\u0E32\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B "
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: "\u0E1C\u0E39\u0E49\u0E04\u0E19\u0E22\u0E34\u0E48\u0E07\u0E25\u0E30\u0E40\u0E25\u0E22\u0E01\u0E32\u0E23\u0E41\u0E22\u0E01\u0E41\u0E25\u0E30\u0E17\u0E34\u0E49\u0E07\u0E02\u0E22\u0E30\u0E43\u0E2B\u0E49\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07"
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: "..\u0E1C\u0E34\u0E14\u0E17\u0E35\u0E48\u0E02\u0E49\u0E32\u0E40\u0E2D\u0E07
       \u0E17\u0E35\u0E48\u0E14\u0E39\u0E41\u0E25\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E44\u0E14\u0E49\u0E44\u0E21\u0E48\u0E14\u0E35\u0E1E\u0E2D "
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
     speakerName: Lumina
     text: "\u0E02\u0E49\u0E32\u0E02\u0E2D\u0E1A\u0E43\u0E08\u0E40\u0E08\u0E49\u0E32-"
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
-  - speaker: 0
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+  - speaker: 1
     speakerName: Lumina
-    text: "\u0E41\u0E25\u0E30\u0E22\u0E31\u0E07\u0E21\u0E35\u0E19\u0E49\u0E33\u0E43\u0E08..\u0E16\u0E36\u0E07\u0E02\u0E31\u0E49\u0E19\u0E40\u0E2A\u0E35\u0E48\u0E22\u0E07\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E21\u0E32\u0E0A\u0E48\u0E27\u0E22\u0E02\u0E49\u0E32"
+    text: "\u0E44\u0E21\u0E48.. \u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48"
     portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
-  - speaker: 0
+  - speaker: 1
     speakerName: Lumina
-    text: "\u0E44\u0E21\u0E48..\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48 \u0E17\u0E48\u0E32\u0E19\u0E1A\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E04\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E40\u0E2A\u0E21\u0E2D\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E41\u0E22\u0E01\u0E02\u0E22\u0E30"
+    text: "\u0E44\u0E21\u0E48..\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48 \u0E17\u0E48\u0E32\u0E19\u0E1A\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E04\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E40\u0E2A\u0E21\u0E2D\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E41\u0E22\u0E01\u0E02\u0E22\u0E30
+      \u0E01\u0E32\u0E23\u0E01\u0E33\u0E08\u0E31\u0E14\u0E02\u0E22\u0E30\u0E43\u0E2B\u0E49\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07"
     portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
   - speaker: 1
     speakerName: Lumina
@@ -102131,36 +102323,52 @@ MonoBehaviour:
     text: "\u0E41\u0E25\u0E30\u0E02\u0E49\u0E32\u2026\u0E2D\u0E22\u0E32\u0E01\u0E43\u0E2B\u0E49\u0E15\u0E19\u0E40\u0E2D\u0E07\u0E01\u0E25\u0E49\u0E32\u0E2B\u0E32\u0E0D\u0E02\u0E36\u0E49\u0E19\u2026\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E17\u0E48\u0E32\u0E19"
     portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
   - speaker: 0
+    speakerName: Clarence
+    text: ...
+    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+  - speaker: 0
     speakerName: Lumina
     text: '...   '
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    portrait: {fileID: 2740161413099099520, guid: 3296e39509d6ad243b648fa88c25b01c, type: 3}
   - speaker: 0
     speakerName: Lumina
-    text: "\u0E41\u0E25\u0E30\u0E22\u0E31\u0E07\u0E21\u0E35\u0E19\u0E49\u0E33\u0E43\u0E08..\u0E16\u0E36\u0E07\u0E02\u0E31\u0E49\u0E19\u0E40\u0E2A\u0E35\u0E48\u0E22\u0E07\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E21\u0E32\u0E0A\u0E48\u0E27\u0E22\u0E02\u0E49\u0E32"
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+    text: "\u0E02\u0E49\u0E32\u0E21\u0E2D\u0E07\u0E40\u0E08\u0E49\u0E32\u0E44\u0E21\u0E48\u0E1C\u0E34\u0E14\u0E40\u0E25\u0E22\u0E08\u0E23\u0E34\u0E07
+      \u0E46 \u0E2A\u0E34\u0E19\u0E30"
+    portrait: {fileID: 2740161413099099520, guid: 3296e39509d6ad243b648fa88c25b01c, type: 3}
   - speaker: 0
     speakerName: Lumina
-    text: "\u0E41\u0E25\u0E30\u0E22\u0E31\u0E07\u0E21\u0E35\u0E19\u0E49\u0E33\u0E43\u0E08..\u0E16\u0E36\u0E07\u0E02\u0E31\u0E49\u0E19\u0E40\u0E2A\u0E35\u0E48\u0E22\u0E07\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E21\u0E32\u0E0A\u0E48\u0E27\u0E22\u0E02\u0E49\u0E32"
+    text: "..\u0E14\u0E35\u0E08\u0E23\u0E34\u0E07 \u0E46 \u0E17\u0E35\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E08\u0E49\u0E32
+      Lumina"
     portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
-  - speaker: 0
-    speakerName: Lumina
-    text: "..\u0E14\u0E35\u0E08\u0E23\u0E34\u0E07 \u0E46 \u0E17\u0E35\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E08\u0E49\u0E32 "
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
-  - speaker: 0
-    speakerName: Lumina
-    text: "\u0E41\u0E25\u0E30\u0E22\u0E31\u0E07\u0E21\u0E35\u0E19\u0E49\u0E33\u0E43\u0E08..\u0E16\u0E36\u0E07\u0E02\u0E31\u0E49\u0E19\u0E40\u0E2A\u0E35\u0E48\u0E22\u0E07\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E21\u0E32\u0E0A\u0E48\u0E27\u0E22\u0E02\u0E49\u0E32"
-    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
-  - speaker: 0
+  - speaker: 1
     speakerName: Lumina
     text: ..
     portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
   - speaker: 0
     speakerName: Lumina
-    text: "\u0E41\u0E25\u0E30\u0E22\u0E31\u0E07\u0E21\u0E35\u0E19\u0E49\u0E33\u0E43\u0E08..\u0E16\u0E36\u0E07\u0E02\u0E31\u0E49\u0E19\u0E40\u0E2A\u0E35\u0E48\u0E22\u0E07\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E21\u0E32\u0E0A\u0E48\u0E27\u0E22\u0E02\u0E49\u0E32"
+    text: Lumina
     portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
   - speaker: 0
     speakerName: Lumina
-    text: "\u0E41\u0E25\u0E30\u0E22\u0E31\u0E07\u0E21\u0E35\u0E19\u0E49\u0E33\u0E43\u0E08..\u0E16\u0E36\u0E07\u0E02\u0E31\u0E49\u0E19\u0E40\u0E2A\u0E35\u0E48\u0E22\u0E07\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E21\u0E32\u0E0A\u0E48\u0E27\u0E22\u0E02\u0E49\u0E32"
+    text: "\u0E08\u0E32\u0E01\u0E19\u0E35\u0E49..."
+    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+  - speaker: 0
+    speakerName: Lumina
+    text: "\u0E43\u0E2B\u0E49\u0E02\u0E49\u0E32\u0E44\u0E14\u0E49\u0E21\u0E35\u0E40\u0E01\u0E35\u0E22\u0E23\u0E15\u0E34"
+    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+  - speaker: 0
+    speakerName: Lumina
+    text: "\u0E43\u0E2B\u0E49\u0E02\u0E49\u0E32\u0E44\u0E14\u0E49\u0E21\u0E35\u0E40\u0E01\u0E35\u0E22\u0E23\u0E15\u0E34\u0E44\u0E14\u0E49\u0E22\u0E37\u0E19\u0E40\u0E04\u0E35\u0E22\u0E07\u0E02\u0E49\u0E32\u0E07\u0E40\u0E08\u0E49\u0E32"
+    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+  - speaker: 0
+    speakerName: Lumina
+    text: "\u0E43\u0E2B\u0E49\u0E02\u0E49\u0E32\u0E44\u0E14\u0E49\u0E21\u0E35\u0E40\u0E01\u0E35\u0E22\u0E23\u0E15\u0E34\u0E44\u0E14\u0E49\u0E22\u0E37\u0E19\u0E40\u0E04\u0E35\u0E22\u0E07\u0E02\u0E49\u0E32\u0E07\u0E40\u0E08\u0E49\u0E32
+      \u0E40\u0E0A\u0E48\u0E19\u0E17\u0E35\u0E48\u0E40\u0E08\u0E49\u0E32\u0E44\u0E21\u0E48\u0E40\u0E04\u0E22\u0E25\u0E30\u0E17\u0E34\u0E49\u0E07\u0E02\u0E49\u0E32\u2026"
+    portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
+  - speaker: 0
+    speakerName: Lumina
+    text: "\u0E43\u0E2B\u0E49\u0E02\u0E49\u0E32\u0E44\u0E14\u0E49\u0E21\u0E35\u0E40\u0E01\u0E35\u0E22\u0E23\u0E15\u0E34\u0E44\u0E14\u0E49\u0E22\u0E37\u0E19\u0E40\u0E04\u0E35\u0E22\u0E07\u0E02\u0E49\u0E32\u0E07\u0E40\u0E08\u0E49\u0E32
+      \u0E40\u0E0A\u0E48\u0E19\u0E17\u0E35\u0E48\u0E40\u0E08\u0E49\u0E32\u0E44\u0E21\u0E48\u0E40\u0E04\u0E22\u0E25\u0E30\u0E17\u0E34\u0E49\u0E07\u0E02\u0E49\u0E32\u2026\u0E08\u0E30\u0E44\u0E14\u0E49\u0E2B\u0E23\u0E37\u0E2D\u0E44\u0E21\u0E48?"
     portrait: {fileID: -5774501616662186930, guid: 1d92a090cdfa80e49956367cc68fbdc1, type: 3}
   - speaker: 0
     speakerName: Lumina
@@ -108123,6 +108331,7 @@ SceneRoots:
   - {fileID: 1727912388}
   - {fileID: 1519865305}
   - {fileID: 890043138}
+  - {fileID: 835722922}
   - {fileID: 144272377}
   - {fileID: 1988189882}
   - {fileID: 1511735398}
