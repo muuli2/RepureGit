@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 619
+  spritePixelsToUnits: 616
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1612,10 +1612,10 @@ TextureImporter:
       name: Water_68
       rect:
         serializedVersion: 2
-        x: 3095
+        x: 3098
         y: 622
-        width: 619
-        height: 619
+        width: 616
+        height: 616
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

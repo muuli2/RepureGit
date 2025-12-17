@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: 7a8a3397f92c06842ad1dc024a77c086
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3871686299878595070
+    second: aatck_0
+  - first:
+      213: -3669117132869376534
+    second: aatck_1
+  - first:
+      213: -2828503308754689005
+    second: aatck_2
+  - first:
+      213: 2834423821688025403
+    second: aatck_3
+  - first:
+      213: -6931770146380819902
+    second: aatck_4
+  - first:
+      213: -19712739933203785
+    second: aatck_5
+  - first:
+      213: -796970970768982084
+    second: aatck_6
+  - first:
+      213: 8604795255703140750
+    second: aatck_7
+  - first:
+      213: -7888666465201707486
+    second: aatck_8
+  - first:
+      213: -5660508828122210368
+    second: aatck_9
+  - first:
+      213: 3703030870091420427
+    second: aatck_10
+  - first:
+      213: 4764515479647517867
+    second: aatck_11
+  - first:
+      213: 3751861802127313589
+    second: aatck_12
+  - first:
+      213: -3997443381772336879
+    second: aatck_13
+  - first:
+      213: 8510933430979045130
+    second: aatck_14
+  - first:
+      213: 2507122622820701520
+    second: aatck_15
+  - first:
+      213: 4914416066587701755
+    second: aatck_16
+  - first:
+      213: -2080453176568565430
+    second: aatck_17
+  - first:
+      213: 1951321550187973818
+    second: aatck_18
+  - first:
+      213: 5396446493782414343
+    second: aatck_19
+  - first:
+      213: 4155685664545194293
+    second: aatck_20
+  - first:
+      213: 647650678868178810
+    second: aatck_21
+  - first:
+      213: -6473857931634036032
+    second: aatck_22
+  - first:
+      213: 8691136555353976744
+    second: aatck_23
+  - first:
+      213: 4549952049996970754
+    second: aatck_24
+  - first:
+      213: -2849494299849422038
+    second: aatck_25
+  - first:
+      213: 7988428884698331841
+    second: aatck_26
+  - first:
+      213: 90155036448530739
+    second: aatck_27
+  - first:
+      213: -5905433449190155317
+    second: aatck_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: aatck_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 411
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2066df5c2d1054ac0800000000000000
+      internalID: -3871686299878595070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aatck_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 411
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77109bc48715c6b4aac3343508ae5480
+      internalID: 1093004121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c57ec2f2120f3884abaf59ab7eb5bafb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":2.0},"gridSpriteSize":{"x":411.0,"y":53.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      aatck_0: -3871686299878595070
+      aatck_1: 1093004121
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

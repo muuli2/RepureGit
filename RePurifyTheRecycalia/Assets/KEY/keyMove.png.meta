@@ -1,10 +1,52 @@
 fileFormatVersion: 2
-guid: 7f02a85599284a14b95251ec939c06c6
+guid: 2a025297670b8c74f8b3fa8b6aeac889
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5589436419742275315
-    second: TokJai_0
+      213: -8876176619038532037
+    second: keyMove_0
+  - first:
+      213: 5602472475566055213
+    second: keyMove_1
+  - first:
+      213: 8268567750177428795
+    second: keyMove_2
+  - first:
+      213: 8384532533011327105
+    second: keyMove_3
+  - first:
+      213: 2481214528320669078
+    second: keyMove_4
+  - first:
+      213: -447780647244459090
+    second: keyMove_5
+  - first:
+      213: -3074576150597102282
+    second: keyMove_6
+  - first:
+      213: 7892597719081703700
+    second: keyMove_7
+  - first:
+      213: 7560551412638612528
+    second: keyMove_8
+  - first:
+      213: 7358714486033666960
+    second: keyMove_9
+  - first:
+      213: 7378625183685578096
+    second: keyMove_10
+  - first:
+      213: -2412153750250920355
+    second: keyMove_11
+  - first:
+      213: -1896922854232024269
+    second: keyMove_12
+  - first:
+      213: 4507381543867574820
+    second: keyMove_13
+  - first:
+      213: -6879691333464104261
+    second: keyMove_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TokJai_0
+      name: keyMove_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 326
-        height: 340
+        width: 196
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +157,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0961aab0355e62b0800000000000000
-      internalID: -5589436419742275315
+      spriteID: b3e949a946c71d480800000000000000
+      internalID: -8876176619038532037
       vertices: []
       indices: 
       edges: []
@@ -125,7 +167,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c16b39b6c862fb74ba7f214c76d8db34
+    spriteID: 6a12d5cbfe3350d4c920c2656473e4b0
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +175,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":196.0,"y":45.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      TokJai_0: -5589436419742275315
+      keyMove_0: -8876176619038532037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
