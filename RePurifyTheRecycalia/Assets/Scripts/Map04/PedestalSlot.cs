@@ -8,11 +8,11 @@ public class PedestalSlot : MonoBehaviour
     public Transform placePoint;     // จุดวางบนแท่น
     public float placementRadius = 2f;
 
-    private InteractionPrompt prompt;
+    private InteractionPrompt04 prompt;
 
     void Awake()
     {
-        prompt = GetComponent<InteractionPrompt>();
+        prompt = GetComponent<InteractionPrompt04>();
     }
 
     void Update()
@@ -41,7 +41,7 @@ public class PedestalSlot : MonoBehaviour
             else if (playerTrash.HasTrash04())
             {
                 // ไม่มีถังบนแท่น + ถือถัง → F วางแท่น / R วางพื้น
-                prompt?.ShowPrompt("F / R");
+                prompt?.ShowPrompt("F");
 
                 if (Keyboard.current.fKey.wasPressedThisFrame)
                 {

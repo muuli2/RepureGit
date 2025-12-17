@@ -62,7 +62,7 @@ public AudioSource miniGameBGM;
     IEnumerator StartCountdown()
     {
         startPanel.SetActive(true);
-        int count = 7;
+        int count = 10;
 
         while (count > 0)
         {
@@ -217,7 +217,7 @@ IEnumerator WinSequence()
     yield return new WaitForSeconds(1f);
 
     // ☠️ Defeated
-    yield return StartCoroutine(ShowBossText("Defeated"));
+    yield return StartCoroutine(ShowBossText("<color=#00B50C>Defeated</color>"));
 
     // เว้นอีกนิดก่อนกลับแมพ
     yield return new WaitForSeconds(2.5f);
