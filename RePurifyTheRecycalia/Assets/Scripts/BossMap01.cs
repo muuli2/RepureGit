@@ -42,9 +42,14 @@ public class BossMap01 : MonoBehaviour
     [Header("Minigame")]
     public string miniGameSceneName = "Minigame01";
 
-    [Header("SFX")]
+   [Header("SFX")]
 public AudioSource audioSource;
 public AudioClip showdownClip;
+
+public AudioClip hurtClip;   // 🔊 เสียงบอสเจ็บ
+public AudioClip dieClip;    // ☠️ เสียงบอสตาย
+
+
 
 [Header("BGM Zone")]
 public AudioSource mapBgmSource;   // เพลงแมพ
@@ -189,19 +194,25 @@ private void FreezeBoss()
     }
 
     // ---------------- Damage System ----------------
-    public void TakeDamage(int dmg)
+   public void TakeDamage(int dmg)
+{
+    if (state != BossState.Normal || isDead) return;
+
+    currentHealth -= dmg;
+
+    // 🔊 เสียงเจ็บ
+    if (audioSource && hurtClip)
+        audioSource.PlayOneShot(hurtClip);
+
+    anim.SetTrigger("hurt");
+    UpdateHealthBar();
+
+    if (currentHealth <= 0)
     {
-        if (state != BossState.Normal || isDead) return;
-
-        currentHealth -= dmg;
-        anim.SetTrigger("hurt");
-        UpdateHealthBar();
-
-        if (currentHealth <= 0)
-        {
-            StartCoroutine(TriggerShowdown());
-        }
+        StartCoroutine(TriggerShowdown());
     }
+}
+
 
     public void DealDamage()
 {
@@ -267,6 +278,9 @@ if (tt != null)
 
         state = BossState.Dead;
         isDead = true;
+
+          if (audioSource && dieClip)
+        audioSource.PlayOneShot(dieClip);
 
         ScoreManage.Instance?.AddScore(1000);
 

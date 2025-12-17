@@ -107031,8 +107031,8 @@ MonoBehaviour:
   gameOverPanel: {fileID: 138712043}
   restartButton: {fileID: 907138761}
   lastCheckpoint: {x: 0, y: 0, z: 0}
-  hurtSound: {fileID: 8300000, guid: 9472d9277916a0c40ab8463d8d209997, type: 3}
-  deathSound: {fileID: 0}
+  hurtSound: {fileID: 8300000, guid: 8caefee10c00078449304949b9ebb522, type: 3}
+  deathSound: {fileID: 8300000, guid: b5e7e14d29e73134ab245626449a7432, type: 3}
   isMiniGameActive: 0
   mapPoints: 0
   skillUnlocked: 0

@@ -28,9 +28,11 @@ public class Monster : MonoBehaviour
     [Header("Score Settings")]
     public int scoreOnDeath = 150;
 
-    [Header("SFX")]
+   [Header("SFX")]
 public AudioSource audioSource;
-public AudioClip dieClip;
+public AudioClip hurtClip;   // 🔊 เสียงมอนเจ็บ
+public AudioClip dieClip;    // ☠️ เสียงมอนตาย
+
 
 
     private Vector3 startPosition;
@@ -48,21 +50,26 @@ public AudioClip dieClip;
     }
 
     public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-        UpdateHealthBar();
+{
+    currentHealth -= damage;
+    currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+    UpdateHealthBar();
 
-        if (currentHealth > 0)
-        {
-            if (anim != null)
-                anim.SetTrigger("hurt");
-        }
-        else
-        {
-            Die();
-        }
+    if (currentHealth > 0)
+    {
+        // 🔊 เสียงเจ็บ
+        if (audioSource && hurtClip)
+            audioSource.PlayOneShot(hurtClip);
+
+        if (anim != null)
+            anim.SetTrigger("hurt");
     }
+    else
+    {
+        Die();
+    }
+}
+
 
     void UpdateHealthBar()
     {
