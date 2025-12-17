@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 542
+  spritePixelsToUnits: 541
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -314,9 +314,9 @@ TextureImporter:
       name: path01_9
       rect:
         serializedVersion: 2
-        x: 4878
+        x: 4880
         y: 2170
-        width: 542
+        width: 540
         height: 542
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -360,7 +360,7 @@ TextureImporter:
         serializedVersion: 2
         x: 5962
         y: 2170
-        width: 542
+        width: 535
         height: 542
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -624,7 +624,7 @@ TextureImporter:
         serializedVersion: 2
         x: 5962
         y: 1628
-        width: 542
+        width: 540
         height: 542
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -888,7 +888,7 @@ TextureImporter:
         serializedVersion: 2
         x: 5962
         y: 1086
-        width: 542
+        width: 541
         height: 542
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
