@@ -1455,8 +1455,8 @@ MonoBehaviour:
   ruleShowTime: 5
   countdownTime: 3
   audioSource: {fileID: 1086534404}
-  countdownBeep: {fileID: 8300000, guid: 6f6cb0fa1ca1a50408c4b55e1fce052f, type: 3}
-  goSound: {fileID: 8300000, guid: 6f6cb0fa1ca1a50408c4b55e1fce052f, type: 3}
+  countdownBeep: {fileID: 8300000, guid: 7b28bfff18fa24e418e0fe3972528510, type: 3}
+  goSound: {fileID: 8300000, guid: 80eb65baad6c83243a8b1e42de019a5d, type: 3}
 --- !u!82 &1086534404
 AudioSource:
   m_ObjectHideFlags: 0

@@ -869,7 +869,7 @@ MonoBehaviour:
   answerTimeLimit: 5
   baseScore: 1000
   bonusScore: 300
-  bonusLimitSeconds: 2
+  bonusLimitSeconds: 3
   targetScore: 12000
   fadeImage: {fileID: 1472276492}
   bossResultText: {fileID: 1709239864}
@@ -4352,7 +4352,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1531782037
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 2
   m_Sprite: {fileID: 42409656205368305, guid: a2e513b715185bd4db25728365365b34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

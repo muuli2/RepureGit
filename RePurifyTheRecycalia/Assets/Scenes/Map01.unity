@@ -3790,10 +3790,10 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110479613}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &110479615
 MonoBehaviour:
@@ -3842,7 +3842,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110479613}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -123815,7 +123815,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.031468153, y: -0.35795522}
+  m_Offset: {x: -0.031468153, y: -0.21792853}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -123825,7 +123825,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.9058552, y: 1.037792}
+  m_Size: {x: 1.9058552, y: 0.7577388}
   m_EdgeRadius: 0
 --- !u!61 &421980456
 BoxCollider2D:
@@ -123861,7 +123861,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.039337873, y: 0.023246646}
+  m_Offset: {x: -0.045946807, y: -0.051650405}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -123871,7 +123871,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.9530706, y: 1.6452286}
+  m_Size: {x: 2.0588827, y: 1.7950227}
   m_EdgeRadius: 0
 --- !u!212 &421980457
 SpriteRenderer:
@@ -138009,7 +138009,7 @@ Transform:
   m_GameObject: {fileID: 784738629}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.104408, y: 21.924553, z: 0}
+  m_LocalPosition: {x: 41.106384, y: 26.209068, z: 0}
   m_LocalScale: {x: 0.27035165, y: 0.27035165, z: 0.27035165}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -138199,7 +138199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e464c36324f3034aa72ab0956286bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SignInfo
-  infoPanel: {fileID: 1913109336}
+  infoPanel: {fileID: 1833299348}
   fadeDuration: 0
 --- !u!1 &786551229
 GameObject:
@@ -138373,8 +138373,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 33.804443, y: 11.445435}
-  m_SizeDelta: {x: -870.4363, y: -634.9685}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -504.7383, y: -479.9069}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800700379
 MonoBehaviour:
@@ -138389,16 +138389,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: -2750537475156535124, guid: 99e3e164d8877664499e11dfca1fbe07, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -142494,8 +142494,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 33.804443, y: 11.445435}
-  m_SizeDelta: {x: -870.4363, y: -634.9685}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -562.9419, y: -504.586}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &921284688
 MonoBehaviour:
@@ -142510,16 +142510,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: -1971285978124464833, guid: c8b604a0ad90624469215b71ce18aa02, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -143142,7 +143142,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &942379411
 MonoBehaviour:
@@ -144689,7 +144689,7 @@ Transform:
   m_GameObject: {fileID: 976830586}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.87681, y: 26.092045, z: 0}
+  m_LocalPosition: {x: 27.095688, y: 22.116722, z: 0}
   m_LocalScale: {x: 0.27035165, y: 0.27035165, z: 0.27035165}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -144879,7 +144879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e464c36324f3034aa72ab0956286bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SignInfo
-  infoPanel: {fileID: 1913109336}
+  infoPanel: {fileID: 110479614}
   fadeDuration: 0
 --- !u!1 &977001434
 GameObject:
@@ -147131,7 +147131,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8042208317616344213, guid: e30fa50044846824fba9531dfec043d5, type: 3}
+  m_Sprite: {fileID: -8410926834102150482, guid: 9135b40820ea2fe4ca4494b7a33ad37f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -149692,7 +149692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e464c36324f3034aa72ab0956286bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SignInfo
-  infoPanel: {fileID: 1913109336}
+  infoPanel: {fileID: 1608946328}
   fadeDuration: 0
 --- !u!1 &1112500854
 GameObject:
@@ -150070,7 +150070,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &1115496527
 MonoBehaviour:
@@ -151739,10 +151739,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E1B\u0E35\u0E28\u0E32\u0E08\u0E40\u0E2B\u0E21\u0E47\u0E19\u0E40\u0E25\u0E47\u0E01\u0E08\u0E30\u0E2A\u0E38\u0E48\u0E21\u0E14\u0E23\u0E2D\u0E1B\u0E40\u0E25\u0E37\u0E2D\u0E14\u0E2B\u0E23\u0E37\u0E2D
-    ...\n\n\u0E43\u0E19\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E19\u0E35\u0E49
-    \u0E21\u0E35\u0E1B\u0E49\u0E32\u0E22\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14
-    3 \u0E41\u0E1C\u0E48\u0E19"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -181085,10 +181082,10 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608946327}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &1608946329
 MonoBehaviour:
@@ -181151,7 +181148,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1608946332
 RectTransform:
@@ -185311,7 +185308,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -562.2085, y: -504.2751}
+  m_SizeDelta: {x: -367.2488, y: -421.6091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708310456
 MonoBehaviour:
@@ -656066,7 +656063,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &1833299349
 MonoBehaviour:
@@ -659112,7 +659109,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &1915853108
 GameObject:
@@ -666428,10 +666425,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E1B\u0E35\u0E28\u0E32\u0E08\u0E40\u0E2B\u0E21\u0E47\u0E19\u0E40\u0E25\u0E47\u0E01\u0E08\u0E30\u0E2A\u0E38\u0E48\u0E21\u0E14\u0E23\u0E2D\u0E1B\u0E40\u0E25\u0E37\u0E2D\u0E14\u0E2B\u0E23\u0E37\u0E2D
-    ...\n\n\u0E43\u0E19\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E19\u0E35\u0E49
-    \u0E21\u0E35\u0E1B\u0E49\u0E32\u0E22\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14
-    3 \u0E41\u0E1C\u0E48\u0E19"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

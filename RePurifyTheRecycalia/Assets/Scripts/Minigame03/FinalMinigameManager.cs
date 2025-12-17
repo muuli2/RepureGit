@@ -37,6 +37,15 @@ public class FinalMinigameManager : MonoBehaviour
     private bool isPlaying = false;
     private int score = 0;
 
+    [Header("SFX")]
+public AudioSource sfxSource;
+
+public AudioClip countdownSFX;   // 🔢 เสียง 3 2 1
+public AudioClip goSFX;          // 🚀 เสียง GO / เริ่ม
+public AudioClip correctSFX;     // ✅ ตอบถูก
+public AudioClip bonusSFX;       // ⭐ ได้โบนัส (ไวมาก)
+
+
     [Header("End FX")]
 public Image fadeImage;
 public TMP_Text bossResultText;
@@ -46,9 +55,13 @@ public float fadeDuration = 1f;
 public AudioSource miniGameBGM;
 
 
+
+
     void Start()
     {
 
+ if (sfxSource == null)
+        sfxSource = GetComponent<AudioSource>();
          PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
 
     if (pause != null)
@@ -60,20 +73,37 @@ public AudioSource miniGameBGM;
     }
 
     IEnumerator StartCountdown()
+{
+    startPanel.SetActive(true);
+    int count = 10;
+
+    while (count > 0)
     {
-        startPanel.SetActive(true);
-        int count = 10;
+        startCountdownText.text = count.ToString();
 
-        while (count > 0)
-        {
-            startCountdownText.text = count.ToString();
-            yield return new WaitForSeconds(1f);
-            count--;
-        }
+        // 🔊 เสียงเคาท์ดาว
+        if (sfxSource && countdownSFX)
+            sfxSource.PlayOneShot(countdownSFX, 0.8f);
 
-        startPanel.SetActive(false);
-        StartQuiz();
+        yield return new WaitForSeconds(1f);
+        count--;
     }
+
+    // 🚀 GO
+    startCountdownText.text = "GO!";
+
+    if (sfxSource && goSFX)
+        sfxSource.PlayOneShot(goSFX, 1f);
+
+    yield return new WaitForSeconds(0.4f);
+
+    // ❌ ซ่อนเท็กซ์เคาท์ดาว
+    startPanel.SetActive(false);
+    startCountdownText.text = "";
+
+    StartQuiz();
+}
+
 
    void StartQuiz()
 {
@@ -132,25 +162,34 @@ public AudioSource miniGameBGM;
         isPlaying = false;
         QuizQuestion q = questions[currentIndex];
 
-        if (index == q.correctIndex)
-        {
-            int gained = baseScore;
+       if (index == q.correctIndex)
+{
+    int gained = baseScore;
 
-            if (questionTimer >= answerTimeLimit - bonusLimitSeconds)
-            {
-                gained += bonusScore;
-                StartCoroutine(ShowFastText());
-            }
+    // ✅ เสียงตอบถูก
+    if (sfxSource && correctSFX)
+        sfxSource.PlayOneShot(correctSFX, 0.7f);
 
-            score += gained;
-            UpdateScoreUI();
+    if (questionTimer >= answerTimeLimit - bonusLimitSeconds)
+    {
+        gained += bonusScore;
 
-            if (score >= targetScore)
-            {
-                WinGame();
-                return;
-            }
-        }
+        // ⭐ เสียงโบนัส
+        if (sfxSource && bonusSFX)
+            sfxSource.PlayOneShot(bonusSFX, 0.9f);
+
+        StartCoroutine(ShowFastText());
+    }
+
+    score += gained;
+    UpdateScoreUI();
+
+    if (score >= targetScore)
+    {
+        WinGame();
+        return;
+    }
+}
         else
         {
             // ตอบผิด ลดหัวใจ + ข้อความ “ผิดแล้ว!”

@@ -39,6 +39,11 @@ public AudioClip keyPressSFX;     // 🔘 กดปุ่ม
 public AudioClip correctHitSFX;   // ✅ ตีโดน
 public AudioClip winSFX;          // 🏆 ชนะ
 
+[Header("Countdown SFX")]
+public AudioClip countSFX;   // เสียง 3 2 1 (ติ๊บ/ปิ๊บ ใช้ซ้ำ)
+public AudioClip goSFX;      // เสียง GO!
+
+
 
     [Header("Bins FX")]
     public GameObject binD;
@@ -100,11 +105,10 @@ public AudioClip winSFX;          // 🏆 ชนะ
 
 IEnumerator RulesThenCountdown()
 {
-    // 🟦 แสดงกติกา 5 วิ
+    // 🟦 แสดงกติกา
     rulesPanel.SetActive(true);
     yield return new WaitForSeconds(5f);
 
-    // 🟦 ปิดกติกา
     rulesPanel.SetActive(false);
 
     // 🟨 เริ่มนับถอยหลัง
@@ -113,21 +117,29 @@ IEnumerator RulesThenCountdown()
     for (int i = 3; i > 0; i--)
     {
         countdownText.text = i.ToString();
+
+        // 🔊 เสียง 3 2 1
+        if (sfxSource && countSFX)
+            sfxSource.PlayOneShot(countSFX, 0.8f);
+
         yield return new WaitForSeconds(1f);
     }
 
     countdownText.text = "GO!";
+
+    // 🔊 เสียง GO
+    if (sfxSource && goSFX)
+        sfxSource.PlayOneShot(goSFX, 1f);
+
     yield return new WaitForSeconds(0.5f);
 
     countdownText.gameObject.SetActive(false);
 
     // 🟩 เริ่มเกมจริง
-    // 🟩 เริ่มเกมจริง
-timer = 0f;
-gameStarted = true;
-
-   
+    timer = 0f;
+    gameStarted = true;
 }
+
 
 
     IEnumerator AutoStartAfterRules()

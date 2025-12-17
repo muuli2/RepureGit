@@ -39,6 +39,11 @@ public AudioClip keyPressSFX;     // 🔘 กดปุ่ม D F J K
 public AudioClip correctHitSFX;   // ✅ ตีโดน / ถูกชนิด
 public AudioClip winSFX;          // 🏆 ชนะมินิเกม
 
+[Header("Countdown SFX")]
+public AudioClip countSFX;   // เสียง 3 2 1 (ติ๊บ / ปิ๊บ)
+public AudioClip goSFX;      // เสียง GO!
+
+
 
     [Header("Bins FX")]
     public GameObject binD;
@@ -84,22 +89,34 @@ public AudioClip winSFX;          // 🏆 ชนะมินิเกม
     }
 
     IEnumerator CountdownAndStart()
+{
+    countdownText.gameObject.SetActive(true);
+    int count = 3;
+
+    while (count > 0)
     {
-        countdownText.gameObject.SetActive(true);
-        int count = 3;
-        while (count > 0)
-        {
-            countdownText.text = count.ToString();
-            yield return new WaitForSeconds(1f);
-            count--;
-        }
+        countdownText.text = count.ToString();
 
-        countdownText.text = "GO!";
-        yield return new WaitForSeconds(0.5f);
-        countdownText.gameObject.SetActive(false);
+        // 🔊 เสียง 3 2 1
+        if (sfxSource && countSFX)
+            sfxSource.PlayOneShot(countSFX, 0.8f);
 
-        gameStarted = true;
+        yield return new WaitForSeconds(1f);
+        count--;
     }
+
+    countdownText.text = "GO!";
+
+    // 🔊 เสียง GO
+    if (sfxSource && goSFX)
+        sfxSource.PlayOneShot(goSFX, 1f);
+
+    yield return new WaitForSeconds(0.5f);
+    countdownText.gameObject.SetActive(false);
+
+    gameStarted = true;
+}
+
 
     private void Update()
     {

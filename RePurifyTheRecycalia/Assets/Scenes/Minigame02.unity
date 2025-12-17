@@ -1460,6 +1460,8 @@ MonoBehaviour:
   keyPressSFX: {fileID: 8300000, guid: cd47c202d683368499ce102dc886dffe, type: 3}
   correctHitSFX: {fileID: 0}
   winSFX: {fileID: 8300000, guid: c74921624ebc30b4ca80a1b7f9504a85, type: 3}
+  countSFX: {fileID: 8300000, guid: 7b28bfff18fa24e418e0fe3972528510, type: 3}
+  goSFX: {fileID: 8300000, guid: 80eb65baad6c83243a8b1e42de019a5d, type: 3}
   binD: {fileID: 935069931}
   binF: {fileID: 460294107}
   binJ: {fileID: 905460286}
