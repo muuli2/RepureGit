@@ -268581,17 +268581,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.62302136, y: -1.8957167}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.242314, y: 3.37}
+    oldSize: {x: 17.78, y: 11.66}
     newSize: {x: 10.4426155, y: 4.5899997}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 9.242314, y: 3.37}
+  m_Size: {x: 13.336233, y: 7.093604}
   m_EdgeRadius: 0
 --- !u!61 &1074932153
 BoxCollider2D:
@@ -268627,17 +268627,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.5122595, y: -0.24017048}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.242314, y: 3.37}
+    oldSize: {x: 17.78, y: 11.66}
     newSize: {x: 10.4426155, y: 4.5899997}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 9.242314, y: 3.37}
+  m_Size: {x: 17.345377, y: 11.715891}
   m_EdgeRadius: 0
 --- !u!212 &1074932154
 SpriteRenderer:
@@ -268683,10 +268683,10 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -82933903
-  m_SortingLayer: 5
+  m_SortingLayerID: -909268515
+  m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2371127243453515034, guid: 4bd9f572b4ccf774f95206e474df74cd, type: 3}
+  m_Sprite: {fileID: -6489448361868340278, guid: 9e8f91b8c66f95b43a215a83f3a1dbd0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -268706,8 +268706,8 @@ Transform:
   m_GameObject: {fileID: 1074932149}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 72.591095, y: 117, z: 0}
-  m_LocalScale: {x: 1.9987345, y: 1.9987345, z: 1.9987345}
+  m_LocalPosition: {x: 73.74367, y: 114.404144, z: 0}
+  m_LocalScale: {x: 0.733035, y: 0.733035, z: 0.733035}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -289158,7 +289158,7 @@ MonoBehaviour:
     \u0E1B\u0E48\u0E32\u0E19\u0E31\u0E48\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E40\u0E02\u0E15\u0E40\u0E01\u0E32\u0E30\u0E40\u0E27\u0E17\u0E22\u0E4C\u0E21\u0E19\u0E15\u0E23\u0E4C
     <color=#22AA00>\u0E15\u0E49\u0E2D\u0E07\u0E02\u0E49\u0E32\u0E21\u0E17\u0E30\u0E40\u0E25</color>
     \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E44\u0E1B\u0E40\u0E01\u0E32\u0E30\u0E19\u0E31\u0E49\u0E19"
-  - "Barkus: \u0E02\u0E49\u0E32\u0E21\u0E35\u0E21\u0E49\u0E32\u0E19\u0E49\u0E33\u0E27\u0E34\u0E40\u0E28\u0E29
+  - "Barkus: \u0E02\u0E49\u0E32\u0E21\u0E35\u0E2B\u0E21\u0E36\u0E01\u0E27\u0E34\u0E40\u0E28\u0E29
     \u0E40\u0E1B\u0E47\u0E19\u0E22\u0E32\u0E19\u0E1E\u0E32\u0E2B\u0E19\u0E30\u0E02\u0E2D\u0E07\u0E02\u0E49\u0E32\u0E40\u0E2D\u0E07
     \u0E1B\u0E01\u0E15\u0E34\u0E21\u0E31\u0E19\u0E22\u0E2D\u0E21\u0E43\u0E2B\u0E49\u0E40\u0E09\u0E1E\u0E32\u0E30\u0E04\u0E19\u0E21\u0E35\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E08\u0E36\u0E07\u0E08\u0E30\u0E02\u0E35\u0E48\u0E48\u0E44\u0E14\u0E49 "
   - "Barkus: \u0E41\u0E15\u0E48\u0E02\u0E49\u0E32\u0E21\u0E31\u0E48\u0E19\u0E43\u0E08
