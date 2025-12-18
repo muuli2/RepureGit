@@ -38405,6 +38405,9 @@ MonoBehaviour:
   choicesPanel: {fileID: 2068553711}
   choiceButtonPrefab: {fileID: 7390755909619856804, guid: 93eb841bad9538f44b9c085dc200586f, type: 3}
   nextButton: {fileID: 0}
+  sfxSource: {fileID: 0}
+  clickChoiceSFX: {fileID: 0}
+  clickNextSFX: {fileID: 0}
 --- !u!114 &1124536400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221848,7 +221851,7 @@ MonoBehaviour:
   sentences:
   - "\u0E2D\u0E31\u0E31\u0E28\u0E27\u0E34\u0E19\u0E19\u0E30\u0E08\u0E4A\u0E30: \u0E21\u0E32\u0E16\u0E36\u0E07\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48\u0E44\u0E14\u0E49
     \u0E40\u0E08\u0E49\u0E32\u0E19\u0E35\u0E48\u0E44\u0E21\u0E48\u0E18\u0E23\u0E23\u0E21\u0E14\u0E32\u0E08\u0E23\u0E34\u0E07\u0E46"
-  - "CHOICE: \u0E17\u0E48\u0E32\u0E19\u0E04\u0E37\u0E2D.."
+  - "CHOICE: \u0E44\u0E2D\u0E21\u0E2D\u0E23\u0E2D\u0E17\u0E44\u0E2D\u0E0A\u0E31\u0E48\u0E27"
   - "CHOICE: \u0E16\u0E36\u0E07\u0E44\u0E21\u0E48 \u0E02\u0E49\u0E32\u0E01\u0E47\u0E08\u0E30\u0E40\u0E02\u0E49\u0E32\u0E44\u0E1B
     \u0E40\u0E1E\u0E23\u0E32\u0E30\u0E02\u0E49\u0E32\u0E17\u0E19\u0E14\u0E39\u0E2D\u0E22\u0E39\u0E48\u0E40\u0E09\u0E22\u0E46\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E2B\u0E23\u0E2D\u0E01!\n"
   - "\u0E2D\u0E31\u0E28\u0E27\u0E34\u0E19\u0E19\u0E30\u0E08\u0E4A\u0E30: \u0E41\u0E19\u0E48\u0E27\u0E41\u0E19\u0E48
@@ -221868,7 +221871,7 @@ Transform:
   m_GameObject: {fileID: 1428686530}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.405686, y: -3.857615, z: 0}
+  m_LocalPosition: {x: -3.2241044, y: 0.14216566, z: 0}
   m_LocalScale: {x: 5.5347, y: 5.5347, z: 5.5347}
   m_ConstrainProportionsScale: 0
   m_Children: []
