@@ -6587,7 +6587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: attackCooldown
-      value: 1.1
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 7365689068454206783, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: attackDistance
@@ -226489,9 +226489,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -82933903
-  m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingLayerID: -909268515
+  m_SortingLayer: 8
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1549508750607559342, guid: fe39b1dd0aebace45b85094a3d725e29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -233479,9 +233479,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -82933903
-  m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingLayerID: -909268515
+  m_SortingLayer: 8
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1549508750607559342, guid: fe39b1dd0aebace45b85094a3d725e29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -234937,7 +234937,7 @@ MonoBehaviour:
     text: ...
     portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
-    speakerName: Lumina
+    speakerName: Clarence
     text: '...   '
     portrait: {fileID: 2740161413099099520, guid: 3296e39509d6ad243b648fa88c25b01c, type: 3}
   - speaker: 0
@@ -234996,11 +234996,11 @@ MonoBehaviour:
   - speaker: 1
     speakerName: Lucius
     text: '!'
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 1
     speakerName: Lucius
     text: "\u0E17\u0E48\u0E32\u0E19\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19\u0E41\u0E25\u0E49\u0E27\u0E43\u0E0A\u0E48\u0E44\u0E2B\u0E21?"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 0
     speakerName: Clarence
     text: "..\u0E1E\u0E25\u0E31\u0E07\u0E02\u0E2D\u0E07\u0E02\u0E49\u0E32 \u0E01\u0E33\u0E25\u0E31\u0E07\u0E1F\u0E37\u0E49\u0E19\u0E15\u0E31\u0E27"
@@ -235008,11 +235008,11 @@ MonoBehaviour:
   - speaker: 1
     speakerName: Lucius
     text: "..\u0E14\u0E35\u0E08\u0E23\u0E34\u0E07\u0E46"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 1
     speakerName: Lucius
     text: "\u0E17\u0E35\u0E48\u0E17\u0E48\u0E32\u0E19\u0E1B\u0E25\u0E2D\u0E14\u0E20\u0E31\u0E22"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 0
     speakerName: Clarence
     text: ...
@@ -235024,11 +235024,11 @@ MonoBehaviour:
   - speaker: 1
     speakerName: Lucius
     text: '!!?'
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 1
     speakerName: Lucius
     text: "\u0E2D\u0E07\u0E04\u0E4C\u0E0A\u0E32\u0E22 ..\u0E17\u0E23\u0E32\u0E1A\u0E19\u0E32\u0E21\u0E02\u0E2D\u0E07\u0E02\u0E49\u0E32?"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 0
     speakerName: Clarence
     text: "\u0E41\u0E1B\u0E25\u0E01\u0E2B\u0E23\u0E37\u0E2D \u0E17\u0E35\u0E48\u0E0A\u0E49\u0E32\u0E08\u0E30\u0E17\u0E23\u0E32\u0E1A\u0E0A\u0E37\u0E48\u0E2D\u0E04\u0E19\u0E02\u0E2D\u0E07\u0E02\u0E49\u0E32"
@@ -235065,7 +235065,7 @@ MonoBehaviour:
   - speaker: 1
     speakerName: Lucius
     text: '!!?'
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 0
     speakerName: Clarence
     text: "\u0E40\u0E08\u0E49\u0E32\u0E01\u0E25\u0E49\u0E32\u0E2B\u0E32\u0E0D\u0E21\u0E32\u0E01"
@@ -235107,42 +235107,42 @@ MonoBehaviour:
   - speaker: 1
     speakerName: Lucius
     text: "\u0E44\u0E21\u0E48.. \u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 1
     speakerName: Lucius
     text: "\u0E44\u0E21\u0E48..\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48 \u0E17\u0E48\u0E32\u0E19\u0E1A\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E04\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E40\u0E2A\u0E21\u0E2D\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E41\u0E22\u0E01\u0E02\u0E22\u0E30
       \u0E01\u0E32\u0E23\u0E01\u0E33\u0E08\u0E31\u0E14\u0E02\u0E22\u0E30\u0E43\u0E2B\u0E49\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 1
     speakerName: Lucius
     text: "\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E02\u0E49\u0E32\u0E44\u0E14\u0E49\u0E22\u0E34\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E02\u0E2D\u0E07\u0E17\u0E48\u0E32\u0E19\u2026"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 1
     speakerName: Lucius
     text: "\u0E40\u0E1E\u0E23\u0E32\u0E30\u0E17\u0E48\u0E32\u0E19"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 1
     speakerName: Lucius
     text: "\u0E40\u0E1E\u0E23\u0E32\u0E30\u0E17\u0E48\u0E32\u0E19 \u0E02\u0E49\u0E32\u0E16\u0E36\u0E07\u0E43\u0E2A\u0E48\u0E43\u0E08\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E41\u0E22\u0E01\u0E02\u0E22\u0E30"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 1
     speakerName: Lucius
     text: "\u0E40\u0E1E\u0E23\u0E32\u0E30\u0E17\u0E48\u0E32\u0E19"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 1
     speakerName: Lucius
     text: "\u0E40\u0E1E\u0E23\u0E32\u0E30\u0E17\u0E48\u0E32\u0E19 \u0E02\u0E49\u0E32\u0E16\u0E36\u0E07\u0E2D\u0E22\u0E32\u0E01\u0E43\u0E2B\u0E49\u0E2B\u0E21\u0E39\u0E48\u0E1A\u0E49\u0E32\u0E19\u0E02\u0E2D\u0E07\u0E02\u0E49\u0E32\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 1
     speakerName: Lucius
     text: "\u0E41\u0E25\u0E30\u0E02\u0E49\u0E32\u2026\u0E2D\u0E22\u0E32\u0E01\u0E43\u0E2B\u0E49\u0E15\u0E19\u0E40\u0E2D\u0E07\u0E01\u0E25\u0E49\u0E32\u0E2B\u0E32\u0E0D\u0E02\u0E36\u0E49\u0E19"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 1
     speakerName: Lucius
     text: "\u2026\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E17\u0E48\u0E32\u0E19"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: -4443154573315160347, guid: 5adce08138228db4d86c8fcde15161d5, type: 3}
   - speaker: 0
-    speakerName: Lucius
+    speakerName: Clarence
     text: ...
     portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
@@ -235153,7 +235153,7 @@ MonoBehaviour:
     speakerName: Clarence
     text: "\u0E02\u0E49\u0E32\u0E21\u0E2D\u0E07\u0E40\u0E08\u0E49\u0E32\u0E44\u0E21\u0E48\u0E1C\u0E34\u0E14\u0E40\u0E25\u0E22\u0E08\u0E23\u0E34\u0E07\u0E46
       \u0E2A\u0E34\u0E19\u0E30"
-    portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
+    portrait: {fileID: 2740161413099099520, guid: 3296e39509d6ad243b648fa88c25b01c, type: 3}
   - speaker: 0
     speakerName: Clarence
     text: "..\u0E14\u0E35\u0E08\u0E23\u0E34\u0E07\u0E46 \u0E17\u0E35\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E08\u0E49\u0E32
@@ -237685,8 +237685,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -82933903
-  m_SortingLayer: 5
+  m_SortingLayerID: -909268515
+  m_SortingLayer: 8
   m_SortingOrder: 10
   m_Sprite: {fileID: 8743813339972885927, guid: 1c025f6499f23334cb433593edc03044, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -239542,8 +239542,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 525.5, y: 244.11285}
-  m_SizeDelta: {x: -1033, y: -179}
+  m_AnchoredPosition: {x: 485.6056, y: 270.08038}
+  m_SizeDelta: {x: -994.7888, y: -179}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2076460664
 GameObject:

@@ -467,6 +467,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBin04
   carriedTrash: {fileID: 0}
   carriedType: 0
+  sfxSource: {fileID: 0}
+  placeOnPedestalSFX: {fileID: 0}
   holdPoint: {fileID: 1874655305155267861}
 --- !u!114 &7490585695386469585
 MonoBehaviour:
@@ -663,7 +665,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.889
+  m_Volume: 0.599
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -385,7 +385,7 @@ if (player != null)
 }
 
     // Unload scene แล้วเรียกบอส
-    SceneManager.UnloadSceneAsync("MiniGame02").completed += (op) =>
+    SceneManager.UnloadSceneAsync("MiniGame022").completed += (op) =>
     {
 
         
