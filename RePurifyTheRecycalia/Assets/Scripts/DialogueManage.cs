@@ -21,11 +21,21 @@ public class DialogueManage : MonoBehaviour
     private PlayerShoot playerShoot; // 🔒 ตัวแปรยิง
     private DialogueTrigger currentTrigger;
 
+    [Header("Sound FX")]
+public AudioSource sfxSource;
+public AudioClip clickChoiceSFX;   // เสียงกดตัวเลือก
+public AudioClip clickNextSFX;     // เสียง Next / กด F
+
+
 
     void Start()
     {
         dialogueBox.SetActive(false);
         choicesPanel.SetActive(false);
+
+        
+    if (sfxSource == null)
+        sfxSource = GetComponent<AudioSource>();
 
         // เชื่อมปุ่ม Next
         nextButton.onClick.AddListener(NextSentence);
@@ -109,6 +119,8 @@ public class DialogueManage : MonoBehaviour
             btn.GetComponentInChildren<TMP_Text>().text = option.Trim();
 
             btn.onClick.AddListener(() => {
+                 if (sfxSource && clickChoiceSFX)
+        sfxSource.PlayOneShot(clickChoiceSFX);
                 choicesPanel.SetActive(false);
                 NextSentence();
             });
@@ -118,6 +130,9 @@ public class DialogueManage : MonoBehaviour
     public void NextSentence()
     {
         if (choicesPanel.activeSelf) return;
+
+        if (sfxSource && clickNextSFX)
+        sfxSource.PlayOneShot(clickNextSFX);
 
         index++;
 

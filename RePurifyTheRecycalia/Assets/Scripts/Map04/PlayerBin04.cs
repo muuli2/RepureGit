@@ -4,6 +4,10 @@ public class PlayerBin04 : MonoBehaviour
 {
     public GameObject carriedTrash;
     public TrashType carriedType;
+    [Header("Sound FX")]
+public AudioSource sfxSource;
+public AudioClip placeOnPedestalSFX;   // 🔊 เสียงวางบนแท่น
+
 
     public Transform holdPoint;   // จุดไว้บนหัว
 

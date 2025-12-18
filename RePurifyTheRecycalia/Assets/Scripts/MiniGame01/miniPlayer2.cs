@@ -7,6 +7,11 @@ public class miniPlayer2 : MonoBehaviour
     public float leftLimit = -8f;
     public float rightLimit = 8f;
 
+    [Header("Audio")]
+public AudioSource sfxSource;
+public AudioClip correctTrashSFX;
+
+
     void Update()
     {
         if (!MiniGame012.Instance.gameStarted)
@@ -34,6 +39,8 @@ public class miniPlayer2 : MonoBehaviour
     // ✅ ต้องใช้ item.trashType2 (ตัวเล็ก)
     if (item.trashType2 == MiniGame012.Instance.targetTrashType)
     {
+         if (sfxSource && correctTrashSFX)
+        sfxSource.PlayOneShot(correctTrashSFX);
         MiniGame012.Instance.AddScore(100);
     }
     else

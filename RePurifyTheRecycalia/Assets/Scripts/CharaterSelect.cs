@@ -35,9 +35,16 @@ public class CharacterSelect : MonoBehaviour
     public float fadeDuration = 0.5f;       // เวลาเลื่อน panel
     public float panelOffset = 20f;         // ระยะเลื่อน panel ทุกครั้งที่กด
 
+    [Header("Sound FX")]
+public AudioSource sfxSource;
+public AudioClip clickCharacterSFX; // เสียงกดเลือกตัวละคร
+public AudioClip confirmSFX;        // เสียงกดยืนยัน (Select)
+
+
     void Start()
     {
-        
+         if (sfxSource == null)
+        sfxSource = GetComponent<AudioSource>();
         // บันทึกตำแหน่งปกติของ Info Panel
         characterLeft.panelBasePosition = characterLeft.infoPanelRect.anchoredPosition;
         characterRight.panelBasePosition = characterRight.infoPanelRect.anchoredPosition;
@@ -90,6 +97,9 @@ public class CharacterSelect : MonoBehaviour
 
     void OnCharacterClicked(Character characterToShow, Character characterToHide)
     {
+           if (sfxSource && clickCharacterSFX)
+        sfxSource.PlayOneShot(clickCharacterSFX);
+
         selectedCharacter = characterToShow;
 
         // ตัวที่เลือกเข้ม ตัวที่ไม่ได้เลือกจาง
@@ -146,6 +156,9 @@ StartCoroutine(SlideIn(
         Debug.Log("กรุณาเลือกตัวละครก่อน!");
         return;
     }
+
+     if (sfxSource && confirmSFX)
+        sfxSource.PlayOneShot(confirmSFX);
 
     // บันทึกตัวละครที่เลือก
     SelectedCharacter.characterName = selectedCharacter.characterName;

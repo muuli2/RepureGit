@@ -20,6 +20,12 @@ public class MiniGame012 : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject winPanel;
 
+    [Header("Audio")]
+public AudioSource sfxSource;
+public AudioClip correctTrashSFX; // เสียงรับขยะถูก
+public AudioClip winSFX;          // เสียงชนะ
+
+
     public string mapSceneName = "Map02";
 
     // ✅ แก้ enum ให้ถูกชนิดเดียวกับ TrashItem2
@@ -29,6 +35,10 @@ public class MiniGame012 : MonoBehaviour
 
     private void Start()
 {
+
+      if (sfxSource == null)
+        sfxSource = GetComponent<AudioSource>();
+
     PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
 
     if (pause != null)
@@ -70,28 +80,33 @@ public class MiniGame012 : MonoBehaviour
     }
 
     // ✅ แก้ CollectTrash ให้ใช้ TrashItem2 (ไม่ใช่ TrashItem)
-    public void CollectTrash(TrashItem2 trash)
+   public void CollectTrash(TrashItem2 trash)
+{
+    int points = 1500;
+
+    if (trash.trashType2 == targetTrashType)
     {
-        int points = 1500;
+        // 🔊 เสียงถูก
+        // if (sfxSource && correctTrashSFX)
+        //     sfxSource.PlayOneShot(correctTrashSFX);
 
-        if (trash.trashType2 == targetTrashType)
-        {
-            AddScore(points);
-        }
-        else
-        {
-            GameManager.Instance.TakeDamage(1);
-            UpdateHeartsUI();
-        }
-
-        Destroy(trash.gameObject);
-
-        if (GameManager.Instance.lives <= 0)
-        {
-            SceneManager.UnloadSceneAsync("MiniGame012");
-            GameManager.Instance.PlayerDied();
-        }
+        AddScore(points);
     }
+    else
+    {
+        GameManager.Instance.TakeDamage(1);
+        UpdateHeartsUI();
+    }
+
+    Destroy(trash.gameObject);
+
+    if (GameManager.Instance.lives <= 0)
+    {
+        SceneManager.UnloadSceneAsync("MiniGame012");
+        GameManager.Instance.PlayerDied();
+    }
+}
+
 
     void DestroyAllTrash()
     {
@@ -127,19 +142,24 @@ public class MiniGame012 : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    void WinGame()
-    {
-        if (winPanel != null) winPanel.SetActive(true);
+   void WinGame()
+{
+    // 🔊 เสียงชนะ
+    if (sfxSource && winSFX)
+        sfxSource.PlayOneShot(winSFX);
 
-        var spawner = Object.FindFirstObjectByType<TrashSpawner>();
-        if (spawner != null)
-            spawner.StopSpawn();
+    if (winPanel != null) winPanel.SetActive(true);
 
-        FreezeAllTrash();
-        DestroyAllTrash();
+    var spawner = Object.FindFirstObjectByType<TrashSpawner>();
+    if (spawner != null)
+        spawner.StopSpawn();
 
-        Time.timeScale = 0;
-    }
+    FreezeAllTrash();
+    DestroyAllTrash();
+
+    Time.timeScale = 0;
+}
+
 
    public void ContinueToMap()
 {

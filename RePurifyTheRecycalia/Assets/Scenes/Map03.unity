@@ -76824,8 +76824,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToastMessage
   toastText: {fileID: 1587437576}
-  audioSource: {fileID: 0}
-  toastClip: {fileID: 0}
+  audioSource: {fileID: 1981716235}
+  toastClip: {fileID: 8300000, guid: a0a988351a49a95469301ed6649eee35, type: 3}
 --- !u!4 &1981716234
 Transform:
   m_ObjectHideFlags: 0

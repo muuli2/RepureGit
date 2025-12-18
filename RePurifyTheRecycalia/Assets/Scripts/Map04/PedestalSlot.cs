@@ -10,9 +10,17 @@ public class PedestalSlot : MonoBehaviour
 
     private InteractionPrompt04 prompt;
 
+    [Header("Sound FX")]
+public AudioSource sfxSource;
+public AudioClip placeOnPedestalSFX;   // 🔊 เสียงวางบนแท่น
+
+
     void Awake()
     {
         prompt = GetComponent<InteractionPrompt04>();
+
+         if (sfxSource == null)
+        sfxSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -48,6 +56,9 @@ public class PedestalSlot : MonoBehaviour
                     placedTrash = playerTrash.DropTrash();
                     placedTrash.transform.SetParent(placePoint);
                     placedTrash.transform.localPosition = Vector3.zero;
+
+                       if (sfxSource && placeOnPedestalSFX)
+        sfxSource.PlayOneShot(placeOnPedestalSFX);
                     TrashPuzzleManager.Instance.CheckPuzzle();
                 }
 
