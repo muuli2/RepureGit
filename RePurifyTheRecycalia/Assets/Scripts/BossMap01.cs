@@ -409,7 +409,7 @@ public void ResetBoss()
 }
 
 
-void StartBossBGM()
+public void StartBossBGM()
 {
     if (bgmCoroutine != null)
         StopCoroutine(bgmCoroutine);
@@ -420,7 +420,7 @@ void StartBossBGM()
     ));
 }
 
-void StopBossBGM()
+public void StopBossBGM()
 {
     if (bgmCoroutine != null)
         StopCoroutine(bgmCoroutine);
