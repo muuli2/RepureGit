@@ -28477,8 +28477,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 182.77979, y: -20.298096}
-  m_SizeDelta: {x: 1379.98, y: 141}
+  m_AnchoredPosition: {x: 133.27979, y: -20.298096}
+  m_SizeDelta: {x: 1280.98, y: 141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &356225325
 CanvasRenderer:
@@ -28804,11 +28804,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3066090635855691282, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.696692
+      value: -21.721384
       objectReference: {fileID: 0}
     - target: {fileID: 3066090635855691282, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.093098
+      value: 2.4123764
       objectReference: {fileID: 0}
     - target: {fileID: 3066090635855691282, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28853,6 +28853,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7578833364996912265, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 369495215}
+    - targetCorrespondingSourceObject: {fileID: 7578833364996912265, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 369495216}
   m_SourcePrefab: {fileID: 100100000, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
 --- !u!1 &369495214 stripped
 GameObject:
@@ -28880,7 +28883,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.1775341
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -28956,6 +28959,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &369495216
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369495214}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1.98
 --- !u!1 &370509210
 GameObject:
   m_ObjectHideFlags: 0
@@ -58916,7 +58955,7 @@ MonoBehaviour:
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
+  m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
 --- !u!114 &1085960748
 MonoBehaviour:
@@ -67210,7 +67249,7 @@ MonoBehaviour:
   - {fileID: 1605397172573836818, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
   minSpawn: 20
   maxSpawn: 25
-  spawnAreaMin: {x: -36.1, y: 62.2}
+  spawnAreaMin: {x: -34.3, y: 67.3}
   spawnAreaMax: {x: -22.5, y: 79.9}
   map03Checkpoint: {fileID: 1675105388}
 --- !u!4 &1459757068
@@ -71361,7 +71400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chapter 03
+  m_text: Chapter III
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}
   m_sharedMaterial: {fileID: -878521081088741051, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}

@@ -12,6 +12,11 @@ public class BoatTrigger : MonoBehaviour
     public TMP_Text warningText;
     private PlayerShoot playerShoot;
 
+    [Header("Sound FX")]
+public AudioSource sfxSource;
+public AudioClip successYesSFX;   // 🔔 เสียงผ่านเงื่อนไข
+
+
 
     private int requiredPoints = 0;
 
@@ -19,6 +24,9 @@ public class BoatTrigger : MonoBehaviour
     {
         confirmPanel.SetActive(false);
         warningText.gameObject.SetActive(false);
+
+         if (sfxSource == null)
+        sfxSource = GetComponent<AudioSource>();
 
         yesButton.onClick.AddListener(OnYes);
         noButton.onClick.AddListener(OnNo);
@@ -61,6 +69,9 @@ private void OnTriggerExit2D(Collider2D col)
         warningText.gameObject.SetActive(true);
         return;
     }
+
+     if (sfxSource && successYesSFX)
+        sfxSource.PlayOneShot(successYesSFX, 0.8f);
 
     ScoreManage.Instance.AddScore(-requiredPoints);
     confirmPanel.SetActive(false);

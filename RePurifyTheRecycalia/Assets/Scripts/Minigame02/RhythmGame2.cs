@@ -77,8 +77,17 @@ public AudioClip goSFX;      // เสียง GO!
 
    private void Start()
 {
+
+     PauseManager pause = Object.FindFirstObjectByType<PauseManager>();
+    if (pause != null)
+        pause.isMiniGameActive = true;
+
+    if (GameManager.Instance != null)
+        GameManager.Instance.isMiniGameActive = true;
     if (sfxSource == null)
     sfxSource = GetComponent<AudioSource>();
+
+    
 
     gameOverPanel.SetActive(false);
     winPanel.SetActive(false);
