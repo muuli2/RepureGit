@@ -36,6 +36,11 @@ public class PrinceDialogueSystem2 : MonoBehaviour
     public CameraPan cameraPan;
  private bool isEnding = false;
 
+ [Header("Audio")]
+public AudioSource sfxSource;
+public AudioClip nextLineSFX;   // 🔊 เสียงคลิกประโยคถัดไป
+
+
 
 
 
@@ -108,6 +113,13 @@ else
 
     public void NextLine()
     {
+if (index < lines.Length - 1)
+{
+    if (sfxSource && nextLineSFX)
+        sfxSource.PlayOneShot(nextLineSFX, 0.6f);
+}
+
+
         index++;
 
         if (index >= lines.Length)

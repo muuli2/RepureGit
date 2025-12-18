@@ -312,7 +312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4292911939982777642, guid: d4a64fe2321cae24e9cc7d093e17282c, type: 3}
+  m_Sprite: {fileID: -4292911939982777642, guid: 94fc4bfcbae8cd04ea0d4433c3198206, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -829,7 +829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FinalMinigameManager
   questions:
-  - picture: {fileID: -4292911939982777642, guid: d4a64fe2321cae24e9cc7d093e17282c, type: 3}
+  - picture: {fileID: -4292911939982777642, guid: 94fc4bfcbae8cd04ea0d4433c3198206, type: 3}
     question: 
     answers:
     - 
@@ -837,7 +837,7 @@ MonoBehaviour:
     - 
     - 
     correctIndex: 0
-  - picture: {fileID: 3009663317672428558, guid: 8f322921b14cd9a48a7045961d000540, type: 3}
+  - picture: {fileID: 3009663317672428558, guid: fefe594df289cfa4bbcb33395b4392d7, type: 3}
     question: 
     answers:
     - 
@@ -845,9 +845,91 @@ MonoBehaviour:
     - 
     - 
     correctIndex: 2
-  - picture: {fileID: -1160770997438946245, guid: 7cb116158fb68d940a0563d2611fb1db, type: 3}
+  - picture: {fileID: -1160770997438946245, guid: d5735f502dcf7944cba4cd9dece8cc9d, type: 3}
     question: 
     answers:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctIndex: 2
+  - picture: {fileID: 4700729678394002025, guid: 2e67cccc8382d9f42a8a373afc09f510, type: 3}
+    question: 
+    answers:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctIndex: 2
+  - picture: {fileID: 5515524443762552950, guid: bd77466f5e393644b939831cf7dbcd41, type: 3}
+    question: 
+    answers:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctIndex: 2
+  - picture: {fileID: 3953006487717480931, guid: 6b5f71977bfcdc14c9a2bcfc018bc140, type: 3}
+    question: 
+    answers:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctIndex: 2
+  - picture: {fileID: 8127160851393796100, guid: 032c5a161be1e424c851f31d133d41d0, type: 3}
+    question: 
+    answers:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctIndex: 2
+  - picture: {fileID: 1157651384903031475, guid: 67064eed8e415664698f9edbc7852b3f, type: 3}
+    question: 
+    answers:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctIndex: 2
+  - picture: {fileID: 1157651384903031475, guid: 67064eed8e415664698f9edbc7852b3f, type: 3}
+    question: 
+    answers:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctIndex: 2
+  - picture: {fileID: 1157651384903031475, guid: 67064eed8e415664698f9edbc7852b3f, type: 3}
+    question: 
+    answers:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctIndex: 2
+  - picture: {fileID: 1157651384903031475, guid: 67064eed8e415664698f9edbc7852b3f, type: 3}
+    question: 
+    answers:
+    - 
+    - 
+    - 
+    - 
+    - 
+    correctIndex: 2
+  - picture: {fileID: 1157651384903031475, guid: 67064eed8e415664698f9edbc7852b3f, type: 3}
+    question: 
+    answers:
+    - 
     - 
     - 
     - 
@@ -2777,7 +2859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4681,11 +4763,11 @@ RectTransform:
   m_Children:
   - {fileID: 909547443}
   - {fileID: 616108460}
+  - {fileID: 1343011518}
   - {fileID: 1876878483}
   - {fileID: 1881911215}
   - {fileID: 1548506690}
   - {fileID: 203592386}
-  - {fileID: 1343011518}
   - {fileID: 1705658128}
   - {fileID: 1749985953}
   - {fileID: 1170684485}
