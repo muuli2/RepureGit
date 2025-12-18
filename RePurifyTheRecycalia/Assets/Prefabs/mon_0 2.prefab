@@ -205,7 +205,7 @@ MonoBehaviour:
     dropChance: 35
   damageToPlayer: 1
   attackCooldown: 1
-  scoreOnDeath: 150
+  scoreOnDeath: 300
   audioSource: {fileID: 8839248180538886699}
   hurtClip: {fileID: 8300000, guid: 971428491fda52047a1b34999bc71a72, type: 3}
   dieClip: {fileID: 8300000, guid: 971428491fda52047a1b34999bc71a72, type: 3}
