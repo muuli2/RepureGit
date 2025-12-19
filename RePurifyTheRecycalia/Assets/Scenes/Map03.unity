@@ -2179,17 +2179,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
---- !u!114 &166262745 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
-  m_PrefabInstance: {fileID: 166262744}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &170320968
 GameObject:
   m_ObjectHideFlags: 0
@@ -28348,6 +28337,97 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327262236}
   m_CullTransparentMesh: 1
+--- !u!1 &344937579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 344937582}
+  - component: {fileID: 344937581}
+  - component: {fileID: 344937580}
+  m_Layer: 0
+  m_Name: TriggerGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!61 &344937580
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344937579}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -76.4, y: -7.2356634}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 103.89064, y: 47.33548}
+  m_EdgeRadius: 0
+--- !u!114 &344937581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344937579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b30e9653da18f44ab3c28622f6b954e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeGunTrigger
+--- !u!4 &344937582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344937579}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9, y: 20.59312, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &351540203
 GameObject:
   m_ObjectHideFlags: 0
@@ -28845,11 +28925,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3066090635855691282, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22
+      value: -7.6888156
       objectReference: {fileID: 0}
     - target: {fileID: 3066090635855691282, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14
+      value: 19.574389
       objectReference: {fileID: 0}
     - target: {fileID: 3066090635855691282, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28898,6 +28978,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 880475142}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7578833364996912265, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 369495219}
     - targetCorrespondingSourceObject: {fileID: 7578833364996912265, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 369495215}
@@ -29059,6 +29142,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3066090635855691282, guid: f046bae94ad55704d9d444e377554eeb, type: 3}
   m_PrefabInstance: {fileID: 369495213}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &369495219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369495214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494475ef9b693ef4ab8c134846a0e825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossGunUpgrade
 --- !u!1 &370509210
 GameObject:
   m_ObjectHideFlags: 0
@@ -31338,17 +31433,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
---- !u!114 &493630914 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
-  m_PrefabInstance: {fileID: 493630913}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &499542998
 GameObject:
   m_ObjectHideFlags: 0
@@ -54250,17 +54334,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
---- !u!114 &765742169 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
-  m_PrefabInstance: {fileID: 765742168}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &779112624
 GameObject:
   m_ObjectHideFlags: 0
@@ -55693,7 +55766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e464c36324f3034aa72ab0956286bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SignInfo
-  infoPanel: {fileID: 1086431199}
+  infoPanel: {fileID: 1639767573}
   fadeDuration: 0
 --- !u!1 &840632817
 GameObject:
@@ -63975,17 +64048,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
---- !u!114 &1271694832 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
-  m_PrefabInstance: {fileID: 1271694831}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1274995767
 GameObject:
   m_ObjectHideFlags: 0
@@ -65681,16 +65743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterManage
   totalEnemies: 10
   killedEnemies: 0
-  allMonsters:
-  - {fileID: 2066358873}
-  - {fileID: 1491586674}
-  - {fileID: 1664886788}
-  - {fileID: 765742169}
-  - {fileID: 1271694832}
-  - {fileID: 2086435685}
-  - {fileID: 166262745}
-  - {fileID: 493630914}
-  - {fileID: 1535653505}
+  allMonsters: []
 --- !u!4 &1362145263
 Transform:
   m_ObjectHideFlags: 0
@@ -68888,17 +68941,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
---- !u!114 &1491586674 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
-  m_PrefabInstance: {fileID: 1491586673}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1494599735
 GameObject:
   m_ObjectHideFlags: 0
@@ -69798,17 +69840,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
---- !u!114 &1535653505 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
-  m_PrefabInstance: {fileID: 1535653504}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1546222187
 GameObject:
   m_ObjectHideFlags: 0
@@ -72335,17 +72366,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
---- !u!114 &1664886788 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
-  m_PrefabInstance: {fileID: 1664886787}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1675105385
 GameObject:
   m_ObjectHideFlags: 0
@@ -282677,17 +282697,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
---- !u!114 &2066358873 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
-  m_PrefabInstance: {fileID: 2066358872}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &2070309062
 GameObject:
   m_ObjectHideFlags: 0
@@ -282745,7 +282754,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E15\u0E49\u0E2D\u0E07\u0E2A\u0E25\u0E30\u0E04\u0E48\u0E32\u0E0A\u0E33\u0E23\u0E23\u0E30\u0E25\u0E49\u0E32\u0E07\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E44\u0E1B\u0E15\u0E48\u0E2D
+  m_text: "\u0E15\u0E49\u0E2D\u0E07\u0E2A\u0E25\u0E30\u0E04\u0E48\u0E32\u0E0A\u0E33\u0E23\u0E30\u0E25\u0E49\u0E32\u0E07\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E44\u0E1B\u0E15\u0E48\u0E2D
     \u0E02\u0E31\u0E49\u0E19\u0E15\u0E48\u0E33 4500"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}
@@ -283131,17 +283140,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
---- !u!114 &2086435685 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
-  m_PrefabInstance: {fileID: 2086435684}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &2091349090
 GameObject:
   m_ObjectHideFlags: 0
@@ -285148,3 +285146,4 @@ SceneRoots:
   - {fileID: 969953700}
   - {fileID: 1063839343}
   - {fileID: 2092964978}
+  - {fileID: 344937582}

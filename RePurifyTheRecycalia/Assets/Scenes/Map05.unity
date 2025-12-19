@@ -4019,17 +4019,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
---- !u!114 &150897521 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
-  m_PrefabInstance: {fileID: 150897520}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &152365799
 GameObject:
   m_ObjectHideFlags: 0
@@ -5188,14 +5177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterManage
   totalEnemies: 8
   killedEnemies: 0
-  allMonsters:
-  - {fileID: 314067319}
-  - {fileID: 1847702210}
-  - {fileID: 492914667}
-  - {fileID: 252547159}
-  - {fileID: 421352899}
-  - {fileID: 150897521}
-  - {fileID: 1517879542}
+  allMonsters: []
 --- !u!4 &202352622
 Transform:
   m_ObjectHideFlags: 0
@@ -6340,17 +6322,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
---- !u!114 &252547159 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
-  m_PrefabInstance: {fileID: 252547158}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &254528241
 GameObject:
   m_ObjectHideFlags: 0
@@ -8687,17 +8658,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
---- !u!114 &314067319 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
-  m_PrefabInstance: {fileID: 314067318}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &317988228
 GameObject:
   m_ObjectHideFlags: 0
@@ -11363,17 +11323,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
---- !u!114 &421352899 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
-  m_PrefabInstance: {fileID: 421352898}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &431819000
 GameObject:
   m_ObjectHideFlags: 0
@@ -13182,17 +13131,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8261d32da53d10e4b93a85d1871a27a2, type: 3}
---- !u!114 &492914667 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 8261d32da53d10e4b93a85d1871a27a2, type: 3}
-  m_PrefabInstance: {fileID: 492914666}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &496539829
 GameObject:
   m_ObjectHideFlags: 0
@@ -224550,17 +224488,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
---- !u!114 &1517879542 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
-  m_PrefabInstance: {fileID: 1517879541}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1519311377
 GameObject:
   m_ObjectHideFlags: 0
@@ -234716,17 +234643,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
---- !u!114 &1847702210 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
-  m_PrefabInstance: {fileID: 1847702209}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1851681446
 GameObject:
   m_ObjectHideFlags: 0
@@ -235017,7 +234933,7 @@ MonoBehaviour:
       \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E40\u0E08\u0E49\u0E32.."
     portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0
-    speakerName: Lumina
+    speakerName: Clarence
     text: "\u0E17\u0E38\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07\u0E17\u0E35\u0E48\u0E02\u0E49\u0E32\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E2B\u0E21\u0E39\u0E48\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E22\u0E40\u0E09\u0E37\u0E48\u0E2D\u0E22 "
     portrait: {fileID: -5304066153669314135, guid: 99fa7bc09b822a1428c60dfcb3760ed7, type: 3}
   - speaker: 0

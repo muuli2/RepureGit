@@ -2006,17 +2006,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
---- !u!114 &70439860 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
-  m_PrefabInstance: {fileID: 70439859}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &71646674
 GameObject:
   m_ObjectHideFlags: 0
@@ -3745,17 +3734,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
---- !u!114 &129782673 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
-  m_PrefabInstance: {fileID: 129782672}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1001 &139082001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14369,17 +14347,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
---- !u!114 &337936652 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
-  m_PrefabInstance: {fileID: 337936651}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &346097068
 GameObject:
   m_ObjectHideFlags: 0
@@ -17453,7 +17420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0E15\u0E49\u0E2D\u0E07\u0E2A\u0E25\u0E30\u0E04\u0E48\u0E32\u0E0A\u0E33\u0E23\u0E23\u0E30\u0E25\u0E49\u0E32\u0E07\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E44\u0E1B\u0E15\u0E48\u0E2D
+  m_text: "\u0E15\u0E49\u0E2D\u0E07\u0E2A\u0E25\u0E30\u0E04\u0E48\u0E32\u0E0A\u0E33\u0E23\u0E30\u0E25\u0E49\u0E32\u0E07\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E44\u0E1B\u0E15\u0E48\u0E2D
     \u0E02\u0E31\u0E49\u0E19\u0E15\u0E48\u0E33 4600"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b82150ce9f64604ebf7ea4bb6fee139, type: 2}
@@ -22084,11 +22051,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 437879152943116350, guid: 5c2fa5e54009cf84ab8f82d0f8f03977, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.2925
+      value: 45.12451
       objectReference: {fileID: 0}
     - target: {fileID: 437879152943116350, guid: 5c2fa5e54009cf84ab8f82d0f8f03977, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.8678
+      value: 21.378853
       objectReference: {fileID: 0}
     - target: {fileID: 437879152943116350, guid: 5c2fa5e54009cf84ab8f82d0f8f03977, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22214,7 +22181,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 7.929413
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -22297,7 +22264,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760423406}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -114124,15 +114091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterManage
   totalEnemies: 9
   killedEnemies: 0
-  allMonsters:
-  - {fileID: 70439860}
-  - {fileID: 337936652}
-  - {fileID: 129782673}
-  - {fileID: 1478600167}
-  - {fileID: 1376008848}
-  - {fileID: 1933521412}
-  - {fileID: 1168694382}
-  - {fileID: 1248782473}
+  allMonsters: []
 --- !u!4 &1086503714
 Transform:
   m_ObjectHideFlags: 0
@@ -114843,17 +114802,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
---- !u!114 &1168694382 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
-  m_PrefabInstance: {fileID: 1168694381}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1172720462
 GameObject:
   m_ObjectHideFlags: 0
@@ -116043,17 +115991,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
---- !u!114 &1248782473 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
-  m_PrefabInstance: {fileID: 1248782472}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1266873746
 GameObject:
   m_ObjectHideFlags: 0
@@ -119530,17 +119467,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
---- !u!114 &1376008848 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
-  m_PrefabInstance: {fileID: 1376008847}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1378555035
 GameObject:
   m_ObjectHideFlags: 0
@@ -121561,17 +121487,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
---- !u!114 &1478600167 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
-  m_PrefabInstance: {fileID: 1478600166}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1001 &1481718792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130196,17 +130111,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
---- !u!114 &1933521412 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
-  m_PrefabInstance: {fileID: 1933521411}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1936105469
 GameObject:
   m_ObjectHideFlags: 0

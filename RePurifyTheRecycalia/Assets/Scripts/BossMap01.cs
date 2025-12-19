@@ -304,6 +304,14 @@ if (tt != null)
         anim?.SetTrigger("die");
 
         StartCoroutine(FinishBossDeath(2f));
+
+        // 🔹 ถ้าบอสตัวนี้มี BossGunUpgrade → ค่อยอัป
+BossGunUpgrade gunUpgrade = GetComponent<BossGunUpgrade>();
+if (gunUpgrade != null)
+{
+    gunUpgrade.ApplyUpgrade();
+}
+
     }
 
     private IEnumerator FinishBossDeath(float delay)
