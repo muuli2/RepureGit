@@ -1621,6 +1621,10 @@ MonoBehaviour:
   - {fileID: 58954146303904838, guid: e6887d7a5a85d214abc3c079162172e0, type: 3}
   - {fileID: 58954146303904838, guid: 1892b1e99ba2b414f847d54bcee973f2, type: 3}
   - {fileID: 58954146303904838, guid: a49e1f75b547bf04d8e046ada53e3aac, type: 3}
+  - {fileID: 58954146303904838, guid: 10504f197dd80a643a8f6004f79ea787, type: 3}
+  - {fileID: 58954146303904838, guid: 309231e0997c389419e0f80484846146, type: 3}
+  - {fileID: 58954146303904838, guid: 156a9493bce5dfe499aed011ccd64370, type: 3}
+  - {fileID: 58954146303904838, guid: 8aa679fd332eb3843b96bfb00bff15e6, type: 3}
   spawnPositions:
   - {fileID: 1647483094}
   - {fileID: 383406844}
