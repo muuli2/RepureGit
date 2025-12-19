@@ -679,7 +679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b7152ce2374ca44a3ba09e210125cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndSkip
-  skipButtonGroup: {fileID: 0}
+  skipButtonGroup: {fileID: 141721790}
   fadeTime: 1
   delayBeforeShow: 2
   videoPlayer: {fileID: 301440807}

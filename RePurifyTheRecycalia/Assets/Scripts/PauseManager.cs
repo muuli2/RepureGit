@@ -61,6 +61,35 @@ public Slider bgmSlider;
         }
     }
 
+    private void OnEnable()
+{
+    SceneManager.sceneLoaded += OnSceneLoaded;
+}
+
+private void OnDisable()
+{
+    SceneManager.sceneLoaded -= OnSceneLoaded;
+}
+
+private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+{
+    // 🔹 ค่าเริ่มต้น: อนุญาต Pause
+    isMiniGameActive = false;
+
+    // 🔹 ซีนที่ต้องบล็อก pause
+    if (scene.name.StartsWith("Minigame") ||
+        scene.name == "MainMenu" ||
+        scene.name == "CharacterSelect" ||
+        scene.name == "CutScenes" ||
+        scene.name == "End")
+    {
+        isMiniGameActive = true;
+    }
+
+    ResetPauseMenu(); // กัน timeScale ค้าง
+}
+
+
 
     public void TogglePauseMenu()
     {
