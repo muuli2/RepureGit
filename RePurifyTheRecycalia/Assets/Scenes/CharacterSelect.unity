@@ -2855,7 +2855,7 @@ MonoBehaviour:
   panelOffset: 20
   sfxSource: {fileID: 1076089722}
   clickCharacterSFX: {fileID: 8300000, guid: f2db7780890f6d145949402cd781fbd3, type: 3}
-  confirmSFX: {fileID: 0}
+  confirmSFX: {fileID: 8300000, guid: db36ec382dadbe44c853747e0a077d9b, type: 3}
 --- !u!82 &1076089722
 AudioSource:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public AudioClip successYesSFX;   // 🔔 เสียงผ่านเงื�
 
 
 
-    private int requiredPoints = 0;
+    private int requiredPoints = 4500;
 
     private void Start()
     {

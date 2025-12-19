@@ -4019,6 +4019,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
+--- !u!114 &150897521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
+  m_PrefabInstance: {fileID: 150897520}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &152365799
 GameObject:
   m_ObjectHideFlags: 0
@@ -5175,15 +5186,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3802eb66d307c0c4ba7fb44311beb642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterManage
-  totalEnemies: 0
+  totalEnemies: 8
   killedEnemies: 0
   allMonsters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 314067319}
+  - {fileID: 1847702210}
+  - {fileID: 492914667}
+  - {fileID: 252547159}
+  - {fileID: 421352899}
+  - {fileID: 150897521}
+  - {fileID: 1517879542}
 --- !u!4 &202352622
 Transform:
   m_ObjectHideFlags: 0
@@ -6328,6 +6340,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
+--- !u!114 &252547159 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
+  m_PrefabInstance: {fileID: 252547158}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &254528241
 GameObject:
   m_ObjectHideFlags: 0
@@ -8664,6 +8687,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
+--- !u!114 &314067319 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
+  m_PrefabInstance: {fileID: 314067318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &317988228
 GameObject:
   m_ObjectHideFlags: 0
@@ -10357,8 +10391,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 164.1582, y: -12.041199}
-  m_SizeDelta: {x: 1325.98, y: 158}
+  m_AnchoredPosition: {x: 156.58398, y: -34.337646}
+  m_SizeDelta: {x: 1321.98, y: 158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &391380328
 CanvasRenderer:
@@ -11329,6 +11363,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
+--- !u!114 &421352899 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: f0fe58e6ceec1a046afb01c782111fe4, type: 3}
+  m_PrefabInstance: {fileID: 421352898}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &431819000
 GameObject:
   m_ObjectHideFlags: 0
@@ -13137,6 +13182,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8261d32da53d10e4b93a85d1871a27a2, type: 3}
+--- !u!114 &492914667 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 8261d32da53d10e4b93a85d1871a27a2, type: 3}
+  m_PrefabInstance: {fileID: 492914666}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &496539829
 GameObject:
   m_ObjectHideFlags: 0
@@ -22604,7 +22660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &898137067
 AudioSource:
   m_ObjectHideFlags: 0
@@ -224494,6 +224550,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
+--- !u!114 &1517879542 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: 4f055fcc15a586f4fb119b55c2aea957, type: 3}
+  m_PrefabInstance: {fileID: 1517879541}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1519311377
 GameObject:
   m_ObjectHideFlags: 0
@@ -224720,7 +224787,7 @@ Transform:
   m_GameObject: {fileID: 1519865302}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.62579, y: 4.90968, z: 0}
+  m_LocalPosition: {x: 7.62579, y: 4.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -234649,6 +234716,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
+--- !u!114 &1847702210 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 257210899650455638, guid: fba1c522d61791441b26954c8e64ccbe, type: 3}
+  m_PrefabInstance: {fileID: 1847702209}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58020cfbbae395a4781c7fdfa2f62670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Monster
 --- !u!1 &1851681446
 GameObject:
   m_ObjectHideFlags: 0
@@ -239651,7 +239729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 485.6056, y: 275.00723}
+  m_AnchoredPosition: {x: 485.6056, y: 299.1815}
   m_SizeDelta: {x: -994.7888, y: -179}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2076460664
