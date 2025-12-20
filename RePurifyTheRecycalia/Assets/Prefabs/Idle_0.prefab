@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FinalBoss
   bulletPrefab: {fileID: 1684732667910442027, guid: c6fe773ac26342e44bcda96f1b2470cb, type: 3}
-  bulletSpawnPoint: {fileID: 3915327498507497184}
+  bulletSpawnPoint: {fileID: 0}
   bulletSpeed: 5
   rangeAttackDistance: 4
   maxHealth: 60
@@ -168,12 +168,12 @@ MonoBehaviour:
   attackDistance: 20
   attackCooldown: 1.2
   damage: 1
-  attackPoint: {fileID: 117262164157036902}
+  attackPoint: {fileID: 0}
   attackRange: 20
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 117262164157036902}
   specialAttackCooldown: 5
   spreadDetectDistance: 5
   spreadBulletCount: 12
@@ -182,6 +182,11 @@ MonoBehaviour:
   bossAnimator: {fileID: 8644396092610067737}
   glowEffect: {fileID: 0}
   bgmSource: {fileID: 0}
+  sfxSource: {fileID: 0}
+  hurtSFX: {fileID: 0}
+  dieSFX: {fileID: 0}
+  shootSFX: {fileID: 0}
+  spreadShootSFX: {fileID: 0}
   miniGameSceneName: MinigameFinal
 --- !u!95 &8644396092610067737
 Animator:
