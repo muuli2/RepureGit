@@ -541,6 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerTrash
   trashIconPoint: {fileID: 4288183279913859232}
+  trashIconPrefab: {fileID: 4456982813048662888, guid: 396beb0b44ed16a499e06362c9ce5ff9, type: 3}
   comboTime: 5
   comboText: {fileID: 5596725412614779944}
   feedbackText: {fileID: 5596725412614779944}

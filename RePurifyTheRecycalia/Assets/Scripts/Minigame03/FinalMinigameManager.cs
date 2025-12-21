@@ -368,7 +368,7 @@ void ReturnToMap()
     Transform player = GameObject.FindGameObjectWithTag("Player")?.transform;
     if (player != null)
     {
-        Vector3 offset = new Vector3(8f, -3.5f, 0);
+        Vector3 offset = new Vector3(8f, -3f, 0);
         player.position = bossPos + offset;
     }
 

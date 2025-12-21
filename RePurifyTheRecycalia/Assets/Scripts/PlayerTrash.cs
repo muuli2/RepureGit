@@ -3,54 +3,56 @@ using TMPro;
 
 public class PlayerTrash : MonoBehaviour
 {
-    public Transform trashIconPoint;       // ตำแหน่งโชว์ขยะบนหัว
-    public float comboTime = 10f;          // เวลา combo
-    public TMP_Text comboText;             // แสดง Combo UI
-    public TMP_Text feedbackText;          // แสดงข้อความชั่วคราว เช่น "ผิดประเภทแล้วล่ะ..."
+    [Header("Icon")]
+    public Transform trashIconPoint;       // จุดโชว์ไอคอนบนหัว
+    public GameObject trashIconPrefab;     // prefab ไอคอนขยะ
 
-    private GameObject currentTrashIcon;
-    private TrashType currentTrashType;    // ชนิดขยะที่ถืออยู่
+    [Header("Combo")]
+    public float comboTime = 10f;
+    public TMP_Text comboText;
+    public TMP_Text feedbackText;
+
+    [Header("Sound FX")]
+    public AudioSource sfxSource;
+    public AudioClip correctTrashSFX;
+    public AudioClip wrongTrashSFX;
+
+    // ===== Runtime =====
+    private GameObject currentTrashIcon;    // ไอคอนบนหัว
+    private GameObject currentTrashObject;  // ขยะจริงในฉาก
+    private TrashType currentTrashType;
+
     private bool hasTrash = false;
     private float comboTimer = 0f;
     private int comboCount = 0;
 
-    [Header("Sound FX")]
-public AudioSource sfxSource;
-public AudioClip correctTrashSFX;
-public AudioClip wrongTrashSFX;
-
-
     void Start()
     {
+        if (sfxSource == null)
+            sfxSource = GetComponent<AudioSource>();
 
-         if (sfxSource == null)
-        sfxSource = GetComponent<AudioSource>();
         if (comboText == null)
-            comboText = GameObject.Find("ComboText").GetComponent<TMP_Text>();
+            comboText = GameObject.Find("ComboText")?.GetComponent<TMP_Text>();
 
         if (feedbackText == null)
-            feedbackText = GameObject.Find("FeedbackText").GetComponent<TMP_Text>();
+            feedbackText = GameObject.Find("FeedbackText")?.GetComponent<TMP_Text>();
 
-        feedbackText.text = "";
+        if (feedbackText != null)
+            feedbackText.text = "";
     }
 
     void Update()
     {
-        // Combo Timer
+        // ===== Combo Timer =====
         if (comboTimer > 0f)
         {
             comboTimer -= Time.deltaTime;
             if (comboTimer <= 0f)
             {
                 comboCount = 0;
-                comboText.text = "";
+                if (comboText != null)
+                    comboText.text = "";
             }
-        }
-
-        // ขยะติดหัวผู้เล่นทุกเฟรม
-        if (hasTrash && currentTrashIcon != null)
-        {
-            currentTrashIcon.transform.position = trashIconPoint.position;
         }
 
         // กด R → วางขยะลงพื้น
@@ -61,84 +63,114 @@ public AudioClip wrongTrashSFX;
         }
     }
 
-    // เก็บขยะ
+    // ================== PICK UP ==================
     public void PickUpTrash(GameObject trash, TrashType trashType)
     {
         if (hasTrash) return;
 
         hasTrash = true;
-        currentTrashIcon = trash;
         currentTrashType = trashType;
 
-        // ปิด Rigidbody + Collider
-        Rigidbody2D rb = currentTrashIcon.GetComponent<Rigidbody2D>();
-        if (rb != null) rb.simulated = false;
+        // 🔹 เก็บขยะจริงไว้ แต่ไม่เอาขึ้นหัว
+        currentTrashObject = trash;
+        currentTrashObject.SetActive(false);
 
-        Collider2D col = currentTrashIcon.GetComponent<Collider2D>();
-        if (col != null) col.enabled = false;
-
-        currentTrashIcon.transform.SetParent(trashIconPoint);
+        // 🔹 สร้างไอคอนบนหัว
+        currentTrashIcon = Instantiate(trashIconPrefab, trashIconPoint);
         currentTrashIcon.transform.localPosition = Vector3.zero;
         currentTrashIcon.transform.localRotation = Quaternion.identity;
-    }
 
-    // วางขยะลงถัง
-    public void DropTrashIntoBin(TrashType binType)
+        // คัดลอก sprite จากขยะจริง
+SpriteRenderer trashSR = currentTrashObject.GetComponent<SpriteRenderer>();
+SpriteRenderer iconSR = currentTrashIcon.GetComponent<SpriteRenderer>();
+
+if (trashSR != null && iconSR != null)
 {
-    if (!hasTrash) return;
-
-    // ❌ ผิดถัง
-    if (currentTrashType != binType)
-    {
-        if (sfxSource && wrongTrashSFX)
-            sfxSource.PlayOneShot(wrongTrashSFX);
-
-        feedbackText.text = "<color=red>ผิดประเภทแล้วล่ะ...</color>";
-        Invoke("ClearFeedback", 2f);
-
-        GameManager.Instance.TakeDamage(1);
-        DropTrashOnGround();
-        return;
-    }
-
-    // ✅ ถูกถัง
-    if (sfxSource && correctTrashSFX)
-        sfxSource.PlayOneShot(correctTrashSFX);
-
-    hasTrash = false;
-    currentTrashIcon.SetActive(false);
-
-    int points = 100;
-    if (comboCount >= 4) points *= 2;
-
-    ScoreManage.Instance?.AddScore(points);
-
-    comboCount++;
-    comboTimer = comboTime;
-    comboText.text = comboCount >= 5 
-        ? $"Combo x{comboCount}! (x2!)" 
-        : $"Combo x{comboCount}!";
-
-    TrashCheck.Instance.AddCollected();
-    currentTrashIcon = null;
+    iconSR.sprite = trashSR.sprite;
+    iconSR.flipX = trashSR.flipX;
+    iconSR.flipY = trashSR.flipY;
 }
 
-    // วางขยะลงพื้น (ไม่ให้คะแนน)
+    }
+
+    // ================== DROP INTO BIN ==================
+    public void DropTrashIntoBin(TrashType binType)
+    {
+        if (!hasTrash) return;
+
+        // ❌ ผิดถัง
+        if (currentTrashType != binType)
+        {
+            if (sfxSource && wrongTrashSFX)
+                sfxSource.PlayOneShot(wrongTrashSFX);
+
+            if (feedbackText != null)
+            {
+                feedbackText.text = "<color=red>ผิดประเภทแล้วล่ะ...</color>";
+                Invoke(nameof(ClearFeedback), 2f);
+            }
+
+            GameManager.Instance?.TakeDamage(1);
+            DropTrashOnGround();
+            return;
+        }
+
+        // ✅ ถูกถัง
+        if (sfxSource && correctTrashSFX)
+            sfxSource.PlayOneShot(correctTrashSFX);
+
+        // ลบ icon
+        if (currentTrashIcon != null)
+            Destroy(currentTrashIcon);
+
+        // ลบขยะจริง (หรือ SetActive(false) ถ้าจะ reuse)
+        if (currentTrashObject != null)
+            Destroy(currentTrashObject);
+
+        hasTrash = false;
+        currentTrashIcon = null;
+        currentTrashObject = null;
+
+        // ===== Score + Combo =====
+        int points = 100;
+        if (comboCount >= 4) points *= 2;
+
+        ScoreManage.Instance?.AddScore(points);
+
+        comboCount++;
+        comboTimer = comboTime;
+
+        if (comboText != null)
+        {
+            comboText.text = comboCount >= 5
+                ? $"Combo x{comboCount}! (x2!)"
+                : $"Combo x{comboCount}!";
+        }
+
+        TrashCheck.Instance?.AddCollected();
+    }
+
+    // ================== DROP ON GROUND ==================
     private void DropTrashOnGround()
     {
         if (!hasTrash) return;
 
         hasTrash = false;
 
-        currentTrashIcon.transform.SetParent(null);
+        // ลบไอคอน
+        if (currentTrashIcon != null)
+            Destroy(currentTrashIcon);
 
-        Rigidbody2D rb = currentTrashIcon.GetComponent<Rigidbody2D>();
-        if (rb != null) rb.simulated = true;
-
-        Collider2D col = currentTrashIcon.GetComponent<Collider2D>();
-        if (col != null) col.enabled = true;
+        // เอาขยะจริงกลับโลก
+        if (currentTrashObject != null)
+        {
+            currentTrashObject.SetActive(true);
+            currentTrashObject.transform.position =
+                transform.position + Vector3.right; // ปรับตำแหน่งได้
+        }
 
         currentTrashIcon = null;
+        currentTrashObject = null;
     }
 
     public bool HasTrash()
@@ -148,6 +180,7 @@ public AudioClip wrongTrashSFX;
 
     private void ClearFeedback()
     {
-        feedbackText.text = "";
+        if (feedbackText != null)
+            feedbackText.text = "";
     }
 }
