@@ -676807,7 +676807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &2055025218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -676866,7 +676866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b034c9e32e2ead44ac1031da2686813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTriggerZone
-  sceneToLoad: Map03
+  sceneToLoad: Map02
 --- !u!4 &2055025220
 Transform:
   m_ObjectHideFlags: 0
