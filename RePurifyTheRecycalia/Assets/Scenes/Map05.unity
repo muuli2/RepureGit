@@ -6479,6 +6479,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -527.02
       objectReference: {fileID: 0}
+    - target: {fileID: 1156620855710971751, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5237579
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156620855710971751, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
+      propertyPath: m_Size.y
+      value: 0.34359968
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156620855710971751, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0003335178
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156620855710971751, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.038634986
+      objectReference: {fileID: 0}
     - target: {fileID: 1885359877828037518, guid: c994e11d1626b3545b7791b4be039eeb, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
